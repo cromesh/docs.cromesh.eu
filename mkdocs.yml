@@ -1,0 +1,65 @@
+site_name: CroMesh Dokumentacija
+site_description: Dokumentacija za CroMesh mrežu i Meshtastic konfiguraciju
+site_author: CroMesh zajednica
+site_url: https://docs.cromesh.eu
+
+nav:
+  - 🏠 Uvod: index.md
+  - ⚙️ Postavke: postavke.md
+
+theme:
+  name: material
+  language: hr
+  features:
+    - content.sections
+    - content.tabs
+    - navigation.sections
+    - navigation.instant
+    - navigation.footer
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+  palette:
+      scheme: slate
+      primary: green
+      accent: dark-green
+  font:
+    text: Roboto
+    code: Roboto Mono
+  
+
+      
+    
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - attr_list
+  - def_list
+  - tables
+  - toc:
+      permalink: true
+  - footnotes
+  - nl2br
+  - md_in_html
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+
+plugins:
+  - search:
+      lang: en   # 'hr' not supported yet
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/cromesh
+    - icon: fontawesome/brands/github
+      link: https://github.com/CroMesh
+    - icon: material/web
+      link: https://cromesh.eu
+  generator: false
