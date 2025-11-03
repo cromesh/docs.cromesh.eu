@@ -1,0 +1,35 @@
+name: Build and Deploy MkDocs
+
+on:
+  push:
+    branches:
+      - main  # Trigger on main branch changes
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs mkdocs-material
+
+      - name: Build and deploy
+        run: |
+          mkdocs build --clean
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git --work-tree site add --all
+          git commit -m "Deploy site" || echo "No changes to commit"
+          git push origin `git subtree split --prefix site main`:build --force
