@@ -3,13 +3,13 @@ name: Build and Deploy MkDocs
 on:
   push:
     branches:
-      - main  # Trigger on main branch changes
+      - main
 
 permissions:
   contents: write
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,13 +23,14 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs mkdocs-material
+          pip install mkdocs mkdocs-material pymdown-extensions
 
-      - name: Build and deploy
-        run: |
-          mkdocs build --clean
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git --work-tree site add --all
-          git commit -m "Deploy site" || echo "No changes to commit"
-          git push origin `git subtree split --prefix site main`:build --force
+      - name: Build site
+        run: mkdocs build --clean
+
+      - name: Deploy to build branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          publish_branch: build
