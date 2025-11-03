@@ -18,12 +18,8 @@ Najnovije stabilno izdanje — čak i ako je označeno kao *Beta* — obično je
 - Ako se krećete, omogućite **Smart Position** s minimum interval: **10 minuta**
   - Distance trigger: **100–130 metara**  
 
-Time se smanjuje nepotreban promet u mreži.
-
-
-
-# Preporučene Postavke za područje Hrvatske
-
+Time se smanjuje nepotreban promet u mreži.  
+# Preporučene Postavke za područje Hrvatske  
 *(Pročitaj sve preporuke prije primjene.)*
 
 ### LoRa Postavke
@@ -35,7 +31,7 @@ Time se smanjuje nepotreban promet u mreži.
 - **Ignore MQTT**: Uključeno
 - **OK to MQTT**: Uključeno  
   
-![Channels](channel_settings1.png){ width="300" }  
+![Channels](lora_settings.png){ width="300" }  
 OK to MQTT je potreban da bi se vaše poruke prikazale na:  
    - map.cromesh.eu  
    - Drugim kartama i drugim alatima za vizualizaciju
@@ -65,7 +61,7 @@ Ovdje se unose postavke vezane za korisnika meshtastic uređaja
 - **Short Name**: Maksimalno 4 znaka — jedinstveno za taj uređaj.  
   To je ime koje se prikazuje u chatu. Možete koristiti i emojije.  
 - **Unmessageable**: Uključeno(Samo za uređaje s u infrastruktura ili nitko ne gleda poruke na njima)  
-- **Licencirani Operator**: Ne uključujte osim ako ste licencirani [radioamater](https://hr.wikipedia.org/wiki/Radioamaterizam) i ako ste pročitali [Licencirane Operacije](../licensed-operations.md).  
+- **Licencirani Operator**: Ne uključujte osim ako ste licencirani [radioamater](https://hr.wikipedia.org/wiki/Radioamaterizam).  
   *(Ako to omogućite, nećete moći komunicirati s korisnicima na zadanim kanalima.)*  
   
 ![Channels](user_settings.png){ width="300" }  
@@ -84,7 +80,7 @@ Ovdje se unose postavke vezane za korisnika meshtastic uređaja
   Pogledaj [službenu dokumentaciju](https://meshtastic.org/blog/choosing-the-right-device-role/) za više informacija.  
   
 **Node Info Brodcast Interval** — 6 sati.  
-![Channels](user_settings.png){ width="300" }  
+![Channels](device_settings.png){ width="300" }  
 
 
 
