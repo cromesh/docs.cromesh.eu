@@ -36,7 +36,7 @@ OK to MQTT je potreban da bi se vaše poruke prikazale na:
    - map.cromesh.eu  
    - Drugim kartama i drugim alatima za vizualizaciju
 
-Ovo pomaže zajednici pratiti tok poruka i otkriti probleme u mreži.
+Ovo pomaže zajednici pratiti tok poruka i otkriti probleme u mreži. Kada je OK to MQTT upaljen drugi uređaji koji su spojeni na MQTT server će relejati telemetriju i poruke s tvog uređaja ostatku mesha.
 
 
 
@@ -92,7 +92,7 @@ Ovo je među naprednijim postavkama. Ako ne znaš što je **"MQTT"**, ostavi ga 
 - **Adress**: mqtt.cromesh.eu  
 - **Username**: meshdev  
 - **Password**: large4cats  
-- **Encryption Enabled**: Uključeno  
+- **Encryption Enabled**: Uključeno(Ako nije uključeno sve poruke preko mqtt će ići nešifrirane)
 - **JSON output enabled**: Isključeno  
 - **TLS enabled**: Isključeno  
 - **root topic**: msh/EU_868/9A  

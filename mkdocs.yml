@@ -5,6 +5,7 @@ site_url: https://docs.cromesh.eu
 
 nav:
   - 🏠 Uvod: index.md
+  - 📡 Detaljnije: detaljnije.md
   - ⚙️ Postavke: postavke.md
 
 theme:
