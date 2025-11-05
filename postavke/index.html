@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://docs.cromesh.eu/postavke/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../detaljnije/">
       
       
       
@@ -229,6 +229,28 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../detaljnije/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📡 Detaljnije
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -404,7 +426,7 @@ Najnovije stabilno izdanje — čak i ako je označeno kao <em>Beta</em> — obi
 OK to MQTT je potreban da bi se vaše poruke prikazale na:<br />
    - map.cromesh.eu<br />
    - Drugim kartama i drugim alatima za vizualizaciju</p>
-<p>Ovo pomaže zajednici pratiti tok poruka i otkriti probleme u mreži.</p>
+<p>Ovo pomaže zajednici pratiti tok poruka i otkriti probleme u mreži. Kada je OK to MQTT upaljen drugi uređaji koji su spojeni na MQTT server će relejati telemetriju i poruke s tvog uređaja ostatku mesha.</p>
 <h3 id="channels">Channels<a class="headerlink" href="#channels" title="Permanent link">&para;</a></h3>
 <p><strong>0 – Primarni kanal</strong>  </p>
 <ul>
@@ -448,7 +470,7 @@ Ovo je među naprednijim postavkama. Ako ne znaš što je <strong>"MQTT"</strong
 <li><strong>Adress</strong>: mqtt.cromesh.eu  </li>
 <li><strong>Username</strong>: meshdev  </li>
 <li><strong>Password</strong>: large4cats  </li>
-<li><strong>Encryption Enabled</strong>: Uključeno  </li>
+<li><strong>Encryption Enabled</strong>: Uključeno(Ako nije uključeno sve poruke preko mqtt će ići nešifrirane)</li>
 <li><strong>JSON output enabled</strong>: Isključeno  </li>
 <li><strong>TLS enabled</strong>: Isključeno  </li>
 <li><strong>root topic</strong>: msh/EU_868/9A<br />
@@ -487,7 +509,7 @@ Točno ovako – velika i mala slova su bitna.  </li>
       <nav class="md-footer__inner md-grid" aria-label="Podnožje" >
         
           
-          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Prethodno: 🏠 Uvod">
+          <a href="../detaljnije/" class="md-footer__link md-footer__link--prev" aria-label="Prethodno: 📡 Detaljnije">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -497,7 +519,7 @@ Točno ovako – velika i mala slova su bitna.  </li>
                 Prethodno
               </span>
               <div class="md-ellipsis">
-                🏠 Uvod
+                📡 Detaljnije
               </div>
             </div>
           </a>

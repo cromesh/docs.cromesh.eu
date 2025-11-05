@@ -6,28 +6,34 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Dokumentacija za CroMesh mrežu i Meshtastic konfiguraciju">
+        <meta name="description" content="Vodič kroz najčešće mikrokontrolere i uređaje koji se koriste s Meshtasticom">
       
       
         <meta name="author" content="CroMesh zajednica">
       
       
+        <link rel="canonical" href="https://docs.cromesh.eu/detaljnije/">
       
       
+        <link rel="prev" href="..">
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      
+        <link rel="next" href="../postavke/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
     
     
       
-        <title>CroMesh Dokumentacija</title>
+        <title>Odabir pravog uređaja za Meshtastic - CroMesh Dokumentacija</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -69,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#odabir-pravog-ureaja" class="md-skip">
+          Preskoči na sadržaj
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -81,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Zaglavlje">
-    <a href="/." title="CroMesh Dokumentacija" class="md-header__button md-logo" aria-label="CroMesh Dokumentacija" data-md-component="logo">
+    <a href=".." title="CroMesh Dokumentacija" class="md-header__button md-logo" aria-label="CroMesh Dokumentacija" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -101,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Odabir pravog uređaja za Meshtastic
             
           </span>
         </div>
@@ -183,7 +194,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigacija" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="CroMesh Dokumentacija" class="md-nav__button md-logo" aria-label="CroMesh Dokumentacija" data-md-component="logo">
+    <a href=".." title="CroMesh Dokumentacija" class="md-nav__button md-logo" aria-label="CroMesh Dokumentacija" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -201,7 +212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -220,10 +231,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/detaljnije/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    📡 Detaljnije
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -234,6 +267,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Sadržaj">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Sadržaj
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#esp32-svestranost-uz-vecu-potrosnju" class="md-nav__link">
+    <span class="md-ellipsis">
+      ESP32 — Svestranost uz veću potrošnju
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nrf52-ucinkovitost-je-prioritet" class="md-nav__link">
+    <span class="md-ellipsis">
+      nRF52 — Učinkovitost je prioritet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rp2040-niska-potrosnja-i-dvojezgreni-pogon" class="md-nav__link">
+    <span class="md-ellipsis">
+      RP2040 — Niska potrošnja i dvojezgreni pogon
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zakljucak" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zaključak
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vazna-napomena" class="md-nav__link">
+    <span class="md-ellipsis">
+      Važna Napomena
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -245,7 +343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/postavke/" class="md-nav__link">
+      <a href="../postavke/" class="md-nav__link">
         
   
   
@@ -272,8 +370,65 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="odabir-pravog-ureaja"><font color="#50EB97">Odabir Pravog Uređaja</font><a class="headerlink" href="#odabir-pravog-ureaja" title="Permanent link">&para;</a></h1>
+<p>Odabir pravog uređaja za Meshtastic ključan je korak za svakog početnika.<br />
+Iako na prvu svi uređaji djeluju slično, razlikuju se po <strong>srcu svoje elektronike — mikrokontroleru (MCU)</strong>.<br />
+U nastavku slijedi vodič koji će vam pomoći razumjeti razlike i donijeti pravu odluku.</p>
+<h2 id="esp32-svestranost-uz-vecu-potrosnju">ESP32 — Svestranost uz veću potrošnju<a class="headerlink" href="#esp32-svestranost-uz-vecu-potrosnju" title="Permanent link">&para;</a></h2>
+<p>Ovaj je čip stariji, ali i dalje vrlo popularan. Njegova glavna prednost je <strong>svestranost</strong>, jer u sebi ima ugrađen <strong>WiFi i Bluetooth</strong>.<br />
+To znači da se uređaji s ESP32 čipom mogu povezati na kućnu mrežu ili koristiti za naprednije funkcionalnosti.  </p>
+<p>Međutim, ta svestranost ima svoju cijenu — <strong>veću potrošnju energije</strong>.<br />
+Ako vam je najvažnije trajanje baterije, imajte na umu da će uređaji s ovim čipom trošiti više.</p>
+<p><strong>Primjeri uređaja:</strong><br />
+- LILYGO® TTGO T-Beam<br />
+- Heltec V3</p>
+<hr />
+<h2 id="nrf52-ucinkovitost-je-prioritet">nRF52 — Učinkovitost je prioritet<a class="headerlink" href="#nrf52-ucinkovitost-je-prioritet" title="Permanent link">&para;</a></h2>
+<p>Ako vam je <strong>trajanje baterije</strong> najvažnije, <strong>nRF52</strong> je pravi izbor.<br />
+Ovaj moderniji čip je znatno <strong>štedljiviji od ESP32</strong> i idealan za uređaje koji će raditi na baterije dulje vrijeme.  </p>
+<p>Glavna razlika je što <strong>nRF52 nema ugrađen WiFi</strong>, već samo Bluetooth.<br />
+Zbog toga je jednostavniji, ali se ne može izravno povezati na WiFi mrežu.</p>
+<p><strong>Primjeri uređaja:</strong><br />
+- LILYGO® TTGO T-Echo<br />
+- RAK4631 Core modul</p>
+<hr />
+<h2 id="rp2040-niska-potrosnja-i-dvojezgreni-pogon">RP2040 — Niska potrošnja i dvojezgreni pogon<a class="headerlink" href="#rp2040-niska-potrosnja-i-dvojezgreni-pogon" title="Permanent link">&para;</a></h2>
+<p>Ovaj čip je proizvod tvrtke <strong>Raspberry Pi</strong>.<br />
+Poput nRF52, štedljiv je i pogodan za uređaje kod kojih je važna <strong>niska potrošnja energije</strong>.  </p>
+<p>Ipak, imajte na umu da na nekim uređajima, poput <strong>Pico W</strong>, <strong>Bluetooth podrška za Meshtastic još nije dostupna</strong>.</p>
+<p><strong>Primjeri uređaja:</strong><br />
+- Raspberry Pi Pico + Waveshare LoRa modul</p>
+<hr />
+<h2 id="zakljucak">Zaključak<a class="headerlink" href="#zakljucak" title="Permanent link">&para;</a></h2>
+<p>Kao što vidite, <strong>ne postoji univerzalno najbolji čip</strong> — odabir ovisi o vašim potrebama.  </p>
+<p>Ovaj vodič naglašava prijenosne uređaje koji se napajaju putem baterije, pa je <strong>potrošnja energije ključan faktor</strong>.<br />
+Ako pak planirate koristiti uređaj kao <strong>fiksnu točku</strong> koja je stalno priključena na izvor napajanja, potrošnja postaje manje važna.  </p>
+<p>U tom slučaju, možete se fokusirati na <strong>funkcionalnosti</strong>, poput WiFi podrške na ESP32 čipu, što omogućuje lakše povezivanje na mrežu.</p>
+<hr />
+<h2 id="vazna-napomena"><font color="#EB5050">Važna Napomena</font><a class="headerlink" href="#vazna-napomena" title="Permanent link">&para;</a></h2>
+<p>Bez obzira na odabrani uređaj, <strong>nikada ga ne uključujte bez spojene antene</strong>!<br />
+To može <strong>trajno oštetiti radio čip</strong>.</p>
+<hr />
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -285,6 +440,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Podnožje" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Prethodno: 🏠 Uvod">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Prethodno
+              </span>
+              <div class="md-ellipsis">
+                🏠 Uvod
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../postavke/" class="md-footer__link md-footer__link--next" aria-label="Sljedeće: ⚙️ Postavke">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Sljedeće
+              </span>
+              <div class="md-ellipsis">
+                ⚙️ Postavke
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -344,10 +537,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": ["content.sections", "content.tabs", "navigation.sections", "navigation.instant", "navigation.footer", "toc.integrate", "search.suggest", "search.highlight", "content.code.copy"], "search": "/assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Kopirano u me\u0111uspremnik", "clipboard.copy": "Kopiraj u me\u0111uspremnik", "search.result.more.one": "1 rezultat na ovoj stranici", "search.result.more.other": "# rezultat(a) na ovoj stranici", "search.result.none": "Ni\u0161ta nije prona\u0111eno", "search.result.one": "1 rezultat pretra\u017eivanja", "search.result.other": "# rezultat(a) pretra\u017eivanja", "search.result.placeholder": "Unesite pojam pretra\u017eivanja", "search.result.term.missing": "Nedostaje", "select.version": "Odabir verzije"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.sections", "content.tabs", "navigation.sections", "navigation.instant", "navigation.footer", "toc.integrate", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Kopirano u me\u0111uspremnik", "clipboard.copy": "Kopiraj u me\u0111uspremnik", "search.result.more.one": "1 rezultat na ovoj stranici", "search.result.more.other": "# rezultat(a) na ovoj stranici", "search.result.none": "Ni\u0161ta nije prona\u0111eno", "search.result.one": "1 rezultat pretra\u017eivanja", "search.result.other": "# rezultat(a) pretra\u017eivanja", "search.result.placeholder": "Unesite pojam pretra\u017eivanja", "search.result.term.missing": "Nedostaje", "select.version": "Odabir verzije"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>
