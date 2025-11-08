@@ -31,7 +31,7 @@ Time se smanjuje nepotreban promet u mreži.
 - **Ignore MQTT**: Uključeno
 - **OK to MQTT**: Uključeno  
   
-![Channels](lora_settings.png){ width="300" }  
+![Channels](assets/lora_settings.png){ width="300" }  
 OK to MQTT je potreban da bi se vaše poruke prikazale na:  
    - map.cromesh.eu  
    - Drugim kartama i drugim alatima za vizualizaciju
