@@ -2,37 +2,44 @@ site_name: CroMesh Dokumentacija
 site_description: Dokumentacija za CroMesh mrežu i Meshtastic konfiguraciju
 site_author: CroMesh zajednica
 site_url: https://docs.cromesh.eu
-
 nav:
   - 🏠 Uvod: index.md
-  - 📡 Detaljnije: detaljnije.md
   - ⚙️ Postavke: postavke.md
-
+  - 📡 Odabir uređaja: odabir-uređaja.md
+  - 📶 Antene: antenne.md
+  - 📱 Aplikacije: aplikacije.md
+  - � firmware: firmware.md
+  - � Solarni Uređaji: solarni-uređaji.md
+  - � MQTT: mqtt.md
+  
 theme:
   name: material
   language: hr
   features:
-    - content.sections
-    - content.tabs
-    - navigation.sections
+    # --- Navigation behavior ---
+    - navigation.collapse     # make sections collapsible
+    - navigation.expand       # auto-expand current section
+    - navigation.indexes      # make parent sections clickable (Detaljnije/index.md)
+    - navigation.sections     # group related pages
     - navigation.instant
     - navigation.footer
-    - toc.integrate
+    # --- Content enhancements ---
+    - content.tabs
+    - content.sections
+    - content.code.copy
+    # --- Search & TOC ---
     - search.suggest
     - search.highlight
-    - content.code.copy
+    - toc.integrate
 
   palette:
-      scheme: slate
-      primary: green
-      accent: dark-green
+    scheme: slate
+    primary: green
+    accent: dark-green
+
   font:
     text: Roboto
     code: Roboto Mono
-  
-
-      
-    
 
 markdown_extensions:
   - admonition
@@ -47,13 +54,12 @@ markdown_extensions:
   - footnotes
   - nl2br
   - md_in_html
-  - attr_list
-  - md_in_html
   - pymdownx.blocks.caption
 
 plugins:
   - search:
       lang: en   # 'hr' not supported yet
+   
 
 extra:
   social:
