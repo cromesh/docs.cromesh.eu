@@ -6,32 +6,34 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Detaljniji pregled Meshtastica iz perspektive ChatGPT-a">
+        <meta name="description" content="Deep dive u Meshtastic firmware">
       
       
         <meta name="author" content="CroMesh zajednica">
       
       
-        <link rel="canonical" href="https://docs.cromesh.eu/">
+        <link rel="canonical" href="https://docs.cromesh.eu/firmware/">
       
       
+        <link rel="prev" href="../aplikacije/">
       
-        <link rel="next" href="postavke/">
+      
+        <link rel="next" href="../solarni-ure%C4%91aji/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
     
     
       
-        <title>Osnove Meshtastica - CroMesh Dokumentacija</title>
+        <title>Meshtastic firmware - CroMesh Dokumentacija</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#uvod-u-meshtastic" class="md-skip">
+        <a href="#meshtastic-firmware" class="md-skip">
           Preskoči na sadržaj
         </a>
       
@@ -90,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Zaglavlje">
-    <a href="." title="CroMesh Dokumentacija" class="md-header__button md-logo" aria-label="CroMesh Dokumentacija" data-md-component="logo">
+    <a href=".." title="CroMesh Dokumentacija" class="md-header__button md-logo" aria-label="CroMesh Dokumentacija" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Osnove Meshtastica
+              Meshtastic firmware
             
           </span>
         </div>
@@ -192,7 +194,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigacija" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="CroMesh Dokumentacija" class="md-nav__button md-logo" aria-label="CroMesh Dokumentacija" data-md-component="logo">
+    <a href=".." title="CroMesh Dokumentacija" class="md-nav__button md-logo" aria-label="CroMesh Dokumentacija" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -207,32 +209,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    🏠 Uvod
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -243,194 +223,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Sadržaj">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Sadržaj
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#glavne-komponente" class="md-nav__link">
-    <span class="md-ellipsis">
-      Glavne Komponente
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Glavne Komponente">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#hardver" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hardver
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#firmver" class="md-nav__link">
-    <span class="md-ellipsis">
-      Firmver
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mobilne-aplikacije" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mobilne Aplikacije
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kako-meshtastic-funkcionira" class="md-nav__link">
-    <span class="md-ellipsis">
-      Kako Meshtastic Funkcionira
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Kako Meshtastic Funkcionira">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#formiranje-mreze" class="md-nav__link">
-    <span class="md-ellipsis">
-      Formiranje Mreže
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#komunikacija" class="md-nav__link">
-    <span class="md-ellipsis">
-      Komunikacija
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#domet-i-energetska-ucinkovitost" class="md-nav__link">
-    <span class="md-ellipsis">
-      Domet i Energetska Učinkovitost
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#primjene" class="md-nav__link">
-    <span class="md-ellipsis">
-      Primjene
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Primjene">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#avanture-na-otvorenom" class="md-nav__link">
-    <span class="md-ellipsis">
-      Avanture na otvorenom
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hitne-situacije" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hitne situacije
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#zajednicke-mreze" class="md-nav__link">
-    <span class="md-ellipsis">
-      Zajedničke mreže
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kako-poceti" class="md-nav__link">
-    <span class="md-ellipsis">
-      Kako Početi
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Kako Početi">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#postavljanje-hardvera" class="md-nav__link">
-    <span class="md-ellipsis">
-      Postavljanje Hardvera
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#konfiguracija" class="md-nav__link">
-    <span class="md-ellipsis">
-      Konfiguracija
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#postavljanje-u-rad" class="md-nav__link">
-    <span class="md-ellipsis">
-      Postavljanje u Rad
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -442,7 +234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="postavke/" class="md-nav__link">
+      <a href="../postavke/" class="md-nav__link">
         
   
   
@@ -464,7 +256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="odabir-ure%C4%91aja/" class="md-nav__link">
+      <a href="../odabir-ure%C4%91aja/" class="md-nav__link">
         
   
   
@@ -486,7 +278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="antenne/" class="md-nav__link">
+      <a href="../antenne/" class="md-nav__link">
         
   
   
@@ -508,7 +300,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aplikacije/" class="md-nav__link">
+      <a href="../aplikacije/" class="md-nav__link">
         
   
   
@@ -527,10 +319,19 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="firmware/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -541,6 +342,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -552,7 +354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="solarni-ure%C4%91aji/" class="md-nav__link">
+      <a href="../solarni-ure%C4%91aji/" class="md-nav__link">
         
   
   
@@ -574,7 +376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="mqtt/" class="md-nav__link">
+      <a href="../mqtt/" class="md-nav__link">
         
   
   
@@ -605,51 +407,7 @@
 
 
 
-<h1 id="uvod-u-meshtastic"><font color="#50EB97">Uvod u Meshtastic</font><a class="headerlink" href="#uvod-u-meshtastic" title="Permanent link">&para;</a></h1>
-<p>Meshtastic je open-source projekt koji omogućuje dalekosežnu, niskopotrošnu, mesh komunikaciju koristeći jeftin hardver. Primarno je osmišljen za aktivnosti na otvorenom, hitne situacije i druge scenarije u kojima tradicionalna komunikacijska infrastruktura nije dostupna.</p>
-<h2 id="glavne-komponente">Glavne Komponente<a class="headerlink" href="#glavne-komponente" title="Permanent link">&para;</a></h2>
-<h3 id="hardver">Hardver<a class="headerlink" href="#hardver" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>LoRa moduli</strong>: Meshtastic koristi LoRa (Long Range) module koji mogu prenositi podatke na udaljenosti od nekoliko kilometara uz minimalnu potrošnju energije. </li>
-<li><strong>Mikrokontroleri</strong>: LoRa moduli obično su integrirani s mikrokontrolerima koji obrađuju podatke i upravljaju komunikacijom.</li>
-</ul>
-<h3 id="firmver">Firmver<a class="headerlink" href="#firmver" title="Permanent link">&para;</a></h3>
-<p><a href="https://github.com/meshtastic/firmware">Meshtastic firmver</a> instalira se na LoRa uređaje i omogućuje rad i konfiguraciju uređaja. </p>
-<h3 id="mobilne-aplikacije">Mobilne Aplikacije<a class="headerlink" href="#mobilne-aplikacije" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Meshtastic aplikacija</strong>: Dostupna za <a href="https://play.google.com/store/apps/details?id=com.geeksville.mesh&amp;pcampaignid=web_share">Android</a> i <a href="https://apps.apple.com/in/app/meshtastic/id1586432531">iOS</a>, omogućuje korisnicima konfiguraciju uređaja, slanje poruka i vizualizaciju mreže. Povezuje se s LoRa uređajima putem Bluetootha, WiFi ili serial komunikacije.  </li>
-<li><strong>Web sučelje</strong>: Također postoji <a href="https://client.meshtastic.org/messages/broadcast/0">web sučelje</a> koje nudi slične funkcionalnosti putem internetskog preglednika.</li>
-</ul>
-<h2 id="kako-meshtastic-funkcionira">Kako Meshtastic Funkcionira<a class="headerlink" href="#kako-meshtastic-funkcionira" title="Permanent link">&para;</a></h2>
-<h3 id="formiranje-mreze">Formiranje Mreže<a class="headerlink" href="#formiranje-mreze" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Postavljanje čvorova</strong>: Svaki LoRa modul djeluje kao čvor u mreži. Kada se uključi, automatski komunicira s obližnjim čvorovima i time formira mesh.  </li>
-<li><strong>Samoobnavljanje i skalabilnost</strong>: Mreža se može automatski reorganizirati ako neki čvor prestane raditi, čineći sustav otpornim i proširivim s velikim brojem čvorova.</li>
-</ul>
-<h3 id="komunikacija">Komunikacija<a class="headerlink" href="#komunikacija" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Usmjeravanje poruka</strong>: Kada se poruka pošalje s jednog čvora, ona se prenosi kroz mrežu dok ne dosegne svoje odredište ovisno o hop postavci. </li>
-<li><strong>Enkripcija</strong>: Poruke su šifrirane radi zaštite privatnosti i sigurnosti unutar mreže.</li>
-</ul>
-<h3 id="domet-i-energetska-ucinkovitost">Domet i Energetska Učinkovitost<a class="headerlink" href="#domet-i-energetska-ucinkovitost" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Veliki domet</strong>: LoRa tehnologija omogućuje komunikaciju na udaljenostima od nekoliko kilometara, ovisno o okruženju i konfiguraciji antene i uređaja.  </li>
-<li><strong>Niska potrošnja energije</strong>: Meshtastic je dizajniran za rad s malom potrošnjom, što ga čini pogodnim za uređaje na baterije i dugotrajne primjene.</li>
-</ul>
-<h2 id="primjene">Primjene<a class="headerlink" href="#primjene" title="Permanent link">&para;</a></h2>
-<h3 id="avanture-na-otvorenom">Avanture na otvorenom<a class="headerlink" href="#avanture-na-otvorenom" title="Permanent link">&para;</a></h3>
-<p>Planinari i zaljubljenici u prirodu mogu koristiti Meshtastic za ostanak u kontaktu u područjima bez mobilne pokrivenosti.</p>
-<h3 id="hitne-situacije">Hitne situacije<a class="headerlink" href="#hitne-situacije" title="Permanent link">&para;</a></h3>
-<p>Meshtastic može biti od ključne važnosti u katastrofama kada je tradicionalna komunikacijska infrastruktura oštećena ili nedostupna.</p>
-<h3 id="zajednicke-mreze">Zajedničke mreže<a class="headerlink" href="#zajednicke-mreze" title="Permanent link">&para;</a></h3>
-<p>Lokalne zajednice mogu postaviti vlastite mreže za događanja, festivale ili potrebe lokalne komunikacije.</p>
-<h2 id="kako-poceti">Kako Početi<a class="headerlink" href="#kako-poceti" title="Permanent link">&para;</a></h2>
-<h3 id="postavljanje-hardvera">Postavljanje Hardvera<a class="headerlink" href="#postavljanje-hardvera" title="Permanent link">&para;</a></h3>
-<p>Kupite <a href="https://meshtastic.org/docs/hardware/devices/">kompatibilan</a> LoRa uređaj i <a href="https://flasher.meshtastic.org/">instalirajte Meshtastic firmver</a> prema službenim uputama.</p>
-<h3 id="konfiguracija">Konfiguracija<a class="headerlink" href="#konfiguracija" title="Permanent link">&para;</a></h3>
-<p>Koristite Meshtastic mobilnu aplikaciju ili web sučelje za konfiguraciju čvorova, postavljanje enkripcijskih ključeva i upravljanje mrežnim postavkama.</p>
-<h3 id="postavljanje-u-rad">Postavljanje u Rad<a class="headerlink" href="#postavljanje-u-rad" title="Permanent link">&para;</a></h3>
-<p>Postavite čvorove na željeno područje i započnite komunikaciju putem mreže.</p>
+<h1 id="meshtastic-firmware"><font color="#50EB97">Meshtastic firmware</font><a class="headerlink" href="#meshtastic-firmware" title="Permanent link">&para;</a></h1>
 
 
 
@@ -681,15 +439,31 @@
       
       <nav class="md-footer__inner md-grid" aria-label="Podnožje" >
         
+          
+          <a href="../aplikacije/" class="md-footer__link md-footer__link--prev" aria-label="Prethodno: 📱 Aplikacije">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Prethodno
+              </span>
+              <div class="md-ellipsis">
+                📱 Aplikacije
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="postavke/" class="md-footer__link md-footer__link--next" aria-label="Sljedeće: ⚙️ Postavke">
+          <a href="../solarni-ure%C4%91aji/" class="md-footer__link md-footer__link--next" aria-label="Sljedeće: � Solarni Uređaji">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Sljedeće
               </span>
               <div class="md-ellipsis">
-                ⚙️ Postavke
+                � Solarni Uređaji
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -758,10 +532,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.collapse", "navigation.expand", "navigation.indexes", "navigation.sections", "navigation.instant", "navigation.footer", "content.tabs", "content.sections", "content.code.copy", "search.suggest", "search.highlight", "toc.integrate"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Kopirano u me\u0111uspremnik", "clipboard.copy": "Kopiraj u me\u0111uspremnik", "search.result.more.one": "1 rezultat na ovoj stranici", "search.result.more.other": "# rezultat(a) na ovoj stranici", "search.result.none": "Ni\u0161ta nije prona\u0111eno", "search.result.one": "1 rezultat pretra\u017eivanja", "search.result.other": "# rezultat(a) pretra\u017eivanja", "search.result.placeholder": "Unesite pojam pretra\u017eivanja", "search.result.term.missing": "Nedostaje", "select.version": "Odabir verzije"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.collapse", "navigation.expand", "navigation.indexes", "navigation.sections", "navigation.instant", "navigation.footer", "content.tabs", "content.sections", "content.code.copy", "search.suggest", "search.highlight", "toc.integrate"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Kopirano u me\u0111uspremnik", "clipboard.copy": "Kopiraj u me\u0111uspremnik", "search.result.more.one": "1 rezultat na ovoj stranici", "search.result.more.other": "# rezultat(a) na ovoj stranici", "search.result.none": "Ni\u0161ta nije prona\u0111eno", "search.result.one": "1 rezultat pretra\u017eivanja", "search.result.other": "# rezultat(a) pretra\u017eivanja", "search.result.placeholder": "Unesite pojam pretra\u017eivanja", "search.result.term.missing": "Nedostaje", "select.version": "Odabir verzije"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>

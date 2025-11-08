@@ -2,14 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.cromesh.eu/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-08</lastmod>
     </url>
     <url>
-         <loc>https://docs.cromesh.eu/detaljnije/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <loc>https://docs.cromesh.eu/antenne/</loc>
+         <lastmod>2025-11-08</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.cromesh.eu/aplikacije/</loc>
+         <lastmod>2025-11-08</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.cromesh.eu/firmware/</loc>
+         <lastmod>2025-11-08</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.cromesh.eu/mqtt/</loc>
+         <lastmod>2025-11-08</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.cromesh.eu/odabir-ure%C4%91aja/</loc>
+         <lastmod>2025-11-08</lastmod>
     </url>
     <url>
          <loc>https://docs.cromesh.eu/postavke/</loc>
-         <lastmod>2025-11-05</lastmod>
+         <lastmod>2025-11-08</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.cromesh.eu/solarni-ure%C4%91aji/</loc>
+         <lastmod>2025-11-08</lastmod>
     </url>
 </urlset>
