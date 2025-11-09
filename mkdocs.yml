@@ -2,35 +2,67 @@ site_name: CroMesh Dokumentacija
 site_description: Dokumentacija za CroMesh mrežu i Meshtastic konfiguraciju
 site_author: CroMesh zajednica
 site_url: https://docs.cromesh.eu
+
+repo_name: cromesh/docs.cromesh.eu
+repo_url: https://github.com/cromesh/docs.cromesh.eu
 nav:
-  - 🏠 Uvod: index.md
-  - ⚙️ Postavke: postavke.md
-  - 📡 Odabir uređaja: odabir-uređaja.md
-  - 📶 Antene: antenne.md
-  - 📱 Aplikacije: aplikacije.md
-  - � firmware: firmware.md
-  - � Solarni Uređaji: solarni-uređaji.md
-  - � MQTT: mqtt.md
+  - 🏠 Home: index.md
+  - 📖 Uvod u Meshtastic: uvod.md
+  - ⚙️ Postavke: 
+    - Postavke: postavke/index.md
+    - Lora: postavke/lora-postavke.md
+    - Channels: postavke/channel-postavke.md
+    - User: postavke/user-postavke.md
+    - Device: postavke/device-postavke.md
+    - MQTT: postavke/mqtt-postavke.md
+  - 💻 Odabir uređaja: 
+    - Odabir Uređaja: odabir-uredaja/index.md
+    - ESP32: odabir-uredaja/esp32.md
+    - NRF52: odabir-uredaja/nrf52.md
+    - RP2040: odabir-uredaja/rp2040.md
+    - Zaključak: odabir-uredaja/zakljucak.md
+  - 📡 Antene: 
+    - Antene: antene/index.md
+  - 📱 Aplikacije: 
+    - Aplikacije: aplikacije/index.md
+  - 🔧 firmware:
+    - Firmware: firmware/index.md
+  - ☀️ Solarni Uređaji: 
+    - Solarni uređaji: solarno/index.md
+  - 🌐 MQTT:
+    - MQTT: mqtt/index.md
   
 theme:
   name: material
   language: hr
   features:
     # --- Navigation behavior ---
-    - navigation.collapse     # make sections collapsible
-    - navigation.expand       # auto-expand current section
-    - navigation.indexes      # make parent sections clickable (Detaljnije/index.md)
-    - navigation.sections     # group related pages
-    - navigation.instant
-    - navigation.footer
-    # --- Content enhancements ---
-    - content.tabs
-    - content.sections
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
     - content.code.copy
-    # --- Search & TOC ---
-    - search.suggest
+    # - content.code.select
+    # - content.footnote.tooltips
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
     - search.highlight
-    - toc.integrate
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
 
   palette:
     scheme: slate
@@ -42,19 +74,53 @@ theme:
     code: Roboto Mono
 
 markdown_extensions:
+  - abbr
   - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.tabbed
   - attr_list
   - def_list
-  - tables
+  - footnotes
+  - md_in_html
   - toc:
       permalink: true
-  - footnotes
-  - nl2br
-  - md_in_html
-  - pymdownx.blocks.caption
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
 plugins:
   - search:
