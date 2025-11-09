@@ -11,7 +11,8 @@ hide:
 
 # <font color="#50EB97">Dobrodošli u CroMesh dokumentaciju</font>
 
-Ovdje se nalaze svi priručnici, vodiči i tehničke upute za CroMesh
+Ovdje se nalaze svi priručnici, vodiči i tehničke upute za CroMesh.  
+Možete slobodno preporučiti promjene u dokumentaciji na github.
 <div class="grid cards" markdown>
 
 -   :book:{ .lg .middle } __Uvod u 5 minuta__
