@@ -1,8 +1,14 @@
 ---
+title: Dobrodošli u CROMESH dokumentaciju
+description: Službena dokumentacija za CROMESH — sustav temeljen na Meshtastic tehnologiji.
+tags:
+  - CROMESH
+  - Dokumentacija
+  - Meshtastic
 hide:
   - navigation
-  - toc
-  - footer
 ---
 
-*(Ova stranica koristi prilagođeni hero layout – sadržaj je definiran u `overrides/home.html`.)*
+# <font color="#50EB97">Dobrodošli u CroMesh dokumentaciju</font>
+
+Ovdje se nalaze svi priručnici, vodiči i tehničke upute za CroMesh
