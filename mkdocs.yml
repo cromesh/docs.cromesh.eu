@@ -35,6 +35,8 @@ nav:
 theme:
   name: material
   language: hr
+  icon:
+    logo: fontawesome/solid/file
   features:
     # --- Navigation behavior ---
     - content.action.edit
@@ -129,8 +131,8 @@ plugins:
 
 extra:
   social:
-    - icon: fontawesome/brands/discord
-      link: https://discord.gg/cromesh
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/cromesh
     - icon: fontawesome/brands/github
       link: https://github.com/CroMesh
     - icon: material/web
