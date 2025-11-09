@@ -6,34 +6,34 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Preporučene zadane postavke koje savjetujemo svima koji koriste Meshtastic">
+        <meta name="description" content="Dokumentacija za CroMesh mrežu i Meshtastic konfiguraciju">
       
       
         <meta name="author" content="CroMesh zajednica">
       
       
-        <link rel="canonical" href="https://docs.cromesh.eu/postavke/">
+        <link rel="canonical" href="https://docs.cromesh.eu/odabir-uredaja/esp32/">
       
       
-        <link rel="prev" href="../uvod/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="lora-postavke/">
+        <link rel="next" href="../nrf52/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
     
     
       
-        <title>Preporučene Postavke - CroMesh Dokumentacija</title>
+        <title>ESP32 - CroMesh Dokumentacija</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#napomena" class="md-skip">
+        <a href="#esp32-svestranost-uz-vecu-potrosnju" class="md-skip">
           Preskoči na sadržaj
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Zaglavlje">
-    <a href=".." title="CroMesh Dokumentacija" class="md-header__button md-logo" aria-label="CroMesh Dokumentacija" data-md-component="logo">
+    <a href="../.." title="CroMesh Dokumentacija" class="md-header__button md-logo" aria-label="CroMesh Dokumentacija" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Preporučene Postavke
+              ESP32
             
           </span>
         </div>
@@ -202,7 +202,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -221,7 +221,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../uvod/" class="md-tabs__link">
+      <a href="../../uvod/" class="md-tabs__link">
         
   
   
@@ -238,13 +238,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../postavke/" class="md-tabs__link">
           
   
   
@@ -262,11 +260,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../odabir-uredaja/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -288,7 +288,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../antene/" class="md-tabs__link">
+        <a href="../../antene/" class="md-tabs__link">
           
   
   
@@ -310,7 +310,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../aplikacije/" class="md-tabs__link">
+        <a href="../../aplikacije/" class="md-tabs__link">
           
   
   
@@ -332,7 +332,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../firmware/" class="md-tabs__link">
+        <a href="../../firmware/" class="md-tabs__link">
           
   
   
@@ -354,7 +354,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../solarno/" class="md-tabs__link">
+        <a href="../../solarno/" class="md-tabs__link">
           
   
   
@@ -376,7 +376,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../mqtt/" class="md-tabs__link">
+        <a href="../../mqtt/" class="md-tabs__link">
           
   
   
@@ -412,7 +412,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigacija" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="CroMesh Dokumentacija" class="md-nav__button md-logo" aria-label="CroMesh Dokumentacija" data-md-component="logo">
+    <a href="../.." title="CroMesh Dokumentacija" class="md-nav__button md-logo" aria-label="CroMesh Dokumentacija" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -442,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -464,7 +464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../uvod/" class="md-nav__link">
+      <a href="../../uvod/" class="md-nav__link">
         
   
   
@@ -483,8 +483,6 @@
       
   
   
-    
-  
   
   
     
@@ -508,23 +506,20 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../postavke/" class="md-nav__link ">
               
   
   
@@ -537,13 +532,13 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_3" id="__nav_3_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             ⚙️ Postavke
@@ -559,7 +554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="lora-postavke/" class="md-nav__link">
+      <a href="../../postavke/lora-postavke/" class="md-nav__link">
         
   
   
@@ -582,7 +577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="channel-postavke/" class="md-nav__link">
+      <a href="../../postavke/channel-postavke/" class="md-nav__link">
         
   
   
@@ -605,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="user-postavke/" class="md-nav__link">
+      <a href="../../postavke/user-postavke/" class="md-nav__link">
         
   
   
@@ -628,7 +623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="device-postavke/" class="md-nav__link">
+      <a href="../../postavke/device-postavke/" class="md-nav__link">
         
   
   
@@ -651,7 +646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="mqtt-postavke/" class="md-nav__link">
+      <a href="../../postavke/mqtt-postavke/" class="md-nav__link">
         
   
   
@@ -678,6 +673,8 @@
       
   
   
+    
+  
   
   
     
@@ -699,20 +696,23 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../odabir-uredaja/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -725,13 +725,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             💻 Odabir uređaja
@@ -744,10 +744,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../odabir-uredaja/esp32/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    ESP32
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -758,6 +780,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Sadržaj">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Sadržaj
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#primjeri-ureaja" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primjeri Uređaja
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -770,7 +821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../odabir-uredaja/nrf52/" class="md-nav__link">
+      <a href="../nrf52/" class="md-nav__link">
         
   
   
@@ -793,7 +844,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../odabir-uredaja/rp2040/" class="md-nav__link">
+      <a href="../rp2040/" class="md-nav__link">
         
   
   
@@ -816,7 +867,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../odabir-uredaja/zakljucak/" class="md-nav__link">
+      <a href="../zakljucak/" class="md-nav__link">
         
   
   
@@ -869,7 +920,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../antene/" class="md-nav__link ">
+            <a href="../../antene/" class="md-nav__link ">
               
   
   
@@ -929,7 +980,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../aplikacije/" class="md-nav__link ">
+            <a href="../../aplikacije/" class="md-nav__link ">
               
   
   
@@ -989,7 +1040,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../firmware/" class="md-nav__link ">
+            <a href="../../firmware/" class="md-nav__link ">
               
   
   
@@ -1049,7 +1100,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../solarno/" class="md-nav__link ">
+            <a href="../../solarno/" class="md-nav__link ">
               
   
   
@@ -1109,7 +1160,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../mqtt/" class="md-nav__link ">
+            <a href="../../mqtt/" class="md-nav__link ">
               
   
   
@@ -1156,6 +1207,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1164,18 +1217,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#napomena" class="md-nav__link">
+  <a href="#primjeri-ureaja" class="md-nav__link">
     <span class="md-ellipsis">
-      Napomena
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#opce-preporuke" class="md-nav__link">
-    <span class="md-ellipsis">
-      Opće Preporuke
+      Primjeri Uređaja
     </span>
   </a>
   
@@ -1197,7 +1241,7 @@
 
 
   
-    <a href="https://github.com/cromesh/docs.cromesh.eu/edit/master/docs/postavke/index.md" title="Uredi stranicu" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/cromesh/docs.cromesh.eu/edit/master/docs/odabir-uredaja/esp32.md" title="Uredi stranicu" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1206,23 +1250,23 @@
     
       
     
-    <a href="https://github.com/cromesh/docs.cromesh.eu/raw/master/docs/postavke/index.md" title="Pregledaj izvorni kod ove stranice" class="md-content__button md-icon">
+    <a href="https://github.com/cromesh/docs.cromesh.eu/raw/master/docs/odabir-uredaja/esp32.md" title="Pregledaj izvorni kod ove stranice" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
   
 
 
-<h2 id="napomena">Napomena<a class="headerlink" href="#napomena" title="Permanent link">&para;</a></h2>
-<p>Prije nastavka <strong>ažurirajte firmware uređaja</strong> pomoću <a href="https://flasher.meshtastic.org/">Web Flashera</a>.<br />
-Najnovije stabilno izdanje — čak i ako je označeno kao <em>Beta</em> — obično je sigurna opcija.</p>
-<h1 id="opce-preporuke">Opće Preporuke<a class="headerlink" href="#opce-preporuke" title="Permanent link">&para;</a></h1>
+<h1 id="esp32-svestranost-uz-vecu-potrosnju">ESP32 — Svestranost uz Veću Potrošnju<a class="headerlink" href="#esp32-svestranost-uz-vecu-potrosnju" title="Permanent link">&para;</a></h1>
+<p>ESP32 je stariji, ali i dalje vrlo popularan čip. Njegova glavna prednost je <strong>svestranost</strong>, jer u sebi ima ugrađen <strong>WiFi i Bluetooth</strong>.<br />
+To znači da se uređaji s ESP32 čipom mogu povezati na kućnu mrežu ili koristiti za naprednije funkcionalnosti.</p>
+<p>Međutim, ta svestranost ima svoju cijenu — <strong>veću potrošnju energije</strong>.<br />
+Ako vam je najvažnije trajanje baterije, imajte na umu da će uređaji s ovim čipom trošiti više.</p>
+<h2 id="primjeri-ureaja">Primjeri Uređaja<a class="headerlink" href="#primjeri-ureaja" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Zadržite <strong>automatske beacon signale</strong> (telemetrija i pozicija) na <strong>6 sati ili više</strong>, posebno za stacionarne čvorove.  </li>
-<li>Ako se krećete, omogućite <strong>Smart Position</strong> s minimum interval: <strong>10 minuta</strong></li>
-<li>Distance trigger: <strong>100–130 metara</strong>  </li>
+<li><strong>LILYGO® TTGO T-Beam</strong>  </li>
+<li><strong>Heltec V3</strong></li>
 </ul>
-<p>Time se smanjuje nepotreban promet u mreži.  </p>
 
 
 
@@ -1261,7 +1305,7 @@ Najnovije stabilno izdanje — čak i ako je označeno kao <em>Beta</em> — obi
       <nav class="md-footer__inner md-grid" aria-label="Podnožje" >
         
           
-          <a href="../uvod/" class="md-footer__link md-footer__link--prev" aria-label="Prethodno: 📖 Uvod u Meshtastic">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Prethodno: Odabir Uređaja">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1271,20 +1315,20 @@ Najnovije stabilno izdanje — čak i ako je označeno kao <em>Beta</em> — obi
                 Prethodno
               </span>
               <div class="md-ellipsis">
-                📖 Uvod u Meshtastic
+                Odabir Uređaja
               </div>
             </div>
           </a>
         
         
           
-          <a href="lora-postavke/" class="md-footer__link md-footer__link--next" aria-label="Sljedeće: Lora">
+          <a href="../nrf52/" class="md-footer__link md-footer__link--next" aria-label="Sljedeće: NRF52">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Sljedeće
               </span>
               <div class="md-ellipsis">
-                Lora
+                NRF52
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1353,10 +1397,10 @@ Najnovije stabilno izdanje — čak i ako je označeno kao <em>Beta</em> — obi
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Kopirano u me\u0111uspremnik", "clipboard.copy": "Kopiraj u me\u0111uspremnik", "search.result.more.one": "1 rezultat na ovoj stranici", "search.result.more.other": "# rezultat(a) na ovoj stranici", "search.result.none": "Ni\u0161ta nije prona\u0111eno", "search.result.one": "1 rezultat pretra\u017eivanja", "search.result.other": "# rezultat(a) pretra\u017eivanja", "search.result.placeholder": "Unesite pojam pretra\u017eivanja", "search.result.term.missing": "Nedostaje", "select.version": "Odabir verzije"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Kopirano u me\u0111uspremnik", "clipboard.copy": "Kopiraj u me\u0111uspremnik", "search.result.more.one": "1 rezultat na ovoj stranici", "search.result.more.other": "# rezultat(a) na ovoj stranici", "search.result.none": "Ni\u0161ta nije prona\u0111eno", "search.result.one": "1 rezultat pretra\u017eivanja", "search.result.other": "# rezultat(a) pretra\u017eivanja", "search.result.placeholder": "Unesite pojam pretra\u017eivanja", "search.result.term.missing": "Nedostaje", "select.version": "Odabir verzije"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>
