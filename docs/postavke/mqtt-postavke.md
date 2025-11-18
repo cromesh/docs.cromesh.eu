@@ -17,3 +17,6 @@ Ovo je među naprednijim postavkama. Ako ne znaš što je **"MQTT"**, ostavi ga 
 Točno ovako – velika i mala slova su bitna.  
   
 ![mqtt](images/mqtt_settings.png){ width="300" }  
+
+Te je također bitno konfigurirati sam LongFast kanal kao što je prikazano ovdje:
+![kanal](images/channel_settings2.png){ width="300" }  
