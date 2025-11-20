@@ -8,7 +8,7 @@ tags:
   - build
 ---
 
-## Meshtastic Firmware
+## <font color="#50EB97">Meshtastic Firmware</font>
 
 Meshtastic Firmware je službeni softver (open‑source) koji pokreće Meshtastic uređaje.
 
