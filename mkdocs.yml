@@ -8,8 +8,10 @@ repo_url: https://github.com/cromesh/docs.cromesh.eu
 nav:
   - 🏠 Home: index.md
   - 📖 Uvod u Meshtastic: uvod.md
+  - ❓ FAQ: faq.md
   - ⚙️ Postavke: 
     - Postavke: postavke/index.md
+    - Prvi koraci: postavke/prvi-koraci.md
     - Lora: postavke/lora-postavke.md
     - Channels: postavke/channel-postavke.md
     - User: postavke/user-postavke.md
@@ -23,6 +25,9 @@ nav:
     - Zaključak: odabir-uredaja/zakljucak.md
   - 📡 Antene: 
     - Antene: antene/index.md
+  - 🔧 Montaža i 3D print:
+    - Montaža i zaštita: hardver/montaza-i-zastita.md
+    - 3D print kućišta: hardver/3d-print.md
   - 📱 Aplikacije: 
     - Aplikacije: aplikacije/index.md
   - 🔧 firmware:
@@ -31,6 +36,13 @@ nav:
     - Solarni uređaji: solarno/index.md
   - 🌐 MQTT:
     - MQTT: mqtt/index.md
+  - 🌍 Mreža:
+    - Standardi: mreza/standardi.md
+    - Kanali: mreza/kanali.md
+    - Uloge i imenovanje: mreza/uloge-i-imenovanje.md
+  - 👥 Zajednica:
+    - O zajednici: zajednica/o-zajednici.md
+    - Pravila: zajednica/pravila.md
   
 theme:
   name: material
