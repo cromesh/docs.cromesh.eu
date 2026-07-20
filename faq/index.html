@@ -6,19 +6,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Deep dive u Meshtastic firmware">
+        <meta name="description" content="Odgovori na najčešća pitanja početnika u CroMesh Meshtastic mreži — dozvole, domet, karta, MQTT, baterije i odabir opreme.">
       
       
         <meta name="author" content="CroMesh zajednica">
       
       
-        <link rel="canonical" href="https://docs.cromesh.eu/firmware/">
+        <link rel="canonical" href="https://docs.cromesh.eu/faq/">
       
       
-        <link rel="prev" href="../aplikacije/">
+        <link rel="prev" href="../uvod/">
       
       
-        <link rel="next" href="../solarno/">
+        <link rel="next" href="../postavke/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Meshtastic firmware - CroMesh Dokumentacija</title>
+        <title>Česta pitanja (FAQ) - CroMesh Dokumentacija</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#meshtastic-firmware" class="md-skip">
+        <a href="#cesta-pitanja-faq" class="md-skip">
           Preskoči na sadržaj
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Meshtastic firmware
+              Česta pitanja (FAQ)
             
           </span>
         </div>
@@ -240,9 +240,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../faq/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -369,13 +371,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../firmware/" class="md-tabs__link">
           
   
   
@@ -580,10 +580,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../faq/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ❓ FAQ
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -599,6 +626,281 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Sadržaj">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Sadržaj
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#osnove" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Osnove
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Osnove">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#trebam-li-dozvolu-ili-radioamatersku-licencu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trebam li dozvolu ili radioamatersku licencu?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moram-li-rucno-postaviti-frekvenciju-override-frequency-na-868-mhz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moram li ručno postaviti frekvenciju (override frequency) na 868 MHz?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#koji-ureaj-kupiti-za-pocetak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Koji uređaj kupiti za početak?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#koliki-je-domet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Koliki je domet?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ne-radi-mi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Ne radi mi"
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="&#34;Ne radi mi&#34;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#poslao-sam-poruku-i-nitko-ne-odgovara-sto-je-krivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Poslao sam poruku i nitko ne odgovara. Što je krivo?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zasto-se-ne-vidim-na-karti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zašto se ne vidim na karti?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dodao-sam-kanal-i-nestao-mi-je-longfast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dodao sam kanal i nestao mi je LongFast!
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vidim-nodeove-sa-57-hopova-je-li-to-dobro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vidim nodeove sa 5–7 hopova — je li to dobro?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heltec-v4-mi-slabo-cuje-s-vanjskom-antenom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Heltec V4 mi slabo čuje s vanjskom antenom
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mqtt-i-karta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MQTT i karta
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MQTT i karta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hoce-li-ukljucivanje-mqtt-a-napraviti-kaos-na-mrezi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hoće li uključivanje MQTT-a napraviti kaos na mreži?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ima-li-zajednica-koristi-ako-ukljucim-mqtt-na-kucnom-nodeu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ima li zajednica koristi ako uključim MQTT na kućnom nodeu?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sto-znace-crte-izmeu-nodeova-na-karti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Što znače crte između nodeova na karti?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ostalo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ostalo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ostalo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#koliko-traje-baterija" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Koliko traje baterija?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mijenjam-ureaj-mogu-li-prenijeti-stari-identitet-id-kljuceve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mijenjam uređaj — mogu li prenijeti stari identitet (ID, ključeve)?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sto-je-s-meshcore-zasto-smo-na-meshtasticu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Što je s MeshCore? Zašto smo na Meshtasticu?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gdje-mogu-kupitiprodati-rabljenu-opremu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gdje mogu kupiti/prodati rabljenu opremu?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kako-mogu-doprinijeti-ovoj-dokumentaciji" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kako mogu doprinijeti ovoj dokumentaciji?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1314,8 +1616,6 @@
       
   
   
-    
-  
   
   
     
@@ -1329,23 +1629,20 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../firmware/" class="md-nav__link ">
               
   
   
@@ -1364,7 +1661,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1811,6 +2108,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1819,22 +2118,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#meshtastic-firmware" class="md-nav__link">
+  <a href="#osnove" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Meshtastic Firmware
+        Osnove
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Meshtastic Firmware">
+    <nav class="md-nav" aria-label="Osnove">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#metode-flashanja-firmwarea" class="md-nav__link">
+  <a href="#trebam-li-dozvolu-ili-radioamatersku-licencu" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Metode flashanja firmwarea
+        Trebam li dozvolu ili radioamatersku licencu?
       
     </span>
   </a>
@@ -1842,10 +2141,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#verzije-firmwarea" class="md-nav__link">
+  <a href="#moram-li-rucno-postaviti-frekvenciju-override-frequency-na-868-mhz" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Verzije firmwarea
+        Moram li ručno postaviti frekvenciju (override frequency) na 868 MHz?
       
     </span>
   </a>
@@ -1853,10 +2152,215 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#razvoj-i-doprinos" class="md-nav__link">
+  <a href="#koji-ureaj-kupiti-za-pocetak" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Razvoj i doprinos
+        Koji uređaj kupiti za početak?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#koliki-je-domet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Koliki je domet?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ne-radi-mi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Ne radi mi"
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="&#34;Ne radi mi&#34;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#poslao-sam-poruku-i-nitko-ne-odgovara-sto-je-krivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Poslao sam poruku i nitko ne odgovara. Što je krivo?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zasto-se-ne-vidim-na-karti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zašto se ne vidim na karti?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dodao-sam-kanal-i-nestao-mi-je-longfast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dodao sam kanal i nestao mi je LongFast!
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vidim-nodeove-sa-57-hopova-je-li-to-dobro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vidim nodeove sa 5–7 hopova — je li to dobro?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heltec-v4-mi-slabo-cuje-s-vanjskom-antenom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Heltec V4 mi slabo čuje s vanjskom antenom
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mqtt-i-karta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MQTT i karta
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MQTT i karta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hoce-li-ukljucivanje-mqtt-a-napraviti-kaos-na-mrezi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hoće li uključivanje MQTT-a napraviti kaos na mreži?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ima-li-zajednica-koristi-ako-ukljucim-mqtt-na-kucnom-nodeu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ima li zajednica koristi ako uključim MQTT na kućnom nodeu?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sto-znace-crte-izmeu-nodeova-na-karti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Što znače crte između nodeova na karti?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ostalo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ostalo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ostalo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#koliko-traje-baterija" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Koliko traje baterija?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mijenjam-ureaj-mogu-li-prenijeti-stari-identitet-id-kljuceve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mijenjam uređaj — mogu li prenijeti stari identitet (ID, ključeve)?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sto-je-s-meshcore-zasto-smo-na-meshtasticu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Što je s MeshCore? Zašto smo na Meshtasticu?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gdje-mogu-kupitiprodati-rabljenu-opremu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gdje mogu kupiti/prodati rabljenu opremu?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kako-mogu-doprinijeti-ovoj-dokumentaciji" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kako mogu doprinijeti ovoj dokumentaciji?
       
     </span>
   </a>
@@ -1885,7 +2389,7 @@
 
 
   
-    <a href="https://github.com/cromesh/docs.cromesh.eu/edit/master/docs/firmware/index.md" title="Uredi stranicu" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/cromesh/docs.cromesh.eu/edit/master/docs/faq.md" title="Uredi stranicu" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1894,43 +2398,97 @@
     
       
     
-    <a href="https://github.com/cromesh/docs.cromesh.eu/raw/master/docs/firmware/index.md" title="Pregledaj izvorni kod ove stranice" class="md-content__button md-icon">
+    <a href="https://github.com/cromesh/docs.cromesh.eu/raw/master/docs/faq.md" title="Pregledaj izvorni kod ove stranice" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
   
 
 
-  <h1>Firmware</h1>
-
-<h2 id="meshtastic-firmware"><font color="#50EB97">Meshtastic Firmware</font><a class="headerlink" href="#meshtastic-firmware" title="Permanent link">&para;</a></h2>
-<p>Meshtastic Firmware je službeni softver (open‑source) koji pokreće Meshtastic uređaje.</p>
-<h3 id="metode-flashanja-firmwarea">Metode flashanja firmwarea<a class="headerlink" href="#metode-flashanja-firmwarea" title="Permanent link">&para;</a></h3>
+<h1 id="cesta-pitanja-faq">Česta pitanja (FAQ)<a class="headerlink" href="#cesta-pitanja-faq" title="Permanent link">&para;</a></h1>
+<h2 id="osnove">Osnove<a class="headerlink" href="#osnove" title="Permanent link">&para;</a></h2>
+<h3 id="trebam-li-dozvolu-ili-radioamatersku-licencu">Trebam li dozvolu ili radioamatersku licencu?<a class="headerlink" href="#trebam-li-dozvolu-ili-radioamatersku-licencu" title="Permanent link">&para;</a></h3>
+<p><strong>Ne.</strong> Meshtastic radi u slobodnom 868 MHz ISM pojasu. Jedino moraš poštovati limite
+snage (ERP) i imati regiju postavljenu na <code>EU_868</code> — vidi
+<a href="../zajednica/pravila/">Pravila</a>.</p>
+<h3 id="moram-li-rucno-postaviti-frekvenciju-override-frequency-na-868-mhz">Moram li ručno postaviti frekvenciju (override frequency) na 868 MHz?<a class="headerlink" href="#moram-li-rucno-postaviti-frekvenciju-override-frequency-na-868-mhz" title="Permanent link">&para;</a></h3>
+<p><strong>Ne.</strong> Odabirom regije <code>EU_868</code> frekvencija je automatski definirana — LongFast radi na
+<strong>869,525 MHz</strong>. Override frequency služi samo za posebne (custom) postavke i ne diraj
+ga.</p>
+<h3 id="koji-ureaj-kupiti-za-pocetak">Koji uređaj kupiti za početak?<a class="headerlink" href="#koji-ureaj-kupiti-za-pocetak" title="Permanent link">&para;</a></h3>
+<p>Za mobilno korištenje: uređaj s <strong>nRF52</strong> čipom (T-Echo, ThinkNode M1, Wio Tracker…).
+Najjeftiniji ulaz: <strong>Heltec V3</strong>. Detaljna usporedba s cijenama i poznatim problemima:
+<a href="../odabir-uredaja/">Odabir uređaja</a>.</p>
+<h3 id="koliki-je-domet">Koliki je domet?<a class="headerlink" href="#koliki-je-domet" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>Web Flasher</strong><br />
-  Najlakši način za ESP32 (i druge) uređaje: koristi se web sučelje koje komunicira preko serijskog porta. <a href="https://flasher.meshtastic.org/">Više o tome ovdje</a></li>
-<li><strong>CLI skripte</strong><br />
-  Za naprednije korisnike: koristi se <code>esptool</code> i skripte koje su dio Meshtastic alata. <a href="https://meshtastic.org/docs/getting-started/flashing-firmware/esp32/cli-script/">Više o tome ovdje</a></li>
-<li><strong>UF2 Drag &amp; Drop</strong><br />
-  Za nRF52 i RP2040: uređaj postane USB disk, i .uf2 datoteka se jednostavno kopira na disk. <a href="https://meshtastic.org/docs/getting-started/flashing-firmware/nrf52/drag-n-drop/">Više o tome ovdje</a></li>
-<li><strong>OTA (Over-The-Air) ažuriranje</strong><br />
-  Kod nRF52 uređaja podržano je ažuriranje firmwarea preko Bluetootha. <a href="https://meshtastic.org/docs/getting-started/flashing-firmware/nrf52/ota/">Više o tome ovdje</a></li>
+<li>Stock antena, urbana sredina: <strong>1–2 km</strong> kroz zgrade i drveće.</li>
+<li>Dobra vanjska antena na visini s optičkom vidljivošću: deseci kilometara
+  (u mreži zabilježene veze Karlovac–Zagreb–Slunj, ovisno o propagaciji).</li>
+<li>Ekstremi: nodeovi u zrakoplovima primani na 150+ km.</li>
+<li>Propagacija je navečer osjetno bolja nego danju — normalna pojava.</li>
 </ul>
-<h3 id="verzije-firmwarea">Verzije firmwarea<a class="headerlink" href="#verzije-firmwarea" title="Permanent link">&para;</a></h3>
-<p>Meshtastic firmware se izdaje u nekoliko verzija, kako bi korisnici mogli birati između stabilnosti i novih funkcionalnosti:</p>
-<ul>
-<li><strong>Beta (stabilna)</strong><br />
-  Preporučena za većinu korisnika. Testirana i pouzdana verzija firmwarea.</li>
-<li><strong>Alpha</strong><br />
-  Najnovije promjene i netestirane funkcionalnosti. Može sadržavati bugove i ne preporučuje se za svakodnevnu upotrebu.</li>
-</ul>
-<h3 id="razvoj-i-doprinos">Razvoj i doprinos<a class="headerlink" href="#razvoj-i-doprinos" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Firmware je razvijen uz pomoć <strong>PlatformIO</strong> alata, što omogućava <a href="https://meshtastic.org/docs/development/firmware/build/">buildanje</a> za različite platforme i mikrokontrolere.  </li>
-<li>Kao open-source projekt, zajednica može pomoći: poboljšanja, nove značajke, podrška za nove tipove uređaja.</li>
-</ul>
-<p>Za više informacija i detaljne upute o tome <strong>kako flashati firmware</strong>, možete posjetiti službenu dokumentaciju:<br />
-<a href="https://meshtastic.org/docs/getting-started/flashing-firmware/">Meshtastic - Flashing Firmware</a></p>
+<p>Domet ovisi prije svega o <strong>visini antene i liniji optičke vidljivosti</strong>, ne o snazi.</p>
+<h2 id="ne-radi-mi">"Ne radi mi"<a class="headerlink" href="#ne-radi-mi" title="Permanent link">&para;</a></h2>
+<h3 id="poslao-sam-poruku-i-nitko-ne-odgovara-sto-je-krivo">Poslao sam poruku i nitko ne odgovara. Što je krivo?<a class="headerlink" href="#poslao-sam-poruku-i-nitko-ne-odgovara-sto-je-krivo" title="Permanent link">&para;</a></h3>
+<p>Najvjerojatnije ništa u tvojim postavkama — <strong>nisi u dometu mreže</strong>. Rijetka pokrivenost
+trenutno je glavni problem CroMesha. Provjeri:</p>
+<ol>
+<li>Regija <code>EU_868</code>, preset <code>LongFast</code>?</li>
+<li>Na <a href="https://map.cromesh.eu">map.cromesh.eu</a> — gdje je najbliži node?</li>
+<li>Pošalji test na <code>LongFast</code> i gledaj <a href="https://map.cromesh.eu/chat">map.cromesh.eu/chat</a>
+   — ako se poruka pojavi, tvoj uređaj radi.</li>
+<li>Javi se u Telegram grupu — netko će potvrditi čuje li te.</li>
+</ol>
+<h3 id="zasto-se-ne-vidim-na-karti">Zašto se ne vidim na karti?<a class="headerlink" href="#zasto-se-ne-vidim-na-karti" title="Permanent link">&para;</a></h3>
+<p>Najčešći uzroci redom: krivi MQTT root topic (mora biti <code>msh/EU_868/9A</code>), isključen
+<em>OK to MQTT</em>, isključen Uplink na LongFast kanalu, node nema lokaciju. Kompletna
+checklista: <a href="../mqtt/">MQTT i karta</a>. Nakon ispravne konfiguracije pričekaj
+1–2 sata.</p>
+<h3 id="dodao-sam-kanal-i-nestao-mi-je-longfast">Dodao sam kanal i nestao mi je LongFast!<a class="headerlink" href="#dodao-sam-kanal-i-nestao-mi-je-longfast" title="Permanent link">&para;</a></h3>
+<p>Kliknuo si <strong>"Replace"</strong> umjesto <strong>"Add"</strong> pri dodavanju kanala. Obriši kanal koji je
+pregazio LongFast i dodaj LongFast natrag sa zadanim postavkama — poruke ostaju. Vidi
+<a href="../mreza/kanali/">Kanali</a>.</p>
+<h3 id="vidim-nodeove-sa-57-hopova-je-li-to-dobro">Vidim nodeove sa 5–7 hopova — je li to dobro?<a class="headerlink" href="#vidim-nodeove-sa-57-hopova-je-li-to-dobro" title="Permanent link">&para;</a></h3>
+<p>Nije. Zadani hop limit je 3; veće vrijednosti nepotrebno opterećuju mrežu. Ako vidiš
+takve nodeove, vjerojatno je netko podigao limit — nemoj to raditi i ti. Vidi
+<a href="../mreza/standardi/">Standardi</a>.</p>
+<h3 id="heltec-v4-mi-slabo-cuje-s-vanjskom-antenom">Heltec V4 mi slabo čuje s vanjskom antenom<a class="headerlink" href="#heltec-v4-mi-slabo-cuje-s-vanjskom-antenom" title="Permanent link">&para;</a></h3>
+<p>Poznat problem revizije ploče 4.2 (šum); revizija 4.3 to rješava. Provjeri i firmware
+(2.7.13+, alpha s LNA fixom). Detalji: <a href="../odabir-uredaja/">Odabir uređaja</a>.</p>
+<h2 id="mqtt-i-karta">MQTT i karta<a class="headerlink" href="#mqtt-i-karta" title="Permanent link">&para;</a></h2>
+<h3 id="hoce-li-ukljucivanje-mqtt-a-napraviti-kaos-na-mrezi">Hoće li uključivanje MQTT-a napraviti kaos na mreži?<a class="headerlink" href="#hoce-li-ukljucivanje-mqtt-a-napraviti-kaos-na-mrezi" title="Permanent link">&para;</a></h3>
+<p><strong>Ne</strong> — ako slijediš upute (samo Uplink na LongFast). Tvoj node će tada samo
+prijavljivati kartu, a MQTT server ne šalje promet natrag u RF mrežu (zero-hop
+politika). Vidi <a href="../mqtt/">MQTT i karta</a>.</p>
+<h3 id="ima-li-zajednica-koristi-ako-ukljucim-mqtt-na-kucnom-nodeu">Ima li zajednica koristi ako uključim MQTT na kućnom nodeu?<a class="headerlink" href="#ima-li-zajednica-koristi-ako-ukljucim-mqtt-na-kucnom-nodeu" title="Permanent link">&para;</a></h3>
+<p>Da — tvoj node će na kartu prijaviti i sve susjede koje čuje, čime karta (i slika
+stvarnog stanja mreže) postaje točnija.</p>
+<h3 id="sto-znace-crte-izmeu-nodeova-na-karti">Što znače crte između nodeova na karti?<a class="headerlink" href="#sto-znace-crte-izmeu-nodeova-na-karti" title="Permanent link">&para;</a></h3>
+<p>Da se ti nodeovi <strong>relativno često čuju</strong>. Ne znači da su u savršenom kontaktu u svakom
+trenutku.</p>
+<h2 id="ostalo">Ostalo<a class="headerlink" href="#ostalo" title="Permanent link">&para;</a></h2>
+<h3 id="koliko-traje-baterija">Koliko traje baterija?<a class="headerlink" href="#koliko-traje-baterija" title="Permanent link">&para;</a></h3>
+<p>Ovisi o uređaju i postavkama; iskustvene brojke: 2× 18650 uz power save ≈ 10 %/dan;
+RAK4631 s GNSS + BME280 senzorima ≈ 40–45 h na jednoj 18650. Za trajni rad — solar:
+<a href="../solarno/">Napajanje i solar</a>.</p>
+<h3 id="mijenjam-ureaj-mogu-li-prenijeti-stari-identitet-id-kljuceve">Mijenjam uređaj — mogu li prenijeti stari identitet (ID, ključeve)?<a class="headerlink" href="#mijenjam-ureaj-mogu-li-prenijeti-stari-identitet-id-kljuceve" title="Permanent link">&para;</a></h3>
+<p>Ne preporučuje se — NodeID je vezan uz hardver i forsiranje starih ključeva izaziva
+<em>key mismatch</em> upozorenja. Novi hardver = novi identitet. Vidi
+<a href="../mreza/uloge-i-imenovanje/">Uloge i imenovanje</a>.</p>
+<h3 id="sto-je-s-meshcore-zasto-smo-na-meshtasticu">Što je s MeshCore? Zašto smo na Meshtasticu?<a class="headerlink" href="#sto-je-s-meshcore-zasto-smo-na-meshtasticu" title="Permanent link">&para;</a></h3>
+<p>MeshCore je alternativni protokol s drugačijim (usmjerenim) rutiranjem preko namjenskih
+repeatera — teoretski bolji za guste urbane mreže. Stav zajednice: <strong>ostajemo na
+Meshtasticu</strong> jer (a) svi novi uređaji dolaze s Meshtasticom "out of the box", dok
+MeshCore traži reflash svega, (b) hardver je isti pa MeshCore ne rješava naš stvarni
+problem — domet i rijetku pokrivenost, &copy; čak i mala promjena (MediumFast test)
+pokazala je koliko je teško koordinirati prelazak cijele mreže. Pojedini članovi
+paralelno eksperimentiraju s MeshCoreom (postoji zaseban topic) i to je dobrodošlo.</p>
+<h3 id="gdje-mogu-kupitiprodati-rabljenu-opremu">Gdje mogu kupiti/prodati rabljenu opremu?<a class="headerlink" href="#gdje-mogu-kupitiprodati-rabljenu-opremu" title="Permanent link">&para;</a></h3>
+<p>Topic <strong>Tržnica Novo/Rabljeno</strong> u Telegram grupi.</p>
+<h3 id="kako-mogu-doprinijeti-ovoj-dokumentaciji">Kako mogu doprinijeti ovoj dokumentaciji?<a class="headerlink" href="#kako-mogu-doprinijeti-ovoj-dokumentaciji" title="Permanent link">&para;</a></h3>
+<p>Pull requestom na
+<a href="https://github.com/cromesh/docs.cromesh.eu">github.com/cromesh/docs.cromesh.eu</a> —
+posebno su dobrodošle dopune mjesta označenih s <code>TODO:</code>.</p>
 
 
 
@@ -1969,7 +2527,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Podnožje" >
         
           
-          <a href="../aplikacije/" class="md-footer__link md-footer__link--prev" aria-label="Prethodno: Aplikacije">
+          <a href="../uvod/" class="md-footer__link md-footer__link--prev" aria-label="Prethodno: 📖 Uvod u Meshtastic">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1979,20 +2537,20 @@
                 Prethodno
               </span>
               <div class="md-ellipsis">
-                Aplikacije
+                📖 Uvod u Meshtastic
               </div>
             </div>
           </a>
         
         
           
-          <a href="../solarno/" class="md-footer__link md-footer__link--next" aria-label="Sljedeće: Solarni uređaji">
+          <a href="../postavke/" class="md-footer__link md-footer__link--next" aria-label="Sljedeće: Postavke">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Sljedeće
               </span>
               <div class="md-ellipsis">
-                Solarni uređaji
+                Postavke
               </div>
             </div>
             <div class="md-footer__button md-icon">
