@@ -1,5 +1,6 @@
 ---
 title: Zaključak
+description: Sažetak preporuka za odabir čipa te upozorenje o spajanju antene prije uključivanja uređaja.
 ---
 ## Zaključak
 

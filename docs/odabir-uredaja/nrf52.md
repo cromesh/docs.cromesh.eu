@@ -1,5 +1,6 @@
 ---
 title: nrf52
+description: Pregled nRF52 čipa — najštedljivija opcija za baterijske uređaje.
 ---
 
 # nRF52 — Učinkovitost kao Prioritet

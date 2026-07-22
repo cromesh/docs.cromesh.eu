@@ -1,5 +1,6 @@
 ---
 title: Lora Postavke
+description: Preporučene LoRa postavke za CroMesh mrežu — regija, preset, broj hopova i MQTT opcije.
 ---
 
 # LoRa Postavke

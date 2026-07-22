@@ -1,5 +1,6 @@
 ---
 title: User Postavke
+description: Postavke korisničkog profila uređaja — ime, kratko ime i status licenciranog operatora.
 ---
 
 # User  
