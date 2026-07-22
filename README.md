@@ -4,7 +4,7 @@ Ova dokumentacija koristi [MkDocs Material](https://squidfunk.github.io/mkdocs-m
 
 Stranicu uređuju CroMesh članovi.
 
-## Changelog
+## Changelog intu v2
 
 ### 2026-07-17 — Dodane sekcije: Hardver, Mreža, Zajednica, FAQ
 
@@ -58,3 +58,20 @@ prefiks korišten u nacrtu).
 
 - `mkdocs.yml` — ažuriran `nav:` blok: dodane nove stavke (FAQ, Prvi koraci, Montaža i
   3D print, Mreža, Zajednica), bez dupliciranja postojećih sekcija.
+  
+### 2026-07-22 — Restrukturiranje navigacije (v3)
+
+#### Izmijenjeno
+
+- **FAQ sekcija proširena** — `Zajednica` uklonjena kao zaseban top-level tab; `O zajednici`
+  i `Pravila` sada su ugniježđeni pod `❓ FAQ` sekcijom.
+- **Nova `💾 Software` sekcija** — spojene tri prijašnje zasebne sekcije (`📱 Aplikacije`,
+  `🔧 firmware`, `🌐 MQTT`) u jednu, s tri stavke u sidebaru.
+- **`🔧 Montaža i 3D print` preimenovana u `🔧 Hardver dodaci`** i proširena sa
+  `Solarni uređaji` (prethodno zasebna `☀️ Solarni Uređaji` sekcija).
+
+#### Neto efekt
+
+Broj top-level tabova smanjen s 13 na **9** (Home, Uvod, FAQ, Postavke, Odabir uređaja,
+Antene, Hardver dodaci, Software, Mreža) — plemenitiji pregled bez gubitka sadržaja,
+budući da su svi prijašnji naslovi i dalje dostupni kao stavke u sidebaru.
