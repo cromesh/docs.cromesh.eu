@@ -4,7 +4,7 @@ Ova dokumentacija koristi [MkDocs Material](https://squidfunk.github.io/mkdocs-m
 
 Stranicu uređuju CroMesh članovi.
 
-## Changelog intu v2
+## Changelog into v2
 
 ### 2026-07-17 — Dodane sekcije: Hardver, Mreža, Zajednica, FAQ
 
@@ -75,3 +75,20 @@ prefiks korišten u nacrtu).
 Broj top-level tabova smanjen s 13 na **9** (Home, Uvod, FAQ, Postavke, Odabir uređaja,
 Antene, Hardver dodaci, Software, Mreža) — plemenitiji pregled bez gubitka sadržaja,
 budući da su svi prijašnji naslovi i dalje dostupni kao stavke u sidebaru.
+
+### 2026-07-22 — v3.1: pretraga, opisi, logo, restrukturiranje Uvoda
+
+#### Izmijenjeno
+- `plugins.search.lang` promijenjen s `en` na `hr` — testirati kvalitetu pretrage za
+  hrvatske riječi s naglascima/sklonidbama.
+- `theme.logo` i `theme.favicon` postavljeni na `assets/logo.png` (CroMesh logo,
+  zamjena generičke FontAwesome ikone).
+- **`📖 Uvod u Meshtastic` ugniježđen** pod novu `📖 Početak` sekciju, zajedno s
+  `Prvi koraci` (koji ostaje dostupan i pod `⚙️ Postavke` kao prije).
+- Dodan `description:` u frontmatter za 9 stranica kojima je nedostajao
+  (5× Postavke podstranice, 4× Odabir uređaja podstranice) — bolji link-previewi i
+  konzistentniji SEO.
+
+#### Bez promjena
+- FAQ sadržaj — potvrđeno da trenutni format zadovoljava.
+- Redirect/SSL problem s prije — potvrđeno riješen.
