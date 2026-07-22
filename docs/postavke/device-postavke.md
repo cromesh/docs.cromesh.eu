@@ -1,5 +1,6 @@
 ---
 title: Device Postavke
+description: Odabir uloge uređaja (Client, Client Mute, Router) i interval slanja node infa.
 ---
 
 # Device

@@ -1,5 +1,6 @@
 ---
 title: Channel Postavke
+description: Konfiguracija primarnog LongFast kanala i postavke dijeljenja lokacije.
 ---
 
 # Channels  

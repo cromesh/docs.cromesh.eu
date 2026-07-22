@@ -1,5 +1,6 @@
 ---
 title: MQTT Postavke
+description: Postavke za spajanje uređaja na CroMesh MQTT server radi pojave na karti.
 ---
 
 # MQTT

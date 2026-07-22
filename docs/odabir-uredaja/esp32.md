@@ -1,5 +1,6 @@
 ---
 title: ESP32
+description: Pregled ESP32 čipa — WiFi/Bluetooth svestranost uz veću potrošnju energije.
 ---
 
 # ESP32 — Svestranost uz Veću Potrošnju

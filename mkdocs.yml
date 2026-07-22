@@ -7,8 +7,13 @@ repo_name: cromesh/docs.cromesh.eu
 repo_url: https://github.com/cromesh/docs.cromesh.eu
 nav:
   - 🏠 Home: index.md
-  - 📖 Uvod u Meshtastic: uvod.md
-  - ❓ FAQ: faq.md
+  - 📖 Početak:
+    - Uvod u Meshtastic: uvod.md
+    - Prvi koraci: postavke/prvi-koraci.md
+  - ❓ FAQ:
+    - FAQ: faq.md
+    - O zajednici: zajednica/o-zajednici.md
+    - Pravila: zajednica/pravila.md
   - ⚙️ Postavke: 
     - Postavke: postavke/index.md
     - Prvi koraci: postavke/prvi-koraci.md
@@ -25,30 +30,24 @@ nav:
     - Zaključak: odabir-uredaja/zakljucak.md
   - 📡 Antene: 
     - Antene: antene/index.md
-  - 🔧 Montaža i 3D print:
+  - 🔧 Hardver dodaci:
     - Montaža i zaštita: hardver/montaza-i-zastita.md
     - 3D print kućišta: hardver/3d-print.md
-  - 📱 Aplikacije: 
-    - Aplikacije: aplikacije/index.md
-  - 🔧 firmware:
-    - Firmware: firmware/index.md
-  - ☀️ Solarni Uređaji: 
     - Solarni uređaji: solarno/index.md
-  - 🌐 MQTT:
+  - 💾 Software:
+    - Aplikacije: aplikacije/index.md
+    - Firmware: firmware/index.md
     - MQTT: mqtt/index.md
   - 🌍 Mreža:
     - Standardi: mreza/standardi.md
     - Kanali: mreza/kanali.md
     - Uloge i imenovanje: mreza/uloge-i-imenovanje.md
-  - 👥 Zajednica:
-    - O zajednici: zajednica/o-zajednici.md
-    - Pravila: zajednica/pravila.md
   
 theme:
   name: material
   language: hr
-  icon:
-    logo: fontawesome/solid/file
+  logo: assets/logo.png
+  favicon: assets/logo.png
   features:
     # --- Navigation behavior ---
     - content.action.edit
@@ -138,7 +137,7 @@ markdown_extensions:
 
 plugins:
   - search:
-      lang: en   # 'hr' not supported yet
+      lang: hr
    
 
 extra:
