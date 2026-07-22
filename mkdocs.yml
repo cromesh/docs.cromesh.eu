@@ -28,9 +28,8 @@ nav:
     - NRF52: odabir-uredaja/nrf52.md
     - RP2040: odabir-uredaja/rp2040.md
     - Zaključak: odabir-uredaja/zakljucak.md
-  - 📡 Antene: 
-    - Antene: antene/index.md
   - 🔧 Hardver dodaci:
+    - Antene: antene/index.md
     - Montaža i zaštita: hardver/montaza-i-zastita.md
     - 3D print kućišta: hardver/3d-print.md
     - Solarni uređaji: solarno/index.md
