@@ -19,7 +19,7 @@ description: Povijest i organizacija CroMesh zajednice — hrvatska Meshtastic m
   ([GitHub repo](https://github.com/cromesh/docs.cromesh.eu) — prvi vanjski PR-ovi
   mergani već u studenom).
 - **Siječanj 2026.** — zajednica prelazi 50 članova; nodeovi od Slavonije do Dalmacije;
-  aktivnost grupe raste.
+  aktivnost grupe nadmašuje globalni službeni Meshtastic kanal.
 - **Ožujak 2026.** — proveden test `MEDIUM_FAST` preseta; odluka: ostanak na `LongFast`
   (vidi [Standardi](../mreza/standardi.md)).
 
@@ -28,7 +28,7 @@ description: Povijest i organizacija CroMesh zajednice — hrvatska Meshtastic m
 | Komponenta | Detalji |
 |---|---|
 | Web (cromesh.eu) | Platforma carrd.co |
-| MQTT + karta + docs | Hostano kod člana zajednice, objavljeno preko Cloudflare tunela |
+| MQTT + karta + docs | Hostano kod člana zajednice u Karlovcu, objavljeno preko Cloudflare tunela |
 | Dokumentacija | MkDocs / GitHub — **doprinosi kroz pull requestove su izričito dobrodošli** |
 | community.cromesh.eu | U pripremi / eksperimentalno |
 
@@ -65,7 +65,7 @@ su i prekogranične propagacije (Slovenija, Italija, Austrija, Srbija).
 
 ## Kako se uključiti
 
-1. Pridruži se [Telegram grupi](https://t.me/+q1MRpiblCNswNDlk).
+1. Pridruži se Telegram grupi (TODO: javni pozivni link).
 2. Predstavi se u topicu **Chat** — lokacija (okvirno) i oprema.
 3. Za upis u adresar mreže javi svoj **short i long name** u topic **Popis članova**.
 4. Nabavi opremu ([vodič](../odabir-uredaja/index.md)), konfiguriraj node

@@ -6,7 +6,8 @@ description: Pravila ponašanja na CroMesh mreži i u zajednici te regulatorni o
 # Pravila i bonton
 
 > **Napomena:** CroMesh nema formalni pravilnik — ovo je kodifikacija ustaljene prakse i
-> dogovora iz zajednice. 
+> dogovora iz zajednice. TODO: zajednica može kroz PR formalizirati pravila koja smatra
+> obvezujućima.
 
 ## Bonton na mreži (RF)
 
@@ -54,11 +55,13 @@ description: Pravila ponašanja na CroMesh mreži i u zajednici te regulatorni o
 
 ### Meshtastic i radioamaterizam
 
-- Meshtastic — 868 MHz nije radioamaterski pojas i
+- Meshtastic **nije radioamaterska služba** — 868 MHz nije radioamaterski pojas i
   pozivni znak nije potreban.
 - Radioamateri u zajednici su dobrodošli i čine značajan dio članstva, ali: pozivni
   znak u imenu nodea koristi samo ako ga stvarno posjeduješ; infrastrukturu mreže
   imenuj geografski (vidi [Imenovanje](../mreza/uloge-i-imenovanje.md)).
+- Podsjetnik iz zajednice za radioamatere: položen ispit i pozivni znak nisu isto što i
+  **dozvola za upotrebu RF spektra** koju izdaje HAKOM — provjeri vlastiti status.
 
 ### Postavljanje nodeova na objekte
 
