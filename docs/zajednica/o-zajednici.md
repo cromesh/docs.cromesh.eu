@@ -28,7 +28,7 @@ description: Povijest i organizacija CroMesh zajednice — hrvatska Meshtastic m
 | Komponenta | Detalji |
 |---|---|
 | Web (cromesh.eu) | Platforma carrd.co |
-| MQTT + karta + docs | Hostano kod člana zajednice u Karlovcu, objavljeno preko Cloudflare tunela |
+| MQTT + karta + docs | Hostano kod člana zajednice, objavljeno preko Cloudflare tunela |
 | Dokumentacija | MkDocs / GitHub — **doprinosi kroz pull requestove su izričito dobrodošli** |
 | community.cromesh.eu | U pripremi / eksperimentalno |
 
