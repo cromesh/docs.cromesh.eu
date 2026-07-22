@@ -65,7 +65,7 @@ su i prekogranične propagacije (Slovenija, Italija, Austrija, Srbija).
 
 ## Kako se uključiti
 
-1. Pridruži se Telegram grupi (TODO: javni pozivni link).
+1. Pridruži se [Telegram grupi](https://t.me/+q1MRpiblCNswNDlk).
 2. Predstavi se u topicu **Chat** — lokacija (okvirno) i oprema.
 3. Za upis u adresar mreže javi svoj **short i long name** u topic **Popis članova**.
 4. Nabavi opremu ([vodič](../odabir-uredaja/index.md)), konfiguriraj node
