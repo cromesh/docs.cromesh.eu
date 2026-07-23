@@ -137,7 +137,7 @@ markdown_extensions:
 
 plugins:
   - search:
-      lang: hr
+      lang: en
    
    
 copyright: Copyright &copy; 2026 CroMesh (cromesh.eu)
