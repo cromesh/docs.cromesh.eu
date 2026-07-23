@@ -29,6 +29,7 @@ nav:
     - RP2040: odabir-uredaja/rp2040.md
     - Zaključak: odabir-uredaja/zakljucak.md
   - 🔧 Hardver dodaci:
+    - Hardver dodaci: hardver/index.md
     - Antene: antene/index.md
     - Montaža i zaštita: hardver/montaza-i-zastita.md
     - 3D print kućišta: hardver/3d-print.md
