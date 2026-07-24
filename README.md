@@ -92,3 +92,19 @@ budući da su svi prijašnji naslovi i dalje dostupni kao stavke u sidebaru.
 #### Bez promjena
 - FAQ sadržaj — potvrđeno da trenutni format zadovoljava.
 - Redirect/SSL problem s prije — potvrđeno riješen.
+
+## v3.1.1
+
+- Ispravljen `search.lang` u `mkdocs.yml` (`hr` → `en`) — `hr` nije podržan
+  pa je uzrokovao build warning
+- Copyright notice u footeru (`copyright:` u mkdocs.yml)
+- `@cromesh.eu` u Long Name pojašnjeno kao community identifikator, ne e-mail
+- Telegram pozivni link dodan (`o-zajednici.md`, `index.md`)
+- Hardver dodaci overview stranica (`docs/hardver/index.md`)
+- Stray zip fajl uklonjen s master brancha
+- Git autorstvo commitova ispravljeno
+
+## v3.1.2
+
+- Dodan vodič "Oživljavanje LiIon" u sekciju Hardver dodaci
+  (`docs/hardver/ozivljavanje-18650.md`)
