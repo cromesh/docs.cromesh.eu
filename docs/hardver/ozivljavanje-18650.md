@@ -18,7 +18,7 @@ tags:
 - **Točno 0,0V** — vjerojatno trajno aktivirana unutarnja zaštita, baciti.
 - **Bila ispod ~1,5V dulje od tjedan dana** — ne oživljavati (rizik unutarnjeg
   kratkog spoja).
-- **Vidljivo oštećenje** (probušeno kućište, ulubljenje, naduvenost, korozija) —
+- **Vidljivo oštećenje** (probušeno kućište, ulubljenje, napuhanost, korozija) —
   nikad ne oživljavati.
 
 ## Postupak
