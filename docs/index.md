@@ -80,11 +80,3 @@ decentraliziranu, off-grid LoRa mesh mrežu na području Republike Hrvatske. Mre
 
 > **Napomena:** Ako imaš pitanja, slobodno pitaj u Telegram grupi — zajednica je aktivna i
 > rado pomaže novim članovima. Prije pitanja preporučujemo pregledati [FAQ](faq.md).
-
-## Struktura dokumentacije
-
-- **Mreža** — dogovoreni standardi, kanali, MQTT i karta, uloge nodeova
-- **Postavke** — upute za konfiguraciju novog uređaja
-- **Hardver** — uređaji, antene, napajanje, montaža, 3D print kućišta
-- **Zajednica** — o nama, pravila ponašanja i regulativa
-- **FAQ** — česta pitanja početnika
