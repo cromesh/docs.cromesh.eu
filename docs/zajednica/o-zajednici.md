@@ -23,8 +23,7 @@ description: Povijest i organizacija CroMesh zajednice — hrvatska Meshtastic m
   karta `map.cromesh.eu` i dokumentacija `docs.cromesh.eu`
   ([GitHub repo](https://github.com/cromesh/docs.cromesh.eu) — prvi vanjski PR-ovi
   mergani već u studenom).
-- **Siječanj 2026.** — zajednica prelazi 50 članova; nodeovi od Slavonije do Dalmacije;
-  aktivnost grupe nadmašuje globalni službeni Meshtastic kanal.
+- **Siječanj 2026.** — zajednica prelazi 50 članova; nodeovi od Slavonije do Dalmacije.
 - **Ožujak 2026.** — proveden test `MEDIUM_FAST` preseta; odluka: ostanak na `LongFast`
   (vidi [Standardi](../mreza/standardi.md)).
 - **Srpanj 2026.** — zajednica za sada broji oko **120 članova** u Telegram grupi i
