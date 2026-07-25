@@ -150,3 +150,6 @@ extra:
     - icon: material/web
       link: https://cromesh.eu
   generator: false
+  copyright: >
+    © CroMesh zajednica — sadržaj dostupan pod licencom
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
