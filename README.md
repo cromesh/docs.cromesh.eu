@@ -130,3 +130,26 @@ budući da su svi prijašnji naslovi i dalje dostupni kao stavke u sidebaru.
 
 - Dodana licenca CC BY-SA 4.0 (`LICENSE` datoteka)
 - Sekcija "Struktura dokumentacije" premještena s `docs/index.md` u README
+
+## v3.2
+
+- Omogućen built-in tags plugin (`docs/tags.md`, oznake sada rade i klikabilne su)
+- Ispravljen mrtvi `extra.copyright` ključ — licenca se sada stvarno prikazuje u
+  footeru (koristi se ispravan top-level `copyright:`)
+- Dodana napomena o neslužbenom statusu u odnosu na Meshtastic LLC — u footeru
+  svake stranice te istaknuto na naslovnoj i stranici zajednice
+  (usput ispravljen i `pymdownx.snippets` `auto_append` bug — putanja se
+  razrješavala relativno na korijen projekta, ne na `docs/`)
+- Ažurirani statistički podaci zajednice u "Kratka povijest" (120 članova,
+  200+ nodeova, srpanj 2026.)
+- Dovršen MQTT vodič — dodane točne putanje postavki po platformi
+  (Android, iOS/iPadOS/macOS, Web client, CLI)
+- Dodana napomena o postavljanju na državne/javne objekte (nema formalne
+  procedure; preporuka kontakta s lokalnim radioklubovima) u `pravila.md` i
+  `montaza-i-zastita.md`
+- Očišćeni interni `TODO:` markeri kroz cijelu dokumentaciju (i dalje otvorena
+  pitanja formulirana bez vidljivog "TODO" teksta)
+- Dodan nacrt stranice zaštite privatnosti (`docs/privatnost.md`) — **nije
+  povezan u navigaciju**, čeka pravnu provjeru i odluku o kontakt podacima
+- Nav duplikat "Prvi koraci" (Početak + Postavke) označen kao namjeran
+  komentarom u `mkdocs.yml`

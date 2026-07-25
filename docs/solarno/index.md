@@ -47,8 +47,8 @@ pouzdanijim — referentni node na Cepelišu s tom kombinacijom mjesecima ne pad
 
 > **Napomena:** Kod modula temeljenih na CN37xx zabilježeni su (neprovjereni) slučajevi
 > "zablokiranja" nakon dubokog pražnjenja — regulator ne nastavi punjenje povratkom
-> sunca. Ako node zimi "umre", prvo provjeri regulator. TODO: potvrditi i dokumentirati
-> uvjete pod kojima se to događa.
+> sunca. Ako node zimi "umre", prvo provjeri regulator. Uvjeti pod kojima se to događa
+> još nisu potvrđeni ni dokumentirani od strane zajednice.
 
 ## Solarni paneli
 
@@ -66,5 +66,5 @@ pouzdanijim — referentni node na Cepelišu s tom kombinacijom mjesecima ne pad
 ## Mrežno napajanje
 
 Za fiksne nodeove na stalnom napajanju (ESP32 + WiFi kao MQTT gateway) sasvim je u redu
-običan USB adapter; baterija tada nije nužna. TODO: PoE napajanje RAK WisBlocka
-spominjano je u grupi, ali bez dokumentiranog rješenja.
+običan USB adapter; baterija tada nije nužna. PoE napajanje RAK WisBlocka spominjano je
+u grupi, ali bez dokumentiranog rješenja za sada.

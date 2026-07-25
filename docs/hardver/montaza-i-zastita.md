@@ -53,9 +53,9 @@ Ispravna zaštita prema iskustvima zajednice:
 
 - **Privatni objekti:** dogovor s vlasnikom (u praksi zajednice: krovovi kuća, zgrada,
   radioklubovi, tvrtke članova).
-- **Javni i državni objekti (napušteni dimnjaci, tornjevi i sl.):** pravno pitanje
-  postavljeno u zajednici bez konačnog odgovora. TODO: dokumentirati proceduru i
-  iskustva (koga kontaktirati, kako je riješeno za postojeće lokacije poput Cepeliša i
-  Sv. Križa).
+- **Javni i državni objekti (napušteni dimnjaci, tornjevi i sl.):** formalna
+  procedura ne postoji. Preporuka je izravan kontakt s lokalnim radioklubovima
+  (često imaju uspostavljene veze i iskustvo s takvim lokacijama); za stambene
+  zgrade dogovor s upravom zgrade/vlasnicima stanova, kao i kod privatnih kuća.
 - Za regulatorna pitanja RF spektra nadležan je HAKOM — vidi
   [Pravila](../zajednica/pravila.md).

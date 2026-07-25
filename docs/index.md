@@ -18,6 +18,11 @@ Možete slobodno preporučiti promjene u dokumentaciji na github.
 decentraliziranu, off-grid LoRa mesh mrežu na području Republike Hrvatske. Mreža radi na
 **868 MHz ISM pojasu (regija EU_868)** i za korištenje **nije potrebna radioamaterska dozvola**.
 
+!!! info ""
+    cromesh.eu i docs.cromesh.eu su neovisni, neslužbeni projekti CroMesh zajednice i
+    nisu službeno povezani s niti odobreni od strane Meshtastic LLC. "Meshtastic®" je
+    registrirani zaštitni znak tvrtke Meshtastic LLC.
+
 <div class="grid cards" markdown>
 
 -   :book:{ .lg .middle } __Uvod u 5 minuta__

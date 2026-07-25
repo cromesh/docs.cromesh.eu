@@ -65,5 +65,6 @@ linija optičke vidljivosti (LOS) + okomita montaža.
 - Svaki dodatni adapter i metar lošeg kabela = gubitak; na 868 MHz koristi što kraći
   kvalitetan kabel.
 
-TODO: dodati tablicu preporučenih pigtailova i kabela s konkretnim linkovima (u grupi
-dijeljeno više AliExpress linkova — potrebno ih je verificirati prije uvrštavanja).
+Kurirana tablica preporučenih pigtailova i kabela s provjerenim linkovima trenutno se
+ne održava — provjeri topic **Hardware preporuke** u Telegram grupi za trenutne
+preporuke i iskustva zajednice.

@@ -5,6 +5,11 @@ description: Povijest i organizacija CroMesh zajednice — hrvatska Meshtastic m
 
 # O zajednici
 
+!!! info ""
+    cromesh.eu i docs.cromesh.eu su neovisni, neslužbeni projekti CroMesh zajednice i
+    nisu službeno povezani s niti odobreni od strane Meshtastic LLC. "Meshtastic®" je
+    registrirani zaštitni znak tvrtke Meshtastic LLC.
+
 ## Kratka povijest
 
 - **17. 8. 2025.** — osnovana Telegram grupa **"CroMesh - Meshtastic Hrvatska"**;
@@ -22,6 +27,8 @@ description: Povijest i organizacija CroMesh zajednice — hrvatska Meshtastic m
   aktivnost grupe nadmašuje globalni službeni Meshtastic kanal.
 - **Ožujak 2026.** — proveden test `MEDIUM_FAST` preseta; odluka: ostanak na `LongFast`
   (vidi [Standardi](../mreza/standardi.md)).
+- **Srpanj 2026.** — zajednica za sada broji oko **120 članova** u Telegram grupi i
+  preko **200 nodeova** diljem Hrvatske.
 
 ## Infrastruktura i tko je održava
 

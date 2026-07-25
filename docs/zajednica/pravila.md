@@ -6,8 +6,8 @@ description: Pravila ponašanja na CroMesh mreži i u zajednici te regulatorni o
 # Pravila i bonton
 
 > **Napomena:** CroMesh nema formalni pravilnik — ovo je kodifikacija ustaljene prakse i
-> dogovora iz zajednice. TODO: zajednica može kroz PR formalizirati pravila koja smatra
-> obvezujućima.
+> dogovora iz zajednice. Zajednica trenutno ne planira formalizirati ova pravila kao
+> obvezujuća.
 
 ## Bonton na mreži (RF)
 
@@ -66,5 +66,7 @@ description: Pravila ponašanja na CroMesh mreži i u zajednici te regulatorni o
 ### Postavljanje nodeova na objekte
 
 - Uvijek s dozvolom vlasnika objekta.
-- Za državne/javne objekte procedura nije razjašnjena — TODO (vidi
-  [Montaža i zaštita](../hardver/montaza-i-zastita.md)).
+- Za državne/javne objekte formalna procedura ne postoji. Preporuka je izravan
+  kontakt s lokalnim radioklubovima (često imaju uspostavljene veze i iskustvo s
+  takvim lokacijama) te dogovor s upravom/vlasnicima za privatne kuće i stanove
+  (vidi [Montaža i zaštita](../hardver/montaza-i-zastita.md)).

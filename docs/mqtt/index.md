@@ -47,11 +47,24 @@ dijagnostiku.
 > sufiksa `/9A` node šalje na topic koji karta ne prati. Provjeri da piše točno
 > `msh/EU_868/9A`.
 
-> **Napomena:** Na iOS-u su neke opcije (*OK to MQTT*, *Ignore MQTT*) raspoređene
-> drugačije nego na Androidu ili ih pojedine verzije aplikacije nemaju — konfiguracija
-> iste stvari nalazi se na više mjesta, provjeri sve tri lokacije (LoRa config, MQTT
-> modul, postavke kanala). TODO: dopuniti točne putanje po platformama i verzijama
-> aplikacije.
+### Točne putanje po platformi
+
+Postavke MQTT-a nalaze se na **tri različita mjesta** — MQTT modul, LoRa postavke
+(za *OK to MQTT*) i postavke kanala (za *Uplink*/*Downlink*) — a putanje se razlikuju
+po platformi:
+
+| Platforma | MQTT modul | OK to MQTT | Uplink / Downlink kanala |
+|---|---|---|---|
+| **Android** | Settings → MQTT (ili ⋮ u gornjem desnom kutu → Radio Configuration → MQTT) | Settings → LoRa, na dnu ekrana (Advanced) | Settings → Channels → odaberi kanal |
+| **iOS / iPadOS / macOS** | Settings → Module Configuration → MQTT | Settings → Radio Configuration → LoRa | Settings → Radio Configuration → Channels |
+| **Web client** (client.meshtastic.org) | Radio Configuration → MQTT → uključi Enabled → Send | Radio Configuration → LoRa | Radio Configuration → Channels |
+| **Python CLI** | `meshtastic --set mqtt.enabled true` (i dalje `mqtt.address`, `mqtt.username` itd.) | `meshtastic --set lora.config_ok_to_mqtt true` | `meshtastic --ch-set uplink_enabled true --ch-index 0` (downlink analogno) |
+
+> **Napomena:** Na iOS-u/iPadOS-u/macOS-u sve tri kategorije postavki nalaze se pod
+> istim "Settings" izbornikom (samo u različitim podsekcijama), dok na Androidu MQTT
+> modul može biti dostupan i kao zaseban unos i kroz Radio Configuration ovisno o
+> verziji aplikacije — ako ne vidiš MQTT izravno u Settings, provjeri Radio
+> Configuration.
 
 ## Uvjeti da se node pojavi na karti
 

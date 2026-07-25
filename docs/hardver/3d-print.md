@@ -35,7 +35,7 @@ printerima na FSB-u).
 | Držač 18650 | Vlastiti dizajn člana zajednice | [thingiverse.com/thing:6801714](https://www.thingiverse.com/thing:6801714) |
 | TonyG profil | Preporučen profil s Meshtastic modelima | [printables.com/@TonyG](https://www.printables.com/@TonyG) |
 
-TODO: u grupi su dijeljena još dva modela bez opisa namjene
+U grupi su dijeljena još dva modela bez opisa namjene
 ([thingiverse.com/thing:6854115](https://www.thingiverse.com/thing:6854115),
 [thingiverse.com/thing:7310226](https://www.thingiverse.com/thing:7310226)) — molimo
 autore objava da dopune opis.
@@ -43,8 +43,8 @@ autore objava da dopune opis.
 ## Praktične napomene
 
 - Za dijelove izložene suncu razmisli o materijalu otpornom na toplinu — u grupi je
-  izražena sumnja u ljetnu izdržljivost standardnih printova na krovu auta.
-  TODO: dokumentirati iskustva s materijalima (PETG/ASA/PC) nakon prve pune sezone.
+  izražena sumnja u ljetnu izdržljivost standardnih printova na krovu auta. Iskustva s
+  materijalima (PETG/ASA/PC) nakon prve pune sezone još nisu dokumentirana.
 - Fleksibilni (TPU) materijali korisni su za brtve i "gap fillere".
 - Vlastite dizajne i remixeve podijeli u topicu **3D printanje i design** — i ovdje
   kroz PR.

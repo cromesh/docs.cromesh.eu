@@ -122,4 +122,5 @@ Topic **Tržnica Novo/Rabljeno** u Telegram grupi.
 
 Pull requestom na
 [github.com/cromesh/docs.cromesh.eu](https://github.com/cromesh/docs.cromesh.eu) —
-posebno su dobrodošle dopune mjesta označenih s `TODO:`.
+posebno su dobrodošle dopune otvorenih pitanja (npr. postavljanje na javne/državne
+objekte, PoE napajanje, materijali za 3D print) navedenih kroz dokumentaciju.

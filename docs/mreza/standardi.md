@@ -66,6 +66,6 @@ Detalji o ulogama nodeova (CLIENT, ROUTER, CLIENT_BASE...) nalaze se na stranici
 - Regulator u RH je **HAKOM**; radioamaterske dozvole i pozivni znakovi provjeravaju se
   na HAKOM-ovim stranicama, ali za Meshtastic **nisu potrebni**.
 
-> **Napomena:** TODO — zajednica još nema formalno definiran postupak donošenja odluka o
+> **Napomena:** Zajednica još nema formalno definiran postupak donošenja odluka o
 > promjeni standarda (tko odlučuje, kojom većinom, gdje se glasa). Dosadašnje odluke
 > donošene su konsenzusom na meetupima i u Telegram grupi.

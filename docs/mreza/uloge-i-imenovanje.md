@@ -23,14 +23,13 @@ ovim pravilima:
 > Sv. Križ ili krov radiokluba — dogovori se u grupi prije postavljanja.
 
 Za infrastrukturne nodeove kojima nitko ne šalje izravne poruke može se dodatno uključiti
-oznaka *Unmessageable*. TODO: zajednica nema formalni dogovor oko ove postavke.
+oznaka *Unmessageable*. Formalni dogovor zajednice o ovoj postavci trenutno ne postoji —
+koristi po vlastitoj procjeni.
 
 ## Imenovanje nodeova
 
 > **Napomena:** Formalno pravilo imenovanja **ne postoji** (pitanje je eksplicitno
-> postavljeno u zajednici) — dolje je opisana ustaljena praksa. TODO: formalizirati
-> konvenciju kroz PR na ovu stranicu. Smjernice: Cromesh.eu /ime _člana ili pozivna
-> oznaka /ime_noda npr. "cromesh.eu / 9A1CVW / R5"
+> postavljeno u zajednici) — dolje je opisana ustaljena praksa.
 
 ### Ustaljena praksa
 
