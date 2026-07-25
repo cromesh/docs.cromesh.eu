@@ -6,19 +6,15 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Detaljnije objašnjenje MQTT-a i njegove uloge u Meshtasticu — kako spojiti node na mqtt.cromesh.eu i pojaviti se na karti map.cromesh.eu.">
+        <meta name="description" content="Informacije o obradi osobnih podataka u sklopu CroMesh mreže — map.cromesh.eu, mqtt.cromesh.eu i docs.cromesh.eu.">
       
       
         <meta name="author" content="CroMesh zajednica">
       
       
-        <link rel="canonical" href="https://docs.cromesh.eu/mqtt/">
+        <link rel="canonical" href="https://docs.cromesh.eu/privatnost/">
       
       
-        <link rel="prev" href="../firmware/">
-      
-      
-        <link rel="next" href="../mreza/standardi/">
       
       
         
@@ -29,7 +25,7 @@
     
     
       
-        <title>Napredno o MQTT - CroMesh Dokumentacija</title>
+        <title>Zaštita privatnosti - CroMesh Dokumentacija</title>
       
     
     
@@ -78,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#napredno-o-mqtt" class="md-skip">
+        <a href="#zastita-privatnosti" class="md-skip">
           Preskoči na sadržaj
         </a>
       
@@ -111,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Napredno o MQTT
+              Zaštita privatnosti
             
           </span>
         </div>
@@ -349,12 +345,10 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../aplikacije/" class="md-tabs__link">
           
   
@@ -1437,8 +1431,6 @@
       
   
   
-    
-  
   
   
     
@@ -1456,19 +1448,16 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -1490,13 +1479,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="">
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1541,37 +1530,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    MQTT
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../mqtt/" class="md-nav__link">
         
   
   
@@ -1587,98 +1549,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Sadržaj">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Sadržaj
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#cemu-sluzi-mqtt-u-meshtasticu" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Čemu služi MQTT u Meshtasticu
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tocne-postavke-modul-mqtt" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Točne postavke (modul MQTT)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Točne postavke (modul MQTT)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tocne-putanje-po-platformi" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Točne putanje po platformi
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#uvjeti-da-se-node-pojavi-na-karti" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Uvjeti da se node pojavi na karti
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mogucnosti-karte" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Mogućnosti karte
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#najcesci-problemi" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Najčešći problemi
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1869,10 +1739,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cemu-sluzi-mqtt-u-meshtasticu" class="md-nav__link">
+  <a href="#voditelj-obrade" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Čemu služi MQTT u Meshtasticu
+        Voditelj obrade
       
     </span>
   </a>
@@ -1880,38 +1750,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tocne-postavke-modul-mqtt" class="md-nav__link">
+  <a href="#koji-se-podaci-obrauju" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Točne postavke (modul MQTT)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Točne postavke (modul MQTT)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tocne-putanje-po-platformi" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Točne putanje po platformi
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#uvjeti-da-se-node-pojavi-na-karti" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Uvjeti da se node pojavi na karti
+        Koji se podaci obrađuju
       
     </span>
   </a>
@@ -1919,10 +1761,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mogucnosti-karte" class="md-nav__link">
+  <a href="#svrha-obrade-i-pravna-osnova" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Mogućnosti karte
+        Svrha obrade i pravna osnova
       
     </span>
   </a>
@@ -1930,10 +1772,87 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#najcesci-problemi" class="md-nav__link">
+  <a href="#primatelji-podataka" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Najčešći problemi
+        Primatelji podataka
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prijenos-podataka-izvan-euegp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prijenos podataka izvan EU/EGP
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#razdoblje-cuvanja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Razdoblje čuvanja
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tvoja-prava" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tvoja prava
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pravo-na-prituzbu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pravo na pritužbu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kolacici-i-analitika-na-docscromesheu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kolačići i analitika na docs.cromesh.eu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preporuka-za-korisnike" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preporuka za korisnike
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#izmjene-ove-stranice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Izmjene ove stranice
       
     </span>
   </a>
@@ -1961,35 +1880,21 @@
       
       
       
-        <a href="../tags/#tag:mqtt" class="md-tag">MQTT</a>
+        <a href="../tags/#tag:gdpr" class="md-tag">GDPR</a>
       
     
       
       
       
       
-        <a href="../tags/#tag:server" class="md-tag">Server</a>
-      
-    
-      
-      
-      
-      
-        <a href="../tags/#tag:karta" class="md-tag">karta</a>
-      
-    
-      
-      
-      
-      
-        <a href="../tags/#tag:planiranje" class="md-tag">planiranje</a>
+        <a href="../tags/#tag:privatnost" class="md-tag">privatnost</a>
       
     
   </nav>
 
 
   
-    <a href="https://github.com/cromesh/docs.cromesh.eu/edit/master/docs/mqtt/index.md" title="Uredi stranicu" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/cromesh/docs.cromesh.eu/edit/master/docs/privatnost.md" title="Uredi stranicu" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1998,203 +1903,118 @@
     
       
     
-    <a href="https://github.com/cromesh/docs.cromesh.eu/raw/master/docs/mqtt/index.md" title="Pregledaj izvorni kod ove stranice" class="md-content__button md-icon">
+    <a href="https://github.com/cromesh/docs.cromesh.eu/raw/master/docs/privatnost.md" title="Pregledaj izvorni kod ove stranice" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
   
 
 
-<h1 id="napredno-o-mqtt"><font color="#50EB97">Napredno o MQTT</font><a class="headerlink" href="#napredno-o-mqtt" title="Permanent link">&para;</a></h1>
-<p>CroMesh održava vlastitu infrastrukturu:</p>
+<h1 id="zastita-privatnosti"><font color="#50EB97">Zaštita privatnosti</font><a class="headerlink" href="#zastita-privatnosti" title="Permanent link">&para;</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Nacrt — potrebna pravna provjera</p>
+<p>Ova stranica je nacrt izrađen prema strukturi članka 13. Opće uredbe o zaštiti
+podataka (GDPR). Nije zamjena za pravni savjet. Prije objave, polja označena
+s <code>[POPUNITI]</code> treba popuniti stvarnim podacima, a cijeli tekst treba pregledati
+osoba s pravnim znanjem o GDPR-u.</p>
+</div>
+<p>Ovom stranicom CroMesh zajednica objašnjava koji se osobni podaci obrađuju u sklopu
+korištenja CroMesh mreže (Meshtastic uređaji, <code>mqtt.cromesh.eu</code>, <code>map.cromesh.eu</code>) i
+ove dokumentacije (<code>docs.cromesh.eu</code>), te koja prava pritom imaš.</p>
+<h2 id="voditelj-obrade">Voditelj obrade<a class="headerlink" href="#voditelj-obrade" title="Permanent link">&para;</a></h2>
+<p>CroMesh je neformalna zajednica bez pravne osobnosti (nije registrirano udruženje ni
+tvrtka). Prema GDPR-u, to ne isključuje primjenu propisa — u nedostatku pravne osobe,
+voditelj obrade su <strong>fizičke osobe koje stvarno upravljaju infrastrukturom</strong> i
+odlučuju o svrsi i načinu obrade.</p>
+<p>Infrastrukturu (<code>mqtt.cromesh.eu</code>, <code>map.cromesh.eu</code>) zajednički vodi više
+administratora zajednice — riječ je o <strong>zajedničkim voditeljima obrade</strong> (čl. 26
+GDPR-a). Svaki od njih odgovoran je za obradu u dijelu koji administrira.</p>
 <ul>
-<li><strong><code>mqtt.cromesh.eu</code></strong> — MQTT server zajednice (hostan u Karlovcu, objavljen preko
-  Cloudflare tunela). U praksi se pokazao stabilnijim od službenog
-  <code>mqtt.meshtastic.org</code>, a karta prati <strong>oba</strong> servera.</li>
-<li><strong><a href="https://map.cromesh.eu">map.cromesh.eu</a></strong> — Meshview instanca s kartom nodeova i
-  uvidom u promet mreže.</li>
+<li>Administratori: <code>[POPUNITI — imena/nadimci administratora]</code></li>
+<li>Zajednički kontakt: <code>[POPUNITI — e-mail]</code></li>
+<li>Telegram: <a href="https://t.me/cromesh">t.me/cromesh</a></li>
+<li>GitHub: <a href="https://github.com/CroMesh">github.com/CroMesh</a></li>
 </ul>
-<h2 id="cemu-sluzi-mqtt-u-meshtasticu">Čemu služi MQTT u Meshtasticu<a class="headerlink" href="#cemu-sluzi-mqtt-u-meshtasticu" title="Permanent link">&para;</a></h2>
-<p>Node spojen na MQTT (preko WiFi-ja ili Bluetooth proxyja kroz mobitel) radi kao
-<strong>gateway</strong>: prijavljuje serveru sebe <strong>i sve nodeove koje čuje preko LoRa-e</strong>. To je
-jedini način da se node pojavi na karti. MQTT <strong>nije potreban za rad mreže</strong> — poruke
-između nodeova putuju isključivo radiovezom; MQTT služi za kartu, statistiku i
-dijagnostiku.</p>
+<p>Za sve upite vezane uz obradu osobnih podataka (pristup, ispravak, brisanje) obratite
+se putem gornjih kontakata — administratori će uputiti zahtjev nadležnoj osobi.</p>
 <blockquote>
-<p><strong>Napomena:</strong> Dovoljno je da <strong>jedan</strong> node u tvom području ima MQTT — on će na kartu
-prijaviti i sve susjede (pod uvjetom da susjedi imaju uključen <em>OK to MQTT</em> i dijele
-lokaciju na javnom kanalu).</p>
+<p><strong>Napomena za administratore:</strong> Čl. 26 GDPR-a zahtijeva da postoji <strong>dogovor</strong> među
+zajedničkim voditeljima obrade o tome tko je za što odgovoran (npr. tko odgovara na
+zahtjeve ispitanika, tko je zadužen za sigurnost servera), te da <strong>bit tog dogovora</strong>
+(ne nužno svaki detalj) bude dostupna ispitanicima — otud gornji odlomak. Preporučeno
+je kratko to zapisati interno (npr. u privatnom repo wikiju), čak i neformalno.</p>
 </blockquote>
-<h2 id="tocne-postavke-modul-mqtt">Točne postavke (modul MQTT)<a class="headerlink" href="#tocne-postavke-modul-mqtt" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Postavka</th>
-<th>Vrijednost</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>MQTT omogućen (Enabled)</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>Adresa servera (Address)</td>
-<td><code>mqtt.cromesh.eu</code></td>
-</tr>
-<tr>
-<td>Korisničko ime (Username)</td>
-<td><code>meshdev</code></td>
-</tr>
-<tr>
-<td>Lozinka (Password)</td>
-<td>zadana Meshtastic lozinka (ista kao za službeni server)</td>
-</tr>
-<tr>
-<td>Root topic</td>
-<td><code>msh/EU_868/9A</code></td>
-</tr>
-<tr>
-<td>OK to MQTT</td>
-<td>✅ uključi (u LoRa/kanal postavkama, ovisno o verziji aplikacije)</td>
-</tr>
-<tr>
-<td>Kanal <code>LongFast</code> → Uplink</td>
-<td>✅ uključi</td>
-</tr>
-<tr>
-<td>Kanal <code>LongFast</code> → Downlink</td>
-<td>❌ isključi (vidi <a href="../mreza/kanali/">Kanali</a>)</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p><strong>Upozorenje:</strong> Najčešći uzrok "ne vidim se na karti" je <strong>krivi root topic</strong> — bez
-sufiksa <code>/9A</code> node šalje na topic koji karta ne prati. Provjeri da piše točno
-<code>msh/EU_868/9A</code>.</p>
-</blockquote>
-<h3 id="tocne-putanje-po-platformi">Točne putanje po platformi<a class="headerlink" href="#tocne-putanje-po-platformi" title="Permanent link">&para;</a></h3>
-<p>Postavke MQTT-a nalaze se na <strong>tri različita mjesta</strong> — MQTT modul, LoRa postavke
-(za <em>OK to MQTT</em>) i postavke kanala (za <em>Uplink</em>/<em>Downlink</em>) — a putanje se razlikuju
-po platformi:</p>
-<table>
-<thead>
-<tr>
-<th>Platforma</th>
-<th>MQTT modul</th>
-<th>OK to MQTT</th>
-<th>Uplink / Downlink kanala</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Android</strong></td>
-<td>Settings → MQTT (ili ⋮ u gornjem desnom kutu → Radio Configuration → MQTT)</td>
-<td>Settings → LoRa, na dnu ekrana (Advanced)</td>
-<td>Settings → Channels → odaberi kanal</td>
-</tr>
-<tr>
-<td><strong>iOS / iPadOS / macOS</strong></td>
-<td>Settings → Module Configuration → MQTT</td>
-<td>Settings → Radio Configuration → LoRa</td>
-<td>Settings → Radio Configuration → Channels</td>
-</tr>
-<tr>
-<td><strong>Web client</strong> (client.meshtastic.org)</td>
-<td>Radio Configuration → MQTT → uključi Enabled → Send</td>
-<td>Radio Configuration → LoRa</td>
-<td>Radio Configuration → Channels</td>
-</tr>
-<tr>
-<td><strong>Python CLI</strong></td>
-<td><code>meshtastic --set mqtt.enabled true</code> (i dalje <code>mqtt.address</code>, <code>mqtt.username</code> itd.)</td>
-<td><code>meshtastic --set lora.config_ok_to_mqtt true</code></td>
-<td><code>meshtastic --ch-set uplink_enabled true --ch-index 0</code> (downlink analogno)</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p><strong>Napomena:</strong> Na iOS-u/iPadOS-u/macOS-u sve tri kategorije postavki nalaze se pod
-istim "Settings" izbornikom (samo u različitim podsekcijama), dok na Androidu MQTT
-modul može biti dostupan i kao zaseban unos i kroz Radio Configuration ovisno o
-verziji aplikacije — ako ne vidiš MQTT izravno u Settings, provjeri Radio
-Configuration.</p>
-</blockquote>
-<h2 id="uvjeti-da-se-node-pojavi-na-karti">Uvjeti da se node pojavi na karti<a class="headerlink" href="#uvjeti-da-se-node-pojavi-na-karti" title="Permanent link">&para;</a></h2>
-<ol>
-<li>MQTT postavljen kako je opisano gore (ili node u dometu nekog CroMesh gatewaya),</li>
-<li>uključen <strong>OK to MQTT</strong>,</li>
-<li>uključen <strong>Uplink</strong> na kanalu <code>LongFast</code>,</li>
-<li>node ima <strong>lokaciju</strong> — GPS ili ručno postavljenu fiksnu poziciju (<em>Fixed position</em>).</li>
-</ol>
-<p>Nakon ispravne konfiguracije pojava na karti može potrajati — nodeovi svoje podatke
-(poziciju, node info) odašilju periodično, tipično svakih nekoliko sati. Iskustveno:
-1–2 sata do prve pojave, promjena preseta ili imena zna se propagirati i sporije.</p>
-<h2 id="mogucnosti-karte">Mogućnosti karte<a class="headerlink" href="#mogucnosti-karte" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>URL</th>
-<th>Sadržaj</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>map.cromesh.eu/map</code></td>
-<td>Karta nodeova</td>
-</tr>
-<tr>
-<td><code>map.cromesh.eu/chat</code></td>
-<td>Poruke s javnog kanala <code>LongFast</code></td>
-</tr>
-<tr>
-<td><code>map.cromesh.eu/nodegraph</code></td>
-<td>Graf povezanosti mreže (tko koga čuje)</td>
-</tr>
-<tr>
-<td><code>map.cromesh.eu/firehose</code></td>
-<td>Svi paketi u stvarnom vremenu</td>
-</tr>
-<tr>
-<td><code>map.cromesh.eu/packet_list/&lt;node_id&gt;</code></td>
-<td>Povijest paketa pojedinog nodea</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p><strong>Napomena:</strong> Karta posjeduje <strong>samo ključ javnog kanala <code>LongFast</code></strong> — jedino njegove
-poruke može dekriptirati i prikazati u <code>/chat</code>. Promet ostalih kanala (uključujući
-<code>cromesh.eu</code>) vidljiv je samo kao šifrirani paketi.</p>
-</blockquote>
-<p>Crte (strelice) između nodeova na grafu znače da se nodeovi <strong>relativno često čuju</strong> —
-ne jamče stabilnu vezu u svakom trenutku.</p>
-<h2 id="najcesci-problemi">Najčešći problemi<a class="headerlink" href="#najcesci-problemi" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Simptom</th>
-<th>Uzrok / rješenje</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Node se ne pojavljuje na karti</td>
-<td>Krivi root topic (nedostaje <code>/9A</code>); isključen <em>OK to MQTT</em>; nema lokacije; DNS/mreža blokira <code>mqtt.cromesh.eu</code></td>
-</tr>
-<tr>
-<td>Susjedi mi se ne pojavljuju</td>
-<td>Susjedi nemaju <em>OK to MQTT</em> i dijeljenje lokacije na javnom kanalu — bez toga ih gateway ne smije prijaviti</td>
-</tr>
-<tr>
-<td>Poruke s MQTT-a ne idu dalje u RF mrežu</td>
-<td>Očekivano ponašanje (zero-hop politika); za primanje s MQTT-a potreban je Downlink na kanalu</td>
-</tr>
-<tr>
-<td>Node ima "MQTT" oznaku iako sam downlink ugasio</td>
-<td>Oznaka ostaje u lokalnoj bazi nodeova; nestaje tek brisanjem node DB-a</td>
-</tr>
-</tbody>
-</table>
+<h2 id="koji-se-podaci-obrauju">Koji se podaci obrađuju<a class="headerlink" href="#koji-se-podaci-obrauju" title="Permanent link">&para;</a></h2>
+<p>Kad uređaj spojiš na <code>mqtt.cromesh.eu</code> i omogućiš prikaz na karti, sljedeći podaci
+postaju <strong>javno vidljivi</strong> na <a href="https://map.cromesh.eu">map.cromesh.eu</a>:</p>
+<ul>
+<li><strong>Long Name / Short Name</strong> tvog nodea (naziv koji sam odabireš — može, ali ne mora,
+  sadržavati tvoje ime)</li>
+<li><strong>GPS pozicija</strong> nodea (točna ili ručno postavljena fiksna pozicija)</li>
+<li>Tehnički podaci o nodeu: verzija firmwarea, razina baterije, metrika signala</li>
+<li>Poruke poslane na javnom kanalu <code>LongFast</code> (vidljive u <code>/chat</code> na karti)</li>
+</ul>
+<p>Ovi podaci <strong>nisu privatni</strong> — svatko na internetu može pristupiti karti i vidjeti ih.</p>
+<h2 id="svrha-obrade-i-pravna-osnova">Svrha obrade i pravna osnova<a class="headerlink" href="#svrha-obrade-i-pravna-osnova" title="Permanent link">&para;</a></h2>
+<p>Podaci se obrađuju radi:</p>
+<ul>
+<li>prikaza pokrivenosti i topologije CroMesh mreže na javnoj karti,</li>
+<li>dijagnostike i planiranja mreže od strane zajednice.</li>
+</ul>
+<p>Pravna osnova je <strong>privola</strong> — podaci se objavljuju isključivo ako korisnik sam
+uključi <em>OK to MQTT</em> i <em>Uplink</em> na svom uređaju te postavi poziciju. Isključivanjem
+tih postavki node prestaje slati podatke na <code>mqtt.cromesh.eu</code>.</p>
+<h2 id="primatelji-podataka">Primatelji podataka<a class="headerlink" href="#primatelji-podataka" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong><code>mqtt.cromesh.eu</code></strong> — MQTT server zajednice.</li>
+<li><strong><a href="https://map.cromesh.eu">map.cromesh.eu</a></strong> — javno dostupna karta (Meshview),
+  vidljiva bilo kome bez prijave.</li>
+<li>Podaci se paralelno mogu pojaviti i na službenom <code>mqtt.meshtastic.org</code> / drugim
+  javnim Meshtastic kartama, ovisno o postavkama uređaja — to je izvan kontrole
+  CroMesh zajednice.</li>
+</ul>
+<h2 id="prijenos-podataka-izvan-euegp">Prijenos podataka izvan EU/EGP<a class="headerlink" href="#prijenos-podataka-izvan-euegp" title="Permanent link">&para;</a></h2>
+<p><code>mqtt.cromesh.eu</code> hostan je unutar EU. Ako koristiš i službeni <code>mqtt.meshtastic.org</code>
+ili druge treće servise, provjeri njihove uvjete — CroMesh nema kontrolu nad njima.</p>
+<h2 id="razdoblje-cuvanja">Razdoblje čuvanja<a class="headerlink" href="#razdoblje-cuvanja" title="Permanent link">&para;</a></h2>
+<p>Nodeovi koji se ne čuju <strong>7 dana</strong> automatski se uklanjaju s karte. Isključivanje
+prijave pozicije sprječava ponovni prikaz.</p>
+<h2 id="tvoja-prava">Tvoja prava<a class="headerlink" href="#tvoja-prava" title="Permanent link">&para;</a></h2>
+<p>Kao ispitanik imaš pravo na:</p>
+<ul>
+<li><strong>pristup</strong> svojim podacima,</li>
+<li><strong>ispravak</strong> netočnih podataka,</li>
+<li><strong>brisanje</strong> ("pravo na zaborav"),</li>
+<li><strong>ograničenje obrade</strong>,</li>
+<li><strong>prigovor</strong> na obradu,</li>
+<li><strong>prenosivost</strong> podataka.</li>
+</ul>
+<p>Budući da su podaci koje šalješ na kartu pod tvojom izravnom kontrolom (Long Name,
+pozicija, MQTT postavke), najbrži način ostvarivanja ovih prava je <strong>isključivanje
+odgovarajuće postavke na vlastitom uređaju</strong> (vidi <a href="../mqtt/">MQTT postavke</a>).
+Za sve ostalo, obrati se kontaktu naznačenom gore.</p>
+<h2 id="pravo-na-prituzbu">Pravo na pritužbu<a class="headerlink" href="#pravo-na-prituzbu" title="Permanent link">&para;</a></h2>
+<p>Ako smatraš da je obrada tvojih podataka u suprotnosti s GDPR-om, imaš pravo podnijeti
+pritužbu nadzornom tijelu:</p>
+<p><strong>Agencija za zaštitu osobnih podataka (AZOP)</strong>
+Ulica Metela Ožegovića 16, HR-10000 Zagreb
+Tel: +385 (0)1 4609-000
+E-mail: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#122;&#111;&#112;&#64;&#97;&#122;&#111;&#112;&#46;&#104;&#114;">&#97;&#122;&#111;&#112;&#64;&#97;&#122;&#111;&#112;&#46;&#104;&#114;</a>
+Web: <a href="https://azop.hr">azop.hr</a></p>
+<h2 id="kolacici-i-analitika-na-docscromesheu">Kolačići i analitika na docs.cromesh.eu<a class="headerlink" href="#kolacici-i-analitika-na-docscromesheu" title="Permanent link">&para;</a></h2>
+<p>Ova dokumentacijska stranica (MkDocs Material) ne koristi kolačiće za praćenje niti
+alate poput Google Analyticsa. Pretraga radi lokalno u tvom pregledniku.</p>
+<h2 id="preporuka-za-korisnike">Preporuka za korisnike<a class="headerlink" href="#preporuka-za-korisnike" title="Permanent link">&para;</a></h2>
+<p>Ako ne želiš da tvoja GPS pozicija ili ime budu javno vidljivi:</p>
+<ul>
+<li>ne uključuj <em>OK to MQTT</em> i <em>Uplink</em> na kanalu koji se prijavljuje na
+  <code>mqtt.cromesh.eu</code>, ili</li>
+<li>koristi pseudonim umjesto stvarnog imena u Long Name / Short Name polju, ili</li>
+<li>ne postavljaj fiksnu poziciju / isključi dijeljenje GPS-a.</li>
+</ul>
+<h2 id="izmjene-ove-stranice">Izmjene ove stranice<a class="headerlink" href="#izmjene-ove-stranice" title="Permanent link">&para;</a></h2>
+<p>Ova stranica može se mijenjati. Datum zadnje izmjene vidljiv je u
+<a href="https://github.com/cromesh/docs.cromesh.eu/commits/master/docs/privatnost.md">povijesti commitova na GitHubu</a>.</p>
 <hr />
 <p><em>cromesh.eu i docs.cromesh.eu su neovisni, neslužbeni projekti CroMesh zajednice
 entuzijasta i nisu službeno povezani s niti odobreni od strane Meshtastic LLC.
@@ -2232,44 +2052,6 @@ entuzijasta i nisu službeno povezani s niti odobreni od strane Meshtastic LLC.
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Podnožje" >
-        
-          
-          <a href="../firmware/" class="md-footer__link md-footer__link--prev" aria-label="Prethodno: Firmware">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Prethodno
-              </span>
-              <div class="md-ellipsis">
-                Firmware
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../mreza/standardi/" class="md-footer__link md-footer__link--next" aria-label="Sljedeće: Standardi">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Sljedeće
-              </span>
-              <div class="md-ellipsis">
-                Standardi
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
