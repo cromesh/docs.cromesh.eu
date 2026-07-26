@@ -16,3 +16,5 @@ autonomne nodeove.
   zaštita, dozvole za vanjske nodeove.
 - **[3D print kućišta](3d-print.md)** — popis STL modela koje zajednica koristi.
 - **[Solarni uređaji](../solarno/index.md)** — baterije, BMS zaštita, MPPT regulatori.
+- **[Oživljavanje LiIon](ozivljavanje-18650.md)** — punjenje i oživljavanje duboko
+  ispražnjenih 18650 ćelija.
