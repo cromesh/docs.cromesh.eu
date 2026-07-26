@@ -153,3 +153,14 @@ budući da su svi prijašnji naslovi i dalje dostupni kao stavke u sidebaru.
   povezan u navigaciju**, čeka pravnu provjeru i odluku o kontakt podacima
 - Nav duplikat "Prvi koraci" (Početak + Postavke) označen kao namjeran
   komentarom u `mkdocs.yml`
+
+## v3.2.1
+
+- Uklonjena tvrdnja o aktivnosti grupe u odnosu na globalni službeni Meshtastic
+  kanal (`zajednica/o-zajednici.md`)
+- Uklonjen tab "Oznake" iz glavne navigacije — tags plugin ostaje aktivan,
+  oznake su i dalje klikabilne na stranicama, samo bez zasebnog nav taba
+- Dodana nedostajuća poveznica na vodič "Oživljavanje LiIon" na pregledoj
+  stranici `hardver/index.md` (bila je u navigaciji, ali ne i na samoj stranici)
+- Smanjena veličina fonta napomene o zaštitnom znaku (Meshtastic®) u footeru
+  (`<small>` oznaka u `includes/mkdocs.md`)
