@@ -7,7 +7,6 @@ repo_name: cromesh/docs.cromesh.eu
 repo_url: https://github.com/cromesh/docs.cromesh.eu
 nav:
   - 🏠 Home: index.md
-  - 🏷️ Oznake: tags.md
   - 📖 Početak:
     - Uvod u Meshtastic: uvod.md
     - Prvi koraci: postavke/prvi-koraci.md  # namjerno duplicirano i pod Postavke
