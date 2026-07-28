@@ -167,5 +167,5 @@ budući da su svi prijašnji naslovi i dalje dostupni kao stavke u sidebaru.
 
 ## v3.2.2
 
-- Tekst dokumentacije lektoriran (terminologija i gramatika)
+- Tekst dokumentacije lekturiran (terminologija i gramatika)
 - Lekturu odradio kolega Damir.
