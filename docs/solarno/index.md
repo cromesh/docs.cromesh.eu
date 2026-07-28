@@ -2,7 +2,7 @@
 title: Solarni uređaji
 description: Napajanje Meshtastic nodeova — 18650 baterije, BMS zaštita, MPPT solarni regulatori (CN3791) i punjenje litijskih baterija na niskim temperaturama.
 tags:
-  - Hardver
+  - Hardware
   - Uređaji
   - Solar
   - Battery

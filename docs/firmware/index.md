@@ -10,9 +10,9 @@ tags:
 
 ## <font color="#50EB97">Meshtastic Firmware</font>
 
-Meshtastic Firmware je službeni softver (open‑source) koji pokreće Meshtastic uređaje.
+Meshtastic Firmware je službeni software (open‑source) koji pokreće Meshtastic uređaje.
 
-### Metode flashanja firmwarea
+### Metode flashanja firmware-a
 
 - **Web Flasher**  
   Najlakši način za ESP32 (i druge) uređaje: koristi se web sučelje koje komunicira preko serijskog porta. [Više o tome ovdje](https://flasher.meshtastic.org/)
@@ -21,14 +21,14 @@ Meshtastic Firmware je službeni softver (open‑source) koji pokreće Meshtasti
 - **UF2 Drag & Drop**  
   Za nRF52 i RP2040: uređaj postane USB disk, i .uf2 datoteka se jednostavno kopira na disk. [Više o tome ovdje](https://meshtastic.org/docs/getting-started/flashing-firmware/nrf52/drag-n-drop/)
 - **OTA (Over-The-Air) ažuriranje**  
-  Kod nRF52 uređaja podržano je ažuriranje firmwarea preko Bluetootha. [Više o tome ovdje](https://meshtastic.org/docs/getting-started/flashing-firmware/nrf52/ota/)
+  Kod nRF52 uređaja podržano je ažuriranje firmware-a preko Bluetootha. [Više o tome ovdje](https://meshtastic.org/docs/getting-started/flashing-firmware/nrf52/ota/)
 
-### Verzije firmwarea
+### Verzije firmware-a
 
 Meshtastic firmware se izdaje u nekoliko verzija, kako bi korisnici mogli birati između stabilnosti i novih funkcionalnosti:
 
 - **Beta (stabilna)**  
-  Preporučena za većinu korisnika. Testirana i pouzdana verzija firmwarea.
+  Preporučena za većinu korisnika. Testirana i pouzdana verzija firmware-a.
 - **Alpha**  
   Najnovije promjene i netestirane funkcionalnosti. Može sadržavati bugove i ne preporučuje se za svakodnevnu upotrebu.
 

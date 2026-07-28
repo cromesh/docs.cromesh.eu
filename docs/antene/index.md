@@ -9,7 +9,7 @@ tags:
 
 # <font color="#50EB97">Antene</font>
 
-Antena i njezina **visina** važnije su od uređaja. Osnovno pravilo zajednice: visina +
+Antena i njezina **visina** važniji su od uređaja. Osnovno pravilo zajednice: visina +
 linija optičke vidljivosti (LOS) + okomita montaža.
 
 ## Testirani i preporučeni modeli

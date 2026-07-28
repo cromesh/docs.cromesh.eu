@@ -2,15 +2,15 @@
 title: Odabir pravog uređaja za Meshtastic
 description: Vodič kroz najčešće mikrokontrolere i uređaje koji se koriste s Meshtasticom, uz usporedbu konkretnih modela korištenih u CroMesh zajednici.
 tags:
-  - Hardver
+  - Hardware
   - Uređaji
   - Početnici
 ---
 
-# <font color="#50EB97">Odabir Pravog Uređaja</font>
+# <font color="#50EB97">Odabir uređaja</font>
 
 Odabir pravog uređaja za Meshtastic ključan je korak za svakog početnika.  
-Iako na prvu svi uređaji djeluju slično, razlikuju se po **srcu svoje elektronike — mikrokontroleru (MCU)**.
+Iako na prvu svi uređaji djeluju slično, razlikuju se po **srcu svoje elektronike — mikrokontroleru (čipu)**.
 
 ## Prvo pravilo: nRF52 ili ESP32?
 
@@ -42,6 +42,7 @@ Za dublji pregled prednosti i mana pojedinog čipa vidi [ESP32](esp32.md),
 | **Heltec T114 / Mesh Node T114** | nRF52840 | Štedljiv, službeno podržan |
 | **Heltec MeshPocket** | nRF52840 | Kompaktna gotova varijanta |
 | **Station G2** | — | ⚠️ Zabilježeni isti problemi "gluhoće" prijema kao Heltec V4 s vanjskim antenama |
+| **SenseCAP Solar Node P1-Pro** | — | Gotov solarni node; potvrđeno besprijekorno radi u mreži |
 
 ### Mobilni / džepni
 
@@ -49,23 +50,23 @@ Za dublji pregled prednosti i mana pojedinog čipa vidi [ESP32](esp32.md),
 |---|---|---|
 | **LILYGO T-Echo / T-Echo Plus** | nRF52840 | E-ink, odličan battery life; Plus verzija: veća baterija, bolja antena, bolji standby. Popularan mobilni uređaj u zajednici |
 | **Seeed T1000-E (card tracker)** | nRF52840 | Dokazan i kao GPS tracker za kućne ljubimce (custom 3D print nosač) |
-| **Seeed Wio Tracker L1 / L1 Pro** | nRF52840 | GPS tracker; ⚠️ GPS bug u beta firmwareu (ispravljen u alphi) |
+| **Seeed Wio Tracker L1 / L1 Pro** | nRF52840 | GPS tracker; ⚠️ GPS bug u beta firmware-u (ispravljen u alphi) |
 | **Elecrow ThinkNode M1** | nRF52840 | GPS + e-paper; mala potrošnja, izdržljiv, prihvatljiva cijena — preporučen kao mobilni node |
 | **LILYGO T-Deck Plus** | ESP32-S3 | Samostalan uređaj s tipkovnicom i ekranom (ne treba mobitel); dostupan i iz EU (DE) skladišta |
-| **SenseCAP Solar Node P1-Pro** | — | Gotov solarni node; potvrđeno besprijekorno radi u mreži |
 
-> **Upozorenje — Heltec V4:** Revizija ploče **4.2** ima ozbiljan hardverski problem sa
+> **Upozorenje — Heltec V4:** Revizija ploče **4.2** ima ozbiljan hardware-ski problem sa
 > šumom (noise floor ~ −83 dB) — pojačava signal, ali i šum, pa je s većim vanjskim
 > antenama (40 cm+) praktički gluh; s malim antenama do 20 cm radi korektno. Revizija
 > **4.3** problem rješava (noise floor ~ −110 dB). Dodatno: pojačalo (PA) ne radi
-> ispravno na firmwareu starijem od **2.7.12** (koristi 2.7.13+), a za prijem postoji
+> ispravno na firmware-u starijem od **2.7.12** (koristi 2.7.13+), a za prijem postoji
 > LNA fix u novijoj alphi. Kod kupnje provjeri reviziju ploče; kvaliteta kontrole
 > proizvodnje Helteca je po iskustvima članova promjenjiva.
 
 ## Gdje kupiti
 
 - Službene stranice proizvođača (Heltec, LILYGO, Elecrow, Seeed, RAK) — uredno
-  dostavljaju u Hrvatsku; LILYGO ima i EU (njemačko) skladište.
+  dostavljaju u Hrvatsku; LILYGO i Seeed imaju i EU (njemačko) skladište, iz kojeg se
+  može naručiti direktno (potvrđeno iskustvom člana zajednice).
 - AliExpress — često znatno povoljnije (npr. Heltec V4 + kućište + 3000 mAh baterija +
   whip antena ≈ 52 €); [diykits.eu](https://www.diykits.eu) za gotove kitove.
 - **Tržnica Novo/Rabljeno** topic u Telegram grupi — članovi redovito prodaju/poklanjaju

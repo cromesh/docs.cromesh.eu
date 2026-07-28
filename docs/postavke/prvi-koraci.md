@@ -1,23 +1,23 @@
 ---
 title: Prvi koraci
-description: Postavljanje novog Meshtastic uređaja za CroMesh mrežu — flashanje firmwarea, instalacija aplikacije i osnovna konfiguracija korak po korak.
+description: Postavljanje novog Meshtastic uređaja za CroMesh mrežu — flashanje firmware-a, instalacija aplikacije i osnovna konfiguracija korak po korak.
 ---
 
 # Prvi koraci s novim uređajem
 
-## 1. Flashanje firmwarea
+## 1. Flashanje firmware-a
 
 1. Otvori **[flasher.meshtastic.org](https://flasher.meshtastic.org)** u Chromeu ili
    Edgeu (WebSerial ne radi u Firefoxu/Safariju).
 2. Spoji uređaj **USB kabelom** (provjeri da kabel prenosi podatke, ne samo punjenje).
-3. Odaberi model uređaja i **stabilnu (beta)** verziju firmwarea, zatim flashaj.
+3. Odaberi model uređaja i **stabilnu (beta)** verziju firmware-a, zatim flashaj.
 
-> **Upozorenje:** Nadogradnju firmwarea radi **preko USB-a, ne preko Bluetootha** — BT
+> **Upozorenje:** Nadogradnju firmware-a radi **preko USB-a, ne preko Bluetootha** — BT
 > update se u praksi pokazao nepouzdanim i nijedan proizvođač ga ne preporučuje.
 
 Iznimke potvrđene u zajednici:
 
-| Uređaj | Napomena o firmwareu |
+| Uređaj | Napomena o firmware-u |
 |---|---|
 | Heltec V4 | Pojačalo (PA) ne radi ispravno na verzijama starijim od **2.7.12** — koristi 2.7.13+; za popravak osjetljivosti prijema (LNA fix) postoji novija alpha. Vidi [Uređaji](../odabir-uredaja/index.md) |
 | Seeed Wio Tracker L1 | GPS bug u beta grani — ispravljen u novijoj alphi |
@@ -71,4 +71,4 @@ Redoslijedom:
 - Za solarne/krovne nodeove: isključi WiFi i BT u potpunosti i upravljaj nodeom preko
   **Remote Admin** funkcije (PKI autorizacija udaljenog nodea) — sporije je, ali štedi
   struju i radi kroz mesh. Poseban admin kanal više nije potreban na novijim verzijama
-  firmwarea.
+  firmware-a.

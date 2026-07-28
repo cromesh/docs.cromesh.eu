@@ -1,6 +1,6 @@
 ---
 title: Uloge i imenovanje nodeova
-description: Preporučene Meshtastic uloge (CLIENT, ROUTER, CLIENT_MUTE, CLIENT_BASE) u CroMesh mreži i konvencije imenovanja nodeova.
+description: Preporučene Meshtastic uloge (CLIENT, ROUTER, CLIENT_MUTE) u CroMesh mreži i konvencije imenovanja nodeova. CLIENT_BASE se više ne koristi (zastario protokol).
 ---
 
 # Uloge i imenovanje nodeova
@@ -14,7 +14,7 @@ ovim pravilima:
 |---|---|---|
 | `CLIENT` | **Zadana uloga za gotovo sve nodeove**, uključujući krovne i stupne nodeove bez značajne elevacije | Normalno retransmitira pakete |
 | `CLIENT_MUTE` | Mobilni uređaji (džepni, u autu) i sekundarni kućni nodeovi | Šalje i prima, ali **ne retransmitira** — ključno za smanjenje zagušenja kad imaš više uređaja na maloj udaljenosti |
-| `CLIENT_BASE` | Glavni kućni node kada imaš više uređaja | Kombiniraj s označavanjem kućnih nodeova kao **Favorites** da ne izgubiš hop prema glavnom nodeu |
+| `CLIENT_BASE` | ❌ Ne koristi se | Protokol na kojem se temeljila ova uloga je zastario |
 | `ROUTER` | **Isključivo infrastrukturni nodeovi na istaknutim pozicijama** (brda, tornjevi, visoke zgrade) s dobrom antenom | Retransmitira bez nasumične odgode — "šiba dalje odmah". U praksi razlika prema CLIENT-u na običnim pozicijama je zanemariva, zato ROUTER nema smisla u stanu |
 | `REPEATER` | ❌ Ne koristi se u CroMesh mreži | Uklonjena iz novijih verzija aplikacije; povremeno se na mreži pojavi node s tom ulogom konfiguriran starom aplikacijom |
 
@@ -51,10 +51,10 @@ Stav iskusnih radioamatera u zajednici:
   pozivni znak koji stvarno posjeduješ** (provjerivo u HAKOM evidenciji dozvola).
   Blok `9A1**` rezerviran je za klubove odnosno zahtijeva posebne uvjete.
 
-### Zamjena hardvera
+### Zamjena hardware-a
 
 Kod prelaska na novi uređaj **ne pokušavaj prenijeti stari identitet**: NodeID je vezan
-uz hardver i bit će novi, pa forsiranje starih ključeva vodi u *key mismatch* /
-*device spoofed* upozorenja kod drugih korisnika. Preporuka zajednice: novi hardver =
+uz hardware i bit će novi, pa forsiranje starih ključeva vodi u *key mismatch* /
+*device spoofed* upozorenja kod drugih korisnika. Preporuka zajednice: novi hardware =
 novi ID i ključevi + novi short name (dovoljna je i varijacija velikog/malog slova);
 long name slobodno zadrži.

@@ -5,10 +5,10 @@ description: Preporučene LoRa postavke za CroMesh mrežu — regija, preset, br
 
 # LoRa Postavke
 
-- **Region**: European union 868MHz  
+- **Region**: European Union 868MHz  
 - **Preset**: Long Range - Fast  
-- **Number of hops**:za infrastrukturalni čvor 4 (zadano postavka je 3, do 5 je u redu)  
-- **Number of hops**: za osobni/chat/mobilni čvor 6 (do 7 je u redu po želji)  
+- **Number of hops**:za infrastrukturalni node 4 (zadano postavka je 3, do 5 je u redu)  
+- **Number of hops**: za osobni/chat/mobilni node 6 (do 7 je u redu po želji)  
 - **Ignore MQTT**: Uključeno
 - **OK to MQTT**: Uključeno  
   

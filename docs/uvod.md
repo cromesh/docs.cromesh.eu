@@ -10,18 +10,18 @@ hide:
 ---
 # <font color="#50EB97">Uvod u Meshtastic</font>
 
-Meshtastic je open-source projekt koji omogućuje dalekosežnu, niskopotrošnu, mesh komunikaciju koristeći jeftin hardver. Primarno je osmišljen za aktivnosti na otvorenom, hitne situacije i druge scenarije u kojima tradicionalna komunikacijska infrastruktura nije dostupna.
+Meshtastic je open-source projekt koji omogućuje dalekosežnu, niskopotrošnu, mesh komunikaciju koristeći jeftin hardware. Primarno je osmišljen za aktivnosti na otvorenom, hitne situacije i druge scenarije u kojima tradicionalna komunikacijska infrastruktura nije dostupna.
 
 ## Glavne Komponente
 
-### Hardver
+### Hardware
 
 - **LoRa moduli**: Meshtastic koristi LoRa (Long Range) module koji mogu prenositi podatke na udaljenosti od nekoliko kilometara uz minimalnu potrošnju energije. 
-- **Mikrokontroleri**: LoRa moduli obično su integrirani s mikrokontrolerima koji obrađuju podatke i upravljaju komunikacijom.
+- **Mikrokontroleri**: LoRa moduli obično su integrirani s mikrokontrolerima koji obrađuju podatke te upravljaju komunikacijom.
 
-### Firmver
+### Firmware
 
-[Meshtastic firmver](https://github.com/meshtastic/firmware) instalira se na LoRa uređaje i omogućuje rad i konfiguraciju uređaja. 
+[Meshtastic firmware](https://github.com/meshtastic/firmware) instalira se na LoRa uređaje i omogućuje rad i konfiguraciju uređaja. 
 
 ### Mobilne Aplikacije
 
@@ -32,12 +32,12 @@ Meshtastic je open-source projekt koji omogućuje dalekosežnu, niskopotrošnu, 
 
 ### Formiranje Mreže
 
-- **Postavljanje čvorova**: Svaki LoRa modul djeluje kao čvor u mreži. Kada se uključi, automatski komunicira s obližnjim čvorovima i time formira mesh.  
-- **Samoobnavljanje i skalabilnost**: Mreža se može automatski reorganizirati ako neki čvor prestane raditi, čineći sustav otpornim i proširivim s velikim brojem čvorova.
+- **Postavljanje nodeova**: Svaki LoRa modul djeluje kao node u mreži. Kada se uključi, automatski komunicira s obližnjim nodeovima i time formira mesh.  
+- **Samoobnavljanje i skalabilnost**: Mreža se može automatski reorganizirati ako neki node prestane raditi, čineći sustav otpornim i proširivim s velikim brojem nodeova.
 
 ### Komunikacija
 
-- **Usmjeravanje poruka**: Kada se poruka pošalje s jednog čvora, ona se prenosi kroz mrežu dok ne dosegne svoje odredište ovisno o hop postavci. 
+- **Usmjeravanje poruka**: Kada se poruka pošalje s jednog nodea, ona se prenosi kroz mrežu dok ne dosegne svoje odredište ovisno o hop postavci. 
 - **Enkripcija**: Poruke su šifrirane radi zaštite privatnosti i sigurnosti unutar mreže.
 
 ### Domet i Energetska Učinkovitost
@@ -61,14 +61,14 @@ Lokalne zajednice mogu postaviti vlastite mreže za događanja, festivale ili po
 
 ## Kako Početi
 
-### Postavljanje Hardvera
+### Postavljanje Hardware-a
 
-Kupite [kompatibilan](https://meshtastic.org/docs/hardware/devices/) LoRa uređaj i [instalirajte Meshtastic firmver](https://flasher.meshtastic.org/) prema službenim uputama.
+Kupite [kompatibilan](https://meshtastic.org/docs/hardware/devices/) LoRa uređaj i [instalirajte Meshtastic firmware](https://flasher.meshtastic.org/) prema službenim uputama.
 
 ### Konfiguracija
 
-Koristite Meshtastic mobilnu aplikaciju ili web sučelje za konfiguraciju čvorova, postavljanje enkripcijskih ključeva i upravljanje mrežnim postavkama.
+Koristite Meshtastic mobilnu aplikaciju ili web sučelje za konfiguraciju nodeova, postavljanje enkripcijskih ključeva i upravljanje mrežnim postavkama.
 
 ### Postavljanje u Rad
 
-Postavite čvorove na željeno područje i započnite komunikaciju putem mreže.
+Postavite nodeove na željeno područje i započnite komunikaciju putem mreže.

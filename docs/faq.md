@@ -100,8 +100,8 @@ RAK4631 s GNSS + BME280 senzorima ≈ 40–45 h na jednoj 18650. Za trajni rad �
 
 ### Mijenjam uređaj — mogu li prenijeti stari identitet (ID, ključeve)?
 
-Ne preporučuje se — NodeID je vezan uz hardver i forsiranje starih ključeva izaziva
-*key mismatch* upozorenja. Novi hardver = novi identitet. Vidi
+Ne preporučuje se — NodeID je vezan uz hardware i forsiranje starih ključeva izaziva
+*key mismatch* upozorenja. Novi hardware = novi identitet. Vidi
 [Uloge i imenovanje](mreza/uloge-i-imenovanje.md).
 
 ### Što je s MeshCore? Zašto smo na Meshtasticu?
@@ -109,7 +109,7 @@ Ne preporučuje se — NodeID je vezan uz hardver i forsiranje starih ključeva 
 MeshCore je alternativni protokol s drugačijim (usmjerenim) rutiranjem preko namjenskih
 repeatera — teoretski bolji za guste urbane mreže. Stav zajednice: **ostajemo na
 Meshtasticu** jer (a) svi novi uređaji dolaze s Meshtasticom "out of the box", dok
-MeshCore traži reflash svega, (b) hardver je isti pa MeshCore ne rješava naš stvarni
+MeshCore traži reflash svega, (b) hardware je isti pa MeshCore ne rješava naš stvarni
 problem — domet i rijetku pokrivenost, (c) čak i mala promjena (MediumFast test)
 pokazala je koliko je teško koordinirati prelazak cijele mreže. Pojedini članovi
 paralelno eksperimentiraju s MeshCoreom (postoji zaseban topic) i to je dobrodošlo.

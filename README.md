@@ -164,3 +164,8 @@ budući da su svi prijašnji naslovi i dalje dostupni kao stavke u sidebaru.
   stranici `hardver/index.md` (bila je u navigaciji, ali ne i na samoj stranici)
 - Smanjena veličina fonta napomene o zaštitnom znaku (Meshtastic®) u footeru
   (`<small>` oznaka u `includes/mkdocs.md`)
+
+## v3.2.2
+
+- Tekst dokumentacije lektoriran (terminologija i gramatika)
+- Lekturu odradio kolega Damir.

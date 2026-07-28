@@ -2,7 +2,7 @@
 title: Punjenje i oživljavanje 18650 Li-ion ćelija
 description: Kratke upute za sigurno oživljavanje i punjenje duboko ispražnjenih 18650 ćelija.
 tags:
-  - hardver
+  - hardware
   - baterije
 ---
 

@@ -51,7 +51,7 @@ postaju **javno vidljivi** na [map.cromesh.eu](https://map.cromesh.eu):
 - **Long Name / Short Name** tvog nodea (naziv koji sam odabireš — može, ali ne mora,
   sadržavati tvoje ime)
 - **GPS pozicija** nodea (točna ili ručno postavljena fiksna pozicija)
-- Tehnički podaci o nodeu: verzija firmwarea, razina baterije, metrika signala
+- Tehnički podaci o nodeu: verzija firmware-a, razina baterije, metrika signala
 - Poruke poslane na javnom kanalu `LongFast` (vidljive u `/chat` na karti)
 
 Ovi podaci **nisu privatni** — svatko na internetu može pristupiti karti i vidjeti ih.

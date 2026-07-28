@@ -4,7 +4,7 @@ description: Preporučene zadane postavke koje savjetujemo svima koji koriste Me
 tags:
   - Početnici
   - Konfiguracija
-  - Klijent
+  - Client
   - MQTT
 ---
 
@@ -14,7 +14,7 @@ Najnovije stabilno izdanje — čak i ako je označeno kao *Beta* — obično je
 
 # Opće Preporuke
 
-- Zadržite **automatske beacon signale** (telemetrija i pozicija) na **6 sati ili više**, posebno za stacionarne čvorove.  
+- Zadržite **automatske beacon signale** (telemetrija i pozicija) na **6 sati ili više**, posebno za stacionarne nodeove.  
 - Ako se krećete, omogućite **Smart Position** s minimum interval: **10 minuta**
   - Distance trigger: **100–130 metara**  
 

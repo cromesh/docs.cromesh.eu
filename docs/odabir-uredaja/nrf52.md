@@ -3,7 +3,7 @@ title: nrf52
 description: Pregled nRF52 čipa — najštedljivija opcija za baterijske uređaje.
 ---
 
-# nRF52 — Učinkovitost kao Prioritet
+# nRF52 — učinkovitost kao prioritet
 
 Ako vam je **trajanje baterije** najvažnije, **nRF52** je pravi izbor.  
 Ovaj moderniji čip je znatno **štedljiviji od ESP32** i idealan za uređaje koji će raditi na baterije dulje vrijeme.
@@ -11,7 +11,7 @@ Ovaj moderniji čip je znatno **štedljiviji od ESP32** i idealan za uređaje ko
 Glavna razlika je što **nRF52 nema ugrađen WiFi**, već samo **Bluetooth**.  
 Zbog toga je jednostavniji, ali se ne može izravno povezati na WiFi mrežu.
 
-## Primjeri Uređaja
+## Primjeri uređaja
 
 - **LILYGO® TTGO T-Echo**  
 - **RAK4631 Core modul**

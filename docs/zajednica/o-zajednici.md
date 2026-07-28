@@ -48,7 +48,7 @@ Grupa je forum s tematskim topicima. Najvažniji za snalaženje:
 |---|---|
 | Chat | Opća rasprava (offtopic izričito dozvoljen) |
 | Hardware preporuke | Preporuke uređaja, posebno za početnike |
-| Software | Softverska i firmware problematika |
+| Software | Software i firmware problematika |
 | Naši kanali | Službene poveznice kanala mreže |
 | Testiranje opreme / Debug opreme | Tx/Rx testovi novih nodeova, rješavanje problema |
 | Routeri | Infrastrukturni nodeovi |

@@ -13,7 +13,7 @@ konfiguracija odstupa od tablice ispod, nećeš (pouzdano) komunicirati s ostatk
 | Parametar | Vrijednost | Napomena |
 |---|---|---|
 | Regija (LoRa Region) | `EU_868` | Frekvencija primarnog kanala: 869,525 MHz |
-| Modem preset | `LongFast` | Zadana (default) postavka firmwarea |
+| Modem preset | `LongFast` | Zadana (default) postavka firmware-a |
 | Primarni kanal | `LongFast` (javni, zadani ključ) | Glavni kanal za komunikaciju cijele mreže |
 | Sekundarni kanal | `cromesh.eu` | Kanal zajednice — vidi [Kanali](kanali.md) |
 | MQTT server | `mqtt.cromesh.eu` | Alternativa: `mqtt.meshtastic.org` (oba rade za kartu) |
@@ -54,7 +54,7 @@ uređaja:
    izmjenjuju i održavaju node list živim bez spamanja kanala.
 3. Ne šalji masovno traceroute pakete — svaki traceroute višestruko opterećuje mrežu.
 
-Detalji o ulogama nodeova (CLIENT, ROUTER, CLIENT_BASE...) nalaze se na stranici
+Detalji o ulogama nodeova (CLIENT, CLIENT_MUTE, ROUTER...) nalaze se na stranici
 [Uloge i imenovanje](uloge-i-imenovanje.md).
 
 ## Regulatorni okvir (ukratko)
