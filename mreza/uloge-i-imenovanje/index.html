@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Preporučene Meshtastic uloge (CLIENT, ROUTER, CLIENT_MUTE, CLIENT_BASE) u CroMesh mreži i konvencije imenovanja nodeova.">
+        <meta name="description" content="Preporučene Meshtastic uloge (CLIENT, ROUTER, CLIENT_MUTE) u CroMesh mreži i konvencije imenovanja nodeova. CLIENT_BASE se više ne koristi (zastario protokol).">
       
       
         <meta name="author" content="CroMesh zajednica">
@@ -1752,10 +1752,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#zamjena-hardvera" class="md-nav__link">
+  <a href="#zamjena-hardware-a" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zamjena hardvera
+        Zamjena hardware-a
       
     </span>
   </a>
@@ -1855,10 +1855,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#zamjena-hardvera" class="md-nav__link">
+  <a href="#zamjena-hardware-a" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zamjena hardvera
+        Zamjena hardware-a
       
     </span>
   </a>
@@ -1928,8 +1928,8 @@ ovim pravilima:</p>
 </tr>
 <tr>
 <td><code>CLIENT_BASE</code></td>
-<td>Glavni kućni node kada imaš više uređaja</td>
-<td>Kombiniraj s označavanjem kućnih nodeova kao <strong>Favorites</strong> da ne izgubiš hop prema glavnom nodeu</td>
+<td>❌ Ne koristi se</td>
+<td>Protokol na kojem se temeljila ova uloga je zastario</td>
 </tr>
 <tr>
 <td><code>ROUTER</code></td>
@@ -1975,10 +1975,10 @@ postavljeno u zajednici) — dolje je opisana ustaljena praksa.</p>
   pozivni znak koji stvarno posjeduješ</strong> (provjerivo u HAKOM evidenciji dozvola).
   Blok <code>9A1**</code> rezerviran je za klubove odnosno zahtijeva posebne uvjete.</li>
 </ul>
-<h3 id="zamjena-hardvera">Zamjena hardvera<a class="headerlink" href="#zamjena-hardvera" title="Permanent link">&para;</a></h3>
+<h3 id="zamjena-hardware-a">Zamjena hardware-a<a class="headerlink" href="#zamjena-hardware-a" title="Permanent link">&para;</a></h3>
 <p>Kod prelaska na novi uređaj <strong>ne pokušavaj prenijeti stari identitet</strong>: NodeID je vezan
-uz hardver i bit će novi, pa forsiranje starih ključeva vodi u <em>key mismatch</em> /
-<em>device spoofed</em> upozorenja kod drugih korisnika. Preporuka zajednice: novi hardver =
+uz hardware i bit će novi, pa forsiranje starih ključeva vodi u <em>key mismatch</em> /
+<em>device spoofed</em> upozorenja kod drugih korisnika. Preporuka zajednice: novi hardware =
 novi ID i ključevi + novi short name (dovoljna je i varijacija velikog/malog slova);
 long name slobodno zadrži.</p>
 <hr />

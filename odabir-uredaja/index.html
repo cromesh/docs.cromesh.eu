@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#odabir-pravog-ureaja" class="md-skip">
+        <a href="#odabir-ureaja" class="md-skip">
           Preskoči na sadržaj
         </a>
       
@@ -1785,7 +1785,7 @@
       
       
       
-        <a href="../tags/#tag:hardver" class="md-tag">Hardver</a>
+        <a href="../tags/#tag:hardware" class="md-tag">Hardware</a>
       
     
       
@@ -1822,9 +1822,9 @@
   
 
 
-<h1 id="odabir-pravog-ureaja"><font color="#50EB97">Odabir Pravog Uređaja</font><a class="headerlink" href="#odabir-pravog-ureaja" title="Permanent link">&para;</a></h1>
+<h1 id="odabir-ureaja"><font color="#50EB97">Odabir uređaja</font><a class="headerlink" href="#odabir-ureaja" title="Permanent link">&para;</a></h1>
 <p>Odabir pravog uređaja za Meshtastic ključan je korak za svakog početnika.<br />
-Iako na prvu svi uređaji djeluju slično, razlikuju se po <strong>srcu svoje elektronike — mikrokontroleru (MCU)</strong>.</p>
+Iako na prvu svi uređaji djeluju slično, razlikuju se po <strong>srcu svoje elektronike — mikrokontroleru (čipu)</strong>.</p>
 <h2 id="prvo-pravilo-nrf52-ili-esp32">Prvo pravilo: nRF52 ili ESP32?<a class="headerlink" href="#prvo-pravilo-nrf52-ili-esp32" title="Permanent link">&para;</a></h2>
 <p>Najvažnija odluka pri kupnji nije brand nego <strong>čip</strong>:</p>
 <table>
@@ -1909,6 +1909,11 @@ rješenje".</p>
 <td>—</td>
 <td>⚠️ Zabilježeni isti problemi "gluhoće" prijema kao Heltec V4 s vanjskim antenama</td>
 </tr>
+<tr>
+<td><strong>SenseCAP Solar Node P1-Pro</strong></td>
+<td>—</td>
+<td>Gotov solarni node; potvrđeno besprijekorno radi u mreži</td>
+</tr>
 </tbody>
 </table>
 <h3 id="mobilni-dzepni">Mobilni / džepni<a class="headerlink" href="#mobilni-dzepni" title="Permanent link">&para;</a></h3>
@@ -1934,7 +1939,7 @@ rješenje".</p>
 <tr>
 <td><strong>Seeed Wio Tracker L1 / L1 Pro</strong></td>
 <td>nRF52840</td>
-<td>GPS tracker; ⚠️ GPS bug u beta firmwareu (ispravljen u alphi)</td>
+<td>GPS tracker; ⚠️ GPS bug u beta firmware-u (ispravljen u alphi)</td>
 </tr>
 <tr>
 <td><strong>Elecrow ThinkNode M1</strong></td>
@@ -1946,26 +1951,22 @@ rješenje".</p>
 <td>ESP32-S3</td>
 <td>Samostalan uređaj s tipkovnicom i ekranom (ne treba mobitel); dostupan i iz EU (DE) skladišta</td>
 </tr>
-<tr>
-<td><strong>SenseCAP Solar Node P1-Pro</strong></td>
-<td>—</td>
-<td>Gotov solarni node; potvrđeno besprijekorno radi u mreži</td>
-</tr>
 </tbody>
 </table>
 <blockquote>
-<p><strong>Upozorenje — Heltec V4:</strong> Revizija ploče <strong>4.2</strong> ima ozbiljan hardverski problem sa
+<p><strong>Upozorenje — Heltec V4:</strong> Revizija ploče <strong>4.2</strong> ima ozbiljan hardware-ski problem sa
 šumom (noise floor ~ −83 dB) — pojačava signal, ali i šum, pa je s većim vanjskim
 antenama (40 cm+) praktički gluh; s malim antenama do 20 cm radi korektno. Revizija
 <strong>4.3</strong> problem rješava (noise floor ~ −110 dB). Dodatno: pojačalo (PA) ne radi
-ispravno na firmwareu starijem od <strong>2.7.12</strong> (koristi 2.7.13+), a za prijem postoji
+ispravno na firmware-u starijem od <strong>2.7.12</strong> (koristi 2.7.13+), a za prijem postoji
 LNA fix u novijoj alphi. Kod kupnje provjeri reviziju ploče; kvaliteta kontrole
 proizvodnje Helteca je po iskustvima članova promjenjiva.</p>
 </blockquote>
 <h2 id="gdje-kupiti">Gdje kupiti<a class="headerlink" href="#gdje-kupiti" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Službene stranice proizvođača (Heltec, LILYGO, Elecrow, Seeed, RAK) — uredno
-  dostavljaju u Hrvatsku; LILYGO ima i EU (njemačko) skladište.</li>
+  dostavljaju u Hrvatsku; LILYGO i Seeed imaju i EU (njemačko) skladište, iz kojeg se
+  može naručiti direktno (potvrđeno iskustvom člana zajednice).</li>
 <li>AliExpress — često znatno povoljnije (npr. Heltec V4 + kućište + 3000 mAh baterija +
   whip antena ≈ 52 €); <a href="https://www.diykits.eu">diykits.eu</a> za gotove kitove.</li>
 <li><strong>Tržnica Novo/Rabljeno</strong> topic u Telegram grupi — članovi redovito prodaju/poklanjaju
