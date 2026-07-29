@@ -1,11 +1,11 @@
 ---
-title: Hardware dodaci
+title: Hardware
 description: Antene, montaža i zaštita, 3D print kućišta i solarni uređaji za Meshtastic nodeove.
 tags:
   - Hardware
 ---
 
-# <font color="#50EB97">Hardware dodaci</font>
+# <font color="#50EB97">Hardware</font>
 
 Sve što ti treba oko fizičke izvedbe nodea, van samog izbora uređaja: antene, montaža
 i zaštita od vremenskih uvjeta, 3D-printani nosači i kućišta te solarno napajanje za
