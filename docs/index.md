@@ -45,7 +45,8 @@ decentraliziranu, off-grid LoRa mesh mrežu na području Republike Hrvatske. Mre
 
     ---
 
-    Ako nemaš uređaj kupi gotov uređaj i imat ćeš sve što ti treba.
+    Ako nemaš uređaj odaberi koji ti odgovara, i kupi, recimo za početak neki od
+    gotovih KIT-ova.
 
     [:octicons-arrow-right-24: Odabir Uređaja](odabir-uredaja/index.md)
 

@@ -19,15 +19,17 @@ Sadržaj ove dokumentacije dostupan je pod licencom [Creative Commons Imenovanje
 ## Verzije
 
 ```
-v2       2026-07-17  Prve tematske sekcije (Hardver, Mreža, Zajednica, FAQ)
-└─ v3    2026-07-22  Restrukturirana navigacija (13 → 9 top-level tabova)
-   └─ v3.1            Pretraga, opisi stranica, logo, restrukturiran Uvod
-      └─ v3.1.1        Copyright footer, ispravci
-         └─ v3.1.2      Vodič: oživljavanje LiIon
-            └─ v3.1.3    Licenca CC BY-SA, struktura u README
-               └─ v3.2    Tags plugin, trademark napomena, MQTT vodič dovršen
-                  └─ v3.2.1  Manji ispravci sadržaja i footera
-                     └─ v3.2.2  Lektura teksta (trenutna verzija)
+v2   2026-07-17  Prve tematske sekcije (Hardver, Mreža, Zajednica, FAQ)
+
+v3   2026-07-22  Restrukturirana navigacija (13 → 9 top-level tabova)
+├─ v3.1            Pretraga, opisi stranica, logo, restrukturiran Uvod
+│  ├─ v3.1.1        Copyright footer, ispravci
+│  ├─ v3.1.2        Vodič: oživljavanje LiIon
+│  └─ v3.1.3        Licenca CC BY-SA, struktura u README
+└─ v3.2            Tags plugin, trademark napomena, MQTT vodič dovršen
+   ├─ v3.2.1        Manji ispravci sadržaja i footera
+   ├─ v3.2.2        Lektura teksta (Damir)
+   └─ v3.2.3        Manje strukturne izmjene, nastavak lekture (trenutna verzija)
 ```
 
 ## Changelog
@@ -132,7 +134,14 @@ Prve tematske sekcije dodane u dokumentaciju. Doprinos: **9A3CYN, 9A3AVX, 9A3VEX
 - Smanjena veličina fonta napomene o zaštitnom znaku (Meshtastic®) u footeru
   (`<small>` oznaka u `includes/mkdocs.md`)
 
-### v3.2.2 — trenutna verzija
+### v3.2.2
 
 - Tekst dokumentacije lekturiran (terminologija i gramatika)
 - Lekturu odradio kolega Damir
+
+### v3.2.3 — trenutna verzija
+
+- Dodane postavke kanala `cromesh.eu` (kanal 1) u `postavke/channel-postavke.md` —
+  Uplink i Downlink isključeni
+- Izmijenjen tekst kartice "Odabir uređaja" na naslovnici
+- Nastavljena lektura teksta (Damir)
