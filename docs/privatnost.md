@@ -48,10 +48,10 @@ se putem gornjih kontakata — administratori će uputiti zahtjev nadležnoj oso
 Kad uređaj spojiš na `mqtt.cromesh.eu` i omogućiš prikaz na karti, sljedeći podaci
 postaju **javno vidljivi** na [map.cromesh.eu](https://map.cromesh.eu):
 
-- **Long Name / Short Name** tvog nodea (naziv koji sam odabireš — može, ali ne mora,
+- **Long Name / Short Name** tvog node-a (naziv koji sam odabireš — može, ali ne mora,
   sadržavati tvoje ime)
-- **GPS pozicija** nodea (točna ili ručno postavljena fiksna pozicija)
-- Tehnički podaci o nodeu: verzija firmware-a, razina baterije, metrika signala
+- **GPS pozicija** node-a (točna ili ručno postavljena fiksna pozicija)
+- Tehnički podaci o node-u: verzija firmware-a, razina baterije, metrika signala
 - Poruke poslane na javnom kanalu `LongFast` (vidljive u `/chat` na karti)
 
 Ovi podaci **nisu privatni** — svatko na internetu može pristupiti karti i vidjeti ih.
@@ -83,7 +83,7 @@ ili druge treće servise, provjeri njihove uvjete — CroMesh nema kontrolu nad 
 
 ## Razdoblje čuvanja
 
-Nodeovi koji se ne čuju **7 dana** automatski se uklanjaju s karte. Isključivanje
+Node-ovi koji se ne čuju **7 dana** automatski se uklanjaju s karte. Isključivanje
 prijave pozicije sprječava ponovni prikaz.
 
 ## Tvoja prava

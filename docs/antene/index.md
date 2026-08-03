@@ -17,7 +17,7 @@ linija optičke vidljivosti (LOS) + okomita montaža.
 | Antena | Dobitak | Cijena (okvirno) | Iskustvo zajednice |
 |---|---|---|---|
 | **MikroTik 868 Omni** | 6,5 dBi | ~50 € | **Najbolji rezultati u praksi** — referentna antena mreže (višestruko uspoređivana s drugima na istim pozicijama). Dostupna u HR (getic.com, adm.hr) |
-| **Interline Horizon 868 Helium** | 8 dBi | — | Solidna, korištena na više nodeova; dostupna u HR (uzishop.hr, makromedia.hr) |
+| **Interline Horizon 868 Helium** | 8 dBi | — | Solidna, korištena na više node-ova; dostupna u HR (uzishop.hr, makromedia.hr) |
 | **Alfa 868 omni / kit** | 5–10 dBi | — | Renomirani proizvođač; kvaliteta opravdava cijenu |
 | **TX868-BLG-40** | — | ~13 € | Povoljna opcija |
 | **Gizont (AliExpress)** | — | jeftino | Reputabilniji kineski proizvođač; 20 cm verzija dobra za T-Echo/mobilne; 55 cm verzije OK |
@@ -49,7 +49,7 @@ linija optičke vidljivosti (LOS) + okomita montaža.
 2. **Što više** — iznad sljemena krova; visina tipično donosi više od skupljeg uređaja.
 3. Dijagram zračenja: viši dobitak = energija usmjerena horizontalno umjesto u nebo —
    zato duža antena "radi" kao veća snaga.
-4. Konektore i spojeve **zabrtvi** — vidi [Montaža i zaštita](../hardver/montaza-i-zastita.md).
+4. Zabrtvi konektore i spojeve! — vidi [Montaža i zaštita](../hardver/montaza-i-zastita.md).
 
 ## Zakonsko ograničenje snage (ERP)
 
@@ -65,6 +65,6 @@ linija optičke vidljivosti (LOS) + okomita montaža.
 - Svaki dodatni adapter i metar lošeg kabela = gubitak; na 868 MHz koristi što kraći
   kvalitetan kabel.
 
-Kurirana tablica preporučenih pigtailova i kabela s provjerenim linkovima trenutno se
+Tablica preporučenih pigtailova i kabela s provjerenim linkovima trenutno se
 ne održava — provjeri topic **Hardware preporuke** u Telegram grupi za trenutne
 preporuke i iskustva zajednice.

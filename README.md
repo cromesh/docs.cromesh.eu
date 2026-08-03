@@ -144,4 +144,8 @@ Prve tematske sekcije dodane u dokumentaciju. Doprinos: **9A3CYN, 9A3AVX, 9A3VEX
 - Dodane postavke kanala `cromesh.eu` (kanal 1) u `postavke/channel-postavke.md` —
   Uplink i Downlink isključeni
 - Izmijenjen tekst kartice "Odabir uređaja" na naslovnici
-- Nastavljena lektura teksta (Damir)
+- Nastavljena lektura teksta (Damir) — gramatika, interpunkcija i red riječi na više
+  stranica (MQTT postavke, Zaključak, Hardver, Antene)
+- Svi padežni oblici riječi "node" sada su dosljedno pisani s crticom
+  (`node-a`, `node-u`, `node-om`, `node-ovi`, `node-ove`, `node-ova`, `node-ovima`)
+  kroz cijelu dokumentaciju

@@ -1,13 +1,13 @@
 ---
 title: Montaža i zaštita
-description: Vanjska montaža Meshtastic nodeova — brtvljenje, borba protiv kondenzacije, gromobranska zaštita i dozvole za postavljanje.
+description: Vanjska montaža Meshtastic node-ova — brtvljenje, borba protiv kondenzacije, gromobranska zaštita i dozvole za postavljanje.
 ---
 
-# Montaža i zaštita vanjskih nodeova
+# Montaža i zaštita vanjskih node-ova
 
 ## Brtvljenje
 
-Voda je najčešći ubojica vanjskih nodeova. Provjerene metode iz zajednice:
+Voda je najčešći ubojica vanjskih node-ova. Provjerene metode iz zajednice:
 
 - **Antenski konektori:** omotaj **3M samovulkanizirajućom (rastezljivom gumenom)
   električarskom trakom** — rastezanjem se lijepi sama za sebe i brtvi. Obuhvati i dio
@@ -44,9 +44,9 @@ Ispravna zaštita prema iskustvima zajednice:
 
 - Presudni su **visina i linija optičke vidljivosti** — metar više na stupu zna donijeti
   više od promjene antene.
-- Izbjegavaj neposrednu blizinu drugih odašiljača: zabilježen je slučaj nodea kojeg je
+- Izbjegavaj neposrednu blizinu drugih odašiljača: zabilježen je slučaj node-a kojeg je
   zaglušivao UKV repetitor na istoj lokaciji svaki put kad bi se aktivirao.
-- Za udaljene solarne nodeove planiraj upravljanje unaprijed (Remote Admin, isključeni
+- Za udaljene solarne node-ove planiraj upravljanje unaprijed (Remote Admin, isključeni
   WiFi/BT) — vidi [Prvi koraci](../postavke/prvi-koraci.md).
 
 ## Dozvole za postavljanje

@@ -14,7 +14,7 @@ Najnovije stabilno izdanje — čak i ako je označeno kao *Beta* — obično je
 
 # Opće Preporuke
 
-- Zadržite **automatske beacon signale** (telemetrija i pozicija) na **6 sati ili više**, posebno za stacionarne nodeove.  
+- Zadržite **automatske beacon signale** (telemetrija i pozicija) na **6 sati ili više**, posebno za stacionarne node-ove.  
 - Ako se krećete, omogućite **Smart Position** s minimum interval: **10 minuta**
   - Distance trigger: **100–130 metara**  
 

@@ -55,7 +55,7 @@ postavkama sustava i ponovno ga upariti.
 ## Zajedničko svima
 
 Sve četiri koriste isti temeljni protokol i istu logiku konfiguracije (LoRa regija,
-kanali, uloge nodeova), pa QR kod/URL za pridruživanje kanalu generiran u jednoj
+kanali, uloge node-ova), pa QR kod/URL za pridruživanje kanalu generiran u jednoj
 aplikaciji radi i u ostalima. **PKC (Public Key Cryptography) enkripcija za direktne
 poruke** aktivno se uvodi u svim clientima, ali brzina uvođenja varira. Najčešći opći
 problem korisnika: nepodudaranje verzije firmware-a i verzije aplikacije/web clienta —

@@ -60,7 +60,7 @@ Redoslijedom:
 
 > **Napomena:** Ako nitko ne odgovara, najvjerojatnije **nisi u dometu** postojeće
 > mreže — to je trenutno glavni izazov CroMesha, ne greška u tvojim postavkama. Provjeri
-> na [karti](https://map.cromesh.eu) gdje su najbliži nodeovi. Domet presudno ovisi o
+> na [karti](https://map.cromesh.eu) gdje su najbliži node-ovi. Domet presudno ovisi o
 > visini antene i liniji optičke vidljivosti; sa stock antenom u urbanoj sredini
 > realno je 1–2 km.
 
@@ -68,7 +68,7 @@ Redoslijedom:
 
 - Uključi **power save**, isključi GPS, Bluetooth i WiFi kada ih ne trebaš —
   iskustveno, uređaj s 2× 18650 tako gubi ~10 % dnevno.
-- Za solarne/krovne nodeove: isključi WiFi i BT u potpunosti i upravljaj nodeom preko
-  **Remote Admin** funkcije (PKI autorizacija udaljenog nodea) — sporije je, ali štedi
+- Za solarne/krovne node-ove: isključi WiFi i BT u potpunosti i upravljaj node-om preko
+  **Remote Admin** funkcije (PKI autorizacija udaljenog node-a) — sporije je, ali štedi
   struju i radi kroz mesh. Poseban admin kanal više nije potreban na novijim verzijama
   firmware-a.

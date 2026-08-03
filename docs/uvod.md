@@ -32,12 +32,12 @@ Meshtastic je open-source projekt koji omogućuje dalekosežnu, niskopotrošnu, 
 
 ### Formiranje Mreže
 
-- **Postavljanje nodeova**: Svaki LoRa modul djeluje kao node u mreži. Kada se uključi, automatski komunicira s obližnjim nodeovima i time formira mesh.  
-- **Samoobnavljanje i skalabilnost**: Mreža se može automatski reorganizirati ako neki node prestane raditi, čineći sustav otpornim i proširivim s velikim brojem nodeova.
+- **Postavljanje node-ova**: Svaki LoRa modul djeluje kao node u mreži. Kada se uključi, automatski komunicira s obližnjim node-ovima i time formira mesh.  
+- **Samoobnavljanje i skalabilnost**: Mreža se može automatski reorganizirati ako neki node prestane raditi, čineći sustav otpornim i proširivim s velikim brojem node-ova.
 
 ### Komunikacija
 
-- **Usmjeravanje poruka**: Kada se poruka pošalje s jednog nodea, ona se prenosi kroz mrežu dok ne dosegne svoje odredište ovisno o hop postavci. 
+- **Usmjeravanje poruka**: Kada se poruka pošalje s jednog node-a, ona se prenosi kroz mrežu dok ne dosegne svoje odredište ovisno o hop postavci. 
 - **Enkripcija**: Poruke su šifrirane radi zaštite privatnosti i sigurnosti unutar mreže.
 
 ### Domet i Energetska Učinkovitost
@@ -67,8 +67,8 @@ Kupite [kompatibilan](https://meshtastic.org/docs/hardware/devices/) LoRa uređa
 
 ### Konfiguracija
 
-Koristite Meshtastic mobilnu aplikaciju ili web sučelje za konfiguraciju nodeova, postavljanje enkripcijskih ključeva i upravljanje mrežnim postavkama.
+Koristite Meshtastic mobilnu aplikaciju ili web sučelje za konfiguraciju node-ova, postavljanje enkripcijskih ključeva i upravljanje mrežnim postavkama.
 
 ### Postavljanje u Rad
 
-Postavite nodeove na željeno područje i započnite komunikaciju putem mreže.
+Postavite node-ove na željeno područje i započnite komunikaciju putem mreže.

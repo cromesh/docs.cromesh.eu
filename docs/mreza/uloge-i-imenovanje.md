@@ -1,9 +1,9 @@
 ---
-title: Uloge i imenovanje nodeova
-description: Preporučene Meshtastic uloge (CLIENT, ROUTER, CLIENT_MUTE) u CroMesh mreži i konvencije imenovanja nodeova. CLIENT_BASE se više ne koristi (zastario protokol).
+title: Uloge i imenovanje node-ova
+description: Preporučene Meshtastic uloge (CLIENT, ROUTER, CLIENT_MUTE) u CroMesh mreži i konvencije imenovanja node-ova. CLIENT_BASE se više ne koristi (zastario protokol).
 ---
 
-# Uloge i imenovanje nodeova
+# Uloge i imenovanje node-ova
 
 ## Uloge (Device Role)
 
@@ -12,28 +12,28 @@ ovim pravilima:
 
 | Uloga | Kada je koristiti | Napomena |
 |---|---|---|
-| `CLIENT` | **Zadana uloga za gotovo sve nodeove**, uključujući krovne i stupne nodeove bez značajne elevacije | Normalno retransmitira pakete |
-| `CLIENT_MUTE` | Mobilni uređaji (džepni, u autu) i sekundarni kućni nodeovi | Šalje i prima, ali **ne retransmitira** — ključno za smanjenje zagušenja kad imaš više uređaja na maloj udaljenosti |
+| `CLIENT` | **Zadana uloga za gotovo sve node-ove**, uključujući krovne i stupne node-ove bez značajne elevacije | Normalno retransmitira pakete |
+| `CLIENT_MUTE` | Mobilni uređaji (džepni, u autu) i sekundarni kućni node-ovi | Šalje i prima, ali **ne retransmitira** — ključno za smanjenje zagušenja kad imaš više uređaja na maloj udaljenosti |
 | `CLIENT_BASE` | ❌ Ne koristi se | Protokol na kojem se temeljila ova uloga je zastario |
-| `ROUTER` | **Isključivo infrastrukturni nodeovi na istaknutim pozicijama** (brda, tornjevi, visoke zgrade) s dobrom antenom | Retransmitira bez nasumične odgode — "šiba dalje odmah". U praksi razlika prema CLIENT-u na običnim pozicijama je zanemariva, zato ROUTER nema smisla u stanu |
+| `ROUTER` | **Isključivo infrastrukturni node-ovi na istaknutim pozicijama** (brda, tornjevi, visoke zgrade) s dobrom antenom | Retransmitira bez nasumične odgode — "šiba dalje odmah". U praksi razlika prema CLIENT-u na običnim pozicijama je zanemariva, zato ROUTER nema smisla u stanu |
 | `REPEATER` | ❌ Ne koristi se u CroMesh mreži | Uklonjena iz novijih verzija aplikacije; povremeno se na mreži pojavi node s tom ulogom konfiguriran starom aplikacijom |
 
 > **Upozorenje:** Nemoj stavljati `ROUTER` ulogu "jer zvuči jače". Node u prizemlju u
 > ROUTER modu samo dodaje kolizije. ROUTER je rezerviran za pozicije tipa Cepeliš,
 > Sv. Križ ili krov radiokluba — dogovori se u grupi prije postavljanja.
 
-Za infrastrukturne nodeove kojima nitko ne šalje izravne poruke može se dodatno uključiti
+Za infrastrukturne node-ove kojima nitko ne šalje izravne poruke može se dodatno uključiti
 oznaka *Unmessageable*. Formalni dogovor zajednice o ovoj postavci trenutno ne postoji —
 koristi po vlastitoj procjeni.
 
-## Imenovanje nodeova
+## Imenovanje node-ova
 
 > **Napomena:** Formalno pravilo imenovanja **ne postoji** (pitanje je eksplicitno
 > postavljeno u zajednici) — dolje je opisana ustaljena praksa.
 
 ### Ustaljena praksa
 
-- **Infrastrukturni nodeovi (routeri):** `<Lokacija> R<broj>` — primjeri iz mreže:
+- **Infrastrukturni node-ovi (routeri):** `<Lokacija> R<broj>` — primjeri iz mreže:
   `KaR1`, `KaR2`, `KaR3` (Karlovac), `Petrinja R1`, `Sisak R1`, `BROD R1`
   (Slavonski Brod).
 - **Long name** poželjno sadrži lokaciju, a mnogi dodaju i `CroMesh.eu` radi promocije
@@ -44,10 +44,10 @@ koristi po vlastitoj procjeni.
 
 Stav iskusnih radioamatera u zajednici:
 
-- Meshtastic **nije radioamaterska služba** — infrastrukturne nodeove nemoj nazivati
+- Meshtastic **nije radioamaterska služba** — infrastrukturne node-ove nemoj nazivati
   `9A...` jer to zbunjuje korisnike koji nisu radioamateri. Preporuka je geografsko
   imenovanje (`BROD R1` umjesto pozivnog znaka).
-- Ako pozivni znak ipak koristiš u imenu svog osobnog nodea, koristi **isključivo
+- Ako pozivni znak ipak koristiš u imenu svog osobnog node-a, koristi **isključivo
   pozivni znak koji stvarno posjeduješ** (provjerivo u HAKOM evidenciji dozvola).
   Blok `9A1**` rezerviran je za klubove odnosno zahtijeva posebne uvjete.
 

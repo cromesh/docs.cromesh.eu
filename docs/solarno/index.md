@@ -1,6 +1,6 @@
 ---
 title: Solarni uređaji
-description: Napajanje Meshtastic nodeova — 18650 baterije, BMS zaštita, MPPT solarni regulatori (CN3791) i punjenje litijskih baterija na niskim temperaturama.
+description: Napajanje Meshtastic node-ova — 18650 baterije, BMS zaštita, MPPT solarni regulatori (CN3791) i punjenje litijskih baterija na niskim temperaturama.
 tags:
   - Hardware
   - Uređaji
@@ -12,12 +12,12 @@ tags:
 
 ## Baterije
 
-Standard zajednice za autonomne nodeove: **18650 Li-Ion ćelije** (jedna ili dvije u
+Standard zajednice za autonomne node-ove: **18650 Li-Ion ćelije** (jedna ili dvije u
 paraleli).
 
 | Preporučena ćelija | Kapacitet | Zašto |
 |---|---|---|
-| Sanyo UR18650ZM2 | 2420 mAh | Prošireni temperaturni raspon (−20 do +60 °C) — bitno za vanjske nodeove |
+| Sanyo UR18650ZM2 | 2420 mAh | Prošireni temperaturni raspon (−20 do +60 °C) — bitno za vanjske node-ove |
 | Panasonic NCR18650B | 3400 mAh | Prošireni temperaturni raspon; veći kapacitet |
 
 - Uzimaj ćelije s deklariranim proširenim temperaturnim rasponom (dostupne npr. na
@@ -34,8 +34,8 @@ paraleli).
 
 ## Solarni regulatori
 
-Preporučena arhitektura autonomnog nodea: **solarni panel → MPPT regulator → baterija
-(s BMS-om) → node**. Odvojeni regulator (umjesto ugrađenog na ploči nodea) pokazao se
+Preporučena arhitektura autonomnog node-a: **solarni panel → MPPT regulator → baterija
+(s BMS-om) → node**. Odvojeni regulator (umjesto ugrađenog na ploči node-a) pokazao se
 pouzdanijim — referentni node na Cepelišu s tom kombinacijom mjesecima ne pada ispod
 95 % baterije.
 
@@ -58,13 +58,13 @@ pouzdanijim — referentni node na Cepelišu s tom kombinacijom mjesecima ne pad
   ~3 W).
 - **RAK WisBlock base ploče imaju ugrađen solarni ulaz** — najjednostavnija integracija.
 - Seeed XIAO kitovi nemaju solarni ulaz: solar ide preko vanjskog MPPT-a na bateriju,
-  baterija s BMS-om na node. Pripazi: potrošnja nodea tijekom punjenja zbunjuje
+  baterija s BMS-om na node. Pripazi: potrošnja node-a tijekom punjenja zbunjuje
   regulator pri procjeni napunjenosti.
 - Neke ploče s ugrađenim kontrolerom (npr. AXP192) po testovima ne pune iznad 4,15 V —
   to je normalno i produžuje život ćelije.
 
 ## Mrežno napajanje
 
-Za fiksne nodeove na stalnom napajanju (ESP32 + WiFi kao MQTT gateway) sasvim je u redu
+Za fiksne node-ove na stalnom napajanju (ESP32 + WiFi kao MQTT gateway) sasvim je u redu
 običan USB adapter; baterija tada nije nužna. PoE napajanje RAK WisBlocka spominjano je
 u grupi, ali bez dokumentiranog rješenja za sada.

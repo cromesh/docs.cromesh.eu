@@ -18,12 +18,12 @@ printerima na FSB-u).
 | Heltec V4 vodootporno kućište | Heltec V4 (vanjska montaža) | [thingiverse.com/thing:7285507](https://www.thingiverse.com/thing:7285507) |
 | Seeed XIAO nRF52 SX1262 kućište | Seeed XIAO kit | [printables.com/model/1346041](https://www.printables.com/model/1346041-meshtastic-seeed-studio-xiao-nrf52-sx1262-case) |
 
-## Vanjski / autonomni nodeovi
+## Vanjski / autonomni node-ovi
 
 | Model | Namjena | Poveznica |
 |---|---|---|
 | All-in-one 6 W solar enclosure | Kompletno solarno kućište s panelom | [makerworld.com/en/models/1773097](https://makerworld.com/en/models/1773097-meshtastic-all-in-one-6-watt-solar-enclosure#profileId-1888456) |
-| Meshtastic repeater for tree | Montaža nodea na stablo | [printables.com/model/798574](https://www.printables.com/model/798574-meshtastic-repeater-for-tree) |
+| Meshtastic repeater for tree | Montaža node-a na stablo | [printables.com/model/798574](https://www.printables.com/model/798574-meshtastic-repeater-for-tree) |
 | Meshtastic birdhouse node | Node kamufliran kao kućica za ptice | [printables.com/model/890830](https://www.printables.com/model/890830-meshtastic-birdhouse-node) |
 | Car roof node (RAK19007/19003) | Magnetni krovni nosač za auto | [makerworld.com/en/models/1779272](https://makerworld.com/en/models/1779272-car-roof-meshtastic-node-wisblock-rak19007-19003#profileId-2025738) |
 

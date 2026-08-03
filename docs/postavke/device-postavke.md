@@ -8,7 +8,7 @@ description: Odabir uloge uređaja (Client, Client Mute, Router) i interval slan
 **Uloga Uređaja**  
   
 - **Client Mute** — Najbolje za vozila ili situacije s više uređaja na istom mjestu.  
-  Ne prenosi poruke drugih nodeova, ali i dalje šalje vlastite poruke.  
+  Ne prenosi poruke drugih node-ova, ali i dalje šalje vlastite poruke.  
 - **Client** — Preporučeno za kućne bazne stanice ili primarne uređaje.  
   Prenosi poruke koje primi.  
 - **Client Base** — ❌ **Ne koristi se** — protokol na kojem se temeljila ova uloga je zastario.  

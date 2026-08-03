@@ -1,6 +1,6 @@
 ---
 title: Standardi CroMesh mreže
-description: Dogovoreni standardi hrvatske Meshtastic mreže — regija, modem preset, kanali, MQTT topic i uloge nodeova. Izvor istine za konfiguraciju.
+description: Dogovoreni standardi hrvatske Meshtastic mreže — regija, modem preset, kanali, MQTT topic i uloge node-ova. Izvor istine za konfiguraciju.
 ---
 
 # Standardi CroMesh mreže (baza odluka)
@@ -34,10 +34,10 @@ Zajednica je **21. 3. 2026. u 00:01** provela dogovoreni test prelaska na `MEDIU
 preset (veća propusnost, teoretski stabilniji kanal u gustim mrežama, ali ~30 % manji domet).
 
 **Rezultat: test nije izdržao ni 24 sata.** Mreža je u Hrvatskoj još uvijek prerijetka —
-glavni problem je domet (nodeovi se međusobno ne čuju), a `MEDIUM_FAST` domet dodatno
+glavni problem je domet (node-ovi se međusobno ne čuju), a `MEDIUM_FAST` domet dodatno
 smanjuje. Zaključci zajednice:
 
-- `MEDIUM_FAST` ima smisla tek uz **100+ nodeova u urbanom području** i channel
+- `MEDIUM_FAST` ima smisla tek uz **100+ node-ova u urbanom području** i channel
   utilization trajno iznad ~20–50 %. Trenutno stanje mreže (2026.) ne zadovoljava
   nijedan od tih uvjeta.
 - **Službeni preset CroMesh mreže ostaje `LongFast`.** Svaka buduća promjena bit će
@@ -48,13 +48,13 @@ smanjuje. Zaključci zajednice:
 Za zdravlje mreže zajednica preporučuje sljedeće postavke, posebno korisnicima s više
 uređaja:
 
-1. Ako imaš više kućnih nodeova, **mobilne uređaje prebaci u `CLIENT_MUTE`** — i dalje
+1. Ako imaš više kućnih node-ova, **mobilne uređaje prebaci u `CLIENT_MUTE`** — i dalje
    šalju i primaju poruke, ali ne retransmitiraju tuđe pakete.
 2. **Slanje lokacije postavi na ~2 sata, a node info na ~3 sata** — intervali se tako
    izmjenjuju i održavaju node list živim bez spamanja kanala.
 3. Ne šalji masovno traceroute pakete — svaki traceroute višestruko opterećuje mrežu.
 
-Detalji o ulogama nodeova (CLIENT, CLIENT_MUTE, ROUTER...) nalaze se na stranici
+Detalji o ulogama node-ova (CLIENT, CLIENT_MUTE, ROUTER...) nalaze se na stranici
 [Uloge i imenovanje](uloge-i-imenovanje.md).
 
 ## Regulatorni okvir (ukratko)

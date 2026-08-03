@@ -23,11 +23,11 @@ description: Povijest i organizacija CroMesh zajednice — hrvatska Meshtastic m
   karta `map.cromesh.eu` i dokumentacija `docs.cromesh.eu`
   ([GitHub repo](https://github.com/cromesh/docs.cromesh.eu) — prvi vanjski PR-ovi
   mergani već u studenom).
-- **Siječanj 2026.** — zajednica prelazi 50 članova; nodeovi od Slavonije do Dalmacije.
+- **Siječanj 2026.** — zajednica prelazi 50 članova; node-ovi od Slavonije do Dalmacije.
 - **Ožujak 2026.** — proveden test `MEDIUM_FAST` preseta; odluka: ostanak na `LongFast`
   (vidi [Standardi](../mreza/standardi.md)).
 - **Srpanj 2026.** — zajednica za sada broji oko **120 članova** u Telegram grupi i
-  preko **200 nodeova** diljem Hrvatske.
+  preko **200 node-ova** diljem Hrvatske.
 
 ## Infrastruktura i tko je održava
 
@@ -50,8 +50,8 @@ Grupa je forum s tematskim topicima. Najvažniji za snalaženje:
 | Hardware preporuke | Preporuke uređaja, posebno za početnike |
 | Software | Software i firmware problematika |
 | Naši kanali | Službene poveznice kanala mreže |
-| Testiranje opreme / Debug opreme | Tx/Rx testovi novih nodeova, rješavanje problema |
-| Routeri | Infrastrukturni nodeovi |
+| Testiranje opreme / Debug opreme | Tx/Rx testovi novih node-ova, rješavanje problema |
+| Routeri | Infrastrukturni node-ovi |
 | Tržnica Novo/Rabljeno | Kupoprodaja opreme među članovima |
 | 3D printanje i design | Kućišta, nosači, dizajn |
 | Zanimljivi kontakti | Zabilježeni daleki/neobični kontakti na mreži |
@@ -60,7 +60,7 @@ Grupa je forum s tematskim topicima. Najvažniji za snalaženje:
 | Random ideje | Brainstorming ("flood" tema) |
 | CroMesh patent office | Razrada ideja iz brainstorminga u konkretne projekte |
 | Meshcore | Rasprave o MeshCore protokolu |
-| Popis članova | Adresar članova (short/long name nodeova) |
+| Popis članova | Adresar članova (short/long name node-ova) |
 
 ## Susjedne zajednice
 

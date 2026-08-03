@@ -66,8 +66,8 @@ decentraliziranu, off-grid LoRa mesh mrežu na području Republike Hrvatske. Mre
 |---|---|---|
 | Glavni web | [cromesh.eu](https://cromesh.eu) | Predstavljanje zajednice |
 | Dokumentacija | [docs.cromesh.eu](https://docs.cromesh.eu) | Ova stranica |
-| Karta mreže | [map.cromesh.eu](https://map.cromesh.eu) | Meshview instanca — nodeovi, paketi, chat |
-| MQTT server | `mqtt.cromesh.eu` | Zajednički MQTT za kartu i gateway nodeove |
+| Karta mreže | [map.cromesh.eu](https://map.cromesh.eu) | Meshview instanca — node-ovi, paketi, chat |
+| MQTT server | `mqtt.cromesh.eu` | Zajednički MQTT za kartu i gateway node-ove |
 | GitHub | [github.com/cromesh/docs.cromesh.eu](https://github.com/cromesh/docs.cromesh.eu) | Izvor ove dokumentacije — PR-ovi su dobrodošli |
 | Telegram      | [t.me/+q1MRpiblCNswNDlk](https://t.me/+q1MRpiblCNswNDlk)  
 

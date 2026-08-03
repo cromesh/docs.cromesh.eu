@@ -15,15 +15,15 @@ CroMesh održava vlastitu infrastrukturu:
 - **`mqtt.cromesh.eu`** — MQTT server zajednice (hostan u Karlovcu, objavljen preko
   Cloudflare tunela). U praksi se pokazao stabilnijim od službenog
   `mqtt.meshtastic.org`, a karta prati **oba** servera.
-- **[map.cromesh.eu](https://map.cromesh.eu)** — Meshview instanca s kartom nodeova i
+- **[map.cromesh.eu](https://map.cromesh.eu)** — Meshview instanca s kartom node-ova i
   uvidom u promet mreže.
 
 ## Čemu služi MQTT u Meshtasticu
 
 Node spojen na MQTT (preko WiFi-ja ili Bluetooth proxyja kroz mobitel) radi kao
-**gateway**: prijavljuje serveru sebe **i sve nodeove koje čuje preko LoRa-e**. To je
+**gateway**: prijavljuje serveru sebe **i sve node-ove koje čuje preko LoRa-e**. To je
 jedini način da se node pojavi na karti. MQTT **nije potreban za rad mreže** — poruke
-između nodeova putuju isključivo radiovezom; MQTT služi za kartu, statistiku i
+između node-ova putuju isključivo radiovezom; MQTT služi za kartu, statistiku i
 dijagnostiku.
 
 > **Napomena:** Dovoljno je da **jedan** node u tvom području ima MQTT — on će na kartu
@@ -73,7 +73,7 @@ po platformi:
 3. uključen **Uplink** na kanalu `LongFast`,
 4. node ima **lokaciju** — GPS ili ručno postavljenu fiksnu poziciju (*Fixed position*).
 
-Nakon ispravne konfiguracije pojava na karti može potrajati — nodeovi svoje podatke
+Nakon ispravne konfiguracije pojava na karti može potrajati — node-ovi svoje podatke
 (poziciju, node info) odašilju periodično, tipično svakih nekoliko sati. Iskustveno:
 1–2 sata do prve pojave, promjena preseta ili imena zna se propagirati i sporije.
 
@@ -81,17 +81,17 @@ Nakon ispravne konfiguracije pojava na karti može potrajati — nodeovi svoje p
 
 | URL | Sadržaj |
 |---|---|
-| `map.cromesh.eu/map` | Karta nodeova |
+| `map.cromesh.eu/map` | Karta node-ova |
 | `map.cromesh.eu/chat` | Poruke s javnog kanala `LongFast` |
 | `map.cromesh.eu/nodegraph` | Graf povezanosti mreže (tko koga čuje) |
 | `map.cromesh.eu/firehose` | Svi paketi u stvarnom vremenu |
-| `map.cromesh.eu/packet_list/<node_id>` | Povijest paketa pojedinog nodea |
+| `map.cromesh.eu/packet_list/<node_id>` | Povijest paketa pojedinog node-a |
 
 > **Napomena:** Karta posjeduje **samo ključ javnog kanala `LongFast`** — jedino njegove
 > poruke može dekriptirati i prikazati u `/chat`. Promet ostalih kanala (uključujući
 > `cromesh.eu`) vidljiv je samo kao šifrirani paketi.
 
-Crte (strelice) između nodeova na grafu znače da se nodeovi **relativno često čuju** —
+Crte (strelice) između node-ova na grafu znače da se node-ovi **relativno često čuju** —
 ne jamče stabilnu vezu u svakom trenutku.
 
 ## Najčešći problemi
@@ -101,4 +101,4 @@ ne jamče stabilnu vezu u svakom trenutku.
 | Node se ne pojavljuje na karti | Krivi root topic (nedostaje `/9A`); isključen *OK to MQTT*; nema lokacije; DNS/mreža blokira `mqtt.cromesh.eu` |
 | Susjedi mi se ne pojavljuju | Susjedi nemaju *OK to MQTT* i dijeljenje lokacije na javnom kanalu — bez toga ih gateway ne smije prijaviti |
 | Poruke s MQTT-a ne idu dalje u RF mrežu | Očekivano ponašanje (zero-hop politika); za primanje s MQTT-a potreban je Downlink na kanalu |
-| Node ima "MQTT" oznaku iako sam downlink ugasio | Oznaka ostaje u lokalnoj bazi nodeova; nestaje tek brisanjem node DB-a |
+| Node ima "MQTT" oznaku iako sam downlink ugasio | Oznaka ostaje u lokalnoj bazi node-ova; nestaje tek brisanjem node DB-a |

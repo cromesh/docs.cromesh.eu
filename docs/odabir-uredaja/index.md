@@ -18,7 +18,7 @@ Najvažnija odluka pri kupnji nije brand nego **čip**:
 
 | Čip | Prednosti | Nedostaci | Kada ga uzeti |
 |---|---|---|---|
-| **nRF52840** | Vrlo mala potrošnja (dani/tjedni na bateriji), stabilniji rad | Nema WiFi | **Preporuka zajednice** za mobilne i solarne nodeove |
+| **nRF52840** | Vrlo mala potrošnja (dani/tjedni na bateriji), stabilniji rad | Nema WiFi | **Preporuka zajednice** za mobilne i solarne node-ove |
 | **ESP32 / ESP32-S3** | Ima WiFi (potreban za MQTT gateway bez mobitela), jeftiniji | Znatno veća potrošnja, deep sleep zna raditi probleme | Fiksni node na stalnom napajanju, MQTT gateway |
 
 > **Napomena:** Službena preporuka zajednice za početnike: **nRF52 uređaj** (npr. Seeed

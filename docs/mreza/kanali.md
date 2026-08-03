@@ -30,11 +30,11 @@ Ako si greškom pregazio LongFast: obriši kanal koji ga je zamijenio i ponovno 
 
 ## Postavke uplink/downlink po kanalu
 
-Za nodeove spojene na MQTT (vidi [MQTT i karta](../mqtt/index.md)):
+Za node-ove spojene na MQTT (vidi [MQTT i karta](../mqtt/index.md)):
 
 | Kanal | Uplink | Downlink | Obrazloženje |
 |---|---|---|---|
-| `LongFast` | ✅ Uključi | ❌ Isključi | Uplink je potreban da tvoj node i nodeovi koje čuje završe na karti. Downlink na javnom kanalu povlači promet s interneta u lokalni RF kanal — uključuj samo svjesno i privremeno. |
+| `LongFast` | ✅ Uključi | ❌ Isključi | Uplink je potreban da tvoj node i node-ovi koje čuje završe na karti. Downlink na javnom kanalu povlači promet s interneta u lokalni RF kanal — uključuj samo svjesno i privremeno. |
 | `cromesh.eu` | Po želji | Po želji | Uz uključen uplink i downlink poruke kanala putuju i preko interneta između udaljenih dijelova mreže. |
 
 > **Napomena:** Poruke poslane putem MQTT-a sa zadanim postavkama servera **ne

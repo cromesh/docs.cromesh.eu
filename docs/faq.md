@@ -30,7 +30,7 @@ Najjeftiniji ulaz: **Heltec V3**. Detaljna usporedba s cijenama i poznatim probl
 - Stock antena, urbana sredina: **1–2 km** kroz zgrade i drveće.
 - Dobra vanjska antena na visini s optičkom vidljivošću: deseci kilometara
   (u mreži zabilježene veze Karlovac–Zagreb–Slunj, ovisno o propagaciji).
-- Ekstremi: nodeovi u zrakoplovima primani na 150+ km.
+- Ekstremi: node-ovi u zrakoplovima primani na 150+ km.
 - Propagacija je navečer osjetno bolja nego danju — normalna pojava.
 
 Domet ovisi prije svega o **visini antene i liniji optičke vidljivosti**, ne o snazi.
@@ -61,10 +61,10 @@ Kliknuo si **"Replace"** umjesto **"Add"** pri dodavanju kanala. Obriši kanal k
 pregazio LongFast i dodaj LongFast natrag sa zadanim postavkama — poruke ostaju. Vidi
 [Kanali](mreza/kanali.md).
 
-### Vidim nodeove sa 5–7 hopova — je li to dobro?
+### Vidim node-ove sa 5–7 hopova — je li to dobro?
 
 Nije. Zadani hop limit je 3; veće vrijednosti nepotrebno opterećuju mrežu. Ako vidiš
-takve nodeove, vjerojatno je netko podigao limit — nemoj to raditi i ti. Vidi
+takve node-ove, vjerojatno je netko podigao limit — nemoj to raditi i ti. Vidi
 [Standardi](mreza/standardi.md).
 
 ### Heltec V4 mi slabo čuje s vanjskom antenom
@@ -80,14 +80,14 @@ Poznat problem revizije ploče 4.2 (šum); revizija 4.3 to rješava. Provjeri i 
 prijavljivati kartu, a MQTT server ne šalje promet natrag u RF mrežu (zero-hop
 politika). Vidi [MQTT i karta](mqtt/index.md).
 
-### Ima li zajednica koristi ako uključim MQTT na kućnom nodeu?
+### Ima li zajednica koristi ako uključim MQTT na kućnom node-u?
 
 Da — tvoj node će na kartu prijaviti i sve susjede koje čuje, čime karta (i slika
 stvarnog stanja mreže) postaje točnija.
 
-### Što znače crte između nodeova na karti?
+### Što znače crte između node-ova na karti?
 
-Da se ti nodeovi **relativno često čuju**. Ne znači da su u savršenom kontaktu u svakom
+Da se ti node-ovi **relativno često čuju**. Ne znači da su u savršenom kontaktu u svakom
 trenutku.
 
 ## Ostalo
