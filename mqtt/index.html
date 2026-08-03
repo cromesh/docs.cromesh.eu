@@ -1965,14 +1965,14 @@
 <li><strong><code>mqtt.cromesh.eu</code></strong> — MQTT server zajednice (hostan u Karlovcu, objavljen preko
   Cloudflare tunela). U praksi se pokazao stabilnijim od službenog
   <code>mqtt.meshtastic.org</code>, a karta prati <strong>oba</strong> servera.</li>
-<li><strong><a href="https://map.cromesh.eu">map.cromesh.eu</a></strong> — Meshview instanca s kartom nodeova i
+<li><strong><a href="https://map.cromesh.eu">map.cromesh.eu</a></strong> — Meshview instanca s kartom node-ova i
   uvidom u promet mreže.</li>
 </ul>
 <h2 id="cemu-sluzi-mqtt-u-meshtasticu">Čemu služi MQTT u Meshtasticu<a class="headerlink" href="#cemu-sluzi-mqtt-u-meshtasticu" title="Permanent link">&para;</a></h2>
 <p>Node spojen na MQTT (preko WiFi-ja ili Bluetooth proxyja kroz mobitel) radi kao
-<strong>gateway</strong>: prijavljuje serveru sebe <strong>i sve nodeove koje čuje preko LoRa-e</strong>. To je
+<strong>gateway</strong>: prijavljuje serveru sebe <strong>i sve node-ove koje čuje preko LoRa-e</strong>. To je
 jedini način da se node pojavi na karti. MQTT <strong>nije potreban za rad mreže</strong> — poruke
-između nodeova putuju isključivo radiovezom; MQTT služi za kartu, statistiku i
+između node-ova putuju isključivo radiovezom; MQTT služi za kartu, statistiku i
 dijagnostiku.</p>
 <blockquote>
 <p><strong>Napomena:</strong> Dovoljno je da <strong>jedan</strong> node u tvom području ima MQTT — on će na kartu
@@ -2081,7 +2081,7 @@ Configuration.</p>
 <li>uključen <strong>Uplink</strong> na kanalu <code>LongFast</code>,</li>
 <li>node ima <strong>lokaciju</strong> — GPS ili ručno postavljenu fiksnu poziciju (<em>Fixed position</em>).</li>
 </ol>
-<p>Nakon ispravne konfiguracije pojava na karti može potrajati — nodeovi svoje podatke
+<p>Nakon ispravne konfiguracije pojava na karti može potrajati — node-ovi svoje podatke
 (poziciju, node info) odašilju periodično, tipično svakih nekoliko sati. Iskustveno:
 1–2 sata do prve pojave, promjena preseta ili imena zna se propagirati i sporije.</p>
 <h2 id="mogucnosti-karte">Mogućnosti karte<a class="headerlink" href="#mogucnosti-karte" title="Permanent link">&para;</a></h2>
@@ -2095,7 +2095,7 @@ Configuration.</p>
 <tbody>
 <tr>
 <td><code>map.cromesh.eu/map</code></td>
-<td>Karta nodeova</td>
+<td>Karta node-ova</td>
 </tr>
 <tr>
 <td><code>map.cromesh.eu/chat</code></td>
@@ -2111,7 +2111,7 @@ Configuration.</p>
 </tr>
 <tr>
 <td><code>map.cromesh.eu/packet_list/&lt;node_id&gt;</code></td>
-<td>Povijest paketa pojedinog nodea</td>
+<td>Povijest paketa pojedinog node-a</td>
 </tr>
 </tbody>
 </table>
@@ -2120,7 +2120,7 @@ Configuration.</p>
 poruke može dekriptirati i prikazati u <code>/chat</code>. Promet ostalih kanala (uključujući
 <code>cromesh.eu</code>) vidljiv je samo kao šifrirani paketi.</p>
 </blockquote>
-<p>Crte (strelice) između nodeova na grafu znače da se nodeovi <strong>relativno često čuju</strong> —
+<p>Crte (strelice) između node-ova na grafu znače da se node-ovi <strong>relativno često čuju</strong> —
 ne jamče stabilnu vezu u svakom trenutku.</p>
 <h2 id="najcesci-problemi">Najčešći problemi<a class="headerlink" href="#najcesci-problemi" title="Permanent link">&para;</a></h2>
 <table>
@@ -2145,7 +2145,7 @@ ne jamče stabilnu vezu u svakom trenutku.</p>
 </tr>
 <tr>
 <td>Node ima "MQTT" oznaku iako sam downlink ugasio</td>
-<td>Oznaka ostaje u lokalnoj bazi nodeova; nestaje tek brisanjem node DB-a</td>
+<td>Oznaka ostaje u lokalnoj bazi node-ova; nestaje tek brisanjem node DB-a</td>
 </tr>
 </tbody>
 </table>

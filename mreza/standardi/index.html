@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Dogovoreni standardi hrvatske Meshtastic mreže — regija, modem preset, kanali, MQTT topic i uloge nodeova. Izvor istine za konfiguraciju.">
+        <meta name="description" content="Dogovoreni standardi hrvatske Meshtastic mreže — regija, modem preset, kanali, MQTT topic i uloge node-ova. Izvor istine za konfiguraciju.">
       
       
         <meta name="author" content="CroMesh zajednica">
@@ -1946,10 +1946,10 @@ korisnih poruka za sve.</p>
 <p>Zajednica je <strong>21. 3. 2026. u 00:01</strong> provela dogovoreni test prelaska na <code>MEDIUM_FAST</code>
 preset (veća propusnost, teoretski stabilniji kanal u gustim mrežama, ali ~30 % manji domet).</p>
 <p><strong>Rezultat: test nije izdržao ni 24 sata.</strong> Mreža je u Hrvatskoj još uvijek prerijetka —
-glavni problem je domet (nodeovi se međusobno ne čuju), a <code>MEDIUM_FAST</code> domet dodatno
+glavni problem je domet (node-ovi se međusobno ne čuju), a <code>MEDIUM_FAST</code> domet dodatno
 smanjuje. Zaključci zajednice:</p>
 <ul>
-<li><code>MEDIUM_FAST</code> ima smisla tek uz <strong>100+ nodeova u urbanom području</strong> i channel
+<li><code>MEDIUM_FAST</code> ima smisla tek uz <strong>100+ node-ova u urbanom području</strong> i channel
   utilization trajno iznad ~20–50 %. Trenutno stanje mreže (2026.) ne zadovoljava
   nijedan od tih uvjeta.</li>
 <li><strong>Službeni preset CroMesh mreže ostaje <code>LongFast</code>.</strong> Svaka buduća promjena bit će
@@ -1959,13 +1959,13 @@ smanjuje. Zaključci zajednice:</p>
 <p>Za zdravlje mreže zajednica preporučuje sljedeće postavke, posebno korisnicima s više
 uređaja:</p>
 <ol>
-<li>Ako imaš više kućnih nodeova, <strong>mobilne uređaje prebaci u <code>CLIENT_MUTE</code></strong> — i dalje
+<li>Ako imaš više kućnih node-ova, <strong>mobilne uređaje prebaci u <code>CLIENT_MUTE</code></strong> — i dalje
    šalju i primaju poruke, ali ne retransmitiraju tuđe pakete.</li>
 <li><strong>Slanje lokacije postavi na ~2 sata, a node info na ~3 sata</strong> — intervali se tako
    izmjenjuju i održavaju node list živim bez spamanja kanala.</li>
 <li>Ne šalji masovno traceroute pakete — svaki traceroute višestruko opterećuje mrežu.</li>
 </ol>
-<p>Detalji o ulogama nodeova (CLIENT, CLIENT_MUTE, ROUTER...) nalaze se na stranici
+<p>Detalji o ulogama node-ova (CLIENT, CLIENT_MUTE, ROUTER...) nalaze se na stranici
 <a href="../uloge-i-imenovanje/">Uloge i imenovanje</a>.</p>
 <h2 id="regulatorni-okvir-ukratko">Regulatorni okvir (ukratko)<a class="headerlink" href="#regulatorni-okvir-ukratko" title="Permanent link">&para;</a></h2>
 <ul>

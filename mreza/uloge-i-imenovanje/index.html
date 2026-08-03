@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Preporučene Meshtastic uloge (CLIENT, ROUTER, CLIENT_MUTE) u CroMesh mreži i konvencije imenovanja nodeova. CLIENT_BASE se više ne koristi (zastario protokol).">
+        <meta name="description" content="Preporučene Meshtastic uloge (CLIENT, ROUTER, CLIENT_MUTE) u CroMesh mreži i konvencije imenovanja node-ova. CLIENT_BASE se više ne koristi (zastario protokol).">
       
       
         <meta name="author" content="CroMesh zajednica">
@@ -27,7 +27,7 @@
     
     
       
-        <title>Uloge i imenovanje nodeova - CroMesh Dokumentacija</title>
+        <title>Uloge i imenovanje node-ova - CroMesh Dokumentacija</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#uloge-i-imenovanje-nodeova" class="md-skip">
+        <a href="#uloge-i-imenovanje-node-ova" class="md-skip">
           Preskoči na sadržaj
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Uloge i imenovanje nodeova
+              Uloge i imenovanje node-ova
             
           </span>
         </div>
@@ -1718,15 +1718,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#imenovanje-nodeova" class="md-nav__link">
+  <a href="#imenovanje-node-ova" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Imenovanje nodeova
+        Imenovanje node-ova
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Imenovanje nodeova">
+    <nav class="md-nav" aria-label="Imenovanje node-ova">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1821,15 +1821,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#imenovanje-nodeova" class="md-nav__link">
+  <a href="#imenovanje-node-ova" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Imenovanje nodeova
+        Imenovanje node-ova
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Imenovanje nodeova">
+    <nav class="md-nav" aria-label="Imenovanje node-ova">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1903,7 +1903,7 @@
   
 
 
-<h1 id="uloge-i-imenovanje-nodeova">Uloge i imenovanje nodeova<a class="headerlink" href="#uloge-i-imenovanje-nodeova" title="Permanent link">&para;</a></h1>
+<h1 id="uloge-i-imenovanje-node-ova">Uloge i imenovanje node-ova<a class="headerlink" href="#uloge-i-imenovanje-node-ova" title="Permanent link">&para;</a></h1>
 <h2 id="uloge-device-role">Uloge (Device Role)<a class="headerlink" href="#uloge-device-role" title="Permanent link">&para;</a></h2>
 <p>Pogrešno odabrana uloga jedan je od najčešćih uzroka nestabilnosti mesh mreža. Vodi se
 ovim pravilima:</p>
@@ -1918,12 +1918,12 @@ ovim pravilima:</p>
 <tbody>
 <tr>
 <td><code>CLIENT</code></td>
-<td><strong>Zadana uloga za gotovo sve nodeove</strong>, uključujući krovne i stupne nodeove bez značajne elevacije</td>
+<td><strong>Zadana uloga za gotovo sve node-ove</strong>, uključujući krovne i stupne node-ove bez značajne elevacije</td>
 <td>Normalno retransmitira pakete</td>
 </tr>
 <tr>
 <td><code>CLIENT_MUTE</code></td>
-<td>Mobilni uređaji (džepni, u autu) i sekundarni kućni nodeovi</td>
+<td>Mobilni uređaji (džepni, u autu) i sekundarni kućni node-ovi</td>
 <td>Šalje i prima, ali <strong>ne retransmitira</strong> — ključno za smanjenje zagušenja kad imaš više uređaja na maloj udaljenosti</td>
 </tr>
 <tr>
@@ -1933,7 +1933,7 @@ ovim pravilima:</p>
 </tr>
 <tr>
 <td><code>ROUTER</code></td>
-<td><strong>Isključivo infrastrukturni nodeovi na istaknutim pozicijama</strong> (brda, tornjevi, visoke zgrade) s dobrom antenom</td>
+<td><strong>Isključivo infrastrukturni node-ovi na istaknutim pozicijama</strong> (brda, tornjevi, visoke zgrade) s dobrom antenom</td>
 <td>Retransmitira bez nasumične odgode — "šiba dalje odmah". U praksi razlika prema CLIENT-u na običnim pozicijama je zanemariva, zato ROUTER nema smisla u stanu</td>
 </tr>
 <tr>
@@ -1948,17 +1948,17 @@ ovim pravilima:</p>
 ROUTER modu samo dodaje kolizije. ROUTER je rezerviran za pozicije tipa Cepeliš,
 Sv. Križ ili krov radiokluba — dogovori se u grupi prije postavljanja.</p>
 </blockquote>
-<p>Za infrastrukturne nodeove kojima nitko ne šalje izravne poruke može se dodatno uključiti
+<p>Za infrastrukturne node-ove kojima nitko ne šalje izravne poruke može se dodatno uključiti
 oznaka <em>Unmessageable</em>. Formalni dogovor zajednice o ovoj postavci trenutno ne postoji —
 koristi po vlastitoj procjeni.</p>
-<h2 id="imenovanje-nodeova">Imenovanje nodeova<a class="headerlink" href="#imenovanje-nodeova" title="Permanent link">&para;</a></h2>
+<h2 id="imenovanje-node-ova">Imenovanje node-ova<a class="headerlink" href="#imenovanje-node-ova" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p><strong>Napomena:</strong> Formalno pravilo imenovanja <strong>ne postoji</strong> (pitanje je eksplicitno
 postavljeno u zajednici) — dolje je opisana ustaljena praksa.</p>
 </blockquote>
 <h3 id="ustaljena-praksa">Ustaljena praksa<a class="headerlink" href="#ustaljena-praksa" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>Infrastrukturni nodeovi (routeri):</strong> <code>&lt;Lokacija&gt; R&lt;broj&gt;</code> — primjeri iz mreže:
+<li><strong>Infrastrukturni node-ovi (routeri):</strong> <code>&lt;Lokacija&gt; R&lt;broj&gt;</code> — primjeri iz mreže:
   <code>KaR1</code>, <code>KaR2</code>, <code>KaR3</code> (Karlovac), <code>Petrinja R1</code>, <code>Sisak R1</code>, <code>BROD R1</code>
   (Slavonski Brod).</li>
 <li><strong>Long name</strong> poželjno sadrži lokaciju, a mnogi dodaju i <code>CroMesh.eu</code> radi promocije
@@ -1968,10 +1968,10 @@ postavljeno u zajednici) — dolje je opisana ustaljena praksa.</p>
 <h3 id="radioamaterski-pozivni-znakovi-u-imenima">Radioamaterski pozivni znakovi u imenima<a class="headerlink" href="#radioamaterski-pozivni-znakovi-u-imenima" title="Permanent link">&para;</a></h3>
 <p>Stav iskusnih radioamatera u zajednici:</p>
 <ul>
-<li>Meshtastic <strong>nije radioamaterska služba</strong> — infrastrukturne nodeove nemoj nazivati
+<li>Meshtastic <strong>nije radioamaterska služba</strong> — infrastrukturne node-ove nemoj nazivati
   <code>9A...</code> jer to zbunjuje korisnike koji nisu radioamateri. Preporuka je geografsko
   imenovanje (<code>BROD R1</code> umjesto pozivnog znaka).</li>
-<li>Ako pozivni znak ipak koristiš u imenu svog osobnog nodea, koristi <strong>isključivo
+<li>Ako pozivni znak ipak koristiš u imenu svog osobnog node-a, koristi <strong>isključivo
   pozivni znak koji stvarno posjeduješ</strong> (provjerivo u HAKOM evidenciji dozvola).
   Blok <code>9A1**</code> rezerviran je za klubove odnosno zahtijeva posebne uvjete.</li>
 </ul>
