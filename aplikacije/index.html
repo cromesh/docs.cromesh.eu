@@ -1748,10 +1748,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zajednicko-svima" class="md-nav__link">
+  <a href="#zajednicke-karakteristike" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zajedničko svima
+        Zajedničke karakteristike
       
     </span>
   </a>
@@ -1823,10 +1823,10 @@ aplikaciji — sličnosti, poznati bugovi i najčešći problemi.</p>
 <p>Radi izravno u pregledniku bez instalacije, ali oslanja se na <strong>Web Bluetooth</strong> i <strong>Web
 Serial API</strong>, koje podržavaju samo preglednici bazirani na Chromiumu (Chrome, Edge) —
 Firefox i Safari ne rade. Spajanje je moguće preko HTTP-a (kad je node na istoj mreži),
-Bluetootha ili serijskog USB kabela. Najveći nedostatak: <strong>web client je efemeran</strong> —
+Bluetootha ili serijskog USB kabela. Najveći nedostatak: <strong>web client je privremen</strong> —
 osvježiš li stranicu, izgubiš prikazane poruke jer se ništa lokalno ne sprema, a node u
 memoriji drži tek ograničen broj zadnjih poruka (kružni buffer). Poznati bugovi
-uključuju povremeni neuspjeh u prosljeđivanju Bluetooth postavki na uređaj nakon
+uključuju povremenu neuspješnost u prosljeđivanju Bluetooth postavki na uređaj nakon
 spremanja te grešku "This connection type requires Web Bluetooth" na Linuxu čak i uz
 podržani Chrome (obično zbog isključenog Bluetootha na razini OS-a ili blokiranog
 <code>chrome://flags</code> eksperimenta).</p>
@@ -1851,8 +1851,8 @@ pritužba zajednice da Android i iOS timovi ne uvode nove opcije istovremeno). P
 zadnje dvije glavne verzije iOS-a/iPadOS-a/macOS-a. Isti BLE re-pairing problem kao na
 Androidu — nakon ponovnog flash-anja firmware-a treba zaboraviti uređaj u Bluetooth
 postavkama sustava i ponovno ga upariti.</p>
-<h2 id="zajednicko-svima">Zajedničko svima<a class="headerlink" href="#zajednicko-svima" title="Permanent link">&para;</a></h2>
-<p>Sve četiri koriste isti temeljni protokol i istu logiku konfiguracije (LoRa regija,
+<h2 id="zajednicke-karakteristike">Zajedničke karakteristike<a class="headerlink" href="#zajednicke-karakteristike" title="Permanent link">&para;</a></h2>
+<p>Sve četiri varijante koriste isti temeljni protokol i istu logiku konfiguracije (LoRa regija,
 kanali, uloge node-ova), pa QR kod/URL za pridruživanje kanalu generiran u jednoj
 aplikaciji radi i u ostalima. <strong>PKC (Public Key Cryptography) enkripcija za direktne
 poruke</strong> aktivno se uvodi u svim clientima, ali brzina uvođenja varira. Najčešći opći
