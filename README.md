@@ -4,11 +4,14 @@ Ova dokumentacija koristi [MkDocs Material](https://squidfunk.github.io/mkdocs-m
 
 ## Struktura dokumentacije
 
-- **Mreža** — dogovoreni standardi, kanali, MQTT i karta, uloge nodeova
-- **Postavke** — upute za konfiguraciju novog uređaja
-- **Hardver** — uređaji, antene, napajanje, montaža, 3D print kućišta
-- **Zajednica** — o nama, pravila ponašanja i regulativa
-- **FAQ** — česta pitanja početnika
+- **Home** — naslovnica s brzim poveznicama i pregledom zajednice
+- **Početak** — uvod u Meshtastic i prvi koraci za nove korisnike
+- **FAQ** — česta pitanja početnika, o zajednici, pravila ponašanja i regulativa
+- **Postavke** — konfiguracija uređaja (LoRa, kanali, korisnik, uređaj, MQTT)
+- **Odabir uređaja** — usporedba čipova (ESP32, nRF52, RP2040) i preporuke uređaja
+- **Hardware** — antene, montaža i zaštita, 3D print kućišta, solarno napajanje
+- **Software** — aplikacije, firmware, MQTT
+- **Mreža** — dogovoreni standardi, kanali, uloge node-ova
 
 ## Licenca
 
