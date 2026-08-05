@@ -5,8 +5,8 @@ description: Dogovoreni standardi hrvatske Meshtastic mreže — regija, modem p
 
 # Standardi CroMesh mreže (baza odluka)
 
-Ova stranica je **izvor istine** za dogovorene postavke CroMesh mreže. Ako tvoja
-konfiguracija odstupa od tablice ispod, nećeš (pouzdano) komunicirati s ostatkom mreže.
+Ova stranica sadrži dogovorene postavke CroMesh mreže. Ako tvoja
+konfiguracija odstupa od tablice ispod, nećeš (pouzdano) moći komunicirati s ostatkom mreže.
 
 ## Sažetak dogovorenih postavki
 
@@ -34,12 +34,12 @@ Zajednica je **21. 3. 2026. u 00:01** provela dogovoreni test prelaska na `MEDIU
 preset (veća propusnost, teoretski stabilniji kanal u gustim mrežama, ali ~30 % manji domet).
 
 **Rezultat: test nije izdržao ni 24 sata.** Mreža je u Hrvatskoj još uvijek prerijetka —
-glavni problem je domet (node-ovi se međusobno ne čuju), a `MEDIUM_FAST` domet dodatno
+glavni problem je domet (node-ovi se međusobno ne čuju), a `MEDIUM_FAST` domet ga dodatno
 smanjuje. Zaključci zajednice:
 
 - `MEDIUM_FAST` ima smisla tek uz **100+ node-ova u urbanom području** i channel
   utilization trajno iznad ~20–50 %. Trenutno stanje mreže (2026.) ne zadovoljava
-  nijedan od tih uvjeta.
+  niti jedan od tih uvjeta.
 - **Službeni preset CroMesh mreže ostaje `LongFast`.** Svaka buduća promjena bit će
   najavljena i dogovorena u Telegram grupi.
 
@@ -59,13 +59,13 @@ Detalji o ulogama node-ova (CLIENT, CLIENT_MUTE, ROUTER...) nalaze se na stranic
 
 ## Regulatorni okvir (ukratko)
 
-- 868 MHz je ISM pojas — **dozvola nije potrebna** za Meshtastic uređaje.
+- 868 MHz je ISM pojas — **za Meshtastic uređaje nije potrebna dozvola**.
 - Zakonski limit efektivne izračene snage (ERP) je **27 dBm (500 mW)** u podpojasu koji
-  koristi LongFast. Pripazi: uređaj na 22 dBm + antena od 10 dBi prelazi zakonski limit.
+  koristi LongFast. Upozorenje: uređaj na 22 dBm + antena od 10 dBi prelazi zakonski limit.
   Vidi [Antene](../antene/index.md) i [Pravila](../zajednica/pravila.md).
 - Regulator u RH je **HAKOM**; radioamaterske dozvole i pozivni znakovi provjeravaju se
   na HAKOM-ovim stranicama, ali za Meshtastic **nisu potrebni**.
 
 > **Napomena:** Zajednica još nema formalno definiran postupak donošenja odluka o
 > promjeni standarda (tko odlučuje, kojom većinom, gdje se glasa). Dosadašnje odluke
-> donošene su konsenzusom na meetupima i u Telegram grupi.
+> donošene su konsenzusom na meetup-ima i u Telegram grupi.

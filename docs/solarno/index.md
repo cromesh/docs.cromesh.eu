@@ -58,7 +58,7 @@ pouzdanijim — referentni node na Cepelišu s tom kombinacijom mjesecima ne pad
   ~3 W).
 - **RAK WisBlock base ploče imaju ugrađen solarni ulaz** — najjednostavnija integracija.
 - Seeed XIAO kitovi nemaju solarni ulaz: solar ide preko vanjskog MPPT-a na bateriju,
-  baterija s BMS-om na node. Pripazi: potrošnja node-a tijekom punjenja zbunjuje
+  baterija s BMS-om na node. Upozorenje: potrošnja node-a tijekom punjenja zbunjuje
   regulator pri procjeni napunjenosti.
 - Neke ploče s ugrađenim kontrolerom (npr. AXP192) po testovima ne pune iznad 4,15 V —
   to je normalno i produžuje život ćelije.

@@ -26,10 +26,12 @@ v3   2026-07-22  Restrukturirana navigacija (13 → 9 top-level tabova)
 │  ├─ v3.1.1        Copyright footer, ispravci
 │  ├─ v3.1.2        Vodič: oživljavanje LiIon
 │  └─ v3.1.3        Licenca CC BY-SA, struktura u README
-└─ v3.2            Tags plugin, trademark napomena, MQTT vodič dovršen
-   ├─ v3.2.1        Manji ispravci sadržaja i footera
-   ├─ v3.2.2        Lektura teksta (Damir)
-   └─ v3.2.3        Manje strukturne izmjene, nastavak lekture (trenutna verzija)
+├─ v3.2            Tags plugin, trademark napomena, MQTT vodič dovršen
+│  ├─ v3.2.1        Manji ispravci sadržaja i footera
+│  ├─ v3.2.2        Lektura teksta (Damir)
+│  └─ v3.2.3        cromesh.eu kanal, node-* hifenizacija, nastavak lekture
+└─ v3.3            Treći krug lekture (Damir), terminološka dosljednost
+   └─ v3.3.0        Trenutna verzija
 ```
 
 ## Changelog
@@ -139,7 +141,7 @@ Prve tematske sekcije dodane u dokumentaciju. Doprinos: **9A3CYN, 9A3AVX, 9A3VEX
 - Tekst dokumentacije lekturiran (terminologija i gramatika)
 - Lekturu odradio kolega Damir
 
-### v3.2.3 — trenutna verzija
+### v3.2.3
 
 - Dodane postavke kanala `cromesh.eu` (kanal 1) u `postavke/channel-postavke.md` —
   Uplink i Downlink isključeni
@@ -149,3 +151,13 @@ Prve tematske sekcije dodane u dokumentaciju. Doprinos: **9A3CYN, 9A3AVX, 9A3VEX
 - Svi padežni oblici riječi "node" sada su dosljedno pisani s crticom
   (`node-a`, `node-u`, `node-om`, `node-ovi`, `node-ove`, `node-ova`, `node-ovima`)
   kroz cijelu dokumentaciju
+
+### v3.3.0 — trenutna verzija
+
+- Treći krug lekture (Damir): ispravci na `hardver/ozivljavanje-18650.md`,
+  `aplikacije/index.md`, `firmware/index.md`, `mreza/standardi.md` i `uvod.md`
+- Terminološka dosljednost oko "flashanja" — usklađeno na `flash-anje`/`flash-ati`
+  kroz `firmware/index.md`, uključujući preimenovanu OTA metodu
+- `Pripazi:` → `Upozorenje:` (usklađeno kroz `standardi.md`, `solarno/index.md`,
+  `mreza/kanali.md`)
+- Svih 8 naslova na `uvod.md` usklađeno iz title-case u hrvatski rečenični case

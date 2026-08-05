@@ -50,4 +50,4 @@ pune napunjenosti.
 
 Za dugoročno skladištenje: napon mirovanja ~3,7–3,9V.
 
-*Hobbyist priručnik, ne sigurnosna certifikacija.*
+*Ovo su informacije iz Hobbyist priručnika, a ne sigurnosna certifikacija.*

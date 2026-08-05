@@ -45,5 +45,5 @@ Za node-ove spojene na MQTT (vidi [MQTT i karta](../mqtt/index.md)):
 
 Za vlastito testiranje i eksperimente slobodno kreiraj privatni (šifrirani) kanal kao
 dodatni sekundarni kanal — to je i preporuka zajednice da se testni promet ne slijeva u
-javni `LongFast`. Pripazi: ako na privatnom kanalu uključiš uplink/downlink, njegov
+javni `LongFast`. Upozorenje: ako na privatnom kanalu uključiš uplink/downlink, njegov
 (šifrirani) promet izlazi na MQTT server.

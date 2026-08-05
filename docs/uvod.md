@@ -12,7 +12,7 @@ hide:
 
 Meshtastic je open-source projekt koji omogućuje dalekosežnu, niskopotrošnu, mesh komunikaciju koristeći jeftin hardware. Primarno je osmišljen za aktivnosti na otvorenom, hitne situacije i druge scenarije u kojima tradicionalna komunikacijska infrastruktura nije dostupna.
 
-## Glavne Komponente
+## Glavne komponente
 
 ### Hardware
 
@@ -23,14 +23,14 @@ Meshtastic je open-source projekt koji omogućuje dalekosežnu, niskopotrošnu, 
 
 [Meshtastic firmware](https://github.com/meshtastic/firmware) instalira se na LoRa uređaje i omogućuje rad i konfiguraciju uređaja. 
 
-### Mobilne Aplikacije
+### Mobilne aplikacije
 
 - **Meshtastic aplikacija**: Dostupna za [Android](https://play.google.com/store/apps/details?id=com.geeksville.mesh&pcampaignid=web_share) i [iOS](https://apps.apple.com/in/app/meshtastic/id1586432531), omogućuje korisnicima konfiguraciju uređaja, slanje poruka i vizualizaciju mreže. Povezuje se s LoRa uređajima putem Bluetootha, WiFi ili serial komunikacije.  
 - **Web sučelje**: Također postoji [web sučelje](https://client.meshtastic.org/messages/broadcast/0) koje nudi slične funkcionalnosti putem internetskog preglednika.
 
-## Kako Meshtastic Funkcionira
+## Kako Meshtastic funkcionira
 
-### Formiranje Mreže
+### Formiranje mreže
 
 - **Postavljanje node-ova**: Svaki LoRa modul djeluje kao node u mreži. Kada se uključi, automatski komunicira s obližnjim node-ovima i time formira mesh.  
 - **Samoobnavljanje i skalabilnost**: Mreža se može automatski reorganizirati ako neki node prestane raditi, čineći sustav otpornim i proširivim s velikim brojem node-ova.
@@ -40,7 +40,7 @@ Meshtastic je open-source projekt koji omogućuje dalekosežnu, niskopotrošnu, 
 - **Usmjeravanje poruka**: Kada se poruka pošalje s jednog node-a, ona se prenosi kroz mrežu dok ne dosegne svoje odredište ovisno o hop postavci. 
 - **Enkripcija**: Poruke su šifrirane radi zaštite privatnosti i sigurnosti unutar mreže.
 
-### Domet i Energetska Učinkovitost
+### Domet i energetska učinkovitost
 
 - **Veliki domet**: LoRa tehnologija omogućuje komunikaciju na udaljenostima od nekoliko kilometara, ovisno o okruženju i konfiguraciji antene i uređaja.  
 - **Niska potrošnja energije**: Meshtastic je dizajniran za rad s malom potrošnjom, što ga čini pogodnim za uređaje na baterije i dugotrajne primjene.
@@ -53,15 +53,15 @@ Planinari i zaljubljenici u prirodu mogu koristiti Meshtastic za ostanak u konta
 
 ### Hitne situacije
 
-Meshtastic može biti od ključne važnosti u katastrofama kada je tradicionalna komunikacijska infrastruktura oštećena ili nedostupna.
+Meshtastic može biti od ključne važnosti u slučajevima katastrofa ili nepogoda kada je tradicionalna komunikacijska infrastruktura oštećena ili nedostupna.
 
 ### Zajedničke mreže
 
 Lokalne zajednice mogu postaviti vlastite mreže za događanja, festivale ili potrebe lokalne komunikacije.
 
-## Kako Početi
+## Kako početi
 
-### Postavljanje Hardware-a
+### Postavljanje hardware-a
 
 Kupite [kompatibilan](https://meshtastic.org/docs/hardware/devices/) LoRa uređaj i [instalirajte Meshtastic firmware](https://flasher.meshtastic.org/) prema službenim uputama.
 
@@ -69,6 +69,6 @@ Kupite [kompatibilan](https://meshtastic.org/docs/hardware/devices/) LoRa uređa
 
 Koristite Meshtastic mobilnu aplikaciju ili web sučelje za konfiguraciju node-ova, postavljanje enkripcijskih ključeva i upravljanje mrežnim postavkama.
 
-### Postavljanje u Rad
+### Postavljanje u rad
 
 Postavite node-ove na željeno područje i započnite komunikaciju putem mreže.
