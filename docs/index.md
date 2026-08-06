@@ -85,4 +85,4 @@ decentraliziranu, off-grid LoRa mesh mrežu na području Republike Hrvatske. Mre
    [karti](mqtt/index.md).
 
 > **Napomena:** Ako imaš pitanja, slobodno pitaj u Telegram grupi — zajednica je aktivna i
-> rado pomaže novim članovima. Prije pitanja preporučujemo pregledati [FAQ](faq.md).
+> rado pomaže novim članovima. Prije pitanja preporučujemo pregledati [Česta pitanja](faq.md).

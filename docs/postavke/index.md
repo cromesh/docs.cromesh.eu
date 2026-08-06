@@ -12,7 +12,7 @@ tags:
 Prije nastavka **ažurirajte firmware uređaja** pomoću [Web Flashera](https://flasher.meshtastic.org/).  
 Najnovije stabilno izdanje — čak i ako je označeno kao *Beta* — obično je sigurna opcija.
 
-# Opće Preporuke
+# Opće preporuke
 
 - Zadržite **automatske beacon signale** (telemetrija i pozicija) na **6 sati ili više**, posebno za stacionarne node-ove.  
 - Ako se krećete, omogućite **Smart Position** s minimum interval: **10 minuta**

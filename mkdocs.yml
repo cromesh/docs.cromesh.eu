@@ -10,8 +10,8 @@ nav:
   - 📖 Početak:
     - Uvod u Meshtastic: uvod.md
     - Prvi koraci: postavke/prvi-koraci.md  # namjerno duplicirano i pod Postavke
-  - ❓ FAQ:
-    - FAQ: faq.md
+  - ❓ Česta pitanja:
+    - Česta pitanja: faq.md
     - O zajednici: zajednica/o-zajednici.md
     - Pravila: zajednica/pravila.md
   - ⚙️ Postavke: 

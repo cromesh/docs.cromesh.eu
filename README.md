@@ -6,7 +6,7 @@ Ova dokumentacija koristi [MkDocs Material](https://squidfunk.github.io/mkdocs-m
 
 - **Home** — naslovnica s brzim poveznicama i pregledom zajednice
 - **Početak** — uvod u Meshtastic i prvi koraci za nove korisnike
-- **FAQ** — česta pitanja početnika, o zajednici, pravila ponašanja i regulativa
+- **Česta pitanja** — česta pitanja početnika, o zajednici, pravila ponašanja i regulativa
 - **Postavke** — konfiguracija uređaja (LoRa, kanali, korisnik, uređaj, MQTT)
 - **Odabir uređaja** — usporedba čipova (ESP32, nRF52, RP2040) i preporuke uređaja
 - **Hardware** — antene, montaža i zaštita, 3D print kućišta, solarno napajanje
@@ -34,7 +34,8 @@ v3   2026-07-22  Restrukturirana navigacija (13 → 9 top-level tabova)
 │  ├─ v3.2.2        Lektura teksta (Damir)
 │  └─ v3.2.3        cromesh.eu kanal, node-* hifenizacija, nastavak lekture
 └─ v3.3            Treći krug lekture (Damir), terminološka dosljednost
-   └─ v3.3.0        Trenutna verzija
+   ├─ v3.3.0        Flash-anje/Upozorenje/uvod heading dosljednost
+   └─ v3.3.1        Trenutna verzija
 ```
 
 ## Changelog
@@ -155,7 +156,7 @@ Prve tematske sekcije dodane u dokumentaciju. Doprinos: **9A3CYN, 9A3AVX, 9A3VEX
   (`node-a`, `node-u`, `node-om`, `node-ovi`, `node-ove`, `node-ova`, `node-ovima`)
   kroz cijelu dokumentaciju
 
-### v3.3.0 — trenutna verzija
+### v3.3.0
 
 - Treći krug lekture (Damir): ispravci na `hardver/ozivljavanje-18650.md`,
   `aplikacije/index.md`, `firmware/index.md`, `mreza/standardi.md` i `uvod.md`
@@ -164,3 +165,9 @@ Prve tematske sekcije dodane u dokumentaciju. Doprinos: **9A3CYN, 9A3AVX, 9A3VEX
 - `Pripazi:` → `Upozorenje:` (usklađeno kroz `standardi.md`, `solarno/index.md`,
   `mreza/kanali.md`)
 - Svih 8 naslova na `uvod.md` usklađeno iz title-case u hrvatski rečenični case
+
+### v3.3.1 — trenutna verzija
+
+- Naslov `Opće Preporuke` → `Opće preporuke` u `postavke/index.md`
+- Nav tab `FAQ` preimenovan u `Česta pitanja` (`mkdocs.yml`, uz usklađenu poveznicu
+  na naslovnici i opis u README "Struktura dokumentacije")
