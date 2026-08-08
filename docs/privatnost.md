@@ -90,12 +90,12 @@ prijave pozicije sprječava ponovni prikaz.
 
 Kao ispitanik imaš pravo na:
 
-- **pristup** svojim podacima,
-- **ispravak** netočnih podataka,
-- **brisanje** ("pravo na zaborav"),
-- **ograničenje obrade**,
-- **prigovor** na obradu,
-- **prenosivost** podataka.
+- **pristup** svojim podacima
+- **ispravak** netočnih podataka
+- **brisanje** ("pravo na zaborav")
+- **ograničenje obrade**
+- **prigovor** na obradu
+- **prenosivost** podataka
 
 Budući da su podaci koje šalješ na kartu pod tvojom izravnom kontrolom (Long Name,
 pozicija, MQTT postavke), najbrži način ostvarivanja ovih prava je **isključivanje

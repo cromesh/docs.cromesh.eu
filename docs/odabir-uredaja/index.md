@@ -1,6 +1,6 @@
 ---
 title: Odabir pravog uređaja za Meshtastic
-description: Vodič kroz najčešće mikrokontrolere i uređaje koji se koriste s Meshtasticom, uz usporedbu konkretnih modela korištenih u CroMesh zajednici.
+description: Vodič kroz najčešće mikrokontrolere i uređaje koji se koriste s Meshtastic-om, uz usporedbu konkretnih modela korištenih u CroMesh zajednici.
 tags:
   - Hardware
   - Uređaji

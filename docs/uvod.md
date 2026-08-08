@@ -1,6 +1,6 @@
 ---
-title: Osnove Meshtastica
-description: Detaljniji pregled Meshtastica 
+title: Osnove Meshtastic-a
+description: Detaljniji pregled Meshtastic-a 
 tags:
   - Osnove
   - Kako funkcionira

@@ -35,7 +35,8 @@ v3   2026-07-22  Restrukturirana navigacija (13 → 9 top-level tabova)
 │  └─ v3.2.3        cromesh.eu kanal, node-* hifenizacija, nastavak lekture
 └─ v3.3            Treći krug lekture (Damir), terminološka dosljednost
    ├─ v3.3.0        Flash-anje/Upozorenje/uvod heading dosljednost
-   └─ v3.3.1        Trenutna verzija
+   ├─ v3.3.1        Preimenovan FAQ nav tab, Opće preporuke heading
+   └─ v3.3.2        Trenutna verzija
 ```
 
 ## Changelog
@@ -166,8 +167,15 @@ Prve tematske sekcije dodane u dokumentaciju. Doprinos: **9A3CYN, 9A3AVX, 9A3VEX
   `mreza/kanali.md`)
 - Svih 8 naslova na `uvod.md` usklađeno iz title-case u hrvatski rečenični case
 
-### v3.3.1 — trenutna verzija
+### v3.3.1
 
 - Naslov `Opće Preporuke` → `Opće preporuke` u `postavke/index.md`
 - Nav tab `FAQ` preimenovan u `Česta pitanja` (`mkdocs.yml`, uz usklađenu poveznicu
   na naslovnici i opis u README "Struktura dokumentacije")
+
+### v3.3.2 — Final touches and proofing. TY Damir!
+
+- Uklonjeni suvišni zarezi i točka u popisu prava ispitanika u `privatnost.md`
+  ("Tvoja prava")
+- Svi padežni oblici riječi "Meshtastic" sada su dosljedno pisani s crticom
+  (`Meshtastic-a`, `Meshtastic-u`, `Meshtastic-om`) kroz cijelu dokumentaciju

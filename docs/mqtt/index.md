@@ -1,6 +1,6 @@
 ---
 title: Napredno o MQTT
-description: Detaljnije objašnjenje MQTT-a i njegove uloge u Meshtasticu — kako spojiti node na mqtt.cromesh.eu i pojaviti se na karti map.cromesh.eu.
+description: Detaljnije objašnjenje MQTT-a i njegove uloge u Meshtastic-u — kako spojiti node na mqtt.cromesh.eu i pojaviti se na karti map.cromesh.eu.
 tags:
   - MQTT
   - Server
@@ -18,7 +18,7 @@ CroMesh održava vlastitu infrastrukturu:
 - **[map.cromesh.eu](https://map.cromesh.eu)** — Meshview instanca s kartom node-ova i
   uvidom u promet mreže.
 
-## Čemu služi MQTT u Meshtasticu
+## Čemu služi MQTT u Meshtastic-u
 
 Node spojen na MQTT (preko WiFi-ja ili Bluetooth proxyja kroz mobitel) radi kao
 **gateway**: prijavljuje serveru sebe **i sve node-ove koje čuje preko LoRa-e**. To je
