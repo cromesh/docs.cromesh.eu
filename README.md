@@ -36,7 +36,8 @@ v3   2026-07-22  Restrukturirana navigacija (13 → 9 top-level tabova)
 └─ v3.3            Treći krug lekture (Damir), terminološka dosljednost
    ├─ v3.3.0        Flash-anje/Upozorenje/uvod heading dosljednost
    ├─ v3.3.1        Preimenovan FAQ nav tab, Opće preporuke heading
-   └─ v3.3.2        Trenutna verzija
+   ├─ v3.3.2        Meshtastic-* hifenizacija, dorade privatnost.md
+   └─ v3.3.3        Trenutna verzija
 ```
 
 ## Changelog
@@ -173,9 +174,16 @@ Prve tematske sekcije dodane u dokumentaciju. Doprinos: **9A3CYN, 9A3AVX, 9A3VEX
 - Nav tab `FAQ` preimenovan u `Česta pitanja` (`mkdocs.yml`, uz usklađenu poveznicu
   na naslovnici i opis u README "Struktura dokumentacije")
 
-### v3.3.2 — Final touches and proofing. TY Damir!
+### v3.3.2
 
 - Uklonjeni suvišni zarezi i točka u popisu prava ispitanika u `privatnost.md`
   ("Tvoja prava")
 - Svi padežni oblici riječi "Meshtastic" sada su dosljedno pisani s crticom
   (`Meshtastic-a`, `Meshtastic-u`, `Meshtastic-om`) kroz cijelu dokumentaciju
+
+### v3.3.3 — Meshcore HR linkovi
+
+- Dodane poveznice na Hrvatsku MeshCore zajednicu u "Naše poveznice"
+  (`meshcore.com.hr` i `map.meshcore.com.hr`)
+- Dodan opis Telegram poveznici; usput ispravljen nepotpun redak tablice
+  (nedostajao stupac "Opis" i završni znak `|`)
