@@ -5,6 +5,7 @@ tags:
   - CROMESH
   - Dokumentacija
   - Meshtastic
+  - MeshCore
 hide:
   - navigation
 ---

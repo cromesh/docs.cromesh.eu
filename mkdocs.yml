@@ -43,6 +43,8 @@ nav:
     - Standardi: mreza/standardi.md
     - Kanali: mreza/kanali.md
     - Uloge i imenovanje: mreza/uloge-i-imenovanje.md
+  - 📡 MeshCore:
+    - MeshCore: meshcore/index.md
   
 theme:
   name: material

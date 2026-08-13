@@ -12,6 +12,7 @@ Ova dokumentacija koristi [MkDocs Material](https://squidfunk.github.io/mkdocs-m
 - **Hardware** — antene, montaža i zaštita, 3D print kućišta, solarno napajanje
 - **Software** — aplikacije, firmware, MQTT
 - **Mreža** — dogovoreni standardi, kanali, uloge node-ova
+- **MeshCore** — hrvatska MeshCore zajednica, usporedba s Meshtastic-om i poveznice
 
 ## Licenca
 
@@ -33,11 +34,12 @@ v3   2026-07-22  Restrukturirana navigacija (13 → 9 top-level tabova)
 │  ├─ v3.2.1        Manji ispravci sadržaja i footera
 │  ├─ v3.2.2        Lektura teksta (Damir)
 │  └─ v3.2.3        cromesh.eu kanal, node-* hifenizacija, nastavak lekture
-└─ v3.3            Treći krug lekture (Damir), terminološka dosljednost
-   ├─ v3.3.0        Flash-anje/Upozorenje/uvod heading dosljednost
-   ├─ v3.3.1        Preimenovan FAQ nav tab, Opće preporuke heading
-   ├─ v3.3.2        Meshtastic-* hifenizacija, dorade privatnost.md
-   └─ v3.3.3        Trenutna verzija
+├─ v3.3            Treći krug lekture (Damir), terminološka dosljednost
+│  ├─ v3.3.0        Flash-anje/Upozorenje/uvod heading dosljednost
+│  ├─ v3.3.1        Preimenovan FAQ nav tab, Opće preporuke heading
+│  ├─ v3.3.2        Meshtastic-* hifenizacija, dorade privatnost.md
+│  └─ v3.3.3        Meshcore HR linkovi
+└─ v3.4            Trenutna verzija
 ```
 
 ## Changelog
@@ -187,3 +189,10 @@ Prve tematske sekcije dodane u dokumentaciju. Doprinos: **9A3CYN, 9A3AVX, 9A3VEX
   (`meshcore.com.hr` i `map.meshcore.com.hr`)
 - Dodan opis Telegram poveznici; usput ispravljen nepotpun redak tablice
   (nedostajao stupac "Opis" i završni znak `|`)
+
+### v3.4.0 — trenutna verzija
+
+- Dodana oznaka (tag) `MeshCore` na naslovnicu
+- Dodana nova stranica/nav tab "MeshCore" (desno od "Mreža") — kratak opis MeshCore
+  mreže u Hrvatskoj, usporedba usmjeravanja poruka Meshtastic-a i MeshCore-a, te
+  poveznice na meshcore.com.hr i map.meshcore.com.hr
