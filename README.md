@@ -6,13 +6,13 @@ Ova dokumentacija koristi [MkDocs Material](https://squidfunk.github.io/mkdocs-m
 
 - **Home** — naslovnica s brzim poveznicama i pregledom zajednice
 - **Početak** — uvod u Meshtastic i prvi koraci za nove korisnike
-- **Česta pitanja** — česta pitanja početnika, o zajednici, pravila ponašanja i regulativa
+- **Česta pitanja** — česta pitanja početnika, o zajednici, pravila ponašanja i
+  regulativa, MeshCore (hrvatska zajednica i usporedba s Meshtastic-om)
 - **Postavke** — konfiguracija uređaja (LoRa, kanali, korisnik, uređaj, MQTT)
 - **Odabir uređaja** — usporedba čipova (ESP32, nRF52, RP2040) i preporuke uređaja
 - **Hardware** — antene, montaža i zaštita, 3D print kućišta, solarno napajanje
 - **Software** — aplikacije, firmware, MQTT
 - **Mreža** — dogovoreni standardi, kanali, uloge node-ova
-- **MeshCore** — hrvatska MeshCore zajednica, usporedba s Meshtastic-om i poveznice
 
 ## Licenca
 
@@ -39,7 +39,9 @@ v3   2026-07-22  Restrukturirana navigacija (13 → 9 top-level tabova)
 │  ├─ v3.3.1        Preimenovan FAQ nav tab, Opće preporuke heading
 │  ├─ v3.3.2        Meshtastic-* hifenizacija, dorade privatnost.md
 │  └─ v3.3.3        Meshcore HR linkovi
-└─ v3.4            Trenutna verzija
+└─ v3.4            Novi ogranak: MeshCore integracija
+   ├─ v3.4.0        Tag, stranica i nav tab za MeshCore
+   └─ v3.4.1        Trenutna verzija
 ```
 
 ## Changelog
@@ -190,9 +192,24 @@ Prve tematske sekcije dodane u dokumentaciju. Doprinos: **9A3CYN, 9A3AVX, 9A3VEX
 - Dodan opis Telegram poveznici; usput ispravljen nepotpun redak tablice
   (nedostajao stupac "Opis" i završni znak `|`)
 
-### v3.4.0 — trenutna verzija
+### v3.4.0
 
 - Dodana oznaka (tag) `MeshCore` na naslovnicu
 - Dodana nova stranica/nav tab "MeshCore" (desno od "Mreža") — kratak opis MeshCore
   mreže u Hrvatskoj, usporedba usmjeravanja poruka Meshtastic-a i MeshCore-a, te
   poveznice na meshcore.com.hr i map.meshcore.com.hr
+
+### v3.4.1 — trenutna verzija
+
+- MeshCore stranica premještena iz zasebnog top-level nav taba u temu unutar
+  "Česta pitanja" (nakon "Pravila")
+- Uklonjena dva MeshCore linka iz tablice "Naše poveznice" na naslovnici — MeshCore
+  poveznice ostaju dostupne na samoj MeshCore stranici
+- Dodana nova FAQ tema "Nejasnoće u Meshtastic tehnologiji" na kraju sekcije "Osnove"
+  — objašnjenje zašto službena Meshtastic dokumentacija zna biti nejasna početnicima,
+  uz dvije preporučene YouTube poveznice
+- Uklonjena oznaka (tag) `MeshCore` s naslovnice — ostaje vidljiva na samoj MeshCore
+  stranici (sada pod "Česta pitanja")
+- Dodana napomena o autorskim pravima na MeshCore stranicu (zaštitni znak, MIT licenca,
+  isključenje jamstva) — sažeta i stilizirana verzija istog obrasca kao postojeća
+  Meshtastic napomena u footeru

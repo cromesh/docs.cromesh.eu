@@ -14,6 +14,7 @@ nav:
     - Česta pitanja: faq.md
     - O zajednici: zajednica/o-zajednici.md
     - Pravila: zajednica/pravila.md
+    - MeshCore: meshcore/index.md
   - ⚙️ Postavke: 
     - Postavke: postavke/index.md
     - Prvi koraci: postavke/prvi-koraci.md  # namjerno duplicirano i pod Početak
@@ -43,8 +44,6 @@ nav:
     - Standardi: mreza/standardi.md
     - Kanali: mreza/kanali.md
     - Uloge i imenovanje: mreza/uloge-i-imenovanje.md
-  - 📡 MeshCore:
-    - MeshCore: meshcore/index.md
   
 theme:
   name: material

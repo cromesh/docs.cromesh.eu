@@ -35,6 +35,30 @@ Najjeftiniji ulaz: **Heltec V3**. Detaljna usporedba s cijenama i poznatim probl
 
 Domet ovisi prije svega o **visini antene i liniji optičke vidljivosti**, ne o snazi.
 
+### Nejasnoće u Meshtastic tehnologiji
+
+**Zašto Meshtastic ne objašnjava sam sebe dovoljno dobro?**
+
+Iako je koncept moćan, Meshtastic je primarno projekt za hobiste, entuzijaste i
+tehnički potkovane korisnike. Zbog toga, službena dokumentacija i objašnjenja često
+pretpostavljaju određeno predznanje, što može biti zbunjujuće za početnike. Neke od
+glavnih prepreka su:
+
+- **Žargon i tehnički detalji** — dokumentacija koristi previše tehničkog žargona.
+  Bez dovoljno objašnjenja pojmova poput LoRa, mesh networking, node-ovi, enkripcija,
+  `Coding Rate` i `Spreading Factor (SF)`, korisnicima je teško razumjeti o čemu se radi.
+- **Fokus na "kako" umjesto na "što"** — dokumentacija se više fokusira na to kako
+  instalirati firmware, konfigurirati postavke i riješiti probleme, nego na jasno
+  objašnjenje temeljnog koncepta i praktične primjene.
+- **Nejasne upute za početnike** — teško je pronaći jednostavan, korak-po-korak vodič
+  za nekoga tko tek ulazi u svijet Meshtastica, pogotovo u smislu što točno kupiti i
+  kako početi.
+
+Mi preporučujemo ova dva YouTube videa:
+
+1. [Što je Meshtastic? (eng)](https://www.youtube.com/watch?v=oAo2sb8LpFc&ab_channel=TheCommsChannel)
+2. [Što je Meshtastic? (eng)](https://www.youtube.com/watch?v=P9G9hR3T4po&ab_channel=323Labs)
+
 ## "Ne radi mi"
 
 ### Poslao sam poruku i nitko ne odgovara. Što je krivo?

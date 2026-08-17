@@ -5,7 +5,6 @@ tags:
   - CROMESH
   - Dokumentacija
   - Meshtastic
-  - MeshCore
 hide:
   - navigation
 ---
@@ -71,8 +70,6 @@ decentraliziranu, off-grid LoRa mesh mrežu na području Republike Hrvatske. Mre
 | MQTT server | `mqtt.cromesh.eu` | Zajednički MQTT za kartu i gateway node-ove |
 | GitHub | [github.com/cromesh/docs.cromesh.eu](https://github.com/cromesh/docs.cromesh.eu) | Izvor ove dokumentacije — PR-ovi su dobrodošli |
 | Telegram | [t.me/+q1MRpiblCNswNDlk](https://t.me/+q1MRpiblCNswNDlk) | Poveznica za ulaz u Telegram grupu |
-| MeshCore HR | [meshcore.com.hr](https://meshcore.com.hr/) | Hrvatska MeshCore zajednica |
-| MeshCore HR karta | [map.meshcore.com.hr](https://map.meshcore.com.hr/) | Karta MeshCore Hrvatska |
 
 ## Brzi start u 5 koraka
 
