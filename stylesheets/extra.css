@@ -107,11 +107,13 @@
   min-height: 9.5rem;
   padding: 1.25rem;
   color: rgba(255,255,255,.9);
+  font-size: 0.9rem;
 }
 
 .cromesh-feature-card h3 {
   color: #fff;
   margin-top: .5rem;
+  font-size: 1.1rem;
 }
 
 .cromesh-icon {
