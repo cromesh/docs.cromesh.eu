@@ -91,7 +91,7 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
-  max-width: 70rem;
+  max-width: 80rem;
 }
 
 .cromesh-feature-card,
@@ -198,51 +198,4 @@
       linear-gradient(90deg, rgba(3,7,10,.9), rgba(3,7,10,.72)),
       url("../assets/images/cromesh-hr-mesh-background.webp") 57% center / cover no-repeat;
   }
-}
-
-
-/* v3.5.0 — CroMesh map card under DODATNE POVEZNICE */
-.cromesh-map-sidebar-card {
-  display: block;
-  margin: .8rem .9rem 1rem;
-  padding: .45rem;
-  border: 1px solid rgba(255,255,255,.16);
-  border-radius: .7rem;
-  background: rgba(7,11,15,.68);
-  box-shadow: 0 10px 28px rgba(0,0,0,.24);
-  backdrop-filter: blur(7px);
-  text-decoration: none !important;
-  overflow: hidden;
-}
-
-.cromesh-map-sidebar-card:hover {
-  border-color: rgba(255,45,45,.65);
-  transform: translateY(-1px);
-}
-
-.cromesh-map-sidebar-card img {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1.38 / 1;
-  object-fit: cover;
-  border-radius: .45rem;
-}
-
-.cromesh-map-sidebar-card-caption {
-  display: block;
-  padding: .55rem .25rem .2rem;
-  color: rgba(255,255,255,.9);
-  font-size: .72rem;
-  line-height: 1.35;
-}
-
-.cromesh-map-sidebar-card-caption strong {
-  color: #fff;
-}
-
-.cromesh-map-sidebar-card-caption span {
-  display: block;
-  margin-top: .12rem;
-  color: #ff6b6b;
 }
