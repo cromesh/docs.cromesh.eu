@@ -13,6 +13,7 @@ nav:
     - Česta pitanja: faq.md
     - O zajednici: zajednica/o-zajednici.md
     - Pravila: zajednica/pravila.md
+    - MeshCore: meshcore/index.md
   - ⚙️ Postavke:
     - Postavke: postavke/index.md
     - Prvi koraci: postavke/prvi-koraci.md  # namjerno duplicirano i pod Početak
@@ -42,7 +43,6 @@ nav:
     - Standardi: mreza/standardi.md
     - Kanali: mreza/kanali.md
     - Uloge i imenovanje: mreza/uloge-i-imenovanje.md
-
 theme:
   name: material
   language: hr
@@ -68,7 +68,6 @@ theme:
     scheme: slate
     primary: green
     accent: dark-green
-
   font:
     text: Roboto
     code: Roboto Mono
@@ -127,7 +126,6 @@ plugins:
 copyright: >
   Copyright &copy; 2026 CroMesh (cromesh.eu) — sadržaj dostupan pod licencom
   <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
-
 extra:
   social:
     - icon: fontawesome/brands/telegram
