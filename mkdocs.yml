@@ -66,8 +66,8 @@ theme:
     - toc.follow
   palette:
     scheme: slate
-    primary: green
-    accent: dark-green
+    primary: black
+    accent: red
   font:
     text: Roboto
     code: Roboto Mono
@@ -126,6 +126,8 @@ plugins:
 copyright: >
   Copyright &copy; 2026 CroMesh (cromesh.eu) — sadržaj dostupan pod licencom
   <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
+extra_css:
+  - stylesheets/extra.css
 extra:
   social:
     - icon: fontawesome/brands/telegram
