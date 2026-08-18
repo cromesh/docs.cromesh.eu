@@ -5,7 +5,7 @@ Ova dokumentacija koristi [MkDocs Material](https://squidfunk.github.io/mkdocs-m
 ## Struktura dokumentacije
 - **Home** — naslovnica s brzim poveznicama i pregledom zajednice
 - **Početak** — uvod u Meshtastic i prvi koraci za nove korisnike
-- **Česta pitanja** — česta pitanja početnika, o zajednici, pravila ponašanja i regulativa
+- **Česta pitanja**
   - **Česta pitanja** — opća pitanja i odgovori
   - **O zajednici** — informacije o zajednici
   - **Pravila** — pravila ponašanja i regulativa
@@ -38,11 +38,11 @@ v3   2026-07-22  Restrukturirana navigacija (13 → 9 top-level tabova)
 │  ├─ v3.3.0        Flash-anje/Upozorenje/uvod heading dosljednost
 │  ├─ v3.3.1        Preimenovan FAQ nav tab, Opće preporuke heading
 │  ├─ v3.3.2        Meshtastic-* hifenizacija, dorade privatnost.md
-│  └─ v3.3.3        Meshcore HR linkovi
-└─ v3.4            Novi ogranak: MeshCore integracija
-   ├─ v3.4.0        Tag, stranica i nav tab za MeshCore
-   ├─ v3.4.1        MeshCore integracija u Česta pitanja
-   ├─ v3.4.2        Restrukturiranje FAQ-a, MeshCore grana i početak ChatGPT-assisted dokumentacijskog rada
+│  └─ v3.3.3        MeshCore HR linkovi
+└─ v3.4            MeshCore integracija
+   ├─ v3.4.0        Dodan MeshCore kao zasebna stranica i nav tab
+   ├─ v3.4.1        MeshCore premješten u Česta pitanja; dorade FAQ-a i poveznica
+   ├─ v3.4.2        Restrukturiran FAQ; dodana tema „MeshCore - kako i zašto?”; početak ChatGPT-assisted rada
    └─ v3.4.3        MeshCore izdvojen u vlastiti podtab unutar Česta pitanja
 ```
 
@@ -52,7 +52,7 @@ v3   2026-07-22  Restrukturirana navigacija (13 → 9 top-level tabova)
 - **Navigacija:** dodan novi podtab **„MeshCore”** unutar **„Česta pitanja”**, odmah nakon „Pravila”
 - **FAQ:** tema **„MeshCore - kako i zašto?”** uklonjena je iz opće FAQ stranice kako se sadržaj ne bi duplicirao
 - **MeshCore:** sadržaj je premješten u vlastitu stranicu `docs/meshcore/index.md`
-- **Struktura:** MeshCore sada ima jasno odvojeno mjesto unutar skupine „Česta pitanja”, uz „Česta pitanja”, „O zajednici” i „Pravila”
+- **Struktura:** MeshCore sada ima jasno odvojeno mjesto unutar skupine „Česta pitanja”
 - **Dokumentacijski proces:** nastavljen je rad uz pomoć **ChatGPT engine-a**, uz pregled i odluke CroMesh zajednice
 
 ### v3.4.2 — FAQ restrukturiranje i ChatGPT-assisted dokumentacija
@@ -65,14 +65,16 @@ v3   2026-07-22  Restrukturirana navigacija (13 → 9 top-level tabova)
 
 ### v3.4.1
 - MeshCore stranica premještena iz zasebnog top-level nav taba u temu unutar „Česta pitanja”
-- Uklonjena dva MeshCore linka iz tablice „Naše poveznice” na naslovnici — MeshCore poveznice ostaju dostupne na samoj MeshCore stranici
-- Dodana nova FAQ tema „Nejasnoće u Meshtastic tehnologiji” na kraju sekcije „Osnove”
-- Uklonjena oznaka (tag) `MeshCore` s naslovnice — ostaje vidljiva na samoj MeshCore stranici
+- Uklonjena dva MeshCore linka iz tablice „Naše poveznice” na naslovnici
+- Dodana nova FAQ tema „Nejasnoće u Meshtastic tehnologiji”
+- Uklonjena oznaka (tag) `MeshCore` s naslovnice
 - Dodana napomena o autorskim pravima na MeshCore stranicu
 
 ### v3.4.0
 - Dodana oznaka (tag) `MeshCore` na naslovnicu
-- Dodana nova stranica/nav tab „MeshCore” — kratak opis MeshCore mreže u Hrvatskoj, usporedba usmjeravanja poruka Meshtastic-a i MeshCore-a, te poveznice na meshcore.com.hr i map.meshcore.com.hr
+- Dodana nova stranica/nav tab „MeshCore”
+- Dodana usporedba usmjeravanja poruka Meshtastic-a i MeshCore-a
+- Dodane poveznice na meshcore.com.hr i map.meshcore.com.hr
 
 ### v3.3.3 — Meshcore HR linkovi
 - Dodane poveznice na Hrvatsku MeshCore zajednicu u „Naše poveznice”
