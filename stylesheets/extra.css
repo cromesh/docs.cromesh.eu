@@ -1,0 +1,201 @@
+/* CroMesh v3.5.0 — landing page visual layer */
+
+.cromesh-home {
+  position: relative;
+  min-height: calc(100vh - 2rem);
+  margin: -1rem -0.8rem -2rem;
+  padding: 0.5rem 1rem 3rem;
+  isolation: isolate;
+}
+
+.cromesh-home::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+  background:
+    linear-gradient(90deg, rgba(3, 7, 10, .93) 0%, rgba(3, 7, 10, .76) 28%, rgba(3, 7, 10, .36) 68%, rgba(3, 7, 10, .62) 100%),
+    linear-gradient(180deg, rgba(3, 7, 10, .18) 0%, rgba(3, 7, 10, .38) 100%),
+    url("../assets/images/cromesh-hr-mesh-background.webp") center center / cover no-repeat;
+  pointer-events: none;
+}
+
+.cromesh-home::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background: radial-gradient(circle at 52% 30%, rgba(255, 42, 42, .08), transparent 42%);
+  pointer-events: none;
+}
+
+.cromesh-hero {
+  max-width: 58rem;
+  padding: 8vh 1rem 4rem;
+}
+
+.cromesh-hero h1 {
+  margin: 0 0 1.25rem;
+  max-width: 52rem;
+  color: #fff;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: .98;
+  letter-spacing: -.045em;
+  text-shadow: 0 3px 24px rgba(0,0,0,.55);
+}
+
+.cromesh-accent {
+  color: #ff2d2d;
+}
+
+.cromesh-hero > p {
+  max-width: 46rem;
+  color: rgba(255,255,255,.88);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  line-height: 1.65;
+  text-shadow: 0 2px 14px rgba(0,0,0,.6);
+}
+
+.cromesh-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 1.75rem;
+}
+
+.cromesh-button {
+  display: inline-flex !important;
+  align-items: center;
+  gap: .5rem;
+  padding: .78rem 1.1rem !important;
+  border: 1px solid rgba(255,255,255,.28) !important;
+  border-radius: .55rem;
+  background: rgba(8,12,16,.62);
+  color: #fff !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+  backdrop-filter: blur(8px);
+}
+
+.cromesh-button-primary {
+  border-color: #ff2d2d !important;
+  background: #e32626;
+}
+
+.cromesh-button:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.08);
+}
+
+.cromesh-feature-grid,
+.cromesh-quick-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: 70rem;
+}
+
+.cromesh-feature-card,
+.cromesh-quick-card {
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: .8rem;
+  background: rgba(7,11,15,.67);
+  box-shadow: 0 16px 40px rgba(0,0,0,.24);
+  backdrop-filter: blur(9px);
+}
+
+.cromesh-feature-card {
+  min-height: 9.5rem;
+  padding: 1.25rem;
+  color: rgba(255,255,255,.9);
+}
+
+.cromesh-feature-card h3 {
+  color: #fff;
+  margin-top: .5rem;
+}
+
+.cromesh-icon {
+  color: #ff2d2d;
+  font-size: 1.55rem;
+}
+
+.cromesh-home h2 {
+  margin-top: 3rem;
+  color: #fff;
+  text-shadow: 0 2px 14px rgba(0,0,0,.5);
+}
+
+.cromesh-quick-card {
+  padding: 1.1rem;
+  color: rgba(255,255,255,.86);
+  transition: transform .18s ease, border-color .18s ease;
+}
+
+.cromesh-quick-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255,45,45,.55);
+}
+
+.cromesh-quick-card strong {
+  display: block;
+  margin: .35rem 0;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.cromesh-quick-card > :first-child {
+  color: #ff2d2d;
+  font-size: 1.35rem;
+}
+
+.cromesh-quick-card a {
+  color: #ff6b6b;
+}
+
+.cromesh-home-note {
+  max-width: 70rem;
+  margin-top: 2rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid rgba(255,255,255,.13);
+  border-radius: .75rem;
+  background: rgba(7,11,15,.58);
+  color: rgba(255,255,255,.8);
+  backdrop-filter: blur(8px);
+}
+
+.cromesh-home-note .admonition {
+  background: rgba(20,25,30,.65);
+}
+
+@media screen and (max-width: 900px) {
+  .cromesh-feature-grid,
+  .cromesh-quick-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cromesh-hero {
+    padding-top: 5vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cromesh-home {
+    margin-left: -.4rem;
+    margin-right: -.4rem;
+  }
+
+  .cromesh-feature-grid,
+  .cromesh-quick-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cromesh-hero h1 {
+    font-size: 2.7rem;
+  }
+
+  .cromesh-home::before {
+    background:
+      linear-gradient(90deg, rgba(3,7,10,.9), rgba(3,7,10,.72)),
+      url("../assets/images/cromesh-hr-mesh-background.webp") 57% center / cover no-repeat;
+  }
+}
