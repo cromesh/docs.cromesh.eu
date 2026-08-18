@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://docs.cromesh.eu/meshcore/">
       
       
+        <link rel="prev" href="../zajednica/pravila/">
+      
+      
+        <link rel="next" href="../postavke/">
       
       
         
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#meshcore" class="md-skip">
+        <a href="#meshcore-kako-i-zasto" class="md-skip">
           Preskoči na sadržaj
         </a>
       
@@ -238,10 +242,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../faq/" class="md-tabs__link">
           
   
@@ -562,8 +568,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -573,24 +581,32 @@
       
         
       
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
   
   
   <span class="md-ellipsis">
@@ -604,10 +620,16 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -700,6 +722,8 @@
     </li>
   
 
+              
+            
               
             
           </ul>
@@ -1686,6 +1710,58 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Sadržaj
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sto-je-meshcore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Što je MeshCore?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#razlika-izmeu-meshtastic-a-i-meshcore-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Razlika između Meshtastic-a i MeshCore-a
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#poveznice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Poveznice
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#napomena-o-neovisnosti-zigu-i-licenci" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Napomena o neovisnosti, žigu i licenci
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1728,16 +1804,66 @@
   
 
 
-<h1 id="meshcore">MeshCore<a class="headerlink" href="#meshcore" title="Permanent link">&para;</a></h1>
-<div class="admonition info">
-<p class="admonition-title">Premješteno u Česta pitanja</p>
-<p>MeshCore je od verzije <strong>v3.4.2</strong> integriran izravno u FAQ kao tema
-<strong><a href="../faq/#meshcore---kako-i-zasto">MeshCore - kako i zašto?</a></strong>.</p>
-<p>Tamo su objedinjeni opis MeshCore-a, usporedba s Meshtastic-om, poveznice
-na hrvatsku zajednicu i karta te napomena o neovisnosti, licenci i odgovornosti.</p>
+<h1 id="meshcore-kako-i-zasto">MeshCore - kako i zašto?<a class="headerlink" href="#meshcore-kako-i-zasto" title="Permanent link">&para;</a></h1>
+<h2 id="sto-je-meshcore">Što je MeshCore?<a class="headerlink" href="#sto-je-meshcore" title="Permanent link">&para;</a></h2>
+<p>MeshCore je lagan sustav za sigurnu tekstualnu komunikaciju putem LoRa radija na
+868 MHz. Svaki node u Hrvatskoj može biti dio mreže, a repetitori prosljeđuju poruke
+dalje — bez centralnog operatera i bez internetske veze.</p>
+<p>Poput Meshtastica, MeshCore omogućuje autonomnu komunikaciju između node-ova. MeshCore
+mreža trenutačno se razvija i gradi na području Republike Hrvatske.</p>
+<p>Sudjelovanje nije vezano uz jedan protokol: korisnici mogu odabrati Meshtastic ili
+MeshCore prema vlastitim potrebama i preferencijama, a moguće je koristiti oba protokola
+na neovisnim uređajima.</p>
+<h2 id="razlika-izmeu-meshtastic-a-i-meshcore-a">Razlika između Meshtastic-a i MeshCore-a<a class="headerlink" href="#razlika-izmeu-meshtastic-a-i-meshcore-a" title="Permanent link">&para;</a></h2>
+<p>Najveća razlika je u načinu usmjeravanja poruka.</p>
+<p><strong>Meshtastic</strong> koristi tzv. "managed flood" routing — svaki uređaj u ulozi Client prima
+i prosljeđuje tuđe poruke. To mrežu čini jednostavnom za postavljanje i vrlo otpornom,
+ali može povećati zauzeće radio-kanala u gušćim mrežama.</p>
+<p><strong>MeshCore</strong> razdvaja uređaje po ulogama: obični uređaji (Companion) ne prosljeđuju tuđe
+poruke, već to rade isključivo namjenski postavljeni repetitori. Rezultat je tiša i
+predvidljivija mreža, ali uz potrebu za pažljivijim planiranjem pokrivenosti repetitorima.</p>
+<p>Oba protokola su otvorenog koda i mogu raditi na istom LoRa hardveru, ali
+<strong>međusobno nisu kompatibilna</strong>.</p>
+<h2 id="poveznice">Poveznice<a class="headerlink" href="#poveznice" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Resurs</th>
+<th>Adresa</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MeshCore HR</td>
+<td><a href="https://meshcore.com.hr/">meshcore.com.hr</a></td>
+<td>Hrvatska MeshCore zajednica</td>
+</tr>
+<tr>
+<td>MeshCore HR karta</td>
+<td><a href="https://map.meshcore.com.hr/">map.meshcore.com.hr</a></td>
+<td>Karta MeshCore mreže u Hrvatskoj</td>
+</tr>
+</tbody>
+</table>
+<h2 id="napomena-o-neovisnosti-zigu-i-licenci">Napomena o neovisnosti, žigu i licenci<a class="headerlink" href="#napomena-o-neovisnosti-zigu-i-licenci" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">MeshCore — pravna napomena</p>
+<p><strong>Neovisnost i žig:</strong> Naziv „MeshCore”, logotipi i povezani vizualni identiteti
+pripadaju svojim autorima, vlasnicima žigova i doprinositeljima zajednici.
+docs.cromesh.eu je neovisan projekt i nije povezan, podržan niti službeno povezan
+s tvrtkom MeshCore Technologies Limited, službenim razvojnim timom na meshcore.io
+niti bilo kojim drugim komercijalnim subjektom koji djeluje pod imenom MeshCore.
+Nazivi i logotipi koriste se isključivo radi identifikacije i edukacije.</p>
+<p><strong>Otvoreni kod:</strong> MeshCore softver i protokol izvorno su djelo Scotta Powella i
+suradnika iz zajednice te se distribuiraju pod <a href="https://github.com/meshcore-dev/MeshCore/blob/main/license.txt">MIT licencijom</a>.
+Korištenjem, izmjenom ili distribucijom koda treba zadržati izvorne napomene o
+autorskim pravima u skladu s uvjetima licence.</p>
+<p><strong>Isključenje jamstva i odgovornosti:</strong> Softver, firmware i informacije na ovoj
+stranici pružaju se u obliku „kakvi jesu” (AS IS), bez jamstava. Autori ove
+dokumentacije i vlasnici autorskih prava ne odgovaraju za štetu, gubitak podataka
+ili kvarove hardvera nastale korištenjem materijala ili koda sa stranice.</p>
 </div>
-<p>Ova stranica ostaje kao jednostavna poveznica radi lakšeg pronalaska postojećeg
-MeshCore sadržaja i izbjegavanja mrtvih poveznica nakon restrukturiranja FAQ-a.</p>
 <hr />
 <p><small><em>cromesh.eu i docs.cromesh.eu su neovisni, neslužbeni projekti CroMesh zajednice
 entuzijasta i nisu službeno povezani s niti odobreni od strane Meshtastic LLC.
@@ -1775,6 +1901,44 @@ entuzijasta i nisu službeno povezani s niti odobreni od strane Meshtastic LLC.
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Podnožje" >
+        
+          
+          <a href="../zajednica/pravila/" class="md-footer__link md-footer__link--prev" aria-label="Prethodno: Pravila">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Prethodno
+              </span>
+              <div class="md-ellipsis">
+                Pravila
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../postavke/" class="md-footer__link md-footer__link--next" aria-label="Sljedeće: Postavke">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Sljedeće
+              </span>
+              <div class="md-ellipsis">
+                Postavke
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">

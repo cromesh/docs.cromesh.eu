@@ -581,6 +581,10 @@
       
         
       
+        
+          
+        
+      
     
     
     
@@ -600,8 +604,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../meshcore/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -615,8 +620,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
@@ -890,67 +901,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#meshcore-kako-i-zasto" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        MeshCore - kako i zašto?
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="MeshCore - kako i zašto?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sto-je-meshcore" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Što je MeshCore?
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#razlika-izmeu-meshtastic-a-i-meshcore-a" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Razlika između Meshtastic-a i MeshCore-a
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#poveznice" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Poveznice
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#napomena-o-neovisnosti-zigu-i-licenci" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Napomena o neovisnosti, žigu i licenci
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#ostalo" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1074,6 +1024,8 @@
     </li>
   
 
+              
+            
               
             
           </ul>
@@ -2261,67 +2213,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#meshcore-kako-i-zasto" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        MeshCore - kako i zašto?
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="MeshCore - kako i zašto?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sto-je-meshcore" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Što je MeshCore?
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#razlika-izmeu-meshtastic-a-i-meshcore-a" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Razlika između Meshtastic-a i MeshCore-a
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#poveznice" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Poveznice
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#napomena-o-neovisnosti-zigu-i-licenci" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Napomena o neovisnosti, žigu i licenci
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#ostalo" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2443,19 +2334,17 @@ Najjeftiniji ulaz: <strong>Heltec V3</strong>. Detaljna usporedba s cijenama i p
 <p>Iako je koncept moćan, Meshtastic je primarno projekt za hobiste, entuzijaste i
 tehnički potkovane korisnike. Zbog toga, službena dokumentacija i objašnjenja često
 pretpostavljaju određeno predznanje, što može biti zbunjujuće za početnike. Neke od
-glavnih prepreka su:</p>
-<ul>
-<li><strong>Žargon i tehnički detalji</strong> — dokumentacija koristi previše tehničkog žargona.
+glavnih prepreka su:
+- <strong>Žargon i tehnički detalji</strong> — dokumentacija koristi previše tehničkog žargona.
   Bez dovoljno objašnjenja pojmova poput LoRa, mesh networking, node-ovi, enkripcija,
-  <code>Coding Rate</code> i <code>Spreading Factor (SF)</code>, korisnicima je teško razumjeti o čemu se radi.</li>
-<li><strong>Fokus na "kako" umjesto na "što"</strong> — dokumentacija se više fokusira na to kako
+  <code>Coding Rate</code> i <code>Spreading Factor (SF)</code>, korisnicima je teško razumjeti o čemu se radi.
+- <strong>Fokus na "kako" umjesto na "što"</strong> — dokumentacija se više fokusira na to kako
   instalirati firmware, konfigurirati postavke i riješiti probleme, nego na jasno
-  objašnjenje temeljnog koncepta i praktične primjene.</li>
-<li><strong>Nejasne upute za početnike</strong> — teško je pronaći jednostavan, korak-po-korak vodič
+  objašnjenje temeljnog koncepta i praktične primjene.
+- <strong>Nejasne upute za početnike</strong> — teško je pronaći jednostavan, korak-po-korak vodič
   za nekoga tko tek ulazi u svijet Meshtastica, pogotovo u smislu što točno kupiti i
-  kako početi.</li>
-</ul>
-<p>Mi preporučujemo ova dva YouTube videa:</p>
+  kako početi.
+Mi preporučujemo ova dva YouTube videa:</p>
 <ol>
 <li><a href="https://www.youtube.com/watch?v=oAo2sb8LpFc&amp;ab_channel=TheCommsChannel">Što je Meshtastic? (eng)</a></li>
 <li><a href="https://www.youtube.com/watch?v=P9G9hR3T4po&amp;ab_channel=323Labs">Što je Meshtastic? (eng)</a></li>
@@ -2498,66 +2387,6 @@ stvarnog stanja mreže) postaje točnija.</p>
 <h3 id="sto-znace-crte-izmeu-node-ova-na-karti">Što znače crte između node-ova na karti?<a class="headerlink" href="#sto-znace-crte-izmeu-node-ova-na-karti" title="Permanent link">&para;</a></h3>
 <p>Da se ti node-ovi <strong>relativno često čuju</strong>. Ne znači da su u savršenom kontaktu u svakom
 trenutku.</p>
-<h2 id="meshcore-kako-i-zasto">MeshCore - kako i zašto?<a class="headerlink" href="#meshcore-kako-i-zasto" title="Permanent link">&para;</a></h2>
-<h3 id="sto-je-meshcore">Što je MeshCore?<a class="headerlink" href="#sto-je-meshcore" title="Permanent link">&para;</a></h3>
-<p>MeshCore je lagan sustav za sigurnu tekstualnu komunikaciju putem LoRa radija na
-868 MHz. Svaki node u Hrvatskoj može biti dio mreže, a repetitori prosljeđuju poruke
-dalje — bez centralnog operatera i bez internetske veze.</p>
-<p>Poput Meshtastica, MeshCore omogućuje autonomnu komunikaciju između node-ova. MeshCore
-mreža trenutačno se razvija i gradi na području Republike Hrvatske.</p>
-<p>Sudjelovanje nije vezano uz jedan protokol: korisnici mogu odabrati Meshtastic ili
-MeshCore prema vlastitim potrebama i preferencijama, a moguće je koristiti oba protokola
-na neovisnim uređajima.</p>
-<h3 id="razlika-izmeu-meshtastic-a-i-meshcore-a">Razlika između Meshtastic-a i MeshCore-a<a class="headerlink" href="#razlika-izmeu-meshtastic-a-i-meshcore-a" title="Permanent link">&para;</a></h3>
-<p>Najveća razlika je u načinu usmjeravanja poruka.</p>
-<p><strong>Meshtastic</strong> koristi tzv. "managed flood" routing — svaki uređaj u ulozi Client prima
-i prosljeđuje tuđe poruke. To mrežu čini jednostavnom za postavljanje i vrlo otpornom,
-ali može povećati zauzeće radio-kanala u gušćim mrežama.</p>
-<p><strong>MeshCore</strong> razdvaja uređaje po ulogama: obični uređaji (Companion) ne prosljeđuju tuđe
-poruke, već to rade isključivo namjenski postavljeni repetitori. Rezultat je tiša i
-predvidljivija mreža, ali uz potrebu za pažljivijim planiranjem pokrivenosti repetitorima.</p>
-<p>Oba protokola su otvorenog koda i mogu raditi na istom LoRa hardveru, ali
-<strong>međusobno nisu kompatibilna</strong>.</p>
-<h3 id="poveznice">Poveznice<a class="headerlink" href="#poveznice" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Resurs</th>
-<th>Adresa</th>
-<th>Opis</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>MeshCore HR</td>
-<td><a href="https://meshcore.com.hr/">meshcore.com.hr</a></td>
-<td>Hrvatska MeshCore zajednica</td>
-</tr>
-<tr>
-<td>MeshCore HR karta</td>
-<td><a href="https://map.meshcore.com.hr/">map.meshcore.com.hr</a></td>
-<td>Karta MeshCore mreže u Hrvatskoj</td>
-</tr>
-</tbody>
-</table>
-<h3 id="napomena-o-neovisnosti-zigu-i-licenci">Napomena o neovisnosti, žigu i licenci<a class="headerlink" href="#napomena-o-neovisnosti-zigu-i-licenci" title="Permanent link">&para;</a></h3>
-<div class="admonition note">
-<p class="admonition-title">MeshCore — pravna napomena</p>
-<p><strong>Neovisnost i žig:</strong> Naziv „MeshCore”, logotipi i povezani vizualni identiteti
-pripadaju svojim autorima, vlasnicima žigova i doprinositeljima zajednici.
-docs.cromesh.eu je neovisan projekt i nije povezan, podržan niti službeno povezan
-s tvrtkom MeshCore Technologies Limited, službenim razvojnim timom na meshcore.io
-niti bilo kojim drugim komercijalnim subjektom koji djeluje pod imenom MeshCore.
-Nazivi i logotipi koriste se isključivo radi identifikacije i edukacije.</p>
-<p><strong>Otvoreni kod:</strong> MeshCore softver i protokol izvorno su djelo Scotta Powella i
-suradnika iz zajednice te se distribuiraju pod <a href="https://github.com/meshcore-dev/MeshCore/blob/main/license.txt">MIT licencijom</a>.
-Korištenjem, izmjenom ili distribucijom koda treba zadržati izvorne napomene o
-autorskim pravima u skladu s uvjetima licence.</p>
-<p><strong>Isključenje jamstva i odgovornosti:</strong> Softver, firmware i informacije na ovoj
-stranici pružaju se u obliku „kakvi jesu” (AS IS), bez jamstava. Autori ove
-dokumentacije i vlasnici autorskih prava ne odgovaraju za štetu, gubitak podataka
-ili kvarove hardvera nastale korištenjem materijala ili koda sa stranice.</p>
-</div>
 <h2 id="ostalo">Ostalo<a class="headerlink" href="#ostalo" title="Permanent link">&para;</a></h2>
 <h3 id="koliko-traje-baterija">Koliko traje baterija?<a class="headerlink" href="#koliko-traje-baterija" title="Permanent link">&para;</a></h3>
 <p>Ovisi o uređaju i postavkama; iskustvene brojke: 2× 18650 uz power save ≈ 10 %/dan;
