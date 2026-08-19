@@ -7,10 +7,9 @@ Ova dokumentacija koristi [MkDocs Material](https://squidfunk.github.io/mkdocs-m
 - **Home** — naslovnica s brzim poveznicama i pregledom zajednice
 - **Početak** — uvod u Meshtastic i prvi koraci za nove korisnike
 - **Česta pitanja**
-  - **Česta pitanja** — opća pitanja i odgovori
+  - **Česta pitanja** — opća pitanja i odgovori; MeshCore tema na dnu stranice
   - **O zajednici** — informacije o zajednici
   - **Pravila** — pravila ponašanja i regulativa
-  - **MeshCore** — hrvatska MeshCore zajednica, osnovni koncepti i usporedba s Meshtastic-om
 - **Postavke** — konfiguracija uređaja (LoRa, kanali, korisnik, uređaj, MQTT)
 - **Odabir uređaja** — usporedba čipova (ESP32, nRF52, RP2040) i preporuke uređaja
 - **Hardware** — antene, montaža i zaštita, 3D print kućišta, solarno napajanje
@@ -32,10 +31,23 @@ v3   2026-07-22  Restrukturirana navigacija
 ├─ v3.2  Tags, MQTT i pravne napomene
 ├─ v3.3  Lektura i terminološka dosljednost
 ├─ v3.4  MeshCore integracija i FAQ restrukturiranje
-└─ v3.5.0  Vizualni redizajn i mrežne pozadine
+└─ v3.5  Vizualni redizajn i mrežne pozadine
+   ├─ v3.5.0  Redizajn naslovnice
+   ├─ v3.5.1  Vizualne sekcije, pozadine po granama
+   ├─ v3.5.2  Antene vodič, MeshCore na dno FAQ grane
+   └─ v3.5.3  Trenutna verzija
 ```
 
 ## Changelog
+
+### v3.5.3 — MeshCore spojen u FAQ, uklonjena zasebna stranica
+- **Česta pitanja:** MeshCore tema (Što je MeshCore?, Razlika prema Meshtastic-u,
+  Poveznice, pravna napomena) sada je fizički dio `faq.md`, kao zadnja sekcija na
+  stranici — ne samo zadnja stavka u nav popisu.
+- **Nav:** uklonjena zasebna stavka „MeshCore” iz skupine „Česta pitanja”; `faq.md`
+  ostaje jedina i glavna stranica te skupine.
+- **Čišćenje:** obrisana samostalna stranica `docs/meshcore/index.md` — sadržaj sada
+  postoji samo na jednom mjestu.
 
 ### v3.5.2 — Struktura pozadina grana i završnih stranica
 - **Home:** postojeća pozadina naslovnice ostaje nepromijenjena.
