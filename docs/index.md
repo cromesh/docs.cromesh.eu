@@ -5,6 +5,9 @@ tags:
   - CROMESH
   - Dokumentacija
   - Meshtastic
+hide:
+  - navigation
+  - toc
 ---
 
 <div class="cromesh-home" markdown>

@@ -35,10 +35,23 @@ v3   2026-07-22  Restrukturirana navigacija
    ├─ v3.5.0  Redizajn naslovnice
    ├─ v3.5.1  Vizualne sekcije, pozadine po granama
    ├─ v3.5.2  Antene vodič, MeshCore na dno FAQ grane
-   └─ v3.5.3  Trenutna verzija
+   └─ v3.5.3  MeshCore spojen u faq.md
+v3.6.0  Trenutna verzija
 ```
 
 ## Changelog
+
+### v3.6.0 — Ispravljen prelom riječi na naslovnici
+- **Bug:** na desktop širinama (4-stupčani grid, ~901–1280px+), riječi poput
+  "Decentralizirana", "besplatno" i "dokumentacija" lomile su se usred riječi
+  (npr. "Decentraliz-irana") jer su kartice bile samo ~142px široke.
+- **Uzrok:** `docs/index.md` nije skrivao lijevi i desni sidebar (nav stablo i TOC
+  "Sadržaj"), pa su zajedno oduzimali 484px prostora sadržaju, iako stranica već
+  koristi vlastite gornje tabove i nema vlastiti TOC koji bi trebao ostati vidljiv.
+- **Popravak:** dodano `hide: [navigation, toc]` u frontmatter naslovnice. Širina
+  sadržaja porasla s 688px na 1188px (na 1280px viewportu), kartice s 142px na
+  267px — riječi se sada lome isključivo na granicama riječi, na svim testiranim
+  širinama (901px, 1280px, tablet, mobitel).
 
 ### v3.5.3 — MeshCore spojen u FAQ, uklonjena zasebna stranica
 - **Česta pitanja:** MeshCore tema (Što je MeshCore?, Razlika prema Meshtastic-u,
