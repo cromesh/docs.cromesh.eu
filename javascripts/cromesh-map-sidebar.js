@@ -39,17 +39,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const applySectionBackground = () => {
     const path = window.location.pathname.replace(/\/+$/, "") || "/";
-    document.body.classList.remove("cromesh-section-blue", "cromesh-section-green");
 
+    document.body.classList.remove(
+      "cromesh-section-blue",
+      "cromesh-section-green"
+    );
+
+    /*
+     * Blue family:
+     *   Početak
+     *   Česta pitanja
+     *   Postavke
+     *   Odabir uređaja
+     *
+     * The Početak "Prvi koraci" page is physically the same URL as
+     * Postavke/Prvi koraci, so it is intentionally covered by blue.
+     */
     const bluePrefixes = [
       "/uvod",
-      "/postavke/",
       "/faq",
       "/zajednica/",
       "/meshcore/",
+      "/postavke/",
       "/odabir-uredaja/"
     ];
 
+    /*
+     * Green family:
+     *   Hardware
+     *   Software
+     *   Mreža
+     *
+     * These match the actual source-directory URLs used by mkdocs.yml:
+     * hardver, antene, solarno, aplikacije, firmware, mqtt, mreza.
+     */
     const greenPrefixes = [
       "/hardver/",
       "/antene/",
