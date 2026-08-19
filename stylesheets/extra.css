@@ -122,9 +122,11 @@
   text-shadow: 0 2px 14px rgba(0,0,0,.5);
 }
 
+/* Brzi pristup — compact white typography */
 .cromesh-quick-card {
   padding: 1.1rem;
   color: rgba(255,255,255,.86);
+  font-size: 0.9rem;
   transition: transform .18s ease, border-color .18s ease;
 }
 
@@ -137,15 +139,17 @@
   display: block;
   margin: .35rem 0;
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 .cromesh-quick-card > :first-child {
-  color: #ff2d2d;
-  font-size: 1.35rem;
+  color: #fff;
+  font-size: 1rem;
 }
 
-.cromesh-quick-card a { color: #ff6b6b; }
+.cromesh-quick-card a {
+  color: #fff;
+}
 
 .cromesh-home-note {
   max-width: 70rem;
