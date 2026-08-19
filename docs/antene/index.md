@@ -9,6 +9,91 @@ tags:
 
 # <font color="#50EB97">Antene</font>
 
+## Antene – kako odabrati antenu prema SWR-u i dBi
+
+Pri odabiru antene nije dovoljno gledati samo njezinu frekvenciju ili nazivni dobitak. Važno je razumjeti nekoliko osnovnih karakteristika, prije svega **SWR/VSWR**, **impedanciju** i **dobitak antene izražen u dBi**.
+
+## SWR – prilagodba antene
+
+**SWR (Standing Wave Ratio)**, odnosno omjer stojnog vala, opisuje koliko je dobro antena prilagođena RF sustavu na određenoj frekvenciji. Kod većine suvremenih RF uređaja ciljana impedancija sustava iznosi **50 Ω**.
+
+Općenito vrijedi: **što je SWR manji, to je prilagodba bolja**. Manji SWR znači da se manji dio odašiljane snage reflektira natrag prema odašiljaču.
+
+Orijentacijske vrijednosti su:
+
+- **1,0:1** – idealna prilagodba
+- **1,2:1** – izvrsna prilagodba
+- **1,5:1** – vrlo dobra prilagodba
+- **2,0:1** – često prihvatljivo
+- **3,0:1 i više** – loša prilagodba
+
+### Važno kod SWR-a
+
+SWR uvijek treba promatrati u odnosu na **frekvenciju**. Niska vrijednost SWR-a bez navedene frekvencije nije osobito korisna informacija.
+
+Pri odabiru antene provjerite je li navedeni SWR/VSWR izmjeren upravo na vašoj radnoj frekvenciji ili barem unutar frekvencijskog raspona koji obuhvaća vašu radnu frekvenciju.
+
+## dBi – dobitak antene
+
+**dBi** označava dobitak antene u odnosu na idealni izotropni izvor zračenja.
+
+Veći dobitak ne znači da antena stvara dodatnu snagu. Antena samo **raspoređuje odnosno koncentrira zračenje u određenim smjerovima**.
+
+Kao praktično pravilo:
+
+- **manji dBi** → šire područje pokrivanja i širi obrazac zračenja
+- **veći dBi** → usmjerenije i uže područje pokrivanja
+
+Međutim, sam podatak o dBi-ju nije dovoljan za potpuno razumijevanje karakteristika antene. Na stvarni obrazac zračenja utječu i **širina snopa (beamwidth)** te **orijentacija antene**.
+
+## Što provjeriti pri kupnji antene?
+
+| Specifikacija | Što tražiti | Zašto je važno |
+|---|---|---|
+| **Frekvencija** | Vaš stvarni radni frekvencijski pojas | Osigurava da je antena predviđena za vašu primjenu |
+| **Impedancija** | **50 Ω** | Odgovara uobičajenom RF sustavu, odašiljaču i koaksijalnom vodu |
+| **VSWR / SWR** | Po mogućnosti **≤ 1,5:1** na vašoj frekvenciji | Ukazuje na dobru impedancijsku prilagodbu |
+| **Dobitak** | Odaberite prema potrebnom području pokrivanja | Veći dobitak općenito znači usmjerenije zračenje |
+| **Konektor** | Kompatibilan s uređajem i kabelom | Izbjegava potrebu za adapterima i moguće mehaničke probleme |
+
+## Primjer: antena za 433 MHz
+
+Za uređaj koji radi na **433 MHz**, primjer odgovarajuće specifikacije mogao bi biti:
+
+**Frekvencija:** 400–470 MHz  
+**Impedancija:** 50 Ω  
+**VSWR:** ≤ 1,5:1  
+**Dobitak:** 2–3 dBi
+
+Takve specifikacije pokazuju da je antena predviđena za navedeni frekvencijski pojas, prilagođena uobičajenom sustavu impedancije od 50 Ω te da pruža relativno široko područje pokrivanja.
+
+## Ukratko
+
+**SWR = prilagodba**  
+Što je SWR niži, to je prilagodba općenito bolja. Uvijek provjerite SWR na svojoj radnoj frekvenciji.
+
+**dBi = dobitak**  
+Veći dBi općenito znači izraženije usmjereno zračenje, dok manji dBi obično daje šire pokrivanje.
+
+**50 Ω = uobičajena impedancija RF sustava**  
+To je tipična ciljana impedancija za RF odašiljače, koaksijalne kabele i antene.
+
+## Antena u stvarnoj ugradnji
+
+Podatak o SWR-u naveden u specifikaciji antene ne mora biti jednak rezultatu nakon ugradnje u stvarni uređaj.
+
+Na konačne karakteristike antennog sustava mogu utjecati:
+
+- PCB vodovi i njihova izvedba
+- konektori
+- kućište uređaja
+- uzemljivačka odnosno referentna ploha (*ground plane*)
+- metalni predmeti u blizini antene
+- položaj i orijentacija antene
+
+Zbog toga je pri odabiru antene važno promatrati **antenu i uređaj kao cjelokupan RF sustav**, a ne samo pojedinačnu vrijednost iz kataloga.
+
+
 Antena i njezina **visina** važniji su od uređaja. Osnovno pravilo zajednice: visina +
 linija optičke vidljivosti (LOS) + okomita montaža.
 

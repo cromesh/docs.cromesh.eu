@@ -37,6 +37,14 @@ v3   2026-07-22  Restrukturirana navigacija
 
 ## Changelog
 
+### v3.5.2 — Struktura pozadina grana i završnih stranica
+- **Home:** postojeća pozadina naslovnice ostaje nepromijenjena.
+- **Zelena obitelj:** Uvod, Česta pitanja, Postavke, Odabir uređaja, Hardware, Software i Mreža koriste zelenu pozadinu na svojim glavnim granama.
+- **Plava obitelj:** MQTT, Solarno, Firmware, Antene i MeshCore koriste plavu pozadinu.
+- **Završne stranice:** ostale ne-početne leaf/end stranice koriste plavu pozadinu.
+- **Antene:** dodan vodič za odabir antene prema SWR-u, impedanciji i dBi.
+- **Česta pitanja:** MeshCore je jasno označen kao zasebna stavka i premješten na dno FAQ grane.
+
 ### v3.5.1 — Vizualne sekcije i završne dorade
 - **Pozadine:** plava obitelj za Početak, Česta pitanja, Postavke i Odabir uređaja; zelena za Hardware, Software i Mreža.
 - **Naslovnica:** kartice ostaju na `80rem`; tekst kartica je smanjen radi boljeg prijeloma.
