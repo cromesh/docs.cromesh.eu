@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   const addMapCard = () => {
-    // Keep the original v3.5.0 sidebar and all existing links untouched.
     const sidebar = document.querySelector(".md-sidebar--primary");
     if (!sidebar || sidebar.querySelector(".cromesh-map-sidebar-card")) return;
 
@@ -26,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
     caption.innerHTML = "<strong>CroMesh karta mreže</strong><span>Otvori map.cromesh.eu ↗</span>";
     card.appendChild(caption);
 
-    // Insert directly after the existing links container.
     const container = title.parentElement;
     let insertAfter = container;
     if (container.nextElementSibling) {
@@ -39,9 +37,43 @@ document.addEventListener("DOMContentLoaded", () => {
     insertAfter.insertAdjacentElement("afterend", card);
   };
 
+  const applySectionBackground = () => {
+    const path = window.location.pathname.replace(/\/+$/, "") || "/";
+    document.body.classList.remove("cromesh-section-blue", "cromesh-section-green");
+
+    const bluePrefixes = [
+      "/uvod",
+      "/postavke/",
+      "/faq",
+      "/zajednica/",
+      "/meshcore/",
+      "/odabir-uredaja/"
+    ];
+
+    const greenPrefixes = [
+      "/hardver/",
+      "/antene/",
+      "/solarno/",
+      "/aplikacije/",
+      "/firmware/",
+      "/mqtt/",
+      "/mreza/"
+    ];
+
+    if (bluePrefixes.some(prefix => path === prefix || path.startsWith(prefix))) {
+      document.body.classList.add("cromesh-section-blue");
+    } else if (greenPrefixes.some(prefix => path === prefix || path.startsWith(prefix))) {
+      document.body.classList.add("cromesh-section-green");
+    }
+  };
+
   addMapCard();
+  applySectionBackground();
 
   if (typeof document$ !== "undefined") {
-    document$.subscribe(addMapCard);
+    document$.subscribe(() => {
+      addMapCard();
+      applySectionBackground();
+    });
   }
 });

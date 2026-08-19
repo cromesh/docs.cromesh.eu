@@ -3,6 +3,7 @@
 Ova dokumentacija koristi [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) za generiranje modernog, responzivnog web sučelja. Stranicu uređuju CroMesh članovi, uz pomoć ChatGPT engine-a za izradu, restrukturiranje, lekturu i provjeru dokumentacijskog sadržaja od verzije v3.4.2.
 
 ## Struktura dokumentacije
+
 - **Home** — naslovnica s brzim poveznicama i pregledom zajednice
 - **Početak** — uvod u Meshtastic i prvi koraci za nove korisnike
 - **Česta pitanja**
@@ -23,118 +24,47 @@ Sadržaj ove dokumentacije dostupan je pod licencom [Creative Commons Imenovanje
 © CroMesh zajednica
 
 ## Verzije
+
 ```text
 v2   2026-07-17  Prve tematske sekcije
 v3   2026-07-22  Restrukturirana navigacija
-├─ v3.1            Pretraga, logo i restrukturiran Uvod
-│  ├─ v3.1.1        Footer i ispravci
-│  ├─ v3.1.2        Vodič za oživljavanje LiIon
-│  └─ v3.1.3        Licenca i struktura README-a
-├─ v3.2            Tags, trademark napomena i MQTT
-│  ├─ v3.2.1        Ispravci sadržaja i footera
-│  ├─ v3.2.2        Lektura (Damir)
-│  └─ v3.2.3        cromesh.eu kanal i node-* hifenizacija
-├─ v3.3            Lektura i terminološka dosljednost
-│  ├─ v3.3.0        Flash-anje, upozorenja i heading standardizacija
-│  ├─ v3.3.1        FAQ naziv i heading ispravci
-│  ├─ v3.3.2        Meshtastic-* hifenizacija i privatnost
-│  └─ v3.3.3        MeshCore HR poveznice
-├─ v3.4            MeshCore integracija
-│  ├─ v3.4.0        MeshCore stranica i nav tab
-│  ├─ v3.4.1        MeshCore u Česta pitanja
-│  ├─ v3.4.2        FAQ restrukturiranje i ChatGPT-assisted rad
-│  └─ v3.4.3        MeshCore vlastiti podtab
-└─ v3.5.0          Novi vizualni izgled naslovnice i mrežna pozadina
+├─ v3.1  Pretraga, logo i restrukturiran Uvod
+├─ v3.2  Tags, MQTT i pravne napomene
+├─ v3.3  Lektura i terminološka dosljednost
+├─ v3.4  MeshCore integracija i FAQ restrukturiranje
+└─ v3.5.0  Vizualni redizajn i mrežne pozadine
 ```
 
 ## Changelog
 
-### v3.4.3 — MeshCore vlastiti podtab
-- **Navigacija:** dodan novi podtab **„MeshCore”** unutar **„Česta pitanja”**, odmah nakon „Pravila”
-- **FAQ:** tema **„MeshCore - kako i zašto?”** uklonjena je iz opće FAQ stranice kako se sadržaj ne bi duplicirao
-- **MeshCore:** sadržaj je premješten u vlastitu stranicu `docs/meshcore/index.md`
-- **Struktura:** MeshCore sada ima jasno odvojeno mjesto unutar skupine „Česta pitanja”
-- **Dokumentacijski proces:** nastavljen je rad uz pomoć **ChatGPT engine-a**, uz pregled i odluke CroMesh zajednice
+### v3.5.1 — Vizualne sekcije i završne dorade
+- **Pozadine:** plava obitelj za Početak, Česta pitanja, Postavke i Odabir uređaja; zelena za Hardware, Software i Mreža.
+- **Naslovnica:** kartice ostaju na `80rem`; tekst kartica je smanjen radi boljeg prijeloma.
+- **Tekst:** „Neovisan” i „Montaža čvora” zamijenili su prethodne nazive.
+- **FAQ:** zadržana i usklađena revidirana FAQ struktura, uz MeshCore kao zasebnu temu unutar skupine „Česta pitanja”.
 
-### v3.4.2 — FAQ restrukturiranje i ChatGPT-assisted dokumentacija
-- **FAQ:** dodana tema **„MeshCore - kako i zašto?”** između „MQTT i karta” i „Ostalo”
-- **MeshCore:** sadržaj je premješten iz stare teme u „Ostalo” i strukturiran kao neutralna tema
-- **MeshCore:** dodane poveznice na hrvatsku zajednicu i kartu te sažeta napomena o neovisnosti, žigu, MIT licenci i isključenju jamstva
-- **Navigacija:** uklonjen zasebni MeshCore nav unos; MeshCore je u ovoj verziji bio dio FAQ sadržaja
-- **Kompatibilnost:** postojeća `docs/meshcore/index.md` stranica zadržana kao poveznica prema novoj FAQ temi
-- **Dokumentacijski proces:** od v3.4.2 CroMesh dokumentacija izrađuje se i održava uz pomoć **ChatGPT engine-a**, uz pregled i odluke CroMesh zajednice
+### v3.5.0 — Vizualni redizajn naslovnice
+- Nova mrežna pozadina i redizajnirane informativne kartice.
+- Uvedena vizualna osnova za moderniji izgled dokumentacije.
+- Dodana poveznica na CroMesh kartu.
 
-### v3.4.1
-- MeshCore stranica premještena iz zasebnog top-level nav taba u temu unutar „Česta pitanja”
-- Uklonjena dva MeshCore linka iz tablice „Naše poveznice” na naslovnici
-- Dodana nova FAQ tema „Nejasnoće u Meshtastic tehnologiji”
-- Uklonjena oznaka (tag) `MeshCore` s naslovnice
-- Dodana napomena o autorskim pravima na MeshCore stranicu
+### v3.4 — MeshCore integracija i FAQ
+- **v3.4.3:** MeshCore dobio vlastiti podtab unutar „Česta pitanja”.
+- **v3.4.2:** FAQ restrukturiran i dodana strukturirana MeshCore tema; uveden ChatGPT-assisted dokumentacijski proces.
+- **v3.4.1:** MeshCore premješten u FAQ i uklonjeni suvišni linkovi s naslovnice.
+- **v3.4.0:** uvedena MeshCore stranica, usporedba s Meshtastic-om i HR poveznice.
 
-### v3.4.0
-- Dodana oznaka (tag) `MeshCore` na naslovnicu
-- Dodana nova stranica/nav tab „MeshCore”
-- Dodana usporedba usmjeravanja poruka Meshtastic-a i MeshCore-a
-- Dodane poveznice na meshcore.com.hr i map.meshcore.com.hr
+### v3.3 — Lektura i standardizacija
+- Terminologija, naslovi, FAQ i MeshCore HR poveznice usklađeni.
 
-### v3.3.3 — Meshcore HR linkovi
-- Dodane poveznice na Hrvatsku MeshCore zajednicu u „Naše poveznice”
-- Dodan opis Telegram poveznici; usput ispravljen nepotpun redak tablice
+### v3.2 — Funkcionalnost i sadržaj
+- Tags, MQTT vodič, pravne napomene, lektura i dodatne postavke.
 
-### v3.3.2
-- Uklonjeni suvišni zarezi i točka u popisu prava ispitanika u `privatnost.md`
-- Svi padežni oblici riječi „Meshtastic” sada su dosljedno pisani s crticom (`Meshtastic-a`, `Meshtastic-u`, `Meshtastic-om`) kroz cijelu dokumentaciju
-
-### v3.3.1
-- Naslov `Opće Preporuke` → `Opće preporuke` u `postavke/index.md`
-- Nav tab `FAQ` preimenovan u `Česta pitanja`
-
-### v3.3.0
-- Treći krug lekture (Damir)
-- Terminološka dosljednost oko „flashanja” — usklađeno na `flash-anje`/`flash-ati`
-- `Pripazi:` → `Upozorenje:`
-- Naslovi na `uvod.md` usklađeni na hrvatski rečenični case
-
-### v3.2.3
-- Dodane postavke kanala `cromesh.eu`
-- Nastavljena lektura teksta
-- Svi padežni oblici riječi „node” dosljedno pisani s crticom
-
-### v3.2.2
-- Tekst dokumentacije lekturiran (terminologija i gramatika)
-- Lekturu odradio kolega Damir
-
-### v3.2.1
-- Uklonjena tvrdnja o aktivnosti grupe u odnosu na globalni službeni Meshtastic kanal
-- Uklonjen tab „Oznake” iz glavne navigacije
-- Dodana poveznica na vodič „Oživljavanje LiIon”
-- Smanjena veličina fonta napomene o zaštitnom znaku Meshtastic®
-
-### v3.2
-- Omogućen built-in tags plugin
-- Ispravljen footer copyright ključ
-- Dodana napomena o neslužbenom statusu u odnosu na Meshtastic LLC
-- Dovršen MQTT vodič
-- Dodan nacrt stranice zaštite privatnosti
-
-### v3.1.3
-- Dodana licenca CC BY-SA 4.0
-- Sekcija „Struktura dokumentacije” premještena u README
-
-### v3.1.2
-- Dodan vodič „Oživljavanje LiIon”
-
-### v3.1.1
-- Ispravljen `search.lang` u `mkdocs.yml`
-- Dodana copyright napomena u footeru
-- Dodan Telegram pozivni link
-- Dodana overview stranica za Hardver dodatke
-
-### v3.1
-- Pretraga, opisi stranica, logo i restrukturiran Uvod
+### v3.1 — Temeljna struktura
+- Pretraga, logo, Uvod, licenca i hardverski vodiči.
 
 ### v3
-- Restrukturirana navigacija (13 → 9 top-level tabova)
+- Restrukturirana navigacija i smanjen broj glavnih tabova.
 
 ### v2
-- Prve tematske sekcije: Hardver, Mreža, Zajednica i FAQ
+- Uvedene prve tematske sekcije: Hardver, Mreža, Zajednica i FAQ.

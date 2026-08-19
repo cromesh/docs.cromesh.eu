@@ -1,4 +1,4 @@
-/* CroMesh v3.5.0 — landing page visual layer */
+/* CroMesh v3.5.1 — landing page and section visual layer */
 
 .cromesh-home {
   position: relative;
@@ -44,9 +44,7 @@
   text-shadow: 0 3px 24px rgba(0,0,0,.55);
 }
 
-.cromesh-accent {
-  color: #ff2d2d;
-}
+.cromesh-accent { color: #ff2d2d; }
 
 .cromesh-hero > p {
   max-width: 46rem;
@@ -116,10 +114,7 @@
   font-size: 1.1rem;
 }
 
-.cromesh-icon {
-  color: #ff2d2d;
-  font-size: 1.55rem;
-}
+.cromesh-icon { color: #ff2d2d; font-size: 1.55rem; }
 
 .cromesh-home h2 {
   margin-top: 3rem;
@@ -150,9 +145,7 @@
   font-size: 1.35rem;
 }
 
-.cromesh-quick-card a {
-  color: #ff6b6b;
-}
+.cromesh-quick-card a { color: #ff6b6b; }
 
 .cromesh-home-note {
   max-width: 70rem;
@@ -165,39 +158,67 @@
   backdrop-filter: blur(8px);
 }
 
-.cromesh-home-note .admonition {
-  background: rgba(20,25,30,.65);
+.cromesh-home-note .admonition { background: rgba(20,25,30,.65); }
+
+/* Blue family: Početak, Česta pitanja, Postavke, Odabir uređaja. */
+body.cromesh-section-blue { background: #020a12; }
+
+body.cromesh-section-blue::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -5;
+  background:
+    linear-gradient(90deg, rgba(2,9,17,.90) 0%, rgba(2,10,19,.66) 38%, rgba(2,12,22,.48) 70%, rgba(2,8,15,.76) 100%),
+    url("../assets/images/cromesh-blue-section-background.webp") center center / cover no-repeat;
+  pointer-events: none;
+}
+
+/* Green family: Hardware, Software, Mreža. */
+body.cromesh-section-green { background: #020b06; }
+
+body.cromesh-section-green::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -5;
+  background:
+    linear-gradient(90deg, rgba(2,10,5,.90) 0%, rgba(2,12,7,.66) 38%, rgba(2,18,10,.46) 70%, rgba(2,9,5,.76) 100%),
+    url("../assets/images/cromesh-green-section-background.webp") center center / cover no-repeat;
+  pointer-events: none;
+}
+
+body.cromesh-section-blue .md-main,
+body.cromesh-section-green .md-main { background: transparent; }
+
+body.cromesh-section-blue .md-content__inner,
+body.cromesh-section-green .md-content__inner {
+  background: rgba(2,8,15,.18);
+  border-radius: .65rem;
+  padding: 1rem 1.25rem 2rem;
 }
 
 @media screen and (max-width: 900px) {
   .cromesh-feature-grid,
-  .cromesh-quick-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .cromesh-hero {
-    padding-top: 5vh;
-  }
+  .cromesh-quick-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cromesh-hero { padding-top: 5vh; }
 }
 
 @media screen and (max-width: 600px) {
-  .cromesh-home {
-    margin-left: -.4rem;
-    margin-right: -.4rem;
-  }
-
+  .cromesh-home { margin-left: -.4rem; margin-right: -.4rem; }
   .cromesh-feature-grid,
-  .cromesh-quick-grid {
-    grid-template-columns: 1fr;
-  }
+  .cromesh-quick-grid { grid-template-columns: 1fr; }
+  .cromesh-hero h1 { font-size: 2.7rem; }
 
-  .cromesh-hero h1 {
-    font-size: 2.7rem;
-  }
-
-  .cromesh-home::before {
+  body.cromesh-section-blue::before {
     background:
-      linear-gradient(90deg, rgba(3,7,10,.9), rgba(3,7,10,.72)),
-      url("../assets/images/cromesh-hr-mesh-background.webp") 57% center / cover no-repeat;
+      linear-gradient(90deg, rgba(2,9,17,.88), rgba(2,10,19,.66)),
+      url("../assets/images/cromesh-blue-section-background.webp") 57% center / cover no-repeat;
+  }
+
+  body.cromesh-section-green::before {
+    background:
+      linear-gradient(90deg, rgba(2,10,5,.88), rgba(2,12,7,.66)),
+      url("../assets/images/cromesh-green-section-background.webp") 57% center / cover no-repeat;
   }
 }
