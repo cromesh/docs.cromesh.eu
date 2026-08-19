@@ -226,3 +226,34 @@ body.cromesh-section-green .md-content__inner {
       url("../assets/images/cromesh-green-section-background.webp") 57% center / cover no-repeat;
   }
 }
+
+/* v3.6.1 — community photos. Original graphics and aspect ratios are preserved. */
+.cromesh-doc-photo {
+  width: 100%;
+  max-width: 800px;
+  margin: 1.75rem auto 2rem;
+  text-align: center;
+}
+
+.cromesh-doc-photo img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: .65rem;
+  box-shadow: 0 8px 30px rgba(0,0,0,.35);
+}
+
+.cromesh-doc-photo--narrow {
+  max-width: 560px;
+}
+
+@media screen and (max-width: 600px) {
+  .cromesh-doc-photo,
+  .cromesh-doc-photo--narrow {
+    width: 100%;
+    max-width: 100%;
+  }
+}
