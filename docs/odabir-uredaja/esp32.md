@@ -15,3 +15,7 @@ Ako vam je najvažnije trajanje baterije, imajte na umu da će uređaji s ovim �
 
 - **LILYGO® TTGO T-Beam**  
 - **Heltec V3**
+
+<figure class="cromesh-doc-photo">
+  <img src="../../assets/images/v361-esp32.jpg" alt="ESP32 Meshtastic uređaj" loading="lazy">
+</figure>

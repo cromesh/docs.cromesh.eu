@@ -90,3 +90,7 @@ Odgovori na najčešća pitanja zajednice.
     `cromesh.eu` i `docs.cromesh.eu` neovisni su, neslužbeni projekti CroMesh zajednice i nisu službeno povezani s niti odobreni od strane Meshtastic LLC. „Meshtastic®” je registrirani zaštitni znak tvrtke Meshtastic LLC.
 </div>
 </div>
+
+<figure class="cromesh-doc-photo">
+  <img src="assets/images/v361-pocetak.jpg" alt="Meshtastic uređaji u radu" loading="lazy">
+</figure>

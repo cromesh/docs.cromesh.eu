@@ -59,3 +59,7 @@ Ispravna zaštita prema iskustvima zajednice:
   zgrade dogovor s upravom zgrade/vlasnicima stanova, kao i kod privatnih kuća.
 - Za regulatorna pitanja RF spektra nadležan je HAKOM — vidi
   [Pravila](../zajednica/pravila.md).
+
+<figure class="cromesh-doc-photo">
+  <img src="../../assets/images/v361-montaza-zastita.jpg" alt="Vanjska montaža antenskog node-a" loading="lazy">
+</figure>

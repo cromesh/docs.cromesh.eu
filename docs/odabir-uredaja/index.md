@@ -74,3 +74,7 @@ Za dublji pregled prednosti i mana pojedinog čipa vidi [ESP32](esp32.md),
 
 > **Napomena:** Prije kupnje "jeftinog čuda" s AliExpressa pitaj u grupi — velika je
 > vjerojatnost da je netko taj točno model već testirao.
+
+<figure class="cromesh-doc-photo cromesh-doc-photo--narrow">
+  <img src="../assets/images/v361-odabir-uredaja-pwrd.jpg" alt="Meshtastic uređaj s antenom" loading="lazy">
+</figure>

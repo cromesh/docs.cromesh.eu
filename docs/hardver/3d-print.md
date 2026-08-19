@@ -48,3 +48,7 @@ autore objava da dopune opis.
 - Fleksibilni (TPU) materijali korisni su za brtve i "gap fillere".
 - Vlastite dizajne i remixeve podijeli u topicu **3D printanje i design** — i ovdje
   kroz PR.
+
+<figure class="cromesh-doc-photo">
+  <img src="../../assets/images/v361-3d-print.jpg" alt="3D printano Meshtastic kućište" loading="lazy">
+</figure>

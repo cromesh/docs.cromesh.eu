@@ -18,3 +18,7 @@ Bez obzira na odabrani uređaj, **nikada ga ne uključujte bez spojene antene!**
 To može **trajno oštetiti radio čip** i učiniti uređaj neupotrebljivim.
 
 ---
+
+<figure class="cromesh-doc-photo">
+  <img src="../../assets/images/v361-t-echo.jpg" alt="LILYGO T-Echo uređaj" loading="lazy">
+</figure>

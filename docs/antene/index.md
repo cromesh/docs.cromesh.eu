@@ -153,3 +153,7 @@ linija optičke vidljivosti (LOS) + okomita montaža.
 Tablica preporučenih pigtailova i kabela s provjerenim linkovima trenutno se
 ne održava — provjeri topic **Hardware preporuke** u Telegram grupi za trenutne
 preporuke i iskustva zajednice.
+
+<figure class="cromesh-doc-photo">
+  <img src="../assets/images/v361-antene.jpg" alt="Vanjska antena za Meshtastic node" loading="lazy">
+</figure>

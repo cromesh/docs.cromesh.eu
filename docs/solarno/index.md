@@ -68,3 +68,7 @@ pouzdanijim — referentni node na Cepelišu s tom kombinacijom mjesecima ne pad
 Za fiksne node-ove na stalnom napajanju (ESP32 + WiFi kao MQTT gateway) sasvim je u redu
 običan USB adapter; baterija tada nije nužna. PoE napajanje RAK WisBlocka spominjano je
 u grupi, ali bez dokumentiranog rješenja za sada.
+
+<figure class="cromesh-doc-photo">
+  <img src="../assets/images/v361-solarni-uredaji.jpg" alt="Solarni Meshtastic uređaj" loading="lazy">
+</figure>
