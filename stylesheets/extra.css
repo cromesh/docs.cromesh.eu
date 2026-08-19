@@ -1,4 +1,4 @@
-/* CroMesh v3.5.1 — landing page and section visual layer */
+/* CroMesh v3.5.2 — landing page and branch/leaf section visual layer */
 
 .cromesh-home {
   position: relative;
@@ -164,7 +164,7 @@
 
 .cromesh-home-note .admonition { background: rgba(20,25,30,.65); }
 
-/* Blue family: Početak, Česta pitanja, Postavke, Odabir uređaja. */
+/* Blue family: explicit blue topics and all leaf/end pages. */
 body.cromesh-section-blue { background: #020a12; }
 
 body.cromesh-section-blue::before {
@@ -178,7 +178,7 @@ body.cromesh-section-blue::before {
   pointer-events: none;
 }
 
-/* Green family: Hardware, Software, Mreža. */
+/* Green family: main topic branches — Uvod, Česta pitanja, Postavke, Odabir uređaja, Hardware, Software, Mreža. */
 body.cromesh-section-green { background: #020b06; }
 
 body.cromesh-section-green::before {

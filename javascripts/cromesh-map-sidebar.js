@@ -38,57 +38,45 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const applySectionBackground = () => {
-    const path = window.location.pathname.replace(/\/+$/, "") || "/";
+  const path = window.location.pathname.replace(/\/+$/, "") || "/";
 
-    document.body.classList.remove(
-      "cromesh-section-blue",
-      "cromesh-section-green"
-    );
+  document.body.classList.remove(
+    "cromesh-section-blue",
+    "cromesh-section-green"
+  );
 
-    /*
-     * Blue family:
-     *   Početak
-     *   Česta pitanja
-     *   Postavke
-     *   Odabir uređaja
-     *
-     * The Početak "Prvi koraci" page is physically the same URL as
-     * Postavke/Prvi koraci, so it is intentionally covered by blue.
-     */
-    const bluePrefixes = [
-      "/uvod",
-      "/faq",
-      "/zajednica/",
-      "/meshcore/",
-      "/postavke/",
-      "/odabir-uredaja/"
-    ];
+  // Home keeps the existing landing-page background unchanged.
+  if (path === "/") return;
 
-    /*
-     * Green family:
-     *   Hardware
-     *   Software
-     *   Mreža
-     *
-     * These match the actual source-directory URLs used by mkdocs.yml:
-     * hardver, antene, solarno, aplikacije, firmware, mqtt, mreza.
-     */
-    const greenPrefixes = [
-      "/hardver/",
-      "/antene/",
-      "/solarno/",
-      "/aplikacije/",
-      "/firmware/",
-      "/mqtt/",
-      "/mreza/"
-    ];
+  // Main topic branches use the green section background.
+  const greenPaths = [
+    "/uvod",
+    "/faq",
+    "/postavke",
+    "/odabir-uredaja",
+    "/hardver",
+    "/aplikacije",
+    "/mreza"
+  ];
 
-    if (bluePrefixes.some(prefix => path === prefix || path.startsWith(prefix))) {
-      document.body.classList.add("cromesh-section-blue");
-    } else if (greenPrefixes.some(prefix => path === prefix || path.startsWith(prefix))) {
-      document.body.classList.add("cromesh-section-green");
-    }
-  };
+  if (greenPaths.includes(path)) {
+    document.body.classList.add("cromesh-section-green");
+    return;
+  }
+
+  // Explicit blue topic sections and all other non-home pages use blue.
+  const blueTopicPaths = [
+    "/mqtt",
+    "/solarno",
+    "/firmware",
+    "/antene",
+    "/meshcore"
+  ];
+
+  if (blueTopicPaths.includes(path) || path !== "/") {
+    document.body.classList.add("cromesh-section-blue");
+  }
+};;
 
   addMapCard();
   applySectionBackground();
