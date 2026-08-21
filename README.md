@@ -38,10 +38,19 @@ v3   2026-07-22  Restrukturirana navigacija
    └─ v3.5.3  MeshCore spojen u faq.md
 v3.6.0  Ispravljen prelom riječi na naslovnici
 ├─ v3.6.1  Community fotografije hardvera i uređaja
-└─ v3.6.2  Trenutna verzija — stilizirane SVG ikone u navigaciji
+├─ v3.6.2  Stilizirane SVG ikone u navigaciji
+└─ v3.6.3  Home poveznice, klikabilne kućice i 18650 fotografija
 ```
 
 ## Changelog
+
+### v3.6.3 — Home, poveznice i 18650 fotografija
+- **Navigacija:** uvedene minimalističke monokromatske SVG ikone u glavnoj navigaciji.
+- **Home:** dodane klikabilne kućice za brzi pristup.
+- **Naše poveznice:** vraćena tablica poveznica na naslovnicu i postavljena iznad odjeljka **Brzi pristup**.
+- **Telegram:** ažurirana Telegram pozivna poveznica na svim relevantnim mjestima.
+- **Home fotografija:** uklonjena problematična fotografija s početne stranice.
+- **18650:** fotografija za „Punjenje i oživljavanje 18650 Li-ion ćelija” zamijenjena novom slikom.
 
 ### v3.6.2 — Stilizirane SVG ikone u glavnoj navigaciji
 - **Zamjena:** emoji u nav tabovima (🏠 📖 ❓ ⚙️ 💻 🔧 💾 🌍) zamijenjeni monokromatskim
@@ -139,11 +148,11 @@ v3.6.0  Ispravljen prelom riječi na naslovnici
 ### v2
 - Uvedene prve tematske sekcije: Hardver, Mreža, Zajednica i FAQ.
 
+### v3.6.3 — Home, poveznice i 18650 fotografija
+- **Navigacija:** uvedene minimalističke SVG ikone u glavnoj navigaciji.
+- **Home:** uvedene klikabilne kućice za brzi pristup.
+- **Naše poveznice:** vraćena tablica poveznica na naslovnicu i postavljena iznad odjeljka **Brzi pristup**.
+- **Telegram:** ažurirana poveznica za poziv u Telegram grupu na cijeloj stranici.
+- **Home:** uklonjena problematična fotografija s naslovnice.
+- **18650:** fotografija za „Punjenje i oživljavanje 18650 Li-ion ćelija” zamijenjena novom slikom.
 
-### v3.6.3 — Home i 18650 fotografije
-- **Naše poveznice:** tablica je postavljena iznad odjeljka **Brzi pristup**.
-- **Naše poveznice:** tablica je postavljena ispod **Brzi pristup**, centrirana i s prozirnom pozadinom.
-- **Home:** **Naše poveznice** postavljene su neposredno iznad odjeljka **Brzi pristup**.
-- **Home:** uklonjena problematična fotografija iz landing stranice; **Naše poveznice** vraćene su neposredno ispod klikabilnih kućica.
-- **Naše poveznice:** tablica je premještena neposredno ispod klikabilnih kućica na početnoj stranici radi pouzdanog prikaza.
-- **Home:** uklonjena fotografija s početne stranice; fotografija za „Punjenje i oživljavanje 18650 Li-ion ćelija” zamijenjena novom slikom.
