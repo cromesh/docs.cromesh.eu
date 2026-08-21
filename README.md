@@ -36,10 +36,47 @@ v3   2026-07-22  Restrukturirana navigacija
    ├─ v3.5.1  Vizualne sekcije, pozadine po granama
    ├─ v3.5.2  Antene vodič, MeshCore na dno FAQ grane
    └─ v3.5.3  MeshCore spojen u faq.md
-v3.6.0  Trenutna verzija
+v3.6.0  Ispravljen prelom riječi na naslovnici
+├─ v3.6.1  Community fotografije hardvera i uređaja
+└─ v3.6.2  Trenutna verzija — stilizirane SVG ikone u navigaciji
 ```
 
 ## Changelog
+
+### v3.6.2 — Stilizirane SVG ikone u glavnoj navigaciji
+- **Zamjena:** emoji u nav tabovima (🏠 📖 ❓ ⚙️ 💻 🔧 💾 🌍) zamijenjeni monokromatskim
+  SVG ikonama iz Material Design Icons seta (Apache-2.0), umetnutim kroz CSS
+  `mask-image` — ikone prate boju teksta i automatski se prilagođavaju light/dark
+  temi.
+- **Otkriveno usput:** `:material-xxx:` shortcode sintaksa radi unutar sadržaja
+  stranica (admonitions, tablice), ali se **ne renderira** u nav naslovima —
+  poznato ograničenje MkDocs Material teme, potvrđeno lokalnim buildom prije nego
+  je pogrešan pristup dospio u produkciju.
+- **Bug uhvaćen tijekom razvoja:** prvi pokušaj koristio je `[href="hardver/"]`
+  CSS selektore, no MkDocs generira relativne putanje (`../`, `../..`) ovisno o
+  dubini trenutne stranice, a aktivni tab dodatno koristi generički `"./"` href
+  neovisno o sekciji — što je činilo href-based targetiranje nepouzdanim.
+  Riješeno prelaskom na pozicijski (`nth-child`) CSS odabir temeljen na fiksnom
+  redoslijedu iz `mkdocs.yml`, testirano na 12 stranica na različitim dubinama.
+- **Opseg:** ikone su primijenjene na desktop tab traku (`.md-tabs__link`).
+  Mobilni hamburger-drawer i dalje prikazuje čist tekst bez ikona.
+
+### v3.6.1 — Community fotografije hardvera i uređaja
+- **Sadržaj:** 11 fotografija zajednice dodano kroz Hardware, Odabir uređaja,
+  Antene, Solarno i naslovnicu, unutar `<figure class="cromesh-doc-photo">`
+  blokova.
+- **Bug:** slike se nisu prikazivale na 7 od 11 stranica. `use_directory_urls`
+  gradi ne-index stranice kao `stranica/index.html`, dvije razine ispod `site/`,
+  ali `<img src="../assets/images/...">` je pretpostavljao samo jednu razinu
+  (kao index.md stranice).
+- **Popravak:** putanje ispravljene u `../../assets/images/...` na svim
+  pogođenim stranicama; potvrđeno s `mkdocs build --clean --strict` i ručnom
+  provjerom da svih 11 slika resolvea na stvarnu datoteku.
+- **Dodatni sitni bug:** `esp32.md` i `zakljucak.md` nisu imali prazan red prije
+  `<figure>` bloka, pa Markdown parser HTML blok nije prepoznao — dodan blank
+  line.
+- **CSS:** `.cromesh-doc-photo` klasa (zaobljeni rubovi, sjena, responzivni
+  max-width) dodana u `extra.css`.
 
 ### v3.6.0 — Ispravljen prelom riječi na naslovnici
 - **Bug:** na desktop širinama (4-stupčani grid, ~901–1280px+), riječi poput
@@ -101,3 +138,12 @@ v3.6.0  Trenutna verzija
 
 ### v2
 - Uvedene prve tematske sekcije: Hardver, Mreža, Zajednica i FAQ.
+
+
+### v3.6.3 — Home i 18650 fotografije
+- **Naše poveznice:** tablica je postavljena iznad odjeljka **Brzi pristup**.
+- **Naše poveznice:** tablica je postavljena ispod **Brzi pristup**, centrirana i s prozirnom pozadinom.
+- **Home:** **Naše poveznice** postavljene su neposredno iznad odjeljka **Brzi pristup**.
+- **Home:** uklonjena problematična fotografija iz landing stranice; **Naše poveznice** vraćene su neposredno ispod klikabilnih kućica.
+- **Naše poveznice:** tablica je premještena neposredno ispod klikabilnih kućica na početnoj stranici radi pouzdanog prikaza.
+- **Home:** uklonjena fotografija s početne stranice; fotografija za „Punjenje i oživljavanje 18650 Li-ion ćelija” zamijenjena novom slikom.

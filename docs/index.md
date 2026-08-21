@@ -51,6 +51,20 @@ Privatnost, sigurnost i sloboda komunikacije.
 </div>
 </div>
 
+
+
+
+## Naše poveznice
+
+| Resurs | Adresa | Opis |
+|---|---|---|
+| Glavni web | [cromesh.eu](https://cromesh.eu) | Predstavljanje zajednice |
+| Dokumentacija | [docs.cromesh.eu](https://docs.cromesh.eu) | Ova stranica |
+| Karta mreže | [map.cromesh.eu](https://map.cromesh.eu) | Meshview instanca — node-ovi, paketi, chat |
+| MQTT server | `mqtt.cromesh.eu` | Zajednički MQTT za kartu i gateway node-ove |
+| GitHub | [github.com/cromesh/docs.cromesh.eu](https://github.com/cromesh/docs.cromesh.eu) | Izvor ove dokumentacije — PR-ovi su dobrodošli |
+| Telegram | [t.me/+LMnznzvgKCg2OTc0](https://t.me/+LMnznzvgKCg2OTc0) | Poveznica za ulaz u Telegram grupu |
+
 ## Brzi pristup
 
 <div class="cromesh-quick-grid" markdown>
@@ -91,6 +105,7 @@ Odgovori na najčešća pitanja zajednice.
 </div>
 </div>
 
-<figure class="cromesh-doc-photo">
-  <img src="assets/images/v361-pocetak.jpg" alt="Meshtastic uređaji u radu" loading="lazy">
-</figure>
+
+<div class="cromesh-home-links" markdown>
+
+</div>

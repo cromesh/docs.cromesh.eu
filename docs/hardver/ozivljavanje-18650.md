@@ -53,5 +53,5 @@ Za dugoročno skladištenje: napon mirovanja ~3,7–3,9V.
 *Ovo su informacije iz Hobbyist priručnika, a ne sigurnosna certifikacija.*
 
 <figure class="cromesh-doc-photo">
-  <img src="../../assets/images/v361-ozivljavanje-liion.jpg" alt="Punjač za Li-ion ćeliju" loading="lazy">
+  <img src="../../assets/images/v363-ozivljavanje-18650.jpg" alt="Punjač za Li-ion ćeliju" loading="lazy">
 </figure>

@@ -147,8 +147,30 @@
   font-size: 1rem;
 }
 
+/* Brzi pristup — cijela kartica ("kuća") je klikabilna, ne samo zadnji link.
+   Standardni "stretched link" pristup: kartica dobiva position:relative, a
+   jedinom linku unutra (npr. "Otvori vodič →") dodaje se ::after pseudo-element
+   koji se rasteže preko cijele kartice (position:absolute; inset:0), pa klik
+   bilo gdje unutar okvira aktivira taj link. Markdown sadržaj kartica ostaje
+   nepromijenjen. */
+.cromesh-quick-card {
+  position: relative;
+}
+
 .cromesh-quick-card a {
   color: #fff;
+  position: static;
+}
+
+.cromesh-quick-card a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.cromesh-quick-card a:hover {
+  text-decoration: underline;
 }
 
 .cromesh-home-note {
@@ -323,3 +345,24 @@ body.cromesh-section-green .md-content__inner {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M16.36%2C14C16.44%2C13.34%2016.5%2C12.68%2016.5%2C12C16.5%2C11.32%2016.44%2C10.66%2016.36%2C10H19.74C19.9%2C10.64%2020%2C11.31%2020%2C12C20%2C12.69%2019.9%2C13.36%2019.74%2C14M14.59%2C19.56C15.19%2C18.45%2015.65%2C17.25%2015.97%2C16H18.92C17.96%2C17.65%2016.43%2C18.93%2014.59%2C19.56M14.34%2C14H9.66C9.56%2C13.34%209.5%2C12.68%209.5%2C12C9.5%2C11.32%209.56%2C10.65%209.66%2C10H14.34C14.43%2C10.65%2014.5%2C11.32%2014.5%2C12C14.5%2C12.68%2014.43%2C13.34%2014.34%2C14M12%2C19.96C11.17%2C18.76%2010.5%2C17.43%2010.09%2C16H13.91C13.5%2C17.43%2012.83%2C18.76%2012%2C19.96M8%2C8H5.08C6.03%2C6.34%207.57%2C5.06%209.4%2C4.44C8.8%2C5.55%208.35%2C6.75%208%2C8M5.08%2C16H8C8.35%2C17.25%208.8%2C18.45%209.4%2C19.56C7.57%2C18.93%206.03%2C17.65%205.08%2C16M4.26%2C14C4.1%2C13.36%204%2C12.69%204%2C12C4%2C11.31%204.1%2C10.64%204.26%2C10H7.64C7.56%2C10.66%207.5%2C11.32%207.5%2C12C7.5%2C12.68%207.56%2C13.34%207.64%2C14M12%2C4.03C12.83%2C5.23%2013.5%2C6.57%2013.91%2C8H10.09C10.5%2C6.57%2011.17%2C5.23%2012%2C4.03M18.92%2C8H15.97C15.65%2C6.75%2015.19%2C5.55%2014.59%2C4.44C16.43%2C5.07%2017.96%2C6.34%2018.92%2C8M12%2C2C6.47%2C2%202%2C6.5%202%2C12A10%2C10%200%200%2C0%2012%2C22A10%2C10%200%200%2C0%2022%2C12A10%2C10%200%200%2C0%2012%2C2Z%22/%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M16.36%2C14C16.44%2C13.34%2016.5%2C12.68%2016.5%2C12C16.5%2C11.32%2016.44%2C10.66%2016.36%2C10H19.74C19.9%2C10.64%2020%2C11.31%2020%2C12C20%2C12.69%2019.9%2C13.36%2019.74%2C14M14.59%2C19.56C15.19%2C18.45%2015.65%2C17.25%2015.97%2C16H18.92C17.96%2C17.65%2016.43%2C18.93%2014.59%2C19.56M14.34%2C14H9.66C9.56%2C13.34%209.5%2C12.68%209.5%2C12C9.5%2C11.32%209.56%2C10.65%209.66%2C10H14.34C14.43%2C10.65%2014.5%2C11.32%2014.5%2C12C14.5%2C12.68%2014.43%2C13.34%2014.34%2C14M12%2C19.96C11.17%2C18.76%2010.5%2C17.43%2010.09%2C16H13.91C13.5%2C17.43%2012.83%2C18.76%2012%2C19.96M8%2C8H5.08C6.03%2C6.34%207.57%2C5.06%209.4%2C4.44C8.8%2C5.55%208.35%2C6.75%208%2C8M5.08%2C16H8C8.35%2C17.25%208.8%2C18.45%209.4%2C19.56C7.57%2C18.93%206.03%2C17.65%205.08%2C16M4.26%2C14C4.1%2C13.36%204%2C12.69%204%2C12C4%2C11.31%204.1%2C10.64%204.26%2C10H7.64C7.56%2C10.66%207.5%2C11.32%207.5%2C12C7.5%2C12.68%207.56%2C13.34%207.64%2C14M12%2C4.03C12.83%2C5.23%2013.5%2C6.57%2013.91%2C8H10.09C10.5%2C6.57%2011.17%2C5.23%2012%2C4.03M18.92%2C8H15.97C15.65%2C6.75%2015.19%2C5.55%2014.59%2C4.44C16.43%2C5.07%2017.96%2C6.34%2018.92%2C8M12%2C2C6.47%2C2%202%2C6.5%202%2C12A10%2C10%200%200%2C0%2012%2C22A10%2C10%200%200%2C0%2022%2C12A10%2C10%200%200%2C0%2012%2C2Z%22/%3E%3C/svg%3E");
 }
+
+/* v3.6.3 — Naše poveznice: centered and transparent table */
+.cromesh-home-links {
+  background: transparent !important;
+  text-align: center;
+}
+
+.cromesh-home-links table {
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent !important;
+}
+
+.cromesh-home-links table thead,
+.cromesh-home-links table tbody,
+.cromesh-home-links table tr,
+.cromesh-home-links table th,
+.cromesh-home-links table td {
+  background: transparent !important;
+}
+

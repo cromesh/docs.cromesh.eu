@@ -5,15 +5,15 @@ site_url: https://docs.cromesh.eu
 repo_name: cromesh/docs.cromesh.eu
 repo_url: https://github.com/cromesh/docs.cromesh.eu
 nav:
-  - 🏠 Home: index.md
-  - 📖 Početak:
+  - Home: index.md
+  - Početak:
     - Uvod u Meshtastic: uvod.md
     - Prvi koraci: postavke/prvi-koraci.md  # namjerno duplicirano i pod Postavke
-  - ❓ Česta pitanja:
+  - Česta pitanja:
     - Česta pitanja: faq.md
     - O zajednici: zajednica/o-zajednici.md
     - Pravila: zajednica/pravila.md
-  - ⚙️ Postavke:
+  - Postavke:
     - Postavke: postavke/index.md
     - Prvi koraci: postavke/prvi-koraci.md  # namjerno duplicirano i pod Početak
     - Lora: postavke/lora-postavke.md
@@ -21,24 +21,24 @@ nav:
     - User: postavke/user-postavke.md
     - Device: postavke/device-postavke.md
     - MQTT: postavke/mqtt-postavke.md
-  - 💻 Odabir uređaja:
+  - Odabir uređaja:
     - Odabir Uređaja: odabir-uredaja/index.md
     - ESP32: odabir-uredaja/esp32.md
     - NRF52: odabir-uredaja/nrf52.md
     - RP2040: odabir-uredaja/rp2040.md
     - Zaključak: odabir-uredaja/zakljucak.md
-  - 🔧 Hardware:
+  - Hardware:
     - Hardware: hardver/index.md
     - Antene: antene/index.md
     - Montaža i zaštita: hardver/montaza-i-zastita.md
     - 3D print kućišta: hardver/3d-print.md
     - Solarni uređaji: solarno/index.md
     - Oživljavanje LiIon: hardver/ozivljavanje-18650.md
-  - 💾 Software:
+  - Software:
     - Aplikacije: aplikacije/index.md
     - Firmware: firmware/index.md
     - MQTT: mqtt/index.md
-  - 🌍 Mreža:
+  - Mreža:
     - Standardi: mreza/standardi.md
     - Kanali: mreza/kanali.md
     - Uloge i imenovanje: mreza/uloge-i-imenovanje.md
@@ -132,7 +132,7 @@ extra_javascript:
 extra:
   social:
     - icon: fontawesome/brands/telegram
-      link: https://t.me/cromesh
+      link: https://t.me/+LMnznzvgKCg2OTc0
     - icon: fontawesome/brands/github
       link: https://github.com/CroMesh
     - icon: material/web

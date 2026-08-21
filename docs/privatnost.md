@@ -31,7 +31,7 @@ GDPR-a). Svaki od njih odgovoran je za obradu u dijelu koji administrira.
 
 - Administratori: `[POPUNITI — imena/nadimci administratora]`
 - Zajednički kontakt: `[POPUNITI — e-mail]`
-- Telegram: [t.me/cromesh](https://t.me/cromesh)
+- Telegram: [t.me/+LMnznzvgKCg2OTc0](https://t.me/+LMnznzvgKCg2OTc0)
 - GitHub: [github.com/CroMesh](https://github.com/CroMesh)
 
 Za sve upite vezane uz obradu osobnih podataka (pristup, ispravak, brisanje) obratite

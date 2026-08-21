@@ -71,7 +71,7 @@ su i prekogranične propagacije (Slovenija, Italija, Austrija, Srbija).
 
 ## Kako se uključiti
 
-1. Pridruži se [Telegram grupi](https://t.me/+q1MRpiblCNswNDlk).
+1. Pridruži se [Telegram grupi](https://t.me/+LMnznzvgKCg2OTc0).
 2. Predstavi se u topicu **Chat** — lokacija (okvirno) i oprema.
 3. Za upis u adresar mreže javi svoj **short i long name** u topic **Popis članova**.
 4. Nabavi opremu ([vodič](../odabir-uredaja/index.md)), konfiguriraj node
