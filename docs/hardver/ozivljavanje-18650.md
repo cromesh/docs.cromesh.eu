@@ -12,9 +12,8 @@ tags:
     Kod sumnje u stanje ili povijest ćelije, sigurnije je reciklirati je nego
     pokušati oživljavanje.
 
-## Kada oživljavati
+## Kada ne oživljavati
 
-- **Iznad ~0,2V** — razuman kandidat za oživljavanje.
 - **Točno 0,0V** — vjerojatno trajno aktivirana unutarnja zaštita, baciti.
 - **Bila ispod ~1,5V dulje od tjedan dana** — ne oživljavati (rizik unutarnjeg
   kratkog spoja).
