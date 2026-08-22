@@ -56,6 +56,8 @@ Privatnost, sigurnost i sloboda komunikacije.
 
 ## Naše poveznice
 
+<div class="cromesh-home-links" markdown>
+
 | Resurs | Adresa | Opis |
 |---|---|---|
 | Glavni web | [cromesh.eu](https://cromesh.eu) | Predstavljanje zajednice |
@@ -64,6 +66,8 @@ Privatnost, sigurnost i sloboda komunikacije.
 | MQTT server | `mqtt.cromesh.eu` | Zajednički MQTT za kartu i gateway node-ove |
 | GitHub | [github.com/cromesh/docs.cromesh.eu](https://github.com/cromesh/docs.cromesh.eu) | Izvor ove dokumentacije — PR-ovi su dobrodošli |
 | Telegram | [t.me/+LMnznzvgKCg2OTc0](https://t.me/+LMnznzvgKCg2OTc0) | Poveznica za ulaz u Telegram grupu |
+
+</div>
 
 ## Brzi pristup
 
@@ -103,9 +107,4 @@ Odgovori na najčešća pitanja zajednice.
 !!! info ""
     `cromesh.eu` i `docs.cromesh.eu` neovisni su, neslužbeni projekti CroMesh zajednice i nisu službeno povezani s niti odobreni od strane Meshtastic LLC. „Meshtastic®” je registrirani zaštitni znak tvrtke Meshtastic LLC.
 </div>
-</div>
-
-
-<div class="cromesh-home-links" markdown>
-
 </div>
