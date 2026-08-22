@@ -1,6 +1,6 @@
 # CroMesh Dokumentacija
 
-Ova dokumentacija koristi [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) za generiranje modernog, responzivnog web sučelja. Stranicu uređuju CroMesh članovi, uz pomoć ChatGPT engine-a za izradu, restrukturiranje, lekturu i provjeru dokumentacijskog sadržaja od verzije v3.4.2.
+Ova dokumentacija koristi [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) za generiranje modernog, responzivnog web sučelja. Stranicu uređuju CroMesh članovi, uz pomoć ChatGPT engine-a za izradu, restrukturiranje, lekturu i provjeru dokumentacijskog sadržaja od verzije v2. Debugirano te djelomično izrađeno Claude-om.
 
 ## Struktura dokumentacije
 
@@ -36,12 +36,12 @@ v3   2026-07-22  Restrukturirana navigacija
    ├─ v3.5.1  Vizualne sekcije, pozadine po granama
    ├─ v3.5.2  Antene vodič, MeshCore na dno FAQ grane
    └─ v3.5.3  MeshCore spojen u faq.md
-v3.6.0  Ispravljen prijelom riječi na naslovnici
-├─ v3.6.1  Community fotografije hardvera i uređaja
-├─ v3.6.2  Stilizirane SVG ikone u navigaciji
-└─ v3.6.3  Home poveznice, klikabilne kućice i 18650 fotografija
-v3.7.0  Povećana tablica Naše poveznice
-└─ v3.7.1  Trenutna verzija — nove fotografije i ispravci putanja
+└─ v3.6.0  Ispravljen prijelom riječi na naslovnici
+   ├─ v3.6.1  Community fotografije hardvera i uređaja
+   ├─ v3.6.2  Stilizirane SVG ikone u navigaciji
+   └─ v3.6.3  Home poveznice, klikabilne kućice i 18650 fotografija
+└─ v3.7.0  Povećana tablica Naše poveznice
+   └─ v3.7.1  Trenutna verzija — nove fotografije i ispravci putanja
 ```
 
 ## Changelog
@@ -71,6 +71,7 @@ v3.7.0  Povećana tablica Naše poveznice
   zahtjev.
 - Sve četiri stranice potvrđene stvarnim browser testom (Playwright) — slike se
   učitavaju (`naturalWidth/Height > 0`), ne samo da putanja postoji na disku.
+- Debugirano putem Claude-a
 
 ### v3.7.0 — Povećana tablica Naše poveznice
 - **Naše poveznice:** tablica na naslovnici povećana — font unutar tablice
@@ -138,7 +139,7 @@ v3.7.0  Povećana tablica Naše poveznice
   267px — riječi se sada lome isključivo na granicama riječi, na svim testiranim
   širinama (901px, 1280px, tablet, mobitel).
 
-### v3.5.3 — MeshCore spojen u FAQ, uklonjena zasebna stranica
+### v3.5.3 — MeshCore spojen u FAQ
 - **Česta pitanja:** MeshCore tema (Što je MeshCore?, Razlika prema Meshtastic-u,
   Poveznice, pravna napomena) sada je fizički dio `faq.md`, kao zadnja sekcija na
   stranici — ne samo zadnja stavka u nav popisu.
@@ -186,4 +187,3 @@ v3.7.0  Povećana tablica Naše poveznice
 
 ### v2
 - Uvedene prve tematske sekcije: Hardver, Mreža, Zajednica i FAQ.
-
