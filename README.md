@@ -36,13 +36,25 @@ v3   2026-07-22  Restrukturirana navigacija
    ├─ v3.5.1  Vizualne sekcije, pozadine po granama
    ├─ v3.5.2  Antene vodič, MeshCore na dno FAQ grane
    └─ v3.5.3  MeshCore spojen u faq.md
-v3.6.0  Ispravljen prelom riječi na naslovnici
+v3.6.0  Ispravljen prijelom riječi na naslovnici
 ├─ v3.6.1  Community fotografije hardvera i uređaja
 ├─ v3.6.2  Stilizirane SVG ikone u navigaciji
 └─ v3.6.3  Home poveznice, klikabilne kućice i 18650 fotografija
+v3.7.0  Trenutna verzija — povećana tablica Naše poveznice
 ```
 
 ## Changelog
+
+### v3.7.0 — Povećana tablica Naše poveznice
+- **Naše poveznice:** tablica na naslovnici povećana — font unutar tablice
+  podignut za 50% (s 0.64rem na 0.96rem). Padding u ćelijama definiran je u `em`
+  jedinicama u MkDocs Material temi, pa raste proporcionalno s fontom, čime cijela
+  tablica (ne samo tekst) postaje vidno veća.
+- **Uzrok potrebe za `!important`:** temeljno pravilo teme
+  (`.md-typeset table:not([class])`) ima veću CSS specifičnost (2 klase) od
+  prvotnog pravila (`.cromesh-home-links table`, 1 klasa), pa je font-size bez
+  `!important` bio tiho ignoriran — potvrđeno usporedbom computed stilova prije
+  i poslije ispravka.
 
 ### v3.6.3 — Home, poveznice i 18650 fotografija
 - **Navigacija:** uvedene minimalističke monokromatske SVG ikone u glavnoj navigaciji.
@@ -87,7 +99,7 @@ v3.6.0  Ispravljen prelom riječi na naslovnici
 - **CSS:** `.cromesh-doc-photo` klasa (zaobljeni rubovi, sjena, responzivni
   max-width) dodana u `extra.css`.
 
-### v3.6.0 — Ispravljen prelom riječi na naslovnici
+### v3.6.0 — Ispravljen prijelom riječi na naslovnici
 - **Bug:** na desktop širinama (4-stupčani grid, ~901–1280px+), riječi poput
   "Decentralizirana", "besplatno" i "dokumentacija" lomile su se usred riječi
   (npr. "Decentraliz-irana") jer su kartice bile samo ~142px široke.
