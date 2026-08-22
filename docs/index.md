@@ -66,6 +66,7 @@ Privatnost, sigurnost i sloboda komunikacije.
 | MQTT server | `mqtt.cromesh.eu` | Zajednički MQTT za kartu i gateway node-ove |
 | GitHub | [github.com/cromesh/docs.cromesh.eu](https://github.com/cromesh/docs.cromesh.eu) | Izvor ove dokumentacije — PR-ovi su dobrodošli |
 | Telegram | [t.me/+LMnznzvgKCg2OTc0](https://t.me/+LMnznzvgKCg2OTc0) | Poveznica za ulaz u Telegram grupu |
+| MeshCore Hrvatska | [meshcore.com.hr](https://meshcore.com.hr/) | Hrvatska MeshCore zajednica |
 
 </div>
 
