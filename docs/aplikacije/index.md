@@ -61,3 +61,5 @@ poruke** aktivno se uvodi u svim clientima, ali brzina uvođenja varira. Najče�
 problem korisnika: nepodudaranje verzije firmware-a i verzije aplikacije/web clienta —
 nakon nadogradnje firmware-a gotovo uvijek treba i najnoviju verziju clienta, inače
 dolazi do neuspjelog spajanja ili netočno prikazanih postavki.
+
+![Software](../assets/images/v371-software.jpg)

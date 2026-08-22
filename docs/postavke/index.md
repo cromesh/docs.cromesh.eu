@@ -20,6 +20,10 @@ Najnovije stabilno izdanje — čak i ako je označeno kao *Beta* — obično je
 
 Time se smanjuje nepotreban promet u mreži.  
 
+<figure class="cromesh-doc-photo">
+  <img src="../assets/images/v371-pocetak.jpg" alt="CroMesh node na planinskom vrhu" loading="lazy">
+</figure>
+
 
  
 

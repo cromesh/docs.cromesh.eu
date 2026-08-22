@@ -18,3 +18,8 @@ autonomne node-ove.
 - **[Solarni uređaji](../solarno/index.md)** — baterije, BMS zaštita, MPPT regulatori
 - **[Oživljavanje Li-Ion ćelija](ozivljavanje-18650.md)** — punjenje i oživljavanje duboko
   ispražnjenih 18650 ćelija
+
+
+<div class="cromesh-doc-photo">
+  <img src="../assets/images/v371-hardver.jpg" alt="CroMesh node na planinskom terenu" loading="lazy">
+</div>
