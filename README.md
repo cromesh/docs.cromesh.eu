@@ -40,10 +40,37 @@ v3.6.0  Ispravljen prijelom riječi na naslovnici
 ├─ v3.6.1  Community fotografije hardvera i uređaja
 ├─ v3.6.2  Stilizirane SVG ikone u navigaciji
 └─ v3.6.3  Home poveznice, klikabilne kućice i 18650 fotografija
-v3.7.0  Trenutna verzija — povećana tablica Naše poveznice
+v3.7.0  Povećana tablica Naše poveznice
+└─ v3.7.1  Trenutna verzija — nove fotografije i ispravci putanja
 ```
 
 ## Changelog
+
+### v3.7.1 — Nove fotografije: postavke, hardver, aplikacije
+- **Sadržaj:** 3 nove fotografije zajednice — `v371-pocetak.jpg`,
+  `v371-hardver.jpg`, `v371-software.jpg` — dodane na stranice Postavke,
+  Hardware i Aplikacije.
+- **Bug 1 — pogrešna dubina putanje:** `postavke/prvi-koraci.md` nije `index.md`
+  pa se gradi dvije razine ispod `site/` (`postavke/prvi-koraci/index.html`), ali
+  je koristio `../` (jednu razinu) umjesto `../../`.
+- **Bug 2 — nedostaje `../` u markdown sintaksi:** `aplikacije/index.md` je
+  sliku umetnuo standardnom `![]()` markdown sintaksom bez ijednog `../`.
+  `mkdocs build --strict` je ovo sam uhvatio kao grešku, jer MkDocs validira
+  markdown-style putanje (za razliku od raw HTML `<img>` tagova, koje nikad ne
+  validira).
+- **Bug 3 — slike nikad nisu bile pushane:** provjerom preko
+  `raw.githubusercontent.com` utvrđeno da sve tri slike vraćaju 404 na masteru,
+  neovisno o ispravnosti putanja — binarni fajlovi nikad nisu stigli u prvi
+  push. Dodani naknadno.
+- **Bug 4 — nedostajala cijela datoteka u pushu:** `hardver/index.md` je već
+  imao ispravnu putanju pa nije trebao izmjenu, ali kao nova datoteka
+  (u odnosu na tadašnji master) nikad nije bila uključena niti u jedan paket za
+  push — otkriveno tek kad je stranica ostala bez slike unatoč ispravnom kodu.
+- **Premještanje sadržaja:** `v371-pocetak.jpg` premještena s
+  `/postavke/prvi-koraci/` na `/postavke/` (sekcijsku naslovnu stranicu), na
+  zahtjev.
+- Sve četiri stranice potvrđene stvarnim browser testom (Playwright) — slike se
+  učitavaju (`naturalWidth/Height > 0`), ne samo da putanja postoji na disku.
 
 ### v3.7.0 — Povećana tablica Naše poveznice
 - **Naše poveznice:** tablica na naslovnici povećana — font unutar tablice
@@ -159,12 +186,4 @@ v3.7.0  Trenutna verzija — povećana tablica Naše poveznice
 
 ### v2
 - Uvedene prve tematske sekcije: Hardver, Mreža, Zajednica i FAQ.
-
-### v3.6.3 — Home, poveznice i 18650 fotografija
-- **Navigacija:** uvedene minimalističke SVG ikone u glavnoj navigaciji.
-- **Home:** uvedene klikabilne kućice za brzi pristup.
-- **Naše poveznice:** vraćena tablica poveznica na naslovnicu i postavljena iznad odjeljka **Brzi pristup**.
-- **Telegram:** ažurirana poveznica za poziv u Telegram grupu na cijeloj stranici.
-- **Home:** uklonjena problematična fotografija s naslovnice.
-- **18650:** fotografija za „Punjenje i oživljavanje 18650 Li-ion ćelija” zamijenjena novom slikom.
 
