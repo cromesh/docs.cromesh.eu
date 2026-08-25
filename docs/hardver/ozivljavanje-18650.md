@@ -15,8 +15,10 @@ tags:
 ## Kada ne oživljavati
 
 - **Točno 0,0V** — vjerojatno trajno aktivirana unutarnja zaštita, baciti.
-- **Bila ispod ~1,5V dulje od tjedan dana** — ne oživljavati (rizik unutarnjeg
+- **Napon pao ispod ~1,5V u roku od tjedan dana** — ne oživljavati (rizik unutarnjeg
   kratkog spoja).
+- **Napon padne npr. ~0,5V unutar nekoliko dana bez opterećenja** (ćelija nije bila
+  pod trošilom) — ukazuje na visoko samopražnjenje ili interni kvar, reciklirati.
 - **Vidljivo oštećenje** (probušeno kućište, ulubljenje, napuhanost, korozija) —
   nikad ne oživljavati.
 
