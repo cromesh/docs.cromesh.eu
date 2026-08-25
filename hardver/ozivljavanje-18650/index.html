@@ -1426,6 +1426,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#ocitanje-napona-celije" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Očitanje napona ćelije
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#kada-ne-ozivljavati" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1452,6 +1463,17 @@
     <span class="md-ellipsis">
       
         Punjenje
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pracenje-nakon-ozivljavanja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Praćenje nakon oživljavanja
       
     </span>
   </a>
@@ -1808,6 +1830,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#ocitanje-napona-celije" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Očitanje napona ćelije
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#kada-ne-ozivljavati" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1834,6 +1867,17 @@
     <span class="md-ellipsis">
       
         Punjenje
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pracenje-nakon-ozivljavanja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Praćenje nakon oživljavanja
       
     </span>
   </a>
@@ -1919,13 +1963,54 @@
 <p>Kod sumnje u stanje ili povijest ćelije, sigurnije je reciklirati je nego
 pokušati oživljavanje.</p>
 </div>
+<h2 id="ocitanje-napona-celije">Očitanje napona ćelije<a class="headerlink" href="#ocitanje-napona-celije" title="Permanent link">&para;</a></h2>
+<p>Prvi korak je izmjeriti napon ćelije u mirovanju (bez opterećenja) i pročitati
+ga prema rasponu u tablici ispod.</p>
+<table>
+<thead>
+<tr>
+<th>Napon</th>
+<th>Stanje / preporuka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>0,00V</strong></td>
+<td>Vjerojatno je aktivirana unutarnja zaštita — ne preporučuje se zaobilaženje zaštite, tretirati kao mrtvu ćeliju.</td>
+</tr>
+<tr>
+<td><strong>0,02–0,2V</strong></td>
+<td>Vjerojatno mrtva ćelija — rezultati oživljavanja obično su loši.</td>
+</tr>
+<tr>
+<td><strong>0,2–1,8V</strong></td>
+<td>Ćelija se nakon oživljavanja vjerojatno brzo prazni.</td>
+</tr>
+<tr>
+<td><strong>1,8–3,6V</strong></td>
+<td>Taman raspon za oživljavanje.</td>
+</tr>
+<tr>
+<td><strong>3,6–4,2V</strong></td>
+<td>Normalni radni napon.</td>
+</tr>
+<tr>
+<td><strong>4,5V i više</strong></td>
+<td>Vjerojatno pogrešno mjerenje ili ozbiljno prenapunjena ćelija — litijeva ćelija u tom stanju predstavlja rizik od požara (gori čak i pod vodom). Odmah prekinuti rad s ćelijom.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="kada-ne-ozivljavati">Kada ne oživljavati<a class="headerlink" href="#kada-ne-ozivljavati" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Točno 0,0V</strong> — vjerojatno trajno aktivirana unutarnja zaštita, baciti.</li>
-<li><strong>Napon pao ispod ~1,5V u roku od tjedan dana</strong> — ne oživljavati (rizik unutarnjeg
-  kratkog spoja).</li>
-<li><strong>Napon padne npr. ~0,5V unutar nekoliko dana bez opterećenja</strong> (ćelija nije bila
-  pod trošilom) — ukazuje na visoko samopražnjenje ili interni kvar, reciklirati.</li>
+<li><strong>Napon padne ispod ~1,5V unutar tjedan dana praćenja</strong> — ne oživljavati
+  (rizik unutarnjeg kratkog spoja), pravilno reciklirati.</li>
+<li><strong>Napon padne npr. ~0,5V unutar nekoliko dana bez opterećenja</strong> (ćelija nije
+  bila pod trošilom) — ukazuje na visoko samopražnjenje ili interni kvar,
+  reciklirati.</li>
+<li><strong>Napon nakon oživljavanja brzo pada</strong> — ćelija se smatra oštećenom,
+  potrebno ju je reciklirati.</li>
+<li><strong>Napon vidljivo pada tijekom kratkog kontinuiranog mjerenja</strong> (desetak
+  sekundi) — ćelija vjerojatno ne drži punjenje, reciklirati.</li>
 <li><strong>Vidljivo oštećenje</strong> (probušeno kućište, ulubljenje, napuhanost, korozija) —
   nikad ne oživljavati.</li>
 </ul>
@@ -1942,6 +2027,22 @@ pokušati oživljavanje.</p>
 <h2 id="punjenje">Punjenje<a class="headerlink" href="#punjenje" title="Permanent link">&para;</a></h2>
 <p>CC-CV do 4,20V (±0,05V). Nikad ne ostavljati na trajnom trickle punjenju nakon
 pune napunjenosti.</p>
+<h2 id="pracenje-nakon-ozivljavanja">Praćenje nakon oživljavanja<a class="headerlink" href="#pracenje-nakon-ozivljavanja" title="Permanent link">&para;</a></h2>
+<p>Oživljenim i upcikliranim ćelijama obavezno pratiti napon kroz vrijeme, ne
+samo neposredno nakon postupka:</p>
+<ul>
+<li>Pratiti <strong>trend stabilizacije</strong> napona. Kad se napon prestane značajno
+  mijenjati, ćelija se stabilizirala.<ul>
+<li>Ako je stabilizirani napon u radnom rasponu (3,6–4,2V) — ćelija je u
+  redu za daljnju upotrebu.</li>
+<li>Ako je stabilizirani napon ispod radnog raspona, nakon par ciklusa
+  punjenja ćelija bi mogla postići stabilnije, više napone.</li>
+<li>Ako napon uporno ostaje ispod radnog raspona unatoč više ciklusa
+  punjenja, postoji mogućnost unutarnjeg kratkog spoja — ćelija je
+  neispravna. Pravilno i odgovorno je odložiti u otpad.</li>
+</ul>
+</li>
+</ul>
 <h2 id="unutarnji-otpor">Unutarnji otpor<a class="headerlink" href="#unutarnji-otpor" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
