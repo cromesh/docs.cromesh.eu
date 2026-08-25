@@ -18,3 +18,7 @@ description: Konfiguracija primarnog LongFast kanala i postavke dijeljenja lokac
 - **Naziv**: `cromesh.eu`  
 - **Uplink enabled**: Isključeno  
 - **Downlink enabled**: Isključeno  
+
+Skeniraj QR kod za brzo dodavanje **cromesh.eu** kanala u Meshtastic aplikaciju:
+
+![QR kod za cromesh.eu kanal](images/channel_qr_cromesh.png){ width="220" }
