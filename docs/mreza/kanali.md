@@ -20,6 +20,8 @@ Kanal dodaješ putem službene poveznice (QR/URL):
 https://meshtastic.org/e/#CgcSAQE6AggNCi4SIOG-EYxkPo3V43tylMQ0YPmk_Stbu-g7hFpkH7V43FkdGgpjcm9tZXNoLmV1Eg8IATgDQANIAVAbaAHABgE
 ```
 
+![QR kod za cromesh.eu kanal](images/channel_qr_cromesh.png){ width="220" }
+
 > **Upozorenje — najčešća greška početnika:** Prilikom otvaranja poveznice ili skeniranja
 > QR koda aplikacija nudi opcije **"Replace"** i **"Add"**. **NIKADA ne klikaj "Replace"**
 > — time ćeš pregaziti (obrisati) svoj primarni `LongFast` kanal i nestat ćeš s mreže.

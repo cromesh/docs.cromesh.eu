@@ -41,10 +41,29 @@ v3   2026-07-22  Restrukturirana navigacija
    ├─ v3.6.2  Stilizirane SVG ikone u navigaciji
    └─ v3.6.3  Home poveznice, klikabilne kućice i 18650 fotografija
 └─ v3.7.0  Povećana tablica Naše poveznice
-   └─ v3.7.1  Trenutna verzija — nove fotografije i ispravci putanja
+   ├─ v3.7.1  Nove fotografije: postavke, hardver, aplikacije
+   └─ v3.7.2  Trenutna verzija — QR kod kanala i dovršen 18650 vodič
 ```
 
 ## Changelog
+
+### v3.7.2 — QR kod kanala i dovršen 18650 vodič
+- **Naše poveznice:** dodan red "MeshCore Hrvatska" ([meshcore.com.hr](https://meshcore.com.hr/)) u tablicu na naslovnici.
+- **QR kod kanala:** dodana slika QR koda za `cromesh.eu` kanal (dekodirano i
+  potvrđeno da odgovara postojećem invite linku) na dvije stranice —
+  [Postavke → Channels](https://docs.cromesh.eu/postavke/channel-postavke/) i
+  [Mreža → Kanali](https://docs.cromesh.eu/mreza/kanali/#kanal-cromesheu) —
+  po zahtjevu zajednice, radi lakšeg dodavanja kanala skeniranjem umjesto
+  ručnog upisa/kopiranja dugog URL-a.
+- **18650 vodič dovršen:**
+    - Naslov sekcije okrenut s "Kada oživljavati" na "Kada ne oživljavati",
+      uklonjen pozitivan (zavaravajući) primjer.
+    - Dodan kriterij visokog samopražnjenja (~0,5V pad unutar nekoliko dana
+      bez opterećenja) kao znak internog kvara.
+    - Cijela stranica reorganizirana: nova sekcija "Očitanje napona ćelije"
+      s punom tablicom raspona (0,00V do 4,5V+), i nova sekcija "Praćenje
+      nakon oživljavanja" (trend stabilizacije, prepoznavanje unutarnjeg
+      kratkog spoja).
 
 ### v3.7.1 — Nove fotografije: postavke, hardver, aplikacije
 - **Sadržaj:** 3 nove fotografije zajednice — `v371-pocetak.jpg`,
