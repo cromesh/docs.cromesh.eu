@@ -7,8 +7,8 @@ description: Postavljanje novog Meshtastic uređaja za CroMesh mrežu — flasha
 
 ## 1. Flashanje firmware-a
 
-1. Otvori **[flasher.meshtastic.org](https://flasher.meshtastic.org)** u Chromeu ili
-   Edgeu (WebSerial ne radi u Firefoxu/Safariju).
+1. Otvori **[flasher.meshtastic.org](https://flasher.meshtastic.org)** u Chrome,
+   Chromium ili Edge pregledniku (WebSerial ne radi u Firefox / Safari).
 2. Spoji uređaj **USB kabelom** (provjeri da kabel prenosi podatke, ne samo punjenje).
 3. Odaberi model uređaja i **stabilnu (beta)** verziju firmware-a, zatim flashaj.
 
