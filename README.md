@@ -1,15 +1,12 @@
 # CroMesh Dokumentacija
 
-Ova dokumentacija koristi [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) za generiranje modernog, responzivnog web sučelja. Stranicu uređuju CroMesh članovi, uz pomoć ChatGPT engine-a za izradu, restrukturiranje, lekturu i provjeru dokumentacijskog sadržaja od verzije v2. Debugirano te djelomično izrađeno Claude-om.
+Ova dokumentacija koristi [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) za generiranje modernog, responzivnog web sučelja. Stranicu uređuju CroMesh članovi, uz pomoć AI (Claude; ChatGPT) engine-a za izradu, restrukturiranje, lekturu i provjeru dokumentacijskog sadržaja od verzije v2. Debugu i lekturi pristupili su članovi zajednice. 
 
 ## Struktura dokumentacije
 
 - **Home** — naslovnica s brzim poveznicama i pregledom zajednice
 - **Početak** — uvod u Meshtastic i prvi koraci za nove korisnike
-- **Česta pitanja**
-  - **Česta pitanja** — opća pitanja i odgovori; MeshCore tema na dnu stranice
-  - **O zajednici** — informacije o zajednici
-  - **Pravila** — pravila ponašanja i regulativa
+- **Česta pitanja** — opća pitanja (Česta pitanja, O zajednici, Pravila, MeshCore)
 - **Postavke** — konfiguracija uređaja (LoRa, kanali, korisnik, uređaj, MQTT)
 - **Odabir uređaja** — usporedba čipova (ESP32, nRF52, RP2040) i preporuke uređaja
 - **Hardware** — antene, montaža i zaštita, 3D print kućišta, solarno napajanje
@@ -18,23 +15,23 @@ Ova dokumentacija koristi [MkDocs Material](https://squidfunk.github.io/mkdocs-m
 
 ## Licenca
 
-Sadržaj ove dokumentacije dostupan je pod licencom [Creative Commons Imenovanje-Dijeli pod istim uvjetima 4.0 (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/), osim ako je za pojedini dio izričito navedeno drugačije. Detalji u [LICENSE](./LICENSE) datoteci.
+Sadržaj ove dokumentacije dostupan je pod licencom [Creative Commons Imenovanje-Dijeli pod istim uvjetima 4.0 (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/), osim ako je za pojedini dio izričito navedeno drugačije. Detalji u [LICENSE](./LICENSE) datoteci. Radi se o share alike principu, dakle slobodno je dijeljenje informacija sa stranice sve ukoliko informacija ostaje besplatna.
 
-© CroMesh zajednica
+© CroMesh zajednica 2025.-2026.
 
 ## Verzije
 
 ```text
-v2   2026-07-17  Prve tematske sekcije
-v3   2026-07-22  Restrukturirana navigacija
-├─ v3.1  Pretraga, logo i restrukturiran Uvod
-├─ v3.2  Tags, MQTT i pravne napomene
-├─ v3.3  Lektura i terminološka dosljednost
-├─ v3.4  MeshCore integracija i FAQ restrukturiranje
-└─ v3.5  Vizualni redizajn i mrežne pozadine
-   ├─ v3.5.0  Redizajn naslovnice
+v2.0.0   2026-07-17  Prve tematske sekcije
+v3.0.0   2026-07-22  Restrukturirana navigacija
+├─ v3.1.0  Pretraga, logo i restrukturiran Uvod
+├─ v3.2.0  Tags, MQTT i pravne napomene
+├─ v3.3.0  Lektura i terminološka dosljednost
+├─ v3.4.0  MeshCore integracija i FAQ restrukturiranje
+└─ v3.5.0  Vizualni redizajn i mrežne pozadine
+   ├─ v3.5.0  Redizajn naslovnice i vizualnog identiteta
    ├─ v3.5.1  Vizualne sekcije, pozadine po granama
-   ├─ v3.5.2  Antene vodič, MeshCore na dno FAQ grane
+   ├─ v3.5.2  Antene vodič
    └─ v3.5.3  MeshCore spojen u faq.md
 └─ v3.6.0  Ispravljen prijelom riječi na naslovnici
    ├─ v3.6.1  Community fotografije hardvera i uređaja
@@ -52,6 +49,7 @@ v3   2026-07-22  Restrukturirana navigacija
 - **Prvi koraci:** ispravljen tekst o preglednicima za flasher.meshtastic.org —
   "u Chromeu ili Edgeu (WebSerial ne radi u Firefoxu/Safariju)" promijenjeno u
   "u Chrome, Chromium ili Edge pregledniku (WebSerial ne radi u Firefox / Safari)".
+- Migracija na novi hosting server.
 
 ### v3.7.2 — QR kod kanala i dovršen 18650 vodič
 - **Naše poveznice:** dodan red "MeshCore Hrvatska" ([meshcore.com.hr](https://meshcore.com.hr/)) u tablicu na naslovnici.
@@ -192,23 +190,23 @@ v3   2026-07-22  Restrukturirana navigacija
 - Uvedena vizualna osnova za moderniji izgled dokumentacije.
 - Dodana poveznica na CroMesh kartu.
 
-### v3.4 — MeshCore integracija i FAQ
+### v3.4.0 — MeshCore integracija i FAQ
 - **v3.4.3:** MeshCore dobio vlastiti podtab unutar „Česta pitanja”.
 - **v3.4.2:** FAQ restrukturiran i dodana strukturirana MeshCore tema; uveden ChatGPT-assisted dokumentacijski proces.
 - **v3.4.1:** MeshCore premješten u FAQ i uklonjeni suvišni linkovi s naslovnice.
 - **v3.4.0:** uvedena MeshCore stranica, usporedba s Meshtastic-om i HR poveznice.
 
-### v3.3 — Lektura i standardizacija
+### v3.3.0 — Lektura i standardizacija
 - Terminologija, naslovi, FAQ i MeshCore HR poveznice usklađeni.
 
-### v3.2 — Funkcionalnost i sadržaj
+### v3.2.0 — Funkcionalnost i sadržaj
 - Tags, MQTT vodič, pravne napomene, lektura i dodatne postavke.
 
-### v3.1 — Temeljna struktura
+### v3.1.0 — Temeljna struktura
 - Pretraga, logo, Uvod, licenca i hardverski vodiči.
 
-### v3
+### v3.0.0 - Rekonstrukcija navigacijske trake
 - Restrukturirana navigacija i smanjen broj glavnih tabova.
 
-### v2
+### v2.0.0 - Import iz Telegram grupe, nove teme i sadržaj
 - Uvedene prve tematske sekcije: Hardver, Mreža, Zajednica i FAQ.
