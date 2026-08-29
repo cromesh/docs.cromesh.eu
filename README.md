@@ -42,10 +42,16 @@ v3   2026-07-22  Restrukturirana navigacija
    └─ v3.6.3  Home poveznice, klikabilne kućice i 18650 fotografija
 └─ v3.7.0  Povećana tablica Naše poveznice
    ├─ v3.7.1  Nove fotografije: postavke, hardver, aplikacije
-   └─ v3.7.2  Trenutna verzija — QR kod kanala i dovršen 18650 vodič
+   ├─ v3.7.2  QR kod kanala i dovršen 18650 vodič
+   └─ v3.7.3  Trenutna verzija — Final — Migration to a new server
 ```
 
 ## Changelog
+
+### v3.7.3 — Final — Migration to a new server
+- **Prvi koraci:** ispravljen tekst o preglednicima za flasher.meshtastic.org —
+  "u Chromeu ili Edgeu (WebSerial ne radi u Firefoxu/Safariju)" promijenjeno u
+  "u Chrome, Chromium ili Edge pregledniku (WebSerial ne radi u Firefox / Safari)".
 
 ### v3.7.2 — QR kod kanala i dovršen 18650 vodič
 - **Naše poveznice:** dodan red "MeshCore Hrvatska" ([meshcore.com.hr](https://meshcore.com.hr/)) u tablicu na naslovnici.
