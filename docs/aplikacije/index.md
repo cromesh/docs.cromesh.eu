@@ -12,7 +12,7 @@ tags:
 Pregled razlika između Meshtastic software-a na web sučelju, GTK clientu, Android i iPhone
 aplikaciji — sličnosti, poznati bugovi i najčešći problemi.
 
-## Web client (client.meshtastic.org)
+## Web client (client.meshtastic.org) { #web-client }
 
 Radi izravno u pregledniku bez instalacije, ali oslanja se na **Web Bluetooth** i **Web
 Serial API**, koje podržavaju samo preglednici bazirani na Chromiumu (Chrome, Edge) —
@@ -25,17 +25,27 @@ spremanja te grešku "This connection type requires Web Bluetooth" na Linuxu ča
 podržani Chrome (obično zbog isključenog Bluetootha na razini OS-a ili blokiranog
 `chrome://flags` eksperimenta).
 
-## GTK client (Linux desktop)
+**Poveznice:** [client.meshtastic.org](https://client.meshtastic.org) ·
+[službena dokumentacija](https://meshtastic.org/docs/software/web-client/)
+
+## GTK client (Linux desktop) { #gtk-client }
 
 Ovo je **neslužbena**, zajednička aplikacija (`gtk-meshtastic-client`, GTK4/Libadwaita,
-autor kop316), dostupna kroz Debian/Ubuntu pakete i Flatpak. Radi preko istog Python
-API-ja kao CLI, pa podržava Serial, Bluetooth i TCP/IP spajanje. Dizajn joj je
+autor kop316), dostupna kroz Debian/Ubuntu pakete, a Flatpak se gradi sam iz izvornog
+koda (nije na Flathubu). Radi preko istog Python API-ja kao
+[CLI](https://meshtastic.org/docs/software/python/cli/), pa podržava Serial, Bluetooth i
+TCP/IP spajanje. Dizajn joj je
 adaptivan — radi jednako dobro na Linux mobilnim uređajima (npr. Librem 5) kao i na
 desktopu. Kako nije službeni Meshtastic proizvod, funkcijski katkad kasni za
 Android/iOS aplikacijama (nove postavke firmware-a stižu prvo tamo), a dokumentacija i
 broj korisnika su znatno manji, pa je rješavanje problema sporije.
 
-## Android aplikacija
+**Poveznice:** [izvorni kod (GitLab)](https://gitlab.com/kop316/gtk-meshtastic-client) ·
+[Debian paket](https://packages.debian.org/trixie/gtk-meshtastic-client) ·
+[Ubuntu paket](https://packages.ubuntu.com/resolute/gtk-meshtastic-client) ·
+[upute za Flatpak](https://gitlab.com/kop316/gtk-meshtastic-client#build-flatpak)
+
+## Android aplikacija { #android }
 
 Najzrelija je i najkorištenija aplikacija — bogata funkcijama, s kartom, upravljanjem
 cijelom mrežom i mogućnošću spajanja preko Bluetootha, USB-a i WiFi-ja. Uobičajeni
@@ -44,7 +54,12 @@ Bluetooth uređaj u sistemskim postavkama i ponovno ga upariti — sigurnosna mj
 zaobilaznog rješenja), a razlike među proizvođačkim Android nadogradnjama ponekad
 utječu na pouzdanost pozadinskog BLE skeniranja.
 
-## iPhone/iPad/macOS aplikacija (Apple)
+**Poveznice:** [Google Play](https://play.google.com/store/apps/details?id=com.geeksville.mesh) ·
+[APK (GitHub releases)](https://github.com/meshtastic/Meshtastic-Android/releases) ·
+[izvorni kod (GitHub)](https://github.com/meshtastic/Meshtastic-Android) ·
+[službena dokumentacija](https://meshtastic.org/docs/software/android/)
+
+## iPhone/iPad/macOS aplikacija (Apple) { #apple }
 
 Funkcijski prati Android, ali s manjim zaostatkom u pojedinim značajkama (dugogodišnja
 pritužba zajednice da Android i iOS timovi ne uvode nove opcije istovremeno). Podržava
@@ -52,7 +67,11 @@ zadnje dvije glavne verzije iOS-a/iPadOS-a/macOS-a. Isti BLE re-pairing problem 
 Androidu — nakon ponovnog flash-anja firmware-a treba zaboraviti uređaj u Bluetooth
 postavkama sustava i ponovno ga upariti.
 
-## Zajedničke karakteristike
+**Poveznice:** [App Store](https://apps.apple.com/app/meshtastic/id1586432531) ·
+[izvorni kod (GitHub)](https://github.com/meshtastic/Meshtastic-Apple) ·
+[službena dokumentacija](https://meshtastic.org/docs/software/apple/)
+
+## Zajedničke karakteristike { #zajednicke-karakteristike }
 
 Sve četiri varijante koriste isti temeljni protokol i istu logiku konfiguracije (LoRa regija,
 kanali, uloge node-ova), pa QR kod/URL za pridruživanje kanalu generiran u jednoj
