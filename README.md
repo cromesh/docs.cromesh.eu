@@ -41,7 +41,7 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
    ├─ v3.7.1  Nove fotografije: postavke, hardver, aplikacije
    ├─ v3.7.2  QR kod kanala i dovršen 18650 vodič
    └─ v3.7.3  Final — Migration to a new server
-└─ v3.8.0  Trenutna verzija — Poveznice u Aplikacijama (community PR)
+└─ v3.8.0  Trenutna verzija — Poveznice aplikacija (community PR #9)
 ```
 
 ## Changelog
@@ -49,9 +49,20 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
 ### v3.8.0 — Poveznice u Aplikacijama (community PR)
 - **Doprinos zajednice:** pull request #9 od Marka Filipovića
   ([markfili](https://github.com/markfili)), su-autorstvo Claude Opus 5.
-- **Aplikacije:** dodan red "Poveznice" ispod svake od četiri sekcije (Web
-  client, GTK client, Android, Apple) — trgovina/paket, izvorni kod i
-  službena dokumentacija za svaku aplikaciju.
+- **Aplikacije:** dodan red "Poveznice" na kraju svake od četiri sekcije:
+    - Web client: [client.meshtastic.org](https://client.meshtastic.org/) ·
+      [dokumentacija](https://meshtastic.org/docs/software/web-client/)
+    - GTK client: [GitLab](https://gitlab.com/kop316/gtk-meshtastic-client) ·
+      [Debian paket](https://packages.debian.org/trixie/gtk-meshtastic-client) ·
+      [Ubuntu paket](https://packages.ubuntu.com/resolute/gtk-meshtastic-client) ·
+      [upute za Flatpak](https://gitlab.com/kop316/gtk-meshtastic-client#build-flatpak)
+    - Android: [Google Play](https://play.google.com/store/apps/details?id=com.geeksville.mesh) ·
+      [APK izdanja](https://github.com/meshtastic/Meshtastic-Android/releases) ·
+      [GitHub](https://github.com/meshtastic/Meshtastic-Android) ·
+      [dokumentacija](https://meshtastic.org/docs/software/android/)
+    - Apple: [App Store](https://apps.apple.com/app/meshtastic/id1586432531) ·
+      [GitHub](https://github.com/meshtastic/Meshtastic-Apple) ·
+      [dokumentacija](https://meshtastic.org/docs/software/apple/)
 - **GTK client:** povezan [Meshtastic Python CLI](https://meshtastic.org/docs/software/python/cli/);
   ispravljen tekst o Flatpaku — paket **nije** na Flathubu, gradi se iz
   izvornog koda.
