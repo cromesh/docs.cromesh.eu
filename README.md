@@ -41,7 +41,7 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
    ├─ v3.7.1  Nove fotografije: postavke, hardver, aplikacije
    ├─ v3.7.2  QR kod kanala i dovršen 18650 vodič
    └─ v3.7.3  Final — Migration to a new server
-└─ v3.8.0  Trenutna verzija — Poveznice aplikacija (community PR #9)
+└─ v3.8.0  Trenutna verzija — Stranica spremna za contrib zajednice
 ```
 
 ## Changelog
@@ -70,7 +70,7 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
   `#zajednicke-karakteristike`) dobili kratke, stabilne id-jeve za pouzdanije
   poveznice iz sadržaja (Sadržaj TOC).
 
-### v3.7.3 — Final — Migration to a new server
+### v3.7.3 — Migration to a new server
 - **Prvi koraci:** ispravljen tekst o preglednicima za flasher.meshtastic.org —
   "u Chromeu ili Edgeu (WebSerial ne radi u Firefoxu/Safariju)" promijenjeno u
   "u Chrome, Chromium ili Edge pregledniku (WebSerial ne radi u Firefox / Safari)".
@@ -98,22 +98,7 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
 - **Sadržaj:** 3 nove fotografije zajednice — `v371-pocetak.jpg`,
   `v371-hardver.jpg`, `v371-software.jpg` — dodane na stranice Postavke,
   Hardware i Aplikacije.
-- **Bug 1 — pogrešna dubina putanje:** `postavke/prvi-koraci.md` nije `index.md`
-  pa se gradi dvije razine ispod `site/` (`postavke/prvi-koraci/index.html`), ali
-  je koristio `../` (jednu razinu) umjesto `../../`.
-- **Bug 2 — nedostaje `../` u markdown sintaksi:** `aplikacije/index.md` je
-  sliku umetnuo standardnom `![]()` markdown sintaksom bez ijednog `../`.
-  `mkdocs build --strict` je ovo sam uhvatio kao grešku, jer MkDocs validira
-  markdown-style putanje (za razliku od raw HTML `<img>` tagova, koje nikad ne
-  validira).
-- **Bug 3 — slike nikad nisu bile pushane:** provjerom preko
-  `raw.githubusercontent.com` utvrđeno da sve tri slike vraćaju 404 na masteru,
-  neovisno o ispravnosti putanja — binarni fajlovi nikad nisu stigli u prvi
-  push. Dodani naknadno.
-- **Bug 4 — nedostajala cijela datoteka u pushu:** `hardver/index.md` je već
-  imao ispravnu putanju pa nije trebao izmjenu, ali kao nova datoteka
-  (u odnosu na tadašnji master) nikad nije bila uključena niti u jedan paket za
-  push — otkriveno tek kad je stranica ostala bez slike unatoč ispravnom kodu.
+- Debugiranje i build
 - **Premještanje sadržaja:** `v371-pocetak.jpg` premještena s
   `/postavke/prvi-koraci/` na `/postavke/` (sekcijsku naslovnu stranicu), na
   zahtjev.
