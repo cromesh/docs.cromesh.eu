@@ -40,10 +40,24 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
 └─ v3.7.0  Povećana tablica Naše poveznice
    ├─ v3.7.1  Nove fotografije: postavke, hardver, aplikacije
    ├─ v3.7.2  QR kod kanala i dovršen 18650 vodič
-   └─ v3.7.3  Trenutna verzija — Final — Migration to a new server
+   └─ v3.7.3  Final — Migration to a new server
+└─ v3.8.0  Trenutna verzija — Poveznice u Aplikacijama (community PR)
 ```
 
 ## Changelog
+
+### v3.8.0 — Poveznice u Aplikacijama (community PR)
+- **Doprinos zajednice:** pull request #9 od Marka Filipovića
+  ([markfili](https://github.com/markfili)), su-autorstvo Claude Opus 5.
+- **Aplikacije:** dodan red "Poveznice" ispod svake od četiri sekcije (Web
+  client, GTK client, Android, Apple) — trgovina/paket, izvorni kod i
+  službena dokumentacija za svaku aplikaciju.
+- **GTK client:** povezan [Meshtastic Python CLI](https://meshtastic.org/docs/software/python/cli/);
+  ispravljen tekst o Flatpaku — paket **nije** na Flathubu, gradi se iz
+  izvornog koda.
+- **TOC:** naslovi sekcija (`#web-client`, `#gtk-client`, `#android`, `#apple`,
+  `#zajednicke-karakteristike`) dobili kratke, stabilne id-jeve za pouzdanije
+  poveznice iz sadržaja (Sadržaj TOC).
 
 ### v3.7.3 — Final — Migration to a new server
 - **Prvi koraci:** ispravljen tekst o preglednicima za flasher.meshtastic.org —
