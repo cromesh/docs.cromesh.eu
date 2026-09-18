@@ -1,6 +1,6 @@
 ---
 title: Uloge i imenovanje node-ova
-description: Preporučene Meshtastic uloge (CLIENT, ROUTER, CLIENT_MUTE) u CroMesh mreži i konvencije imenovanja node-ova. CLIENT_BASE se više ne koristi (zastario protokol).
+description: Preporučene Meshtastic uloge (CLIENT, ROUTER, CLIENT_MUTE, CLIENT_BASE) u CroMesh mreži i konvencije imenovanja node-ova.
 ---
 
 # Uloge i imenovanje node-ova
@@ -14,9 +14,10 @@ ovim pravilima:
 |---|---|---|
 | `CLIENT` | **Zadana uloga za gotovo sve node-ove**, uključujući krovne i stupne node-ove bez značajne elevacije | Normalno retransmitira pakete |
 | `CLIENT_MUTE` | Mobilni uređaji (džepni, u autu) i sekundarni kućni node-ovi | Šalje i prima, ali **ne retransmitira** — ključno za smanjenje zagušenja kad imaš više uređaja na maloj udaljenosti |
-| `CLIENT_BASE` | ❌ Ne koristi se | Protokol na kojem se temeljila ova uloga je zastario |
+| `CLIENT_BASE` | Dobro pozicioniran "bazni" node (npr. tavan, krov) kojemu su ostali tvoji node-ovi označeni kao favoriti | Prometu s/prema favoriziranim node-ovima daje prioritet slično kao `ROUTER_LATE`, dok sav ostali promet tretira kao običan `CLIENT` |
 | `ROUTER` | **Isključivo infrastrukturni node-ovi na istaknutim pozicijama** (brda, tornjevi, visoke zgrade) s dobrom antenom | Retransmitira bez nasumične odgode — "šiba dalje odmah". U praksi razlika prema CLIENT-u na običnim pozicijama je zanemariva, zato ROUTER nema smisla u stanu |
-| `REPEATER` | ❌ Ne koristi se u CroMesh mreži | Uklonjena iz novijih verzija aplikacije; povremeno se na mreži pojavi node s tom ulogom konfiguriran starom aplikacijom |
+| `ROUTER_CLIENT` | ❌ Zastarjelo od firmware 2.3.15 | Koristi `ROUTER` ili `CLIENT` umjesto ovoga |
+| `REPEATER` | ❌ Zastarjelo od firmware 2.7.11 | Uklonjena iz novijih verzija aplikacije; povremeno se na mreži pojavi node s tom ulogom konfiguriran starom aplikacijom |
 
 > **Upozorenje:** Nemoj stavljati `ROUTER` ulogu "jer zvuči jače". Node u prizemlju u
 > ROUTER modu samo dodaje kolizije. ROUTER je rezerviran za pozicije tipa Cepeliš,

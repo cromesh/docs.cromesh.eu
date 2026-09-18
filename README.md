@@ -41,10 +41,23 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
    ├─ v3.7.1  Nove fotografije: postavke, hardver, aplikacije
    ├─ v3.7.2  QR kod kanala i dovršen 18650 vodič
    └─ v3.7.3  Final — Migration to a new server
-└─ v3.8.0  Trenutna verzija — Stranica spremna za contrib zajednice
+└─ v3.8.0  Stranica spremna za contrib zajednice
+   └─ v3.8.1  Trenutna verzija — Ispravak: CLIENT_BASE nije zastario
 ```
 
 ## Changelog
+
+### v3.8.1 — Ispravak: CLIENT_BASE nije zastario
+- **Prijava:** admin Dinko uočio grešku na `postavke/device-postavke.md` — uloga
+  `CLIENT_BASE` bila je pogrešno označena kao zastarjela.
+- **Provjereno** naspram službene Meshtastic dokumentacije i protobuf izvornog
+  koda: `CLIENT_BASE` **nije** zastario — službeno je preporučena uloga (uz
+  `CLIENT` i `CLIENT_MUTE`) za dobro pozicioniran "bazni" node koji prioritizira
+  promet omiljenih (favorite) node-ova.
+- Stvarno zastarjele uloge su `ROUTER_CLIENT` (od firmware 2.3.15) i `REPEATER`
+  (od firmware 2.7.11) — obje sada ispravno označene u tablici uloga.
+- Ispravljeno na dva mjesta: `postavke/device-postavke.md` (opis uloge Client
+  Base) i `mreza/uloge-i-imenovanje.md` (tablica uloga i frontmatter opis).
 
 ### v3.8.0 — Poveznice u Aplikacijama (community PR)
 - **Doprinos zajednice:** pull request #9 od Marka Filipovića
