@@ -9,7 +9,7 @@ tags:
 # <font color="#50EB97">Punjenje i oživljavanje 18650 Li-ion ćelija</font>
 
 !!! warning
-    Kod sumnje u stanje ili povijest ćelije, sigurnije je reciklirati je nego
+    Kod sumnje u stanje ili povijest ćelije, sigurnije je reciklirati ju nego
     pokušati oživljavanje.
 
 ## Očitanje napona ćelije
@@ -50,6 +50,22 @@ ga prema rasponu u tablici ispod.
 
 Neki punjači (XTAR, Nitecore i slični) imaju ugrađen način "aktivacija na 0V" /
 "boost" koji ovo radi automatski.
+
+
+Ključna pravila za sigurno oživljavanje:
+
+• Faza pred-punjenja (Trickle Charge): Dok je napon baterije kritično nizak (ispod 2.5 V do 3.0 V), bateriju smijete puniti isključivo slabom strujom (~140 mA). Ako u nju odmah pustite jaku struju, uništit ćete je ili riskirati pregrijavanje i požar.
+
+• Kada prijeći na normalno punjenje: Čim napon baterije pomoću slabe struje naraste na sigurnu granicu od 3.0 V, kemija unutar ćelije je ponovno stabilna. Tada možete uključiti standardni pametni punjač koji će nastaviti normalno punjenje strujom od 0.5C do 1C (oko 1400 mA).
+
+• Najsigurniji način: Najbolje je koristiti pametni punjač koji ima ugrađenu "0V Activation" ili "Rescue" funkciju. On će sam prepoznati niske volte, automatski dozirati točan broj miliampera (mA) i prebaciti se na normalan rad tek kada se baterija "probudi".
+
+
+⚠️ Važno upozorenje o sigurnosti
+
+Ako je baterija dulje vrijeme provela na naponu od 0 V, unutar nje se stvaraju bakreni mikro-kratki spojevi. Tijekom cijelog procesa oživljavanja obavezno provjeravajte temperaturu baterije rukom. Ako postane topla ili vruća, ili ako primijetite da je napuhnuta, odmah prekinite postupak i bacite je u reciklažno dvorište jer je trajno oštećena.
+
+Ako vas zanima konkretan postupak, javite mi koji napon (V) trenutno očiravate na multimetru i kakvu opremu/punjač planirate koristiti, pa možemo proći kroz točne korake!
 
 ## Punjenje
 
