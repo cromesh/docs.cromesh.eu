@@ -12,6 +12,11 @@ tags:
     Kod sumnje u stanje ili povijest ćelije, sigurnije je reciklirati ju nego
     pokušati oživljavanje.
 
+!!! note ""
+    **NAPOMENA:** Imajte na umu da, ukoliko je napon baterije pao ispod 1,8V
+    (50% nazivnog napona), kapacitet baterije biti će niži od navedenog,
+    katkad i značajno
+
 ## Očitanje napona ćelije
 
 Prvi korak je izmjeriti napon ćelije u mirovanju (bez opterećenja) i pročitati
@@ -64,8 +69,6 @@ Ključna pravila za sigurno oživljavanje:
 ⚠️ Važno upozorenje o sigurnosti
 
 Ako je baterija dulje vrijeme provela na naponu od 0 V, unutar nje se stvaraju bakreni mikro-kratki spojevi. Tijekom cijelog procesa oživljavanja obavezno provjeravajte temperaturu baterije rukom. Ako postane topla ili vruća, ili ako primijetite da je napuhnuta, odmah prekinite postupak i bacite je u reciklažno dvorište jer je trajno oštećena.
-
-Ako vas zanima konkretan postupak, javite mi koji napon (V) trenutno očiravate na multimetru i kakvu opremu/punjač planirate koristiti, pa možemo proći kroz točne korake!
 
 ## Punjenje
 
