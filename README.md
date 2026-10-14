@@ -42,10 +42,19 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
    ├─ v3.7.2  QR kod kanala i dovršen 18650 vodič
    └─ v3.7.3  Final — Migration to a new server
 └─ v3.8.0  Stranica spremna za contrib zajednice
-   └─ v3.8.1  Trenutna verzija — Ispravak: CLIENT_BASE nije zastario
+   ├─ v3.8.1  Ispravak: CLIENT_BASE nije zastario
+   └─ v3.8.2  Trenutna verzija — 18650 vodič: napomena o niskom naponu i čišćenje teksta
 ```
 
 ## Changelog
+
+### v3.8.2 — 18650 vodič: napomena o niskom naponu i čišćenje teksta
+- **Oživljavanje 18650:** ispod upozorenja na vrhu stranice dodana napomena da
+  će kapacitet ćelije, ako je napon pao ispod 1,8V (50% nazivnog napona), biti
+  niži od navedenog, katkad i značajno.
+- **Čišćenje:** iz sigurnosnog dijela uklonjen zalutali odlomak koji nije
+  pripadao dokumentaciji (poziv na daljnji razgovor o naponu i opremi).
+- Izmijenjena je samo stranica `hardver/ozivljavanje-18650.md`.
 
 ### v3.8.1 — Ispravak: CLIENT_BASE nije zastario
 - **Prijava:** admin Dinko uočio grešku na `postavke/device-postavke.md` — uloga
