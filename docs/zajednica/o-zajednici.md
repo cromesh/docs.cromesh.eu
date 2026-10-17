@@ -28,6 +28,8 @@ description: Povijest i organizacija CroMesh zajednice — hrvatska Meshtastic m
   (vidi [Standardi](../mreza/standardi.md)).
 - **Srpanj 2026.** — zajednica za sada broji oko **120 članova** u Telegram grupi i
   preko **200 node-ova** diljem Hrvatske.
+- **Listopad 2026.** — **150+ članova** u Telegram grupi, **400 MQTT node-ova**,
+  postavljeni routeri na Sljemenu, Goranova Radionica; u planu novi susreti!
 
 ## Infrastruktura i tko je održava
 
