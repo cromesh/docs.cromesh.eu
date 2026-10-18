@@ -1,15 +1,15 @@
 # CroMesh Dokumentacija
 
-Ova dokumentacija koristi [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) za generiranje modernog, responzivnog web sučelja. Stranicu uređuju CroMesh članovi, uz pomoć AI (Claude; ChatGPT) engine-a za izradu, restrukturiranje, lekturu i provjeru dokumentacijskog sadržaja od verzije v2. Debugu i lekturi pristupili su članovi zajednice. 
+Ova dokumentacija koristi [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) za generiranje modernog, responzivnog web sučelja. Stranicu uređuju CroMesh članovi, uz pomoć AI (Claude; ChatGPT) engine-a za izradu, restrukturiranje, lekturu i provjeru dokumentacijskog sadržaja od verzije v2. Debugu i lekturi pristupili su članovi zajednice.
 
 ## Struktura dokumentacije
 
 - **Home** — naslovnica s brzim poveznicama i pregledom zajednice
 - **Početak** — uvod u Meshtastic i prvi koraci za nove korisnike
 - **Česta pitanja** — opća pitanja (Česta pitanja, O zajednici, Pravila, MeshCore)
-- **Postavke** — konfiguracija uređaja (LoRa, kanali, korisnik, uređaj, MQTT)
+- **Postavke** — prvi koraci i konfiguracija uređaja (LoRa, kanali, korisnik, uređaj, MQTT)
 - **Odabir uređaja** — usporedba čipova (ESP32, nRF52, RP2040) i preporuke uređaja
-- **Hardware** — antene, montaža i zaštita, 3D print kućišta, solarno napajanje
+- **Hardware** — antene, montaža i zaštita, 3D print kućišta, solarno napajanje, oživljavanje i punjenje LiIon ćelija
 - **Software** — aplikacije, firmware, MQTT
 - **Mreža** — dogovoreni standardi, kanali, uloge node-ova
 
@@ -28,25 +28,35 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
 ├─ v3.2.0  Tags, MQTT i pravne napomene
 ├─ v3.3.0  Lektura i terminološka dosljednost
 ├─ v3.4.0  MeshCore integracija i FAQ restrukturiranje
-└─ v3.5.0  Vizualni redizajn i mrežne pozadine
-   ├─ v3.5.0  Redizajn naslovnice i vizualnog identiteta
-   ├─ v3.5.1  Vizualne sekcije, pozadine po granama
-   ├─ v3.5.2  Antene vodič
-   └─ v3.5.3  MeshCore spojen u faq.md
-└─ v3.6.0  Ispravljen prijelom riječi na naslovnici
-   ├─ v3.6.1  Community fotografije hardvera i uređaja
-   ├─ v3.6.2  Stilizirane SVG ikone u navigaciji
-   └─ v3.6.3  Home poveznice, klikabilne kućice i 18650 fotografija
-└─ v3.7.0  Povećana tablica Naše poveznice
-   ├─ v3.7.1  Nove fotografije: postavke, hardver, aplikacije
-   ├─ v3.7.2  QR kod kanala i dovršen 18650 vodič
-   └─ v3.7.3  Final — Migration to a new server
+├─ v3.5.0  Vizualni redizajn i mrežne pozadine
+│  ├─ v3.5.1  Vizualne sekcije, pozadine po granama
+│  ├─ v3.5.2  Antene vodič
+│  └─ v3.5.3  MeshCore spojen u faq.md
+├─ v3.6.0  Ispravljen prijelom riječi na naslovnici
+│  ├─ v3.6.1  Community fotografije hardvera i uređaja
+│  ├─ v3.6.2  Stilizirane SVG ikone u navigaciji
+│  └─ v3.6.3  Home poveznice, klikabilne kućice i 18650 fotografija
+├─ v3.7.0  Povećana tablica Naše poveznice
+│  ├─ v3.7.1  Nove fotografije: postavke, hardver, aplikacije
+│  ├─ v3.7.2  QR kod kanala i dovršen 18650 vodič
+│  └─ v3.7.3  Final — Migration to a new server
 └─ v3.8.0  Stranica spremna za contrib zajednice
    ├─ v3.8.1  Ispravak: CLIENT_BASE nije zastario
-   └─ v3.8.2  Trenutna verzija — 18650 vodič: napomena o niskom naponu i čišćenje teksta
+   ├─ v3.8.2  18650 vodič: napomena o niskom naponu i čišćenje teksta
+   └─ v3.8.3  Trenutna verzija — Listopad 2026 u povijesti zajednice, ispravak README-a
 ```
 
 ## Changelog
+
+### v3.8.3 — Listopad 2026 u povijesti zajednice, ispravak README-a
+- **O zajednici:** u „Kratka povijest" dodan unos **Listopad 2026.** — 150+ članova
+  u Telegram grupi, 400 MQTT node-ova, postavljeni routeri na Sljemenu, Goranova
+  Radionica ([radiona.org](https://radiona.org)) i najava novih susreta.
+- **README:** ispravljeno stablo verzija (grane `└─` ponavljale su se na istoj razini,
+  v3.5.0 bio naveden dvaput) — sada je jedna razgranata struktura pod v3.0.0.
+- **README:** popis „Struktura dokumentacije" usklađen s navigacijom (Prvi koraci
+  pod Postavke, Oživljavanje LiIon pod Hardware).
+- Izmijenjene stranice: `zajednica/o-zajednici.md`, `README.md`.
 
 ### v3.8.2 — 18650 vodič: napomena o niskom naponu i čišćenje teksta
 - **Oživljavanje 18650:** ispod upozorenja na vrhu stranice dodana napomena da
