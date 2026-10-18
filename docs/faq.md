@@ -58,6 +58,33 @@ Mi preporučujemo ova dva YouTube videa:
 1. [Što je Meshtastic? (eng)](https://www.youtube.com/watch?v=oAo2sb8LpFc&ab_channel=TheCommsChannel)
 2. [Što je Meshtastic? (eng)](https://www.youtube.com/watch?v=P9G9hR3T4po&ab_channel=323Labs)
 
+## Snaga, regulativa i propusnost
+
+### Koja je najveća dopuštena snaga?
+
+Meshtastic dokumentacija navodi za EU 868 MHz maksimalnih **+27 dBm ERP (500 mW)**.
+Standardni SX1262 moduli daju 22 dBm (oko 160 mW). Veća snaga nije nužno bolja: važniji su
+visina i optička vidljivost, kvaliteta antene, a tek zatim snaga. Jači nodovi znatno više
+troše. Vidi [Pravila](zajednica/pravila.md) i
+[Antene](antene/index.md#zakonsko-ogranicenje-snage-erp).
+
+<!-- TODO: potvrditi s HAKOM-om / nacionalnom regulativom (u chatu se pojavila i tvrdnja o 25 mW). Dodati točan propis i frekvencijsku podjelu. -->
+
+### Postoji li ograničenje zauzeća kanala (duty cycle)?
+
+U raspravi je navedeno da je u EU za ovaj dio spektra dopušten duty cycle od oko 10%.
+Vidi [Pravila](zajednica/pravila.md#ogranicenja-koja-moras-postovati).
+
+<!-- TODO: potvrditi izvorom (ETSI EN 300 220 / HAKOM) prije objave. -->
+
+### Može li se preko LoRa slati slike, audio ili veće datoteke?
+
+U praksi ne. Prema procjenama članova, LongFast ima sirovu propusnost od oko 1 kB/s, uz
+duty cycle od 10% to je oko 100 B/s za jedan uređaj, a uz protokolarni overhead i
+retransmisije realno **ne više od 30 bps** u idealnim uvjetima. Prikladne su kratke
+tekstualne poruke i telemetrija. Eksperimenti s kompresijom (Codec2, EnCodec) opisani su
+samo kao istraživački.
+
 ## "Ne radi mi"
 
 ### Poslao sam poruku i nitko ne odgovara. Što je krivo?
@@ -78,6 +105,11 @@ Najčešći uzroci redom: krivi MQTT root topic (mora biti `msh/EU_868/9A`), isk
 checklista: [MQTT i karta](mqtt/index.md). Nakon ispravne konfiguracije pričekaj
 1–2 sata.
 
+### Zašto se moj node na karti nalazi kraj afričke obale (koordinate 0°, 0°)?
+
+To je tzv. *Null Island*. Node je izgubio ili obrisao GPS koordinate pa se prijavljuje s
+0,0. Postavi fiksnu lokaciju ili provjeri GPS.
+
 ### Dodao sam kanal i nestao mi je LongFast!
 
 Kliknuo si **"Replace"** umjesto **"Add"** pri dodavanju kanala. Obriši kanal koji je
@@ -94,6 +126,34 @@ takve node-ove, vjerojatno je netko podigao limit — nemoj to raditi i ti. Vidi
 
 Poznat problem revizije ploče 4.2 (šum); revizija 4.3 to rješava. Provjeri i firmware
 (2.7.13+, alpha s LNA fixom). Detalji: [Odabir uređaja](odabir-uredaja/index.md).
+
+Više slučajeva (resetiranje, Bluetooth, firmware, test dometa):
+[Rješavanje problema](rjesavanje-problema.md).
+
+## Poruke i potvrde isporuke
+
+### Što znači kvačica ili ikona potvrde uz poruku?
+
+Potvrda u aplikaciji znači da je tvoj node **čuo da je barem jedan drugi node proslijedio
+poruku**. To ne znači da je poruka stigla na odredište. Pojedinog "slušatelja" ne možeš
+vidjeti, a za provjeru puta možeš koristiti *traceroute*.
+
+### Zašto piše "Max Retransmission Reached" i prikazuje se uskličnik?
+
+Node je poslao poruku i nije dobio nikakvu potvrdu (ACK) da ju je netko čuo. Najčešće nema
+nikoga u dometu. Provjeri radi li poruka na `LongFast` kanalu i pojavljuje li se na
+[map.cromesh.eu/chat](https://map.cromesh.eu/chat).
+
+### Poruka je prošla, a traceroute nije. Je li to greška?
+
+Ne nužno. Traceroute se ponaša drukčije od običnih poruka, a prolaznost u mreži varira od
+trenutka do trenutka. Isti put može jednom proći, a nekoliko sekundi kasnije ne.
+
+### Kako najjednostavnije provjeriti čuje li me netko?
+
+Pošalji poruku na javni `LongFast` kanal ili na zajednički test kanal. Ako se pojavi oznaka
+da je neki repetitor čuo poruku, doseg postoji. Ne moraš nikoga posebno pitati. Više o
+alatima: [Mapiranje i nadzor](mapiranje/index.md).
 
 ## MQTT i karta
 
@@ -112,6 +172,20 @@ stvarnog stanja mreže) postaje točnija.
 
 Da se ti node-ovi **relativno često čuju**. Ne znači da su u savršenom kontaktu u svakom
 trenutku.
+
+## Uloge noda
+
+### Koju ulogu (role) postaviti?
+
+Kratko:
+
+- **Client** je zadana opcija za osobne i prijenosne uređaje.
+- **Client Base** je za fiksne nodove na krovu ili kući. Dobro ga je koristiti kad si i sam
+  spojen na taj node.
+- **Router** je samo za strateške lokacije (npr. vrhovi, tornjevi) na kojima postoji velik
+  broj nodova u dometu.
+
+Detalji su u [Uloge i imenovanje](mreza/uloge-i-imenovanje.md).
 
 ## Ostalo
 
@@ -138,59 +212,28 @@ Pull requestom na
 posebno su dobrodošle dopune otvorenih pitanja (npr. postavljanje na javne/državne
 objekte, PoE napajanje, materijali za 3D print) navedenih kroz dokumentaciju.
 
-## MeshCore - kako i zašto?
+## MeshCore
+
+Sve o MeshCoreu — što je, razlike prema Meshtasticu, usmjeravanje, preporučene postavke,
+poveznice i pravna napomena — nalazi se u zasebnom tabu
+[MeshCore](meshcore/index.md).
 
 ### Što je MeshCore?
 
-MeshCore je lagan sustav za sigurnu tekstualnu komunikaciju putem LoRa radija na
-868 MHz. Svaki node u Hrvatskoj može biti dio mreže, a repetitori prosljeđuju poruke
-dalje — bez centralnog operatera i bez internetske veze.
+Lagan sustav za sigurnu tekstualnu komunikaciju putem LoRa radija na 868 MHz, bez
+centralnog operatera i bez internetske veze. Pregled: [MeshCore u CroMeshu](meshcore/index.md).
 
-Poput Meshtastica, MeshCore omogućuje autonomnu komunikaciju između node-ova. MeshCore
-mreža trenutačno se razvija i gradi na području Republike Hrvatske.
+### Mogu li isti uređaj i ista antena koristiti oba protokola istodobno?
 
-Sudjelovanje nije vezano uz jedan protokol: korisnici mogu odabrati Meshtastic ili
-MeshCore prema vlastitim potrebama i preferencijama, a moguće je koristiti oba protokola
-na neovisnim uređajima.
+**Ne.** Protokoli rade s različitim LoRa parametrima, a radio ne može istodobno slušati
+dvije konfiguracije. Dual-boot firmware i dva odvojena modula u istom kućištu:
+[Meshtastic i MeshCore zajedno](meshcore/meshtastic-i-meshcore.md).
 
-### Razlika između Meshtastic-a i MeshCore-a
+### Mogu li MeshCore i Meshtastic međusobno razgovarati?
 
-Najveća razlika je u načinu usmjeravanja poruka.
+**Ne izravno.** Kompatibilni su na fizičkom sloju (LoRa), ali ne na razini protokola.
+Detalji: [Meshtastic i MeshCore zajedno](meshcore/meshtastic-i-meshcore.md).
 
-**Meshtastic** koristi tzv. "managed flood" routing — svaki uređaj u ulozi Client prima
-i prosljeđuje tuđe poruke. To mrežu čini jednostavnom za postavljanje i vrlo otpornom,
-ali može povećati zauzeće radio-kanala u gušćim mrežama.
+### Poveznice i pravna napomena
 
-**MeshCore** razdvaja uređaje po ulogama: obični uređaji (Companion) ne prosljeđuju tuđe
-poruke, već to rade isključivo namjenski postavljeni repetitori. Rezultat je tiša i
-predvidljivija mreža, ali uz potrebu za pažljivijim planiranjem pokrivenosti repetitorima.
-
-Oba protokola su otvorenog koda i mogu raditi na istom LoRa hardveru, ali
-**međusobno nisu kompatibilna**.
-
-### Poveznice
-
-| Resurs | Adresa | Opis |
-|---|---|---|
-| MeshCore HR | [meshcore.com.hr](https://meshcore.com.hr/) | Hrvatska MeshCore zajednica |
-| MeshCore HR karta | [map.meshcore.com.hr](https://map.meshcore.com.hr/) | Karta MeshCore mreže u Hrvatskoj |
-
-### Napomena o neovisnosti, žigu i licenci
-
-!!! note "MeshCore — pravna napomena"
-    **Neovisnost i žig:** Naziv „MeshCore”, logotipi i povezani vizualni identiteti
-    pripadaju svojim autorima, vlasnicima žigova i doprinositeljima zajednici.
-    docs.cromesh.eu je neovisan projekt i nije povezan, podržan niti službeno povezan
-    s tvrtkom MeshCore Technologies Limited, službenim razvojnim timom na meshcore.io
-    niti bilo kojim drugim komercijalnim subjektom koji djeluje pod imenom MeshCore.
-    Nazivi i logotipi koriste se isključivo radi identifikacije i edukacije.
-
-    **Otvoreni kod:** MeshCore softver i protokol izvorno su djelo Scotta Powella i
-    suradnika iz zajednice te se distribuiraju pod [MIT licencijom](https://github.com/meshcore-dev/MeshCore/blob/main/license.txt).
-    Korištenjem, izmjenom ili distribucijom koda treba zadržati izvorne napomene o
-    autorskim pravima u skladu s uvjetima licence.
-
-    **Isključenje jamstva i odgovornosti:** Softver, firmware i informacije na ovoj
-    stranici pružaju se u obliku „kakvi jesu” (AS IS), bez jamstava. Autori ove
-    dokumentacije i vlasnici autorskih prava ne odgovaraju za štetu, gubitak podataka
-    ili kvarove hardvera nastale korištenjem materijala ili koda sa stranice.
+[MeshCore HR, karte i alati, licenca i isključenje odgovornosti](meshcore/poveznice.md).

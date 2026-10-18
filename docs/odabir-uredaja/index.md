@@ -34,24 +34,25 @@ Za dublji pregled prednosti i mana pojedinog čipa vidi [ESP32](esp32.md),
 
 | Uređaj | Čip | Komentar zajednice |
 |---|---|---|
-| **Heltec V3** | ESP32-S3 | Najjeftiniji ulaz u Meshtastic; provjeren, masovno korišten u mreži. Sa stock antenom 1–2 km kroz urbanu sredinu. Dijeli konfiguraciju s TLora T3-S3 |
-| **Heltec V4** | ESP32-S3 | Do 27–28 dBm TX (≈ 4× više od V3), ali **vidi upozorenje ispod** |
-| **RAK4631 WisBlock** | nRF52840 | Modularni sustav (senzori, GNSS, Ethernet...); base ploča ima **ugrađen solarni ulaz**; 40–45 h rada na staroj 18650 s GNSS + BME280. Preporuka za ozbiljne solarne routere |
+| **Heltec V3** | ESP32-S3 | Najjeftiniji ulaz u Meshtastic; provjeren, masovno korišten u mreži. Sa stock antenom 1–2 km kroz urbanu sredinu. Dijeli konfiguraciju s TLora T3-S3. Prijave resetiranja i gubitka postavki (uzrok nepotvrđen) — vidi [Rješavanje problema](../rjesavanje-problema.md) |
+| **Heltec V4** | ESP32-S3 | WiFi, snažniji; do 27–28 dBm TX (≈ 4× više od V3), ali **vidi upozorenje ispod** |
+| **RAK4631 WisBlock** | nRF52840 | Modularni sustav (senzori, GNSS, Ethernet...); base ploča ima **ugrađen solarni ulaz**; 40–45 h rada na staroj 18650 s GNSS + BME280. Pouzdan (godina rada u vinogradu); potreban baseboard. Preporuka za ozbiljne solarne routere |
 | **Seeed SX1262 + XIAO ESP32S3** | ESP32-S3 | Povoljan kit; nema bateriju (napajanje powerbank/USB) |
-| **Seeed XIAO nRF52 + SX1262 kit** | nRF52840 | Štedljiva varijanta; nema ugrađen solarni ulaz — solar ide preko vanjskog MPPT-a i BMS-a |
+| **Seeed XIAO nRF52 + SX1262 kit** (XIAO nRF52840 + Wio-SX1262) | nRF52840 | Štedljiva varijanta, kompaktna i jeftina (oko 15 € s PDV-om), pogodna za solar i routere; nema ugrađen solarni ulaz — solar ide preko vanjskog MPPT-a i BMS-a. Zahtijeva lemljenje B2B/pinova |
 | **Heltec T114 / Mesh Node T114** | nRF52840 | Štedljiv, službeno podržan |
 | **Heltec MeshPocket** | nRF52840 | Kompaktna gotova varijanta |
+| **Heltec T096** | nRF52840 | Dobra štednja baterije; nema WiFi-ja |
 | **Station G2** | — | ⚠️ Zabilježeni isti problemi "gluhoće" prijema kao Heltec V4 s vanjskim antenama |
-| **SenseCAP Solar Node P1-Pro** | — | Gotov solarni node; potvrđeno besprijekorno radi u mreži |
+| **SenseCAP Solar Node P1-Pro** | nRF52840 | Gotov solarni node (22 dBm), dostupan kod Seeeda; potvrđeno besprijekorno radi u mreži |
 
 ### Mobilni / džepni
 
 | Uređaj | Čip | Komentar zajednice |
 |---|---|---|
-| **LILYGO T-Echo / T-Echo Plus** | nRF52840 | E-ink, odličan battery life; Plus verzija: veća baterija, bolja antena, bolji standby. Popularan mobilni uređaj u zajednici |
-| **Seeed T1000-E (card tracker)** | nRF52840 | Dokazan i kao GPS tracker za kućne ljubimce (custom 3D print nosač) |
-| **Seeed Wio Tracker L1 / L1 Pro** | nRF52840 | GPS tracker; ⚠️ GPS bug u beta firmware-u (ispravljen u alphi) |
-| **Elecrow ThinkNode M1** | nRF52840 | GPS + e-paper; mala potrošnja, izdržljiv, prihvatljiva cijena — preporučen kao mobilni node |
+| **LILYGO T-Echo / T-Echo Plus** | nRF52840 | E-ink, odličan battery life; Plus verzija: veća baterija, bolja antena, bolji standby. Popularan mobilni uređaj u zajednici; zabilježen domet do 50 km direktno s Medvednice |
+| **Seeed T1000-E (card tracker)** | nRF52840 | Mali tracker; dokazan i kao GPS tracker za kućne ljubimce (custom 3D print nosač). Kratko trajanje baterije (oko 2 dana) i nema ekrana |
+| **Seeed Wio Tracker L1 / L1 Pro** | nRF52840 | GPS tracker; baterija 2000 mAh, može raditi bez mobitela, USB; cijena oko 50 € iz Njemačke; ⚠️ GPS bug u beta firmware-u (ispravljen u alphi) |
+| **Elecrow ThinkNode M1** | nRF52840 | GPS + e-paper; mala potrošnja, izdržljiv, prihvatljiva cijena — preporučen kao mobilni node. Pri neuspjelom ažuriranju koristiti web flasher |
 | **LILYGO T-Deck Plus** | ESP32-S3 | Samostalan uređaj s tipkovnicom i ekranom (ne treba mobitel); dostupan i iz EU (DE) skladišta |
 
 > **Upozorenje — Heltec V4:** Revizija ploče **4.2** ima ozbiljan hardware-ski problem sa
@@ -67,10 +68,24 @@ Za dublji pregled prednosti i mana pojedinog čipa vidi [ESP32](esp32.md),
 - Službene stranice proizvođača (Heltec, LILYGO, Elecrow, Seeed, RAK) — uredno
   dostavljaju u Hrvatsku; LILYGO i Seeed imaju i EU (njemačko) skladište, iz kojeg se
   može naručiti direktno (potvrđeno iskustvom člana zajednice).
+- **Seeed Studio** ima EU skladište (Njemačka). Dostava se razlikuje po skladištu (EU, SAD, Kina).
+- **DIYKits.eu:** trgovina u Zagrebu, u ponudi je ESP32 inačica.
 - AliExpress — često znatno povoljnije (npr. Heltec V4 + kućište + 3000 mAh baterija +
   whip antena ≈ 52 €); [diykits.eu](https://www.diykits.eu) za gotove kitove.
 - **Tržnica Novo/Rabljeno** topic u Telegram grupi — članovi redovito prodaju/poklanjaju
   opremu (npr. rabljeni T-Echo ~25 €, Meshnology N37 s Wio Tracker L1 ~30 €).
+- **Kućišta za vanjsku montažu:** nadžbukna kutija za vanjsku upotrebu (Bauhaus), kutije za
+  optiku (Nuškalo). Zajednica 3D-printa kućišta za Heltec (uključujući magnetne nosače) —
+  vidi [3D print kućišta](../hardver/3d-print.md).
+- **Kabeli i konektori:** vidi [Antene](../antene/index.md#kabeli-i-konektori). U CroMesh
+  zajednici dostupni su i doniraju se sleeve dipoli i pigtaili.
+- **Napomena o carini:** članovi su prijavili da AliExpress od srpnja 2026. naplaćuje
+  carinske troškove EU-a. Kod paketa ispod 150 € primjenjuje se carina.
+
+<!-- TODO: potvrditi trenutna pravila i troškove carine prema službenim izvorima. -->
+<!-- TODO: popis lokalnih dobavljača po kategorijama. -->
+<!-- TODO: provjeriti i uskladiti tablicu uređaja s iskustvima; neke ocjene su iskustva pojedinaca. -->
+<!-- TODO: Heltec MeshTower V2 spominje se u raspravi uz upozorenja o kvaliteti, ali bez provjerenih iskustava, pa nije uključen. -->
 
 > **Napomena:** Prije kupnje "jeftinog čuda" s AliExpressa pitaj u grupi — velika je
 > vjerojatnost da je netko taj točno model već testirao.

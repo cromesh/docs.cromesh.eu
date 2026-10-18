@@ -12,7 +12,7 @@ ovim pravilima:
 
 | Uloga | Kada je koristiti | Napomena |
 |---|---|---|
-| `CLIENT` | **Zadana uloga za gotovo sve node-ove**, uključujući krovne i stupne node-ove bez značajne elevacije | Normalno retransmitira pakete |
+| `CLIENT` | **Zadana uloga za gotovo sve node-ove**, uključujući krovne i stupne node-ove bez značajne elevacije | Normalno retransmitira pakete; ako čuje da je poruku već proslijedio drugi node, ne prosljeđuje je ponovno |
 | `CLIENT_MUTE` | Mobilni uređaji (džepni, u autu) i sekundarni kućni node-ovi | Šalje i prima, ali **ne retransmitira** — ključno za smanjenje zagušenja kad imaš više uređaja na maloj udaljenosti |
 | `CLIENT_BASE` | Dobro pozicioniran "bazni" node (npr. tavan, krov) kojemu su ostali tvoji node-ovi označeni kao favoriti | Prometu s/prema favoriziranim node-ovima daje prioritet slično kao `ROUTER_LATE`, dok sav ostali promet tretira kao običan `CLIENT` |
 | `ROUTER` | **Isključivo infrastrukturni node-ovi na istaknutim pozicijama** (brda, tornjevi, visoke zgrade) s dobrom antenom | Retransmitira bez nasumične odgode — "šiba dalje odmah". U praksi razlika prema CLIENT-u na običnim pozicijama je zanemariva, zato ROUTER nema smisla u stanu |
@@ -26,6 +26,37 @@ ovim pravilima:
 Za infrastrukturne node-ove kojima nitko ne šalje izravne poruke može se dodatno uključiti
 oznaka *Unmessageable*. Formalni dogovor zajednice o ovoj postavci trenutno ne postoji —
 koristi po vlastitoj procjeni.
+
+### Odabir uloge prema položaju
+
+Zajednica CroMesh preporučuje ulogu birati prema **položaju noda, a ne prema modelu
+uređaja**. Hardver je isti, razlikuje se konfiguracija i način obrade poruka.
+
+- Prema iskustvu dijela članova, `CLIENT_BASE` je dobar izbor za fiksni node na krovu ili
+  kući kada si i sam spojen na taj node.
+- `ROUTER` ima smisla tek na lokaciji gdje ih ima mnogo u blizini. Krov kuće najčešće
+  nije dobra lokacija za router. Vidi službeni članak:
+  <https://meshtastic.org/blog/choosing-the-right-device-role/>.
+- Meshtastic je dizajniran tako da node koji slabije čuje izvornu poruku prosljeđuje
+  **prije** onoga koji je čuje bolje (ideja je maksimalan domet). Zbog toga na istoj
+  lokaciji slabiji unutarnji node može preuzeti promet umjesto jačeg vanjskog.
+
+<!-- NB: tablica iznad navodi CLIENT kao zadanu ulogu i za krovne node-ove; točka o CLIENT_BASE je iskustvo dijela članova. Uskladiti prema službenoj dokumentaciji kad bude potvrđeno. -->
+
+### Slučaj: unutarnji node preuzima promet umjesto krovnog
+
+Dva noda na istoj adresi: slabiji unutar zgrade i krovni solarni node s antenom većeg
+dobitka. Svi traceroute i promet idu kroz unutarnji node.
+
+**Rješenje koje je potvrdila zajednica:** unutarnji node postaviti na `CLIENT_MUTE`.
+Uzrok može biti i to što su ta dva noda međusobno označena kao favoriti.
+
+<!-- TODO: potvrditi ponašanje favorita u kombinaciji s `CLIENT_BASE` u dokumentaciji Meshtastica i navesti verziju firmwarea. -->
+
+### Fiksna lokacija
+
+Za fiksne nodove postavi fiksnu lokaciju (ako nema GPS-a, može se koristiti lokacija
+mobitela).
 
 ## Imenovanje node-ova
 

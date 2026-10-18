@@ -115,6 +115,29 @@ linija optičke vidljivosti (LOS) + okomita montaža.
 > realno ~6). Ista serija istog prodavača zna imati primjerke ugođene na 912 MHz umjesto
 > 868 MHz — razlika od 2 mm na vrhu elementa pomiče rezonanciju.
 
+## Vrste antena i iskustva zajednice
+
+### Kolinearne antene (vertikalke većeg dobitka)
+
+- Zrače u **ravnini okomitoj na štap**, a dijagram zračenja im je spljošten kao
+  "palačinka". Idealne su na visokoj zgradi s čistim prostorom oko antene.
+- Na vrhu brda mogu **preskočiti** područje u podnožju, a u kotlini ili zaklonjene
+  zgradama mogu raditi **lošije** od antene 2 dBi.
+- Kod kolinearnih antena presudno je ispravno faziranje elemenata, što je teško izvesti u
+  kućnoj radinosti. Dobar SWR sam po sebi nije dovoljan.
+- J-pole i Slim Jim su dipoli napajani na kraju i **ne daju** bolju antenu od običnog
+  vertikalnog dipola.
+
+### Sleeve dipol (2 dBi)
+
+Zajednica ga je u praksi ocijenila kao pouzdan odabir za fiksne i solarne nodove. Dva noda
+s dvije takve antene u neposrednoj blizini nisu u praksi pokazala smetnje.
+
+### Smjerne antene
+
+Moxon (oko 6 dBi u smjeru zračenja) navodi se kao jednostavna samogradnja za smjerne
+veze.
+
 ## SWR — jedina metrika koja se isplati mjeriti
 
 - **SWR (stojni valovi) na 868 MHz** je ključni pokazatelj je li antena dobra; deklaracije
@@ -126,6 +149,20 @@ linija optičke vidljivosti (LOS) + okomita montaža.
 - Samogradnja je legitimna opcija — poluvalni dipol za 868 MHz (ukupna duljina ~164 mm
   praktično) uz SWR metar daje vrlo upotrebljive rezultate uz minimalan trošak.
 
+## Mjerenje s NanoVNA
+
+1. U izborniku **STIMULUS** postavi frekvencijski raspon (npr. 830–910 MHz). NanoVNA
+   uvijek mjeri 101 točku unutar raspona.
+2. Napravi kalibraciju (open / short / load) za zadani raspon. Kalibraciju po mogućnosti
+   napravi na kraju kabela ili adaptera, a ne na samom uređaju. Na 868 MHz i kratki kabel
+   utječe na mjerenje.
+3. U izborniku **TRACE** uključi tri prikaza: SWR, RETURN LOSS i SMITH CHART.
+4. Antenu postavi okomito, barem pola metra od metalnih objekata.
+5. Kalibraciju možeš spremiti u preset, ali adapter unosi grešku.
+
+> Za ispravno mjerenje antena treba biti u blizini samo NanoVNA. U blizini jakog
+> odašiljača (npr. LTE bazna) rezultat može biti neupotrebljiv.
+
 ## Montaža
 
 1. **Okomito** — svaka kosa montaža direktno smanjuje domet (možeš "pucati na Mjesec"
@@ -135,6 +172,29 @@ linija optičke vidljivosti (LOS) + okomita montaža.
 3. Dijagram zračenja: viši dobitak = energija usmjerena horizontalno umjesto u nebo —
    zato duža antena "radi" kao veća snaga.
 4. Zabrtvi konektore i spojeve! — vidi [Montaža i zaštita](../hardver/montaza-i-zastita.md).
+
+## Postavljanje i kabel
+
+- Kabel od modula do antene treba biti **što kraći i položen ravno** (bez savijanja).
+  Savijanje mijenja karakteristike (rezonantnu frekvenciju).
+- Razlog je asimetrija dipola: oplet koaksijalca postaje dio antene. Na nižim
+  frekvencijama koristi se choke balun (feritni prstenovi ili namotaj na jezgri).
+- Na 868 MHz utjecaj je obično mali zbog male snage i kratkog kabela, ali ako je moguće,
+  rezonantnu frekvenciju treba podesiti.
+- Antene s WiFi uređaja (2,4 / 5 GHz) **nisu** upotrebljive za 868 MHz.
+- Metalna ograda uz antenu može znatno pogoršati prijem (iskustvo člana).
+- Zaštita od statike i munje: vidi
+  [Montaža i zaštita](../hardver/montaza-i-zastita.md#zastita-od-statike-i-munje).
+
+## Smetnje: LTE i bazne stanice
+
+- U blizini LTE odašiljača (npr. B20, uplink oko 850 MHz) prijem može biti ozbiljno
+  degradiran. Iskustveno: nepouzdano na 50 m i na oko 15 m ispod stupa.
+- Zaštita: **band-pass (SAW) filter** i kvalitetna antena rezonantna na
+  869,525 MHz ± 125 kHz. Komercijalni uređaji imaju takav filter.
+- Provjera lokacije: HAKOM karta baznih stanica.
+
+<!-- TODO: preporučeni model filtera i rezultati mjerenja (član je naručio jeftine band-pass filtere i čeka testiranje). -->
 
 ## Zakonsko ograničenje snage (ERP)
 

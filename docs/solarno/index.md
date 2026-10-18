@@ -32,6 +32,31 @@ paraleli).
 > punjenja. LiFePO4 je alternativa, ali traži poseban punjač, a SoC očitanje je
 > nepouzdano zbog ravne krivulje napona.
 
+### Kemija baterija
+
+- **Li-Ion:** standardno za ove uređaje.
+- **LiFePO4:** nazivni napon oko 3,3 V je niži za oko 0,4 V, pa ugrađeni punjač na
+  modulu ne radi ispravno, a indikator napunjenosti će biti netočan. Ako se koristi,
+  treba vanjski punjač za LiFePO4. Preporuka: ne koristiti dok se ne testira donji napon
+  na kojem node još radi.
+- **NiMH (3S):** ne koristiti: elektronika je za Li-Ion i neće ispravno prikazivati
+  napunjenost.
+- Za Li-Ion u vanjskim uređajima na suncu i zimi članovi izvještavaju o godinama rada bez
+  problema.
+
+<!-- TODO: dodati tablicu preporučenih BMS/punjača (npr. TP4056 moduli) i sheme spajanja. -->
+
+## Potrošnja
+
+- **nRF52840 + SX1262** (npr. XIAO nRF52 + Wio-SX1262): vrlo štedljiv. Na jednoj bateriji
+  18650 (2200 mAh) radi oko **tjedan dana**, a s dvije u paraleli oko 10 dana bez sunca
+  (iskustvo člana).
+- **ESP32-S3** (npr. Heltec V4): veća potrošnja, osobito s WiFi-jem. Pogodniji uz stalno
+  napajanje.
+- **Bluetooth** troši znatno manje energije od WiFi-ja (otprilike red veličine). Ipak, s
+  jednom 18650 uz Bluetooth uređaj izdrži oko dan i noć.
+- Veća snaga odašiljanja (npr. 27 dBm umjesto 22 dBm) znatno povećava potrošnju.
+
 ## Solarni regulatori
 
 Preporučena arhitektura autonomnog node-a: **solarni panel → MPPT regulator → baterija
@@ -49,6 +74,19 @@ pouzdanijim — referentni node na Cepelišu s tom kombinacijom mjesecima ne pad
 > "zablokiranja" nakon dubokog pražnjenja — regulator ne nastavi punjenje povratkom
 > sunca. Ako node zimi "umre", prvo provjeri regulator. Uvjeti pod kojima se to događa
 > još nisu potvrđeni ni dokumentirani od strane zajednice.
+
+### Provjerena kombinacija za solarni router
+
+SeeedStudio XIAO nRF52 kit + solar SUPPSW001 (oko 25 € po komadu) + mali punjač solarnih
+panela s AliExpressa + Li-ion baterije (npr. 2 × 18650 2200 mAh u paraleli).
+
+- Jeftiniji Temu solar 5 V / 2,5 W (izmjereno oko 2,5 W) dovoljan je za osobni solarni
+  node, a za router se preporučuje jači solar.
+- Regulator s AliExpressa najčešće **nije pravi MPPT** (iako to piše), ali za 5 V solar
+  razlika je mala. Bitno je da radi stabilno.
+- Solar iz kućnih "solar" reflektora često ima ugrađenu elektroniku za USB. Treba je
+  ukloniti i spojiti pravi regulator punjenja za Li-Ion.
+- Sklopivi solarni punjači za mobitele nisu predviđeni za trajno postavljanje vani.
 
 ## Solarni paneli
 

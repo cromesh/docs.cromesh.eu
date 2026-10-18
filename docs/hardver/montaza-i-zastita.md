@@ -40,12 +40,24 @@ Ispravna zaštita prema iskustvima zajednice:
 3. Minimalna varijanta (bolja od ničega): izvod odvodnika na masu antenskog nosača radi
    pražnjenja statičkog elektriciteta od vjetra.
 
+### Zaštita od statike i munje
+
+- Najjednostavnija i najjeftinija zaštita od statike je **λ/4 kratkospojna dionica**
+  (T-konektor i komad koaksijalnog kabela od λ/4, kratko spojen na kraju). DC ne prolazi,
+  RF prolazi. Radi samo ako je masa dobro uzemljena.
+- **Od izravnog udara munje ne štiti ništa.**
+- Preporuka člana s iskustvom: za pouzdanost nužna je velika površina uzemljenja.
+
+<!-- TODO: provjeriti tvrdnje o površini uzemljenja i komercijalnim gromobranima (npr. RF lightning arrestor) s autorom/izvorom. -->
+<!-- TODO: stvarna učestalost kvarova zbog statike u nodovima u plastičnim kutijama (pitanje je u chatu ostalo bez potvrđenog odgovora). -->
+
 ## Pozicioniranje
 
 - Presudni su **visina i linija optičke vidljivosti** — metar više na stupu zna donijeti
   više od promjene antene.
 - Izbjegavaj neposrednu blizinu drugih odašiljača: zabilježen je slučaj node-a kojeg je
-  zaglušivao UKV repetitor na istoj lokaciji svaki put kad bi se aktivirao.
+  zaglušivao UKV repetitor na istoj lokaciji svaki put kad bi se aktivirao. Za smetnje od
+  LTE baznih stanica vidi [Antene — smetnje](../antene/index.md#smetnje-lte-i-bazne-stanice).
 - Za udaljene solarne node-ove planiraj upravljanje unaprijed (Remote Admin, isključeni
   WiFi/BT) — vidi [Prvi koraci](../postavke/prvi-koraci.md).
 

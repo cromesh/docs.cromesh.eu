@@ -32,6 +32,24 @@ Meshtastic firmware se izdaje u nekoliko verzija, kako bi korisnici mogli birati
 - **Alpha**  
   Najnovije promjene i netestirane funkcionalnosti. Može sadržavati bugove i ne preporučuje se za svakodnevnu upotrebu.
 
+### Poznati problemi pri ažuriranju
+
+- Prije OTA ažuriranja potrebno je jednokratno flashati **OTA bootloader**:
+  <https://meshmonitor.org/firmware-ota-prerequisites.html#one-time-ota-bootloader-setup>.
+- WiFi OTA ažuriranje prema iskustvima nije pouzdano.
+- Za XIAO nRF52 koristi **web flasher**. Ako se uređaj ne oporavi, na MeshCore web
+  flasheru pod XIAO nRF52 + Wio Kit postoji opcija popravka bootloadera, nakon čega
+  slijedi puno brisanje (full erase) i flashanje Meshtasticom.
+- **Beta 2.7.26:** različita iskustva. Za jedan XIAO nRF uređaj nakon nadogradnje node
+  više nije radio ni nakon full erasea (vraćanje na 2.7.15 pomoglo je), dok je drugim
+  članovima na XIAO nRF52 i Heltec V4 radila bez problema.
+- Alat zajednice za OTA: <https://github.com/vedranius/meshtastic-ota-updater> (nije
+  službeni, koristiti oprezno).
+
+<!-- TODO: provjeriti verzije i uzrok razlika (beta 2.7.26). -->
+
+Ostali problemi s uređajima: [Rješavanje problema](../rjesavanje-problema.md).
+
 ### Razvoj i doprinos
 
 - Firmware je razvijen uz pomoć **PlatformIO** alata, što omogućava [buildanje](https://meshtastic.org/docs/development/firmware/build/) za različite platforme i mikrokontrolere.  

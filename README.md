@@ -6,12 +6,13 @@ Ova dokumentacija koristi [MkDocs Material](https://squidfunk.github.io/mkdocs-m
 
 - **Home** — naslovnica s brzim poveznicama i pregledom zajednice
 - **Početak** — uvod u Meshtastic i prvi koraci za nove korisnike
-- **Česta pitanja** — opća pitanja (Česta pitanja, O zajednici, Pravila, MeshCore)
+- **Česta pitanja** — opća pitanja (Česta pitanja, Rješavanje problema, O zajednici, Pravila)
 - **Postavke** — prvi koraci i konfiguracija uređaja (LoRa, kanali, korisnik, uređaj, MQTT)
 - **Odabir uređaja** — usporedba čipova (ESP32, nRF52, RP2040) i preporuke uređaja
 - **Hardware** — antene, montaža i zaštita, 3D print kućišta, solarno napajanje, oživljavanje i punjenje LiIon ćelija
-- **Software** — aplikacije, firmware, MQTT
-- **Mreža** — dogovoreni standardi, kanali, uloge node-ova
+- **Software** — aplikacije, firmware, MQTT, mapiranje i nadzor
+- **Mreža** — dogovoreni standardi, kanali, uloge node-ova, infrastruktura (poznati routeri i repetitori)
+- **MeshCore** — pregled protokola, usmjeravanje, postavke, rad uz Meshtastic, povezivanje i observeri, poznati problemi, poveznice i pravna napomena
 
 ## Licenca
 
@@ -40,13 +41,43 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
 │  ├─ v3.7.1  Nove fotografije: postavke, hardver, aplikacije
 │  ├─ v3.7.2  QR kod kanala i dovršen 18650 vodič
 │  └─ v3.7.3  Final — Migration to a new server
-└─ v3.8.0  Stranica spremna za contrib zajednice
-   ├─ v3.8.1  Ispravak: CLIENT_BASE nije zastario
-   ├─ v3.8.2  18650 vodič: napomena o niskom naponu i čišćenje teksta
-   └─ v3.8.3  Trenutna verzija — Listopad 2026 u povijesti zajednice, ispravak README-a
+├─ v3.8.0  Stranica spremna za contrib zajednice
+│  ├─ v3.8.1  Ispravak: CLIENT_BASE nije zastario
+│  ├─ v3.8.2  18650 vodič: napomena o niskom naponu i čišćenje teksta
+│  └─ v3.8.3  Listopad 2026 u povijesti zajednice, ispravak README-a
+└─ v3.9.0  Trenutna verzija — MeshCore tab, nove stranice i nadopune iz zajednice
 ```
 
 ## Changelog
+
+### v3.9.0 — MeshCore tab, nove stranice i nadopune iz zajednice
+Veća nadopuna sadržaja iz zajednice (dokument „Docs addition 2026-10-18"). Činjenice su
+razvrstane po temama i dodane postojećim stranicama; ništa nije uklonjeno. Neprovjerene
+tvrdnje i podsjetnici za doradu spremljeni su kao skriveni HTML komentari (`TODO`) u
+izvornim datotekama.
+
+- **Novi tab MeshCore** (desno od Mreže, ikona radio-tower): Pregled, Usmjeravanje,
+  Postavke (uključujući imenovanje repetitora), Meshtastic i MeshCore, Povezivanje i
+  observeri (Tailscale most), Poznati problemi, Poveznice i pravna napomena. Cjelokupni
+  MeshCore odjeljak (Što je MeshCore, razlike, poveznice, pravna napomena) preseljen je iz
+  FAQ-a u novi tab; u FAQ-u je ostao kratak odjeljak s poveznicama.
+- **Nove stranice:** `rjesavanje-problema.md` (tab Česta pitanja),
+  `mreza/infrastruktura.md` (poznati routeri i repetitori, tab Mreža),
+  `mapiranje/index.md` (mapiranje pokrivenosti i nadzor, tab Software).
+- **FAQ:** novi odjeljci „Snaga, regulativa i propusnost", „Poruke i potvrde isporuke" i
+  „Uloge noda"; pitanje o Null Islandu uz „Zašto se ne vidim na karti?".
+- **Uloge i imenovanje:** odabir uloge prema položaju, slučaj unutarnjeg noda koji preuzima
+  promet (`CLIENT_MUTE`), fiksna lokacija; dopuna opisa uloge `CLIENT`.
+- **Antene:** kolinearne antene, sleeve dipol, smjerne antene, mjerenje NanoVNA-om,
+  postavljanje i kabel, smetnje od LTE baznih stanica.
+- **Montaža i zaštita:** zaštita od statike i munje (λ/4 kratkospojna dionica).
+- **Solarni uređaji:** kemija baterija, potrošnja, provjerena kombinacija za solarni
+  router.
+- **Odabir uređaja:** dopunjene tablice uređaja iskustvima zajednice (novi red Heltec
+  T096), nabava, kućišta, kabeli i napomena o carini.
+- **Firmware:** poznati problemi pri ažuriranju (OTA bootloader, web flasher, beta 2.7.26).
+- **Stil/navigacija:** 9. tab dobio ikonu u `extra.css`; `mkdocs.yml` proširen novim
+  stranicama.
 
 ### v3.8.3 — Listopad 2026 u povijesti zajednice, ispravak README-a
 - **O zajednici:** u „Kratka povijest" dodan unos **Listopad 2026.** — 150+ članova
