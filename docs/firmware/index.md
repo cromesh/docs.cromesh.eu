@@ -48,7 +48,7 @@ Meshtastic firmware se izdaje u nekoliko verzija, kako bi korisnici mogli birati
 
 Općenito, iskustva s ažuriranjem razlikuju se od verzije do verzije firmwarea.
 
-Ostali problemi s uređajima: [Rješavanje problema](../rjesavanje-problema.md).
+Ostali problemi s uređajima: [Rješavanje problema](../rjesavanje-problema/index.md).
 
 ### Razvoj i doprinos
 

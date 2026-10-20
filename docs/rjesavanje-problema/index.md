@@ -8,7 +8,7 @@ tags:
 
 # Rješavanje problema
 
-Prve provjere nalaze se u FAQ odjeljku [„Ne radi mi”](faq.md#ne-radi-mi). Ovdje su
+Prve provjere nalaze se u FAQ odjeljku [„Ne radi mi”](../faq/index.md#ne-radi-mi). Ovdje su
 detaljniji slučajevi koje je zajednica već susrela.
 
 ## Vidim samo svoj node na karti u aplikaciji
@@ -59,7 +59,7 @@ i [GitHub prijave](https://github.com/meshtastic/firmware/issues/2793) poznato j
 - U aplikaciji postavi vezu na „None (disabled)”, pa ponovno odaberi node. Veza se vrati,
   no kod jednog korisnika opet pada nakon nekoliko minuta.
 - Zaboravi uređaj u sistemskim Bluetooth postavkama i ponovno ga upari (vidi
-  [Aplikacije](aplikacije/index.md#android)).
+  [Aplikacije](../aplikacije/index.md#android)).
 - Na ESP32 uređajima uz uključen WiFi Bluetooth može biti neaktivan (prijavljeno na
   firmwareu 2.7.15).
 - Jedan korisnik prijavio je da je zamjena zavijene Bluetooth antene ravnom žicom duljine
@@ -68,11 +68,11 @@ i [GitHub prijave](https://github.com/meshtastic/firmware/issues/2793) poznato j
 ## Ažuriranje firmwarea ne uspijeva
 
 OTA bootloader, WiFi OTA, web flasher za XIAO nRF52 i iskustva s betom 2.7.26 opisani su
-na stranici [Firmware — poznati problemi pri ažuriranju](firmware/index.md#poznati-problemi-pri-azuriranju).
+na stranici [Firmware — poznati problemi pri ažuriranju](../firmware/index.md#poznati-problemi-pri-azuriranju).
 
 ## MeshCore: kontakti su nestali iz aplikacije
 
-Vidi [MeshCore — poznati problemi](meshcore/postavke.md#poznati-problemi).
+Vidi [MeshCore — poznati problemi](../meshcore/postavke.md#poznati-problemi).
 
 ## Test dometa (Range Test)
 
@@ -83,6 +83,6 @@ Vidi [MeshCore — poznati problemi](meshcore/postavke.md#poznati-problemi).
 
 ## Povezano
 
-- [Česta pitanja](faq.md) — poruke i potvrde isporuke, karta i MQTT
-- [MQTT i karta](mqtt/index.md) — kompletna checklista za prikaz na karti
-- [Mapiranje i nadzor](mapiranje/index.md) — provjera čuje li te netko bez druge strane
+- [Česta pitanja](../faq/index.md) — poruke i potvrde isporuke, karta i MQTT
+- [MQTT i karta](../mqtt/index.md) — kompletna checklista za prikaz na karti
+- [Mapiranje i nadzor](../mapiranje/index.md) — provjera čuje li te netko bez druge strane

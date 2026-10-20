@@ -20,7 +20,7 @@ Sve što trebate za izgradnju, korištenje i razumijevanje CroMesh mreže — na
 **Otvoreno. Neovisno. Za zajednicu.**
 
 <div class="cromesh-actions" markdown>
-[ :octicons-rocket-24: Kreni od početka](uvod.md){ .cromesh-button .cromesh-button-primary }
+[ :octicons-rocket-24: Kreni od početka](uvod/index.md){ .cromesh-button .cromesh-button-primary }
 [ :octicons-book-24: Pregledaj vodiče](postavke/prvi-koraci.md){ .cromesh-button }
 </div>
 </div>
@@ -98,7 +98,7 @@ Pregled aktivnih čvorova i pokrivenosti.
 :material-help-circle-outline:
 **Česta pitanja**
 Odgovori na najčešća pitanja zajednice.
-[Otvori FAQ →](faq.md)
+[Otvori FAQ →](faq/index.md)
 </div>
 </div>
 

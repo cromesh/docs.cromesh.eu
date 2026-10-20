@@ -160,7 +160,7 @@ bila je mala. Za pouzdan rad u pokretu bit će potrebna veća gustoća repetitor
 
 - Popravak bootloadera XIAO nRF52 putem MeshCore web flashera:
   [Firmware](../firmware/index.md#poznati-problemi-pri-azuriranju).
-- Opći problemi s uređajima i vezom: [Rješavanje problema](../rjesavanje-problema.md).
+- Opći problemi s uređajima i vezom: [Rješavanje problema](../rjesavanje-problema/index.md).
 
 ---
 

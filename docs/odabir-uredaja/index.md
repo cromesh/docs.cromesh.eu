@@ -34,7 +34,7 @@ Za dublji pregled prednosti i mana pojedinog čipa vidi [ESP32](esp32.md),
 
 | Uređaj | Čip | Komentar zajednice |
 |---|---|---|
-| **Heltec V3** | ESP32-S3 | Najjeftiniji ulaz u Meshtastic; provjeren, masovno korišten u mreži. Sa stock antenom 1–2 km kroz urbanu sredinu. Dijeli konfiguraciju s TLora T3-S3. Prijave resetiranja i gubitka postavki (uzrok nepotvrđen) — vidi [Rješavanje problema](../rjesavanje-problema.md) |
+| **Heltec V3** | ESP32-S3 | Najjeftiniji ulaz u Meshtastic; provjeren, masovno korišten u mreži. Sa stock antenom 1–2 km kroz urbanu sredinu. Dijeli konfiguraciju s TLora T3-S3. Prijave resetiranja i gubitka postavki (uzrok nepotvrđen) — vidi [Rješavanje problema](../rjesavanje-problema/index.md) |
 | **Heltec V4** | ESP32-S3 | WiFi, snažniji; do 27–28 dBm TX (≈ 4× više od V3), ali **vidi upozorenje ispod** |
 | **RAK4631 WisBlock** | nRF52840 | Modularni sustav (senzori, GNSS, Ethernet...); base ploča ima **ugrađen solarni ulaz**; 40–45 h rada na staroj 18650 s GNSS + BME280. Pouzdan (godina rada u vinogradu); potreban baseboard. Preporuka za ozbiljne solarne routere |
 | **Seeed SX1262 + XIAO ESP32S3** | ESP32-S3 | Povoljan kit; nema bateriju (napajanje powerbank/USB) |

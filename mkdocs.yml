@@ -7,11 +7,11 @@ repo_url: https://github.com/cromesh/docs.cromesh.eu
 nav:
   - Home: index.md
   - Početak:
-    - Uvod u Meshtastic: uvod.md
+    - Uvod u Meshtastic: uvod/index.md
     - Prvi koraci: postavke/prvi-koraci.md  # namjerno duplicirano i pod Postavke
   - Česta pitanja:
-    - Česta pitanja: faq.md
-    - Rješavanje problema: rjesavanje-problema.md
+    - Česta pitanja: faq/index.md
+    - Rješavanje problema: rjesavanje-problema/index.md
     - O zajednici: zajednica/o-zajednici.md
     - Pravila: zajednica/pravila.md
   - Postavke:

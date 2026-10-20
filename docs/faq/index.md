@@ -11,7 +11,7 @@ description: Odgovori na najčešća pitanja početnika u CroMesh Meshtastic mre
 
 **Ne.** Meshtastic radi u slobodnom 868 MHz ISM pojasu. Jedino moraš poštovati limite
 snage (ERP) i imati regiju postavljenu na `EU_868` — vidi
-[Pravila](zajednica/pravila.md).
+[Pravila](../zajednica/pravila.md).
 
 ### Moram li ručno postaviti frekvenciju (override frequency) na 868 MHz?
 
@@ -23,7 +23,7 @@ ga.
 
 Za mobilno korištenje: uređaj s **nRF52** čipom (T-Echo, ThinkNode M1, Wio Tracker…).
 Najjeftiniji ulaz: **Heltec V3**. Detaljna usporedba s cijenama i poznatim problemima:
-[Odabir uređaja](odabir-uredaja/index.md).
+[Odabir uređaja](../odabir-uredaja/index.md).
 
 ### Koliki je domet?
 
@@ -66,13 +66,13 @@ Najveća dopuštena izlazna snaga je **0,5 W**, odnosno **+27 dBm ERP (500 mW)**
 potvrdila zajednica, a navodi je i Meshtastic dokumentacija za EU 868 MHz.
 Standardni SX1262 moduli daju 22 dBm (oko 160 mW). Veća snaga nije nužno bolja: važniji su
 visina i optička vidljivost, kvaliteta antene, a tek zatim snaga. Jači nodovi znatno više
-troše. Vidi [Pravila](zajednica/pravila.md) i
-[Antene](antene/index.md#zakonsko-ogranicenje-snage-erp).
+troše. Vidi [Pravila](../zajednica/pravila.md) i
+[Antene](../antene/index.md#zakonsko-ogranicenje-snage-erp).
 
 ### Postoji li ograničenje zauzeća kanala (duty cycle)?
 
 Da — u EU je za ovaj dio spektra dopušten duty cycle od oko **10%**.
-Vidi [Pravila](zajednica/pravila.md#ogranicenja-koja-moras-postovati).
+Vidi [Pravila](../zajednica/pravila.md#ogranicenja-koja-moras-postovati).
 
 ### Može li se preko LoRa slati slike, audio ili veće datoteke?
 
@@ -99,7 +99,7 @@ trenutno je glavni problem CroMesha. Provjeri:
 
 Najčešći uzroci redom: krivi MQTT root topic (mora biti `msh/EU_868/9A`), isključen
 *OK to MQTT*, isključen Uplink na LongFast kanalu, node nema lokaciju. Kompletna
-checklista: [MQTT i karta](mqtt/index.md). Nakon ispravne konfiguracije pričekaj
+checklista: [MQTT i karta](../mqtt/index.md). Nakon ispravne konfiguracije pričekaj
 1–2 sata.
 
 ### Zašto se moj node na karti nalazi kraj afričke obale (koordinate 0°, 0°)?
@@ -111,21 +111,21 @@ To je tzv. *Null Island*. Node je izgubio ili obrisao GPS koordinate pa se prija
 
 Kliknuo si **"Replace"** umjesto **"Add"** pri dodavanju kanala. Obriši kanal koji je
 pregazio LongFast i dodaj LongFast natrag sa zadanim postavkama — poruke ostaju. Vidi
-[Kanali](mreza/kanali.md).
+[Kanali](../mreza/kanali.md).
 
 ### Vidim node-ove sa 5–7 hopova — je li to dobro?
 
 Nije. Zadani hop limit je 3; veće vrijednosti nepotrebno opterećuju mrežu. Ako vidiš
 takve node-ove, vjerojatno je netko podigao limit — nemoj to raditi i ti. Vidi
-[Standardi](mreza/standardi.md).
+[Standardi](../mreza/standardi.md).
 
 ### Heltec V4 mi slabo čuje s vanjskom antenom
 
 Poznat problem revizije ploče 4.2 (šum); revizija 4.3 to rješava. Provjeri i firmware
-(2.7.13+, alpha s LNA fixom). Detalji: [Odabir uređaja](odabir-uredaja/index.md).
+(2.7.13+, alpha s LNA fixom). Detalji: [Odabir uređaja](../odabir-uredaja/index.md).
 
 Više slučajeva (resetiranje, Bluetooth, firmware, test dometa):
-[Rješavanje problema](rjesavanje-problema.md).
+[Rješavanje problema](../rjesavanje-problema/index.md).
 
 ## Poruke i potvrde isporuke
 
@@ -150,7 +150,7 @@ trenutka do trenutka. Isti put može jednom proći, a nekoliko sekundi kasnije n
 
 Pošalji poruku na javni `LongFast` kanal ili na zajednički test kanal. Ako se pojavi oznaka
 da je neki repetitor čuo poruku, doseg postoji. Ne moraš nikoga posebno pitati. Više o
-alatima: [Mapiranje i nadzor](mapiranje/index.md).
+alatima: [Mapiranje i nadzor](../mapiranje/index.md).
 
 ## MQTT i karta
 
@@ -158,7 +158,7 @@ alatima: [Mapiranje i nadzor](mapiranje/index.md).
 
 **Ne** — ako slijediš upute (samo Uplink na LongFast). Tvoj node će tada samo
 prijavljivati kartu, a MQTT server ne šalje promet natrag u RF mrežu (zero-hop
-politika). Vidi [MQTT i karta](mqtt/index.md).
+politika). Vidi [MQTT i karta](../mqtt/index.md).
 
 ### Ima li zajednica koristi ako uključim MQTT na kućnom node-u?
 
@@ -182,7 +182,7 @@ Kratko:
 - **Router** je samo za strateške lokacije (npr. vrhovi, tornjevi) na kojima postoji velik
   broj nodova u dometu.
 
-Detalji su u [Uloge i imenovanje](mreza/uloge-i-imenovanje.md).
+Detalji su u [Uloge i imenovanje](../mreza/uloge-i-imenovanje.md).
 
 ## Ostalo
 
@@ -190,13 +190,13 @@ Detalji su u [Uloge i imenovanje](mreza/uloge-i-imenovanje.md).
 
 Ovisi o uređaju i postavkama; iskustvene brojke: 2× 18650 uz power save ≈ 10 %/dan;
 RAK4631 s GNSS + BME280 senzorima ≈ 40–45 h na jednoj 18650. Za trajni rad — solar:
-[Napajanje i solar](solarno/index.md).
+[Napajanje i solar](../solarno/index.md).
 
 ### Mijenjam uređaj — mogu li prenijeti stari identitet (ID, ključeve)?
 
 Ne preporučuje se — NodeID je vezan uz hardware i forsiranje starih ključeva izaziva
 *key mismatch* upozorenja. Novi hardware = novi identitet. Vidi
-[Uloge i imenovanje](mreza/uloge-i-imenovanje.md).
+[Uloge i imenovanje](../mreza/uloge-i-imenovanje.md).
 
 ### Gdje mogu kupiti/prodati rabljenu opremu?
 
@@ -213,24 +213,24 @@ objekte, PoE napajanje, materijali za 3D print) navedenih kroz dokumentaciju.
 
 Sve o MeshCoreu — što je, razlike prema Meshtasticu, usmjeravanje, preporučene postavke,
 poveznice i pravna napomena — nalazi se u zasebnom tabu
-[MeshCore](meshcore/index.md).
+[MeshCore](../meshcore/index.md).
 
 ### Što je MeshCore?
 
 Lagan sustav za sigurnu tekstualnu komunikaciju putem LoRa radija na 868 MHz, bez
-centralnog operatera i bez internetske veze. Pregled: [MeshCore u CroMeshu](meshcore/index.md).
+centralnog operatera i bez internetske veze. Pregled: [MeshCore u CroMeshu](../meshcore/index.md).
 
 ### Mogu li isti uređaj i ista antena koristiti oba protokola istodobno?
 
 **Ne.** Protokoli rade s različitim LoRa parametrima, a radio ne može istodobno slušati
 dvije konfiguracije. Dual-boot firmware i dva odvojena modula u istom kućištu:
-[Meshtastic i MeshCore zajedno](meshcore/meshtastic-i-meshcore.md).
+[Meshtastic i MeshCore zajedno](../meshcore/meshtastic-i-meshcore.md).
 
 ### Mogu li MeshCore i Meshtastic međusobno razgovarati?
 
 **Ne izravno.** Kompatibilni su na fizičkom sloju (LoRa), ali ne na razini protokola.
-Detalji: [Meshtastic i MeshCore zajedno](meshcore/meshtastic-i-meshcore.md).
+Detalji: [Meshtastic i MeshCore zajedno](../meshcore/meshtastic-i-meshcore.md).
 
 ### Poveznice i pravna napomena
 
-[MeshCore HR, karte i alati, licenca i isključenje odgovornosti](meshcore/poveznice.md).
+[MeshCore HR, karte i alati, licenca i isključenje odgovornosti](../meshcore/poveznice.md).

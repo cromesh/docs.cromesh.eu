@@ -47,10 +47,20 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
 │  └─ v3.8.3  Listopad 2026 u povijesti zajednice, ispravak README-a
 └─ v3.9.0  MeshCore tab, nove stranice i nadopune iz zajednice
    ├─ v3.9.1  Riješeni TODO-i, ikona MeshCore taba, ispravljene tvrdnje
-   └─ v3.9.2  Trenutna verzija — fotografije, provjera prema službenoj dokumentaciji i preuređenje MeshCore taba
+   ├─ v3.9.2  Fotografije, provjera prema službenoj dokumentaciji i preuređenje MeshCore taba
+   └─ v3.9.3  Trenutna verzija — svaka stranica u vlastitoj mapi
 ```
 
 ## Changelog
+
+### v3.9.3 — Svaka stranica u vlastitoj mapi
+- **Struktura:** stranice koje su stajale izravno u `docs/` premještene su svaka u vlastitu
+  mapu, kao ostale: `faq.md`, `privatnost.md`, `rjesavanje-problema.md`, `tags.md` i
+  `uvod.md` sada su `faq/index.md`, `privatnost/index.md`, `rjesavanje-problema/index.md`,
+  `tags/index.md` i `uvod/index.md`. `index.md` ostaje u korijenu `docs/`.
+- **Adrese:** javni URL-ovi stranica ostaju isti (npr. `/faq/`, `/uvod/`).
+- **Poveznice:** sve relativne poveznice i `mkdocs.yml` ažurirani; povijest datoteka
+  `privatnost` usmjerena na novu putanju.
 
 ### v3.9.2 — Fotografije, provjera prema službenoj dokumentaciji i preuređenje MeshCore taba
 - **MeshCore (Pregled):** fotografija unutrašnjosti kućišta solarnog repetitora

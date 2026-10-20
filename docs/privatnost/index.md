@@ -99,7 +99,7 @@ Kao ispitanik imaš pravo na:
 
 Budući da su podaci koje šalješ na kartu pod tvojom izravnom kontrolom (Long Name,
 pozicija, MQTT postavke), najbrži način ostvarivanja ovih prava je **isključivanje
-odgovarajuće postavke na vlastitom uređaju** (vidi [MQTT postavke](mqtt/index.md)).
+odgovarajuće postavke na vlastitom uređaju** (vidi [MQTT postavke](../mqtt/index.md)).
 Za sve ostalo, obrati se kontaktu naznačenom gore.
 
 ## Pravo na pritužbu
@@ -130,4 +130,4 @@ Ako ne želiš da tvoja GPS pozicija ili ime budu javno vidljivi:
 ## Izmjene ove stranice
 
 Ova stranica može se mijenjati. Datum zadnje izmjene vidljiv je u
-[povijesti commitova na GitHubu](https://github.com/cromesh/docs.cromesh.eu/commits/master/docs/privatnost.md).
+[povijesti commitova na GitHubu](https://github.com/cromesh/docs.cromesh.eu/commits/master/docs/privatnost/index.md).
