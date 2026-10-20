@@ -47,3 +47,9 @@ prosljeđuje; također je dodana u firmwareu 1.14.
 
 Dogovoreni obrazac za novi repetitor: `HR-<OZNAKA GRADA>-<lokacija>` (npr.
 `HR-ZG-M.Sljeme`). Osijek koristi `HR OS ...`.
+
+## Primjer: Base Sljeme
+
+<figure class="cromesh-doc-photo">
+  <img src="../../assets/images/v392-meshcore-sljeme.jpg" alt="Repetitor Base Sljeme na stupu: kućište s antenom i solarni panel" loading="lazy">
+</figure>

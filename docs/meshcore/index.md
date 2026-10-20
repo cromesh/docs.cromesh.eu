@@ -70,3 +70,7 @@ Poznati MeshCore repetitori u Hrvatskoj navedeni su na stranici
 
 > Pravna napomena o neovisnosti, žigu i licenci nalazi se na stranici
 > [Poveznice i pravna napomena](poveznice.md#napomena-o-neovisnosti-zigu-i-licenci).
+
+<figure class="cromesh-doc-photo">
+  <img src="../assets/images/v392-meshcore.jpg" alt="Unutrašnjost kućišta solarnog repetitora: XIAO nRF52840, dvije ćelije 18650 sa zaštitnom pločicom i modul za punjenje" loading="lazy">
+</figure>
