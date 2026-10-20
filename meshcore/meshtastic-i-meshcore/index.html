@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Mogu li isti uređaj i antena koristiti Meshtastic i MeshCore istodobno, izvedbe s dvostrukim nodom i (ne)mogućnost izravne komunikacije dvaju protokola.">
+        <meta name="description" content="Razlike između Meshtastica i MeshCorea i kratka usporedba; mogu li isti uređaj i antena koristiti Meshtastic i MeshCore istodobno, izvedbe s dvostrukim nodom i (ne)mogućnost izravne komunikacije dvaju protokola.">
       
       
         <meta name="author" content="CroMesh zajednica">
@@ -1925,6 +1925,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#razlika-izmeu-meshtastic-a-i-meshcore-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Razlika između Meshtastic-a i MeshCore-a
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kratki-pregled-razlika" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kratki pregled razlika
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#mogu-li-isti-ureaj-i-ista-antena-koristiti-oba-protokola-istodobno" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2017,6 +2039,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#razlika-izmeu-meshtastic-a-i-meshcore-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Razlika između Meshtastic-a i MeshCore-a
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kratki-pregled-razlika" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kratki pregled razlika
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#mogu-li-isti-ureaj-i-ista-antena-koristiti-oba-protokola-istodobno" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2090,6 +2134,52 @@
 
 
 <h1 id="meshtastic-i-meshcore-zajedno">Meshtastic i MeshCore zajedno<a class="headerlink" href="#meshtastic-i-meshcore-zajedno" title="Permanent link">&para;</a></h1>
+<h2 id="razlika-izmeu-meshtastic-a-i-meshcore-a">Razlika između Meshtastic-a i MeshCore-a<a class="headerlink" href="#razlika-izmeu-meshtastic-a-i-meshcore-a" title="Permanent link">&para;</a></h2>
+<p>Najveća razlika je u načinu usmjeravanja poruka.</p>
+<p><strong>Meshtastic</strong> koristi "managed flood": svaki uređaj u ulozi Client prima i prosljeđuje
+tuđe poruke. Mreža je jednostavna za postavljanje i otporna, ali u gušćim mrežama može
+povećati zauzeće radio-kanala.</p>
+<p><strong>MeshCore</strong> razdvaja uloge: obični uređaji (Companion) ne prosljeđuju tuđe poruke, to rade
+samo namjenski postavljeni repetitori. Mreža je tiša i predvidljivija, ali traži pažljivije
+planiranje pokrivenosti repetitorima. Detalji su u <a href="../postavke/#usmjeravanje-poruka-u-meshcoreu">Postavkama</a>.</p>
+<h2 id="kratki-pregled-razlika">Kratki pregled razlika<a class="headerlink" href="#kratki-pregled-razlika" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Meshtastic</th>
+<th>MeshCore</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Usmjeravanje</td>
+<td>Flooding, uz ograničenje hopova (zadano 3)</td>
+<td>Prvi put flood, zatim se pamti put</td>
+</tr>
+<tr>
+<td>Repetitori</td>
+<td>Prosljeđuju poruke po pravilima flood-a</td>
+<td>Prosljeđuju samo ako su na putu poruke</td>
+</tr>
+<tr>
+<td>MQTT</td>
+<td>Uplink na kartu i nadzor</td>
+<td>Nema ugrađenog MQTT-a (mreža radi bez interneta); observeri mogu slati pakete na MQTT, vidi <a href="../postavke/#povezivanje-mreze-i-observeri">Povezivanje i observeri</a></td>
+</tr>
+<tr>
+<td>Hardver</td>
+<td>Isti moduli (npr. XIAO nRF52 + Wio-SX1262, Heltec V4)</td>
+<td>Isti moduli, drugi firmware</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Napomena:</strong> Zajednica nije jedinstvena u ocjeni koji je protokol "bolji". Dio članova
+izvještava o znatno boljoj isporuci poruka na MeshCoreu u gustim mrežama (npr. Osijek),
+a dio navodi prednosti Meshtastica u izvanrednim situacijama i veću zajednicu.
+Dokumentacija ostaje neutralna.</p>
+</blockquote>
 <h2 id="mogu-li-isti-ureaj-i-ista-antena-koristiti-oba-protokola-istodobno">Mogu li isti uređaj i ista antena koristiti oba protokola istodobno?<a class="headerlink" href="#mogu-li-isti-ureaj-i-ista-antena-koristiti-oba-protokola-istodobno" title="Permanent link">&para;</a></h2>
 <p><strong>Ne.</strong> Protokoli rade s različitim LoRa parametrima (bandwidth, spreading factor,
 coding rate), a radio ne može istodobno slušati dvije konfiguracije. Postoje:</p>
@@ -2102,12 +2192,9 @@ coding rate), a radio ne može istodobno slušati dvije konfiguracije. Postoje:<
 <p><strong>Preporuka:</strong> kanali Meshtastica i MeshCorea se preklapaju, pa je između dvije antene
 potrebna visinska razlika od najmanje <strong>1,5 m</strong>.</p>
 <h2 id="mogu-li-meshcore-i-meshtastic-meusobno-razgovarati">Mogu li MeshCore i Meshtastic međusobno razgovarati?<a class="headerlink" href="#mogu-li-meshcore-i-meshtastic-meusobno-razgovarati" title="Permanent link">&para;</a></h2>
-<p><strong>Ne izravno.</strong> Kompatibilni su na fizičkom sloju (LoRa), ali ne na razini protokola.
-Oba protokola su otvorenog koda i mogu raditi na istom LoRa hardveru, ali međusobno nisu
-kompatibilna. Neka mjesta u mreži imaju dvostruke nodove (dva noda, na svakom po jedan sustav:
-Meshtastic i MeshCore) — vidi
-<a href="../../mreza/infrastruktura/#slavonija-i-podravina">Infrastruktura</a>.</p>
-<p>Pregled razlika: <a href="../">MeshCore u CroMeshu</a>.</p>
+<p><strong>Ne izravno.</strong> Isti su na fizičkom sloju (LoRa) i rade na istom hardveru, ali protokoli
+međusobno nisu kompatibilni. Neka mjesta u mreži zato imaju dvostruke nodove: dva noda, na
+svakom po jedan sustav. Vidi <a href="../../mreza/infrastruktura/#slavonija-i-podravina">Infrastruktura</a>.</p>
 <figure class="cromesh-doc-photo">
   <img src="../../assets/images/meshcore-meshtastic-dva-noda.jpg" alt="Dva kućišta nodova montirana jedno uz drugo na istom stupu rukohvata, s antenom" loading="lazy">
 </figure>
