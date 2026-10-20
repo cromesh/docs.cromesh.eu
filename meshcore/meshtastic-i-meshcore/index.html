@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Mogu li isti uređaj i antena koristiti Meshtastic i MeshCore istodobno, dual-node izvedbe i (ne)mogućnost izravne komunikacije dvaju protokola.">
+        <meta name="description" content="Mogu li isti uređaj i antena koristiti Meshtastic i MeshCore istodobno, izvedbe s dvostrukim nodom i (ne)mogućnost izravne komunikacije dvaju protokola.">
       
       
         <meta name="author" content="CroMesh zajednica">
@@ -2104,9 +2104,14 @@ potrebna visinska razlika od najmanje <strong>1,5 m</strong>.</p>
 <h2 id="mogu-li-meshcore-i-meshtastic-meusobno-razgovarati">Mogu li MeshCore i Meshtastic međusobno razgovarati?<a class="headerlink" href="#mogu-li-meshcore-i-meshtastic-meusobno-razgovarati" title="Permanent link">&para;</a></h2>
 <p><strong>Ne izravno.</strong> Kompatibilni su na fizičkom sloju (LoRa), ali ne na razini protokola.
 Oba protokola su otvorenog koda i mogu raditi na istom LoRa hardveru, ali međusobno nisu
-kompatibilna. Neki nodovi u mreži su dual (Meshtastic + MeshCore) — vidi
+kompatibilna. Neka mjesta u mreži imaju dvostruke nodove (dva noda, na svakom po jedan sustav:
+Meshtastic i MeshCore) — vidi
 <a href="../../mreza/infrastruktura/#slavonija-i-podravina">Infrastruktura</a>.</p>
 <p>Pregled razlika: <a href="../">MeshCore u CroMeshu</a>.</p>
+<figure class="cromesh-doc-photo">
+  <img src="../../assets/images/meshcore-meshtastic-dva-noda.jpg" alt="Dva kućišta nodova montirana jedno uz drugo na istom stupu rukohvata, s antenom" loading="lazy">
+</figure>
+
 <hr />
 <div class="admonition info">
 <p class="admonition-title">Napomena o neovisnosti</p>
