@@ -1,6 +1,6 @@
 ---
 title: MeshCore u CroMeshu
-description: Pregled MeshCore protokola u CroMesh zajednici — što je MeshCore, razlike prema Meshtasticu i kratka usporedba dvaju protokola.
+description: Pregled MeshCore protokola u CroMesh zajednici — što je MeshCore, pregled sadržaja taba i poveznice.
 tags:
   - MeshCore
   - Početnici
@@ -25,43 +25,14 @@ Sudjelovanje nije vezano uz jedan protokol: korisnici mogu odabrati Meshtastic i
 MeshCore prema vlastitim potrebama i preferencijama, a moguće je koristiti oba protokola
 na neovisnim uređajima.
 
-## Razlika između Meshtastic-a i MeshCore-a
-
-Najveća razlika je u načinu usmjeravanja poruka.
-
-**Meshtastic** koristi tzv. "managed flood" routing — svaki uređaj u ulozi Client prima
-i prosljeđuje tuđe poruke. To mrežu čini jednostavnom za postavljanje i vrlo otpornom,
-ali može povećati zauzeće radio-kanala u gušćim mrežama.
-
-**MeshCore** razdvaja uređaje po ulogama: obični uređaji (Companion) ne prosljeđuju tuđe
-poruke, već to rade isključivo namjenski postavljeni repetitori. Rezultat je tiša i
-predvidljivija mreža, ali uz potrebu za pažljivijim planiranjem pokrivenosti repetitorima.
-
-Oba protokola su otvorenog koda i mogu raditi na istom LoRa hardveru, ali
-**međusobno nisu kompatibilna**.
-
-## Kratki pregled razlika
-
-| | Meshtastic | MeshCore |
-|---|---|---|
-| Usmjeravanje | Flooding, uz ograničenje hopova (zadano 3) | Prvi put flood, zatim se pamti put |
-| Repetitori | Prosljeđuju poruke po pravilima flood-a | Prosljeđuju samo ako su na putu poruke |
-| MQTT | Uplink na kartu i nadzor | Nema ugrađenog MQTT-a (mreža radi bez interneta); observeri mogu slati pakete na MQTT, vidi [Povezivanje i observeri](postavke.md#povezivanje-mreze-i-observeri) |
-| Hardver | Isti moduli (npr. XIAO nRF52 + Wio-SX1262, Heltec V4) | Isti moduli, drugi firmware |
-
-> **Napomena:** Zajednica nije jedinstvena u ocjeni koji je protokol "bolji". Dio članova
-> izvještava o znatno boljoj isporuci poruka na MeshCoreu u gustim mrežama (npr. Osijek),
-> a dio navodi prednosti Meshtastica u izvanrednim situacijama i veću zajednicu.
-> Dokumentacija ostaje neutralna.
-
 ## Što se nalazi u ovom tabu
 
 - **[Postavke](postavke.md)** — preporučene postavke za CroMesh i imenovanje repetitora,
   [usmjeravanje poruka](postavke.md#usmjeravanje-poruka-u-meshcoreu),
   [povezivanje mreže i observeri](postavke.md#povezivanje-mreze-i-observeri) te
   [poznati problemi](postavke.md#poznati-problemi)
-- **[Meshtastic i MeshCore](meshtastic-i-meshcore.md)** — rad oba protokola na istom
-  uređaju i (ne)mogućnost međusobne komunikacije
+- **[Meshtastic i MeshCore](meshtastic-i-meshcore.md)** — razlike i usporedba protokola,
+  rad oba protokola na istom uređaju i (ne)mogućnost međusobne komunikacije
 - **[Poveznice i pravna napomena](poveznice.md)** — MeshCore HR, karte, alati, licenca
 
 Poznati MeshCore repetitori u Hrvatskoj navedeni su na stranici

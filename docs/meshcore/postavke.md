@@ -93,13 +93,6 @@ prosljeđuju pakete; prosljeđuju samo repetitori te room serveri s uključenim
 `set repeat on`. Ograničenje firmwarea je 64 skoka, no u praksi putevi rijetko dolaze
 blizu toga.
 
-### Usporedba s Meshtasticom
-
-Meshtastic poruke šalje flood-om uz ograničenje hopova (zadano 3), a repetitori ih
-prosljeđuju po pravilima flood-a. MeshCore nakon prvog flood-a pamti put, a repetitori
-prosljeđuju poruku samo ako se nalaze na putu te poruke. Cjelovitu usporedbu vidi na
-stranici [MeshCore u CroMeshu](index.md#kratki-pregled-razlika).
-
 ## Povezivanje mreže i observeri
 
 ### Spajanje udaljenih dijelova mreže
