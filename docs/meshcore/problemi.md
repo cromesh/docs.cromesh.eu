@@ -12,7 +12,16 @@ tags:
 
 Prijavljeno više puta, uzrok nije utvrđen (aplikacija ili node).
 
-<!-- TODO: dopuniti upute za sigurnosnu kopiju kontakata. -->
+Što je poznato iz [MeshCore repozitorija](https://github.com/meshcore-dev/MeshCore/issues/1227):
+
+- Lista kontakata ima ograničenje ovisno o uređaju (npr. 350). Kad se popuni, automatsko
+  dodavanje staje i novi se kontakti pojavljuju samo na popisu otkrivenih, osim ako je
+  uključeno prepisivanje najstarijih ("Overwrite Oldest").
+- Jedan korisnik prijavio je da su mu nakon nadogradnje favoriti nestali nakon nekoliko
+  dana na ograničenju; uzrok nije potvrđen.
+- U CLI dokumentaciji ne postoji naredba za izvoz ili sigurnosnu kopiju kontakata. Privatni
+  ključ (identitet noda) može se pročitati samo preko serijske konzole (`get prv.key`) i
+  mora ostati tajan; to nije kopija kontakata.
 
 ## Slaba prolaznost u pokretu
 

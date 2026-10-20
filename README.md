@@ -45,10 +45,36 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
 │  ├─ v3.8.1  Ispravak: CLIENT_BASE nije zastario
 │  ├─ v3.8.2  18650 vodič: napomena o niskom naponu i čišćenje teksta
 │  └─ v3.8.3  Listopad 2026 u povijesti zajednice, ispravak README-a
-└─ v3.9.0  Trenutna verzija — MeshCore tab, nove stranice i nadopune iz zajednice
+└─ v3.9.0  MeshCore tab, nove stranice i nadopune iz zajednice
+   └─ v3.9.1  Trenutna verzija — riješeni TODO-i, ikona MeshCore taba, ispravljene tvrdnje
 ```
 
 ## Changelog
+
+### v3.9.1 — Riješeni TODO-i, ikona MeshCore taba, ispravljene tvrdnje
+Obrađeni su svi skriveni `TODO` komentari iz v3.9.0; u izvornim datotekama više nema
+otvorenih. Provjere su rađene prema službenoj dokumentaciji i stručnim izvorima, a izvori
+su navedeni uz tekst na stranicama.
+
+- **MeshCore tab:** nova ikona (antenski toranj sa signalnim lukovima).
+- **Potvrđeno:** najveća dopuštena snaga je 0,5 W (500 mW ERP), a duty cycle oko 10%
+  (FAQ); Store & Forward poslužitelj može biti samo ESP32 s PSRAM-om (Mapiranje i nadzor).
+- **Uloge:** napomena da su oba izbora, `CLIENT` i `CLIENT_BASE`, prihvatljiva za fiksni node;
+  korisnici CroMesha preporučuju `CLIENT_BASE`, a dokumentacija `CLIENT`; ponašanje
+  favorita prema službenom Meshtastic članku.
+- **MeshCore:** objašnjene naredbe `loop.detect` i `path.hash.mode` (CLI dokumentacija);
+  osnove postavljanja observera; poznato o nestanku kontakata; preporuka visinske
+  razlike od najmanje 1,5 m između dvije antene u dual-node izvedbi.
+- **Hardver i napajanje:** punjači i zaštita baterije (TP4056, CN3791); ispravna uporaba
+  λ/4 dionice, plinskog odvodnika i uzemljenja; dopunjena tablica uređaja (Heltec
+  MeshTower V2, podaci o P1-Pro, T1000-E, T096 i Wio Tracker L1 Pro).
+- **Rješavanje problema:** poznati uzroci resetiranja Heltec V3 i zaobilazna rješenja za
+  Bluetooth vezu.
+- **Ispravljene tvrdnje:** 1-bajtni path hash ima 256 mogućih vrijednosti (umjesto
+  „oko 1200”); uklonjena tvrdnja o razmaku antena od 5 do 20 cm jer proturječi
+  preporuci o visinskoj razlici od 1,5 m; uklonjena napomena o carini za AliExpress.
+- **Uklonjeno na zahtjev:** popisi lokalnih dobavljača, modela filtera, koordinata i
+  vlasnika node-ova te najava uputa za Tailscale most.
 
 ### v3.9.0 — MeshCore tab, nove stranice i nadopune iz zajednice
 Veća nadopuna sadržaja iz zajednice (dokument „Docs addition 2026-10-18"). Činjenice su

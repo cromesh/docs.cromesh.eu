@@ -41,17 +41,18 @@ Za dublji pregled prednosti i mana pojedinog čipa vidi [ESP32](esp32.md),
 | **Seeed XIAO nRF52 + SX1262 kit** (XIAO nRF52840 + Wio-SX1262) | nRF52840 | Štedljiva varijanta, kompaktna i jeftina (oko 15 € s PDV-om), pogodna za solar i routere; nema ugrađen solarni ulaz — solar ide preko vanjskog MPPT-a i BMS-a. Zahtijeva lemljenje B2B/pinova |
 | **Heltec T114 / Mesh Node T114** | nRF52840 | Štedljiv, službeno podržan |
 | **Heltec MeshPocket** | nRF52840 | Kompaktna gotova varijanta |
-| **Heltec T096** | nRF52840 | Dobra štednja baterije; nema WiFi-ja |
+| **Heltec T096** | nRF52840 | Dobra štednja baterije; nema WiFi-ja (Bluetooth 5 LE); SX1262 do 28 dBm i GNSS |
 | **Station G2** | — | ⚠️ Zabilježeni isti problemi "gluhoće" prijema kao Heltec V4 s vanjskim antenama |
-| **SenseCAP Solar Node P1-Pro** | nRF52840 | Gotov solarni node (22 dBm), dostupan kod Seeeda; potvrđeno besprijekorno radi u mreži |
+| **SenseCAP Solar Node P1-Pro** | nRF52840 | Gotov solarni node (XIAO nRF52840 + Wio-SX1262, do 22 dBm), solar 5 W i četiri ćelije 18650 od 3350 mAh u kompletu (verzija P1 dolazi bez baterija); dostupan kod Seeeda; potvrđeno besprijekorno radi u mreži |
+| **Heltec MeshTower V2** | nRF52840 | Gotov solarni outdoor node prema podacima proizvođača: SX1262 do 30 dBm (postoji i opcija 22 dBm), solar 18 V / 10 W, 3 × 2800 mAh, aluminijsko kućište IP66. Provjerenih iskustava zajednice za sada nema, a u grupi su se pojavila upozorenja o kvaliteti |
 
 ### Mobilni / džepni
 
 | Uređaj | Čip | Komentar zajednice |
 |---|---|---|
 | **LILYGO T-Echo / T-Echo Plus** | nRF52840 | E-ink, odličan battery life; Plus verzija: veća baterija, bolja antena, bolji standby. Popularan mobilni uređaj u zajednici; zabilježen domet do 50 km direktno s Medvednice |
-| **Seeed T1000-E (card tracker)** | nRF52840 | Mali tracker; dokazan i kao GPS tracker za kućne ljubimce (custom 3D print nosač). Kratko trajanje baterije (oko 2 dana) i nema ekrana |
-| **Seeed Wio Tracker L1 / L1 Pro** | nRF52840 | GPS tracker; baterija 2000 mAh, može raditi bez mobitela, USB; cijena oko 50 € iz Njemačke; ⚠️ GPS bug u beta firmware-u (ispravljen u alphi) |
+| **Seeed T1000-E (card tracker)** | nRF52840 | Mali tracker; dokazan i kao GPS tracker za kućne ljubimce (custom 3D print nosač). Baterija 700 mAh: oko 2 dana uz GPS i telemetriju (oko 3 dana bez njih, do tjedan dana u power save načinu); nema ekrana |
+| **Seeed Wio Tracker L1 / L1 Pro** | nRF52840 | GPS tracker; verzija L1 Pro ima ugrađenu bateriju od 2000 mAh, može raditi bez mobitela, USB-C; cijena oko 50 € iz Njemačke; ⚠️ GPS bug u beta firmware-u (ispravljen u alphi) |
 | **Elecrow ThinkNode M1** | nRF52840 | GPS + e-paper; mala potrošnja, izdržljiv, prihvatljiva cijena — preporučen kao mobilni node. Pri neuspjelom ažuriranju koristiti web flasher |
 | **LILYGO T-Deck Plus** | ESP32-S3 | Samostalan uređaj s tipkovnicom i ekranom (ne treba mobitel); dostupan i iz EU (DE) skladišta |
 
@@ -79,13 +80,6 @@ Za dublji pregled prednosti i mana pojedinog čipa vidi [ESP32](esp32.md),
   vidi [3D print kućišta](../hardver/3d-print.md).
 - **Kabeli i konektori:** vidi [Antene](../antene/index.md#kabeli-i-konektori). U CroMesh
   zajednici dostupni su i doniraju se sleeve dipoli i pigtaili.
-- **Napomena o carini:** članovi su prijavili da AliExpress od srpnja 2026. naplaćuje
-  carinske troškove EU-a. Kod paketa ispod 150 € primjenjuje se carina.
-
-<!-- TODO: potvrditi trenutna pravila i troškove carine prema službenim izvorima. -->
-<!-- TODO: popis lokalnih dobavljača po kategorijama. -->
-<!-- TODO: provjeriti i uskladiti tablicu uređaja s iskustvima; neke ocjene su iskustva pojedinaca. -->
-<!-- TODO: Heltec MeshTower V2 spominje se u raspravi uz upozorenja o kvaliteti, ali bez provjerenih iskustava, pa nije uključen. -->
 
 > **Napomena:** Prije kupnje "jeftinog čuda" s AliExpressa pitaj u grupi — velika je
 > vjerojatnost da je netko taj točno model već testirao.

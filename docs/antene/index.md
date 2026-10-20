@@ -194,8 +194,6 @@ veze.
   869,525 MHz ± 125 kHz. Komercijalni uređaji imaju takav filter.
 - Provjera lokacije: HAKOM karta baznih stanica.
 
-<!-- TODO: preporučeni model filtera i rezultati mjerenja (član je naručio jeftine band-pass filtere i čeka testiranje). -->
-
 ## Zakonsko ograničenje snage (ERP)
 
 > **Upozorenje:** Zakonski limit u podpojasu koji koristi LongFast je **27 dBm (500 mW)

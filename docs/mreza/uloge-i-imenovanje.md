@@ -41,7 +41,17 @@ uređaja**. Hardver je isti, razlikuje se konfiguracija i način obrade poruka.
   **prije** onoga koji je čuje bolje (ideja je maksimalan domet). Zbog toga na istoj
   lokaciji slabiji unutarnji node može preuzeti promet umjesto jačeg vanjskog.
 
-<!-- NB: tablica iznad navodi CLIENT kao zadanu ulogu i za krovne node-ove; točka o CLIENT_BASE je iskustvo dijela članova. Uskladiti prema službenoj dokumentaciji kad bude potvrđeno. -->
+!!! note "CLIENT ili CLIENT_BASE za fiksni node?"
+    Oba izbora su prihvatljiva. Korisnici CroMesha za fiksni node na krovu ili tavanu
+    preporučuju `CLIENT_BASE`, dok dokumentacija (tablica gore i
+    [službeni Meshtastic članak](https://meshtastic.org/blog/choosing-the-right-device-role/))
+    kao sigurnu zadanu opciju navodi `CLIENT` („when in doubt, simply sticking with Client
+    is a safe bet”).
+
+    Prema službenom članku, `CLIENT_BASE` ima prioritet pri retransmisiji poruka od i prema
+    svojim favoritiziranim node-ovima: za node na tavanu ili krovu postavlja se
+    `CLIENT_BASE`, a ostali tvoji node-ovi (`CLIENT` ili `CLIENT_MUTE`) označavaju se kao
+    favoriti na njemu. Članak ne navodi verziju firmwarea od koje ova uloga postoji.
 
 ### Slučaj: unutarnji node preuzima promet umjesto krovnog
 
@@ -50,8 +60,6 @@ dobitka. Svi traceroute i promet idu kroz unutarnji node.
 
 **Rješenje koje je potvrdila zajednica:** unutarnji node postaviti na `CLIENT_MUTE`.
 Uzrok može biti i to što su ta dva noda međusobno označena kao favoriti.
-
-<!-- TODO: potvrditi ponašanje favorita u kombinaciji s `CLIENT_BASE` u dokumentaciji Meshtastica i navesti verziju firmwarea. -->
 
 ### Fiksna lokacija
 

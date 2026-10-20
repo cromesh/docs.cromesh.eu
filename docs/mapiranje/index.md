@@ -29,7 +29,13 @@ tags:
 - Ako se ne koristi MQTT, privatni kanal s uključenom lokacijom svim članovima kanala
   prikazuje GPS lokaciju noda neovisno o MQTT-u.
 
-<!-- TODO: dodati upute za Store & Forward (radi na ESP32 s 8 MB PSRAM-a uz odgovarajući firmware) i potvrditi hardverske zahtjeve. -->
+## Store & Forward
+
+Prema [službenoj dokumentaciji](https://meshtastic.org/docs/configuration/module/store-and-forward-module/)
+poslužitelj Store & Forward može biti samo **ESP32 uređaj s ugrađenim PSRAM-om** (npr.
+T-Beam noviji od v1.0, T3S3). Minimalna veličina PSRAM-a nije navedena. Opcija „Is server”
+postoji od firmwarea 2.4, a Android i Apple aplikacije moraju biti verzije 2.2.23 ili novije
+za ručno traženje povijesti.
 
 ## Povezano
 

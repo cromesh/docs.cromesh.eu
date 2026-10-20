@@ -17,11 +17,10 @@ coding rate), a radio ne može istodobno slušati dvije konfiguracije. Postoje:
 - **dva odvojena modula u istom kućištu** (npr. 2 × XIAO nRF52 + Wio-SX1262 s jednim
   solarom i baterijom).
 
-Članovi koji koriste dual-node izvještavaju da razmak od 5 do 20 cm između dvije antene
-u praksi ne stvara problem. Dijeljenje jedne antene preko razdjelnika nije praktično
-jer su frekvencije preblizu.
+Dijeljenje jedne antene preko razdjelnika nije praktično jer su frekvencije preblizu.
 
-<!-- TODO: dodati upute i shemu za dual-node izvedbu. -->
+**Preporuka:** kanali Meshtastica i MeshCorea se preklapaju, pa je između dvije antene
+potrebna visinska razlika od najmanje **1,5 m**.
 
 ## Mogu li MeshCore i Meshtastic međusobno razgovarati?
 

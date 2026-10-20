@@ -36,14 +36,34 @@ dokumentaciji.
 - Nakon preduboke ispražnjenosti baterije mogu se promijeniti kratko i dugo ime noda.
 - Heltec V3 može ući u stanje u kojem ne prima poruke, a aplikacija se normalno spaja.
 
-<!-- TODO: potvrditi uzrok resetiranja i gubitka postavki na Heltec V3. -->
+Što je poznato iz rasprava na [Meshtastic forumu](https://meshtastic.discourse.group/t/heltec-v3-random-factory-resets/13769):
+
+- Nasumični reset na tvorničke postavke (gubitak popisa node-ova i konfiguracije) najčešće
+  se javlja na baterijskim i solarnim node-ovima nakon što se baterija isprazni. Sumnja se
+  na pad napona (brownout) i oštećenje flash memorije (LittleFS), a ne na sat ili timer.
+- Prijavljeno na firmwareu od 2.3.4 do 2.5; potvrđeno rješenje ne postoji. Neki su se
+  vratili na 2.3.9 ili 2.3.15 i resetiranja su prestala, ali to nije provjerena popravka.
+- Preporuke iz rasprave: zaštićena baterija i izbjegavanje potpunog pražnjenja. Prema
+  jednom izvještaju, s uključenim dubokim snom i niskom baterijom node može ostati u dubokom
+  snu i oporavlja se tek vanjskim resetom; spominje se i kalibracija ADC multiplikatora
+  baterije, bez koje granica niskog napona ne radi ispravno
+  ([forum](https://meshtastic.discourse.group/t/flash-corruption-power-management-on-heltec-v3/12673)).
 
 ## Aplikacija se ne spaja na Heltec V3 preko Bluetootha
 
 Prijavljeno: spajanje se prekida pri učitavanju nodova i na kraju piše "Could not
-establish a stable connection". Rješenje nije potvrđeno.
+establish a stable connection". Službeno rješenje ne postoji; iz
+[foruma](https://meshtastic.discourse.group/t/bluetooth-going-to-sleep-and-not-reconnecting/14612)
+i [GitHub prijave](https://github.com/meshtastic/firmware/issues/2793) poznato je:
 
-<!-- TODO: dopuniti kad zajednica potvrdi uzrok i rješenje. -->
+- U aplikaciji postavi vezu na „None (disabled)”, pa ponovno odaberi node. Veza se vrati,
+  no kod jednog korisnika opet pada nakon nekoliko minuta.
+- Zaboravi uređaj u sistemskim Bluetooth postavkama i ponovno ga upari (vidi
+  [Aplikacije](aplikacije/index.md#android)).
+- Na ESP32 uređajima uz uključen WiFi Bluetooth može biti neaktivan (prijavljeno na
+  firmwareu 2.7.15).
+- Jedan korisnik prijavio je da je zamjena zavijene Bluetooth antene ravnom žicom duljine
+  2,9 cm znatno povećala domet (neprovjereno).
 
 ## Ažuriranje firmwarea ne uspijeva
 
@@ -60,8 +80,6 @@ Vidi [MeshCore — poznati problemi](meshcore/problemi.md).
 2. Na drugom uređaju uključi **receive** modul. Ako ga ne možeš uključiti, paketi se ipak
    mogu pojaviti u zadanom kanalu kao `seq <broj>`.
 3. Test na prvom uređaju mora biti uključen dovoljno dugo.
-
-<!-- TODO: potvrditi ponašanje prijemne strane. -->
 
 ## Povezano
 

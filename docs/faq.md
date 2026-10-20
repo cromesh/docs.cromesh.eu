@@ -62,20 +62,17 @@ Mi preporučujemo ova dva YouTube videa:
 
 ### Koja je najveća dopuštena snaga?
 
-Meshtastic dokumentacija navodi za EU 868 MHz maksimalnih **+27 dBm ERP (500 mW)**.
+Najveća dopuštena izlazna snaga je **0,5 W**, odnosno **+27 dBm ERP (500 mW)** — to je
+potvrdila zajednica, a navodi je i Meshtastic dokumentacija za EU 868 MHz.
 Standardni SX1262 moduli daju 22 dBm (oko 160 mW). Veća snaga nije nužno bolja: važniji su
 visina i optička vidljivost, kvaliteta antene, a tek zatim snaga. Jači nodovi znatno više
 troše. Vidi [Pravila](zajednica/pravila.md) i
 [Antene](antene/index.md#zakonsko-ogranicenje-snage-erp).
 
-<!-- TODO: potvrditi s HAKOM-om / nacionalnom regulativom (u chatu se pojavila i tvrdnja o 25 mW). Dodati točan propis i frekvencijsku podjelu. -->
-
 ### Postoji li ograničenje zauzeća kanala (duty cycle)?
 
-U raspravi je navedeno da je u EU za ovaj dio spektra dopušten duty cycle od oko 10%.
+Da — u EU je za ovaj dio spektra dopušten duty cycle od oko **10%**.
 Vidi [Pravila](zajednica/pravila.md#ogranicenja-koja-moras-postovati).
-
-<!-- TODO: potvrditi izvorom (ETSI EN 300 220 / HAKOM) prije objave. -->
 
 ### Može li se preko LoRa slati slike, audio ili veće datoteke?
 

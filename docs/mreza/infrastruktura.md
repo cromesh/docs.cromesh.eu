@@ -25,8 +25,6 @@ Petrinjom i Samoborom te povremeno austrijski nodovi i slovenski nodovi.
 Za MeshCore je u prvim testovima iz automobila u zagrebačkom urbanom području prolaznost
 bila mala. Za pouzdan rad u pokretu bit će potrebna veća gustoća repetitora.
 
-<!-- TODO: dodati koordinate i visine postavljenih routera. -->
-
 ## Velebit i Jadran
 
 Tri noda postavljena na Velebitu (među njima Budakovo Brdo). Prvotno su postavljeni za
@@ -40,8 +38,6 @@ Zabilježene udaljenosti:
 - Visoka (Split) – Dugi Rat oko 15 km, odnosno oko 50 km direktno s Medvednice
   prijenosnim uređajem T-Echo.
 
-<!-- TODO: popis imena, koordinata i vlasnika svakog noda uz njihovu suglasnost. -->
-
 ## Slavonija i Podravina
 
 Osijek, Donji Miholjac i Slatina su primarno na MeshCoreu. Neki nodovi su dual
@@ -50,8 +46,6 @@ Osijek, Donji Miholjac i Slatina su primarno na MeshCoreu. Neki nodovi su dual
 ## Ostalo
 
 Lokacije u izgradnji ili u testu: Krk, Rovinj, Pula, Karlovac, Varaždin.
-
-<!-- TODO: uskladiti s popisom nodova i routera članova u Telegram kanalu. -->
 
 ## Povezano
 

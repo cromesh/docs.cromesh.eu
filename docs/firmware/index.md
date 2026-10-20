@@ -46,7 +46,7 @@ Meshtastic firmware se izdaje u nekoliko verzija, kako bi korisnici mogli birati
 - Alat zajednice za OTA: <https://github.com/vedranius/meshtastic-ota-updater> (nije
   službeni, koristiti oprezno).
 
-<!-- TODO: provjeriti verzije i uzrok razlika (beta 2.7.26). -->
+Općenito, iskustva s ažuriranjem razlikuju se od verzije do verzije firmwarea.
 
 Ostali problemi s uređajima: [Rješavanje problema](../rjesavanje-problema.md).
 

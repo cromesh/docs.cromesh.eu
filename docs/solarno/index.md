@@ -44,8 +44,6 @@ paraleli).
 - Za Li-Ion u vanjskim uređajima na suncu i zimi članovi izvještavaju o godinama rada bez
   problema.
 
-<!-- TODO: dodati tablicu preporučenih BMS/punjača (npr. TP4056 moduli) i sheme spajanja. -->
-
 ## Potrošnja
 
 - **nRF52840 + SX1262** (npr. XIAO nRF52 + Wio-SX1262): vrlo štedljiv. Na jednoj bateriji
@@ -74,6 +72,26 @@ pouzdanijim — referentni node na Cepelišu s tom kombinacijom mjesecima ne pad
 > "zablokiranja" nakon dubokog pražnjenja — regulator ne nastavi punjenje povratkom
 > sunca. Ako node zimi "umre", prvo provjeri regulator. Uvjeti pod kojima se to događa
 > još nisu potvrđeni ni dokumentirani od strane zajednice.
+
+### Punjači i zaštita baterije
+
+- **TP4056 i klonovi (npr. CL4056)** su općeniti Li-Ion punjači bez solarnih funkcija, pa ne
+  izvlače maksimum iz panela. Punjači ugrađeni na pločama (npr. TP4054 na Heltec V3) imaju
+  neprovjerenu zaštitu od prekomjernog pražnjenja.
+- **CN3791** je pravi MPPT regulator, dok je CN3163 „MPPT” samo po imenu (smanjuje struju
+  punjenja kako bi napon na ulazu ostao iznad oko 4,4 V). U jednom ispitivanju na forumu
+  CN3791 je punio učinkovitije od RAK Green Power modula i ugrađenih punjača.
+- Većina ćelija 18650 nema zaštitu od podnapona, pa je odvojena zaštitna pločica (BMS)
+  potrebna i kad regulator štiti ulaz s panela.
+- Neki jeftiniji moduli nisu se pouzdano oporavljali nakon potpunog pražnjenja baterije
+  (zabilježeno za Hailege CN3065, a Waveshare D Solar Power Manager imao je problema sa
+  zaštićenim ćelijama). Ako node zimi „umre”, prvo provjeri regulator.
+- Zimi izlaz panela može biti znatno ispod nazivne snage (u jednom mjerenju panel od 4 W nije
+  prelazio 1 W), pa panel treba predimenzionirati.
+
+Izvori: [solarni LoRa node (kaspars.net)](https://kaspars.net/blog/solar-lora-meshtastic),
+[Meshtastic forum: MPPT solarni node](https://meshtastic.discourse.group/t/universal-meshtastic-solar-node-with-mppt/14766).
+Sheme spajanja nisu dodane.
 
 ### Provjerena kombinacija za solarni router
 
