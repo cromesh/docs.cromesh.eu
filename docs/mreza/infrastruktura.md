@@ -40,8 +40,8 @@ Zabilježene udaljenosti:
 
 ## Slavonija i Podravina
 
-Osijek, Donji Miholjac i Slatina su primarno na MeshCoreu. Neki nodovi su dual
-(Meshtastic i MeshCore). Detalji su na [map.meshcore.com.hr](https://map.meshcore.com.hr).
+Osijek, Donji Miholjac i Slatina su primarno na MeshCoreu. Neka mjesta imaju dvostruke
+nodove: dva noda, svaki sa svojim sustavom (jedan Meshtastic, jedan MeshCore). Detalji su na [map.meshcore.com.hr](https://map.meshcore.com.hr).
 
 ## Ostalo
 

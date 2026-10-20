@@ -1,6 +1,6 @@
 ---
 title: Meshtastic i MeshCore zajedno
-description: Mogu li isti uređaj i antena koristiti Meshtastic i MeshCore istodobno, dual-node izvedbe i (ne)mogućnost izravne komunikacije dvaju protokola.
+description: Mogu li isti uređaj i antena koristiti Meshtastic i MeshCore istodobno, izvedbe s dvostrukim nodom i (ne)mogućnost izravne komunikacije dvaju protokola.
 tags:
   - MeshCore
   - Hardware
@@ -26,10 +26,15 @@ potrebna visinska razlika od najmanje **1,5 m**.
 
 **Ne izravno.** Kompatibilni su na fizičkom sloju (LoRa), ali ne na razini protokola.
 Oba protokola su otvorenog koda i mogu raditi na istom LoRa hardveru, ali međusobno nisu
-kompatibilna. Neki nodovi u mreži su dual (Meshtastic + MeshCore) — vidi
+kompatibilna. Neka mjesta u mreži imaju dvostruke nodove (dva noda, na svakom po jedan sustav:
+Meshtastic i MeshCore) — vidi
 [Infrastruktura](../mreza/infrastruktura.md#slavonija-i-podravina).
 
 Pregled razlika: [MeshCore u CroMeshu](index.md).
+
+<figure class="cromesh-doc-photo">
+  <img src="../../assets/images/meshcore-meshtastic-dva-noda.jpg" alt="Dva kućišta nodova montirana jedno uz drugo na istom stupu rukohvata, s antenom" loading="lazy">
+</figure>
 
 ---
 

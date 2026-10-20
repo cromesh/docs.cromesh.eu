@@ -83,7 +83,7 @@ Poznati MeshCore repetitori u Hrvatskoj navedeni su na stranici
 
 **Hrvatska zajednica i alati**
 
-- [MeshCore HR](https://meshcore.com.hr/) — vodič, karta i observeri za Zagreb i okolicu
+- [MeshCore HR](https://meshcore.com.hr/) — vodič, karta uživo i observeri
 - [MeshCore HR karta](https://map.meshcore.com.hr/)
 - [MeshCore karta (globalno)](https://map.meshcore.io)
 - [LetsMesh Analyzer](https://analyzer.letsmesh.net)

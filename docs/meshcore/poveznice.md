@@ -11,8 +11,8 @@ tags:
 
 | Resurs | Adresa | Opis |
 |---|---|---|
-| MeshCore HR | [meshcore.com.hr](https://meshcore.com.hr/) | Hrvatska MeshCore zajednica; vodič, živa karta i observeri za Zagreb i okolicu |
-| MeshCore HR karta | [map.meshcore.com.hr](https://map.meshcore.com.hr/) | Karta MeshCore mreže u Hrvatskoj (Zagreb i okolica) |
+| MeshCore HR | [meshcore.com.hr](https://meshcore.com.hr/) | Hrvatska MeshCore zajednica; vodič, karta uživo i observeri |
+| MeshCore HR karta | [map.meshcore.com.hr](https://map.meshcore.com.hr/) | Karta MeshCore mreže u Hrvatskoj |
 | MeshCore karta (globalno) | [map.meshcore.io](https://map.meshcore.io) | Globalni alat |
 | LetsMesh Analyzer (globalno) | [analyzer.letsmesh.net](https://analyzer.letsmesh.net) | Globalni alat |
 

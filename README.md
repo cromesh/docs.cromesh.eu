@@ -92,7 +92,7 @@ su navedeni uz tekst na stranicama.
   favorita prema službenom Meshtastic članku.
 - **MeshCore:** objašnjene naredbe `loop.detect` i `path.hash.mode` (CLI dokumentacija);
   osnove postavljanja observera; poznato o nestanku kontakata; preporuka visinske
-  razlike od najmanje 1,5 m između dvije antene u dual-node izvedbi.
+  razlike od najmanje 1,5 m između dvije antene u izvedbi s dvostrukim nodom (dva noda, svaki sa svojim sustavom).
 - **Hardver i napajanje:** punjači i zaštita baterije (TP4056, CN3791); ispravna uporaba
   λ/4 dionice, plinskog odvodnika i uzemljenja; dopunjena tablica uređaja (Heltec
   MeshTower V2, podaci o P1-Pro, T1000-E, T096 i Wio Tracker L1 Pro).

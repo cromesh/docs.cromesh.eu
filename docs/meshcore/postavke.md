@@ -133,6 +133,10 @@ Točne korake instalacije i konfiguracije vidi u README datoteci projekta.
 Karte, vodiči i analizatori navedeni su na stranici
 [Poveznice i pravna napomena](poveznice.md).
 
+<figure class="cromesh-doc-photo">
+  <img src="../../assets/images/meshcore-repetitor-solar.jpg" alt="Solarni repetitor na rukohvatu: kućište s antenom i solarni panel" loading="lazy">
+</figure>
+
 ## Poznati problemi
 
 ### Kontakti su nestali iz aplikacije
