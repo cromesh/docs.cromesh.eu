@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Preporučene MeshCore postavke u CroMesh zajednici — radio preset, coding rate, širina path hasha, firmware repetitora i imenovanje repetitora.">
+        <meta name="description" content="Preporučene MeshCore postavke u CroMesh zajednici, usmjeravanje poruka, povezivanje mreže i observeri te poznati problemi.">
       
       
         <meta name="author" content="CroMesh zajednica">
@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://docs.cromesh.eu/meshcore/postavke/">
       
       
-        <link rel="prev" href="../usmjeravanje/">
+        <link rel="prev" href="../">
       
       
         <link rel="next" href="../meshtastic-i-meshcore/">
@@ -1807,12 +1807,6 @@
       
         
       
-        
-      
-        
-      
-        
-      
     
     
     
@@ -1868,34 +1862,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../usmjeravanje/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Usmjeravanje
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -2025,6 +1991,162 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#usmjeravanje-poruka-u-meshcoreu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usmjeravanje poruka u MeshCoreu
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usmjeravanje poruka u MeshCoreu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nacin-usmjeravanja-sazetak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Način usmjeravanja (sažetak)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usporedba-s-meshtasticom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usporedba s Meshtasticom
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#povezivanje-mreze-i-observeri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Povezivanje mreže i observeri
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Povezivanje mreže i observeri">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spajanje-udaljenih-dijelova-mreze" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spajanje udaljenih dijelova mreže
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Observer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Observer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#osnovno-o-postavljanju" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Osnovno o postavljanju
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#koristan-alat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Koristan alat
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#poznati-problemi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Poznati problemi
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Poznati problemi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kontakti-su-nestali-iz-aplikacije" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kontakti su nestali iz aplikacije
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slaba-prolaznost-u-pokretu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slaba prolaznost u pokretu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#povezano" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Povezano
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2049,62 +2171,6 @@
     
   
     Meshtastic i MeshCore
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../povezivanje-i-observeri/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Povezivanje i observeri
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../problemi/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Poznati problemi
   
 
     
@@ -2240,6 +2306,162 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#usmjeravanje-poruka-u-meshcoreu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usmjeravanje poruka u MeshCoreu
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usmjeravanje poruka u MeshCoreu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nacin-usmjeravanja-sazetak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Način usmjeravanja (sažetak)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usporedba-s-meshtasticom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usporedba s Meshtasticom
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#povezivanje-mreze-i-observeri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Povezivanje mreže i observeri
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Povezivanje mreže i observeri">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spajanje-udaljenih-dijelova-mreze" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spajanje udaljenih dijelova mreže
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Observer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Observer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#osnovno-o-postavljanju" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Osnovno o postavljanju
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#koristan-alat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Koristan alat
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#poznati-problemi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Poznati problemi
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Poznati problemi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kontakti-su-nestali-iz-aplikacije" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kontakti su nestali iz aplikacije
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slaba-prolaznost-u-pokretu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slaba prolaznost u pokretu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#povezano" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Povezano
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2271,6 +2493,13 @@
         <a href="../../tags/#tag:meshcore" class="md-tag">MeshCore</a>
       
     
+      
+      
+      
+      
+        <a href="../../tags/#tag:rješavanje-problema" class="md-tag">Rješavanje problema</a>
+      
+    
   </nav>
 
 
@@ -2294,8 +2523,13 @@
 <h1 id="meshcore-postavke-za-cromesh">MeshCore postavke za CroMesh<a class="headerlink" href="#meshcore-postavke-za-cromesh" title="Permanent link">&para;</a></h1>
 <h2 id="preporucene-postavke-za-cromesh">Preporučene postavke za CroMesh<a class="headerlink" href="#preporucene-postavke-za-cromesh" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Radio preset: <strong>EU/UK Narrow</strong>.</li>
-<li>Coding rate: <strong>CR 8</strong> (pri provjeri na repetitoru).</li>
+<li>Radio preset: <strong>EU/UK (Narrow)</strong> — 869,618 MHz, SF8, BW 62,5 kHz, CR 8 (prema popisu
+  presetova koji koristi MeshCore aplikacija; službeni popis je na
+  <a href="https://docs.meshcore.io/radio_presets/">stranici Radio Presets</a>, a preseti su
+  prijedlozi zajednice, ne obveza). Stariji preset „EU/UK (Deprecated)” (869,525 MHz,
+  SF11, BW 250 kHz, CR 5) više se ne preporučuje.</li>
+<li>Coding rate: <strong>CR 8</strong> (provjeriti na repetitoru); službeni primjer naredbe
+  <code>set radio</code> ima zadani CR 5, a dopušten raspon je 5–8.</li>
 <li>Širina path hasha: u zajednici se preporučuje <strong>2 bajta</strong> jer 1 bajt ima samo 256
   mogućih vrijednosti (2 bajta imaju 65 536), pa su kod 1 bajta moguće kolizije. Klijent s 2 bajta može komunicirati s klijentom s
   1 bajtom.</li>
@@ -2349,9 +2583,40 @@ putu hash/ID tog repetitora pojavljuje previše puta:</p>
 </tbody>
 </table>
 <h3 id="velicina-path-hasha-pathhashmode">Veličina path hasha (<code>path.hash.mode</code>)<a class="headerlink" href="#velicina-path-hasha-pathhashmode" title="Permanent link">&para;</a></h3>
-<p><code>set path.hash.mode &lt;0–2&gt;</code>: 0 = 1 bajt (zadano), 1 = 2 bajta, 2 = 3 bajta. Prema
-dokumentaciji, postavka <strong>ne utječe</strong> na veličinu hasha paketa koje taj repetitor
-prosljeđuje; također je dodana u firmwareu 1.14.</p>
+<p><code>set path.hash.mode &lt;0–2&gt;</code>: 0 = 1 bajt (zadano), 1 = 2 bajta, 2 = 3 bajta (vrijednost 3
+je rezervirana i ne smije se koristiti). Prema dokumentaciji, postavka <strong>ne utječe</strong> na
+veličinu hasha paketa koje taj repetitor prosljeđuje; također je dodana u firmwareu 1.14.</p>
+<p>Veći hash znači više jedinstvenih ID-eva, ali manji maksimalni broj skokova (hopova)
+flood paketa:</p>
+<table>
+<thead>
+<tr>
+<th>Veličina hasha</th>
+<th>Jedinstvenih ID-eva</th>
+<th>Maks. flood hopova</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 bajt</td>
+<td>256</td>
+<td>64</td>
+</tr>
+<tr>
+<td>2 bajta</td>
+<td>65 536</td>
+<td>32</td>
+</tr>
+<tr>
+<td>3 bajta</td>
+<td>16 777 216</td>
+<td>21</td>
+</tr>
+</tbody>
+</table>
+<p>Veličinu za poruke i advertove određuje pošiljatelj; u aplikaciji se podešava u
+Eksperimentalnim postavkama (aplikacija 1.41.0 ili novija). Službeni FAQ savjetuje da
+klijenti ostanu na 1 bajtu dok većina obližnjih repetitora ne prijeđe na 1.14+.</p>
 <h2 id="imenovanje-repetitora">Imenovanje repetitora<a class="headerlink" href="#imenovanje-repetitora" title="Permanent link">&para;</a></h2>
 <p>Dogovoreni obrazac za novi repetitor: <code>HR-&lt;OZNAKA GRADA&gt;-&lt;lokacija&gt;</code> (npr.
 <code>HR-ZG-M.Sljeme</code>). Osijek koristi <code>HR OS ...</code>.</p>
@@ -2360,6 +2625,85 @@ prosljeđuje; također je dodana u firmwareu 1.14.</p>
   <img src="../../assets/images/v392-meshcore-sljeme.jpg" alt="Repetitor Base Sljeme na stupu: kućište s antenom i solarni panel" loading="lazy">
 </figure>
 
+<h2 id="usmjeravanje-poruka-u-meshcoreu">Usmjeravanje poruka u MeshCoreu<a class="headerlink" href="#usmjeravanje-poruka-u-meshcoreu" title="Permanent link">&para;</a></h2>
+<h3 id="nacin-usmjeravanja-sazetak">Način usmjeravanja (sažetak)<a class="headerlink" href="#nacin-usmjeravanja-sazetak" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Prva poruka prema nekom kontaktu šalje se kao flood (kroz sve repetitore).</li>
+<li>Pošiljatelj dobiva informaciju o putu kojim je poruka prošla najbrže i pohranjuje ga.</li>
+<li>Sljedeće poruke koriste taj put, do tri pokušaja. Ostali repetitori ne sudjeluju.</li>
+<li>Ako put ne radi, automatski se vraća na flood i ponovno traži novi put (prema službenom
+   FAQ-u zadnji pokušaj se prema zadanim postavkama šalje kao flood; to se može isključiti
+   u postavkama).</li>
+<li>Put prema odredištu ne mora biti isti kao povratni, uključujući ACK.</li>
+</ol>
+<p><strong>Repetitori ne usmjeravaju: rutu određuje node koji šalje.</strong></p>
+<p>Grupni kanali nemaju definiran put pa se uvijek šalju flood-om; administrator repetitora
+može ograničiti flood promet naredbom <code>set flood.max</code>. Klijenti (Companion) ne
+prosljeđuju pakete; prosljeđuju samo repetitori te room serveri s uključenim
+<code>set repeat on</code>. Ograničenje firmwarea je 64 skoka, no u praksi putevi rijetko dolaze
+blizu toga.</p>
+<h3 id="usporedba-s-meshtasticom">Usporedba s Meshtasticom<a class="headerlink" href="#usporedba-s-meshtasticom" title="Permanent link">&para;</a></h3>
+<p>Meshtastic poruke šalje flood-om uz ograničenje hopova (zadano 3), a repetitori ih
+prosljeđuju po pravilima flood-a. MeshCore nakon prvog flood-a pamti put, a repetitori
+prosljeđuju poruku samo ako se nalaze na putu te poruke. Cjelovitu usporedbu vidi na
+stranici <a href="../#kratki-pregled-razlika">MeshCore u CroMeshu</a>.</p>
+<h2 id="povezivanje-mreze-i-observeri">Povezivanje mreže i observeri<a class="headerlink" href="#povezivanje-mreze-i-observeri" title="Permanent link">&para;</a></h2>
+<h3 id="spajanje-udaljenih-dijelova-mreze">Spajanje udaljenih dijelova mreže<a class="headerlink" href="#spajanje-udaljenih-dijelova-mreze" title="Permanent link">&para;</a></h3>
+<p>MeshCore mreža sama po sebi ne koristi MQTT. Za privremeno povezivanje dijelova mreže koristi se <strong>Tailscale VPN
+most</strong> s XIAO ESP32-S3 koji se u mreži ponaša kao običan repetitor.</p>
+<h3 id="observer">Observer<a class="headerlink" href="#observer" title="Permanent link">&para;</a></h3>
+<p>Observer je repetitor spojen preko USB-a na Raspberry Pi koji šalje statistiku na web.
+Preporuka: uređaj s WiFi-jem flashati kao observer kako bi mreža bila vidljiva 24/7.</p>
+<h4 id="osnovno-o-postavljanju">Osnovno o postavljanju<a class="headerlink" href="#osnovno-o-postavljanju" title="Permanent link">&para;</a></h4>
+<p>Prema projektu <a href="https://github.com/Cisien/meshcoretomqtt">meshcoretomqtt</a>:</p>
+<ul>
+<li>Potrebno je računalo koje može pokretati Python 3.11+ (Raspberry Pi Zero, 2, 3 ili 4,
+  ili drugi Linux/macOS uređaj) i repetitor spojen USB-om.</li>
+<li>Repetitor mora imati firmware izgrađen s uključenim bilježenjem paketa
+  (<code>-D MESH_PACKET_LOGGING=1</code>) i jedinstveno ime. Testirane su RAK i Heltec ploče.</li>
+<li>Skripta čita repetitor preko serijskog porta (npr. <code>/dev/ttyACM0</code>) i objavljuje pakete
+  (bez dešifriranja) na MQTT poslužitelje koje postaviš u konfiguraciji; najčešće se šalje
+  na <a href="https://analyzer.letsmesh.net">LetsMesh</a>.</li>
+<li>Prijava na poslužitelj ide korisničkim imenom i lozinkom ili tokenom (token zahtijeva
+  firmware 1.8.0 ili noviji).</li>
+</ul>
+<p>Točne korake instalacije i konfiguracije vidi u README datoteci projekta.</p>
+<h3 id="koristan-alat">Koristan alat<a class="headerlink" href="#koristan-alat" title="Permanent link">&para;</a></h3>
+<p>Karte, vodiči i analizatori navedeni su na stranici
+<a href="../poveznice/">Poveznice i pravna napomena</a>.</p>
+<h2 id="poznati-problemi">Poznati problemi<a class="headerlink" href="#poznati-problemi" title="Permanent link">&para;</a></h2>
+<h3 id="kontakti-su-nestali-iz-aplikacije">Kontakti su nestali iz aplikacije<a class="headerlink" href="#kontakti-su-nestali-iz-aplikacije" title="Permanent link">&para;</a></h3>
+<p>Prijavljeno više puta, uzrok nije utvrđen (aplikacija ili node).</p>
+<p>Što je poznato iz <a href="https://github.com/meshcore-dev/MeshCore/issues/1227">MeshCore repozitorija</a>:</p>
+<ul>
+<li>Lista kontakata ima ograničenje ovisno o uređaju (npr. 350). Kad se popuni, automatsko
+  dodavanje staje i novi se kontakti pojavljuju samo na popisu otkrivenih, osim ako je
+  uključeno prepisivanje najstarijih ("Overwrite Oldest").</li>
+<li>Jedan korisnik prijavio je da su mu nakon nadogradnje favoriti nestali nakon nekoliko
+  dana na ograničenju; uzrok nije potvrđen.</li>
+<li>U CLI dokumentaciji ne postoji naredba za izvoz ili sigurnosnu kopiju kontakata. Privatni
+  ključ (identitet noda) može se pročitati samo preko serijske konzole (<code>get prv.key</code>) i
+  mora ostati tajan; to nije kopija kontakata.</li>
+</ul>
+<h3 id="slaba-prolaznost-u-pokretu">Slaba prolaznost u pokretu<a class="headerlink" href="#slaba-prolaznost-u-pokretu" title="Permanent link">&para;</a></h3>
+<p>U prvim testovima iz automobila u zagrebačkom urbanom području prolaznost MeshCorea
+bila je mala. Za pouzdan rad u pokretu bit će potrebna veća gustoća repetitora — vidi
+<a href="../../mreza/infrastruktura/#zagreb-i-okolica">Infrastruktura</a>.</p>
+<h3 id="povezano">Povezano<a class="headerlink" href="#povezano" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Popravak bootloadera XIAO nRF52 putem MeshCore web flashera:
+  <a href="../../firmware/#poznati-problemi-pri-azuriranju">Firmware</a>.</li>
+<li>Opći problemi s uređajima i vezom: <a href="../../rjesavanje-problema/">Rješavanje problema</a>.</li>
+</ul>
+<hr />
+<div class="admonition info">
+<p class="admonition-title">Napomena o neovisnosti</p>
+<p>docs.cromesh.eu je neovisan projekt i nije povezan s tvrtkom MeshCore Technologies
+Limited niti službenim MeshCore timom; „MeshCore” je naziv njegovih vlasnika. Sadržaj
+se pruža „kakav jest”, bez jamstva, a mjerodavna je službena dokumentacija na
+<a href="https://docs.meshcore.io/">docs.meshcore.io</a>. Cjelovita
+<a href="../poveznice/#napomena-o-neovisnosti-zigu-i-licenci">pravna napomena</a>.</p>
+</div>
 <hr />
 <p><small><em>cromesh.eu i docs.cromesh.eu su neovisni, neslužbeni projekti CroMesh zajednice
 entuzijasta i nisu službeno povezani s niti odobreni od strane Meshtastic LLC.
@@ -2402,7 +2746,7 @@ entuzijasta i nisu službeno povezani s niti odobreni od strane Meshtastic LLC.
       <nav class="md-footer__inner md-grid" aria-label="Podnožje" >
         
           
-          <a href="../usmjeravanje/" class="md-footer__link md-footer__link--prev" aria-label="Prethodno: Usmjeravanje">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Prethodno: MeshCore">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2412,7 +2756,7 @@ entuzijasta i nisu službeno povezani s niti odobreni od strane Meshtastic LLC.
                 Prethodno
               </span>
               <div class="md-ellipsis">
-                Usmjeravanje
+                MeshCore
               </div>
             </div>
           </a>

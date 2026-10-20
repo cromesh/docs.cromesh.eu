@@ -18,7 +18,7 @@
         <link rel="prev" href="../mreza/infrastruktura/">
       
       
-        <link rel="next" href="usmjeravanje/">
+        <link rel="next" href="postavke/">
       
       
         
@@ -1807,12 +1807,6 @@
       
         
       
-        
-      
-        
-      
-        
-      
     
     
     
@@ -1877,34 +1871,6 @@
   
   
     <li class="md-nav__item">
-      <a href="usmjeravanje/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Usmjeravanje
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="postavke/" class="md-nav__link">
         
   
@@ -1941,62 +1907,6 @@
     
   
     Meshtastic i MeshCore
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="povezivanje-i-observeri/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Povezivanje i observeri
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="problemi/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Poznati problemi
   
 
     
@@ -2115,6 +2025,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#poveznice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Poveznice
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2212,7 +2133,7 @@ predvidljivija mreža, ali uz potrebu za pažljivijim planiranjem pokrivenosti r
 <tr>
 <td>MQTT</td>
 <td>Uplink na kartu i nadzor</td>
-<td>Nema MQTT-a (mreža je namijenjena radu bez interneta)</td>
+<td>Nema ugrađenog MQTT-a (mreža radi bez interneta); observeri mogu slati pakete na MQTT, vidi <a href="postavke/#povezivanje-mreze-i-observeri">Povezivanje i observeri</a></td>
 </tr>
 <tr>
 <td>Hardver</td>
@@ -2229,13 +2150,12 @@ Dokumentacija ostaje neutralna.</p>
 </blockquote>
 <h2 id="sto-se-nalazi-u-ovom-tabu">Što se nalazi u ovom tabu<a class="headerlink" href="#sto-se-nalazi-u-ovom-tabu" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong><a href="usmjeravanje/">Usmjeravanje</a></strong> — kako MeshCore pronalazi i pamti put poruke</li>
-<li><strong><a href="postavke/">Postavke</a></strong> — preporučene postavke za CroMesh i imenovanje repetitora</li>
+<li><strong><a href="postavke/">Postavke</a></strong> — preporučene postavke za CroMesh i imenovanje repetitora,
+  <a href="postavke/#usmjeravanje-poruka-u-meshcoreu">usmjeravanje poruka</a>,
+  <a href="postavke/#povezivanje-mreze-i-observeri">povezivanje mreže i observeri</a> te
+  <a href="postavke/#poznati-problemi">poznati problemi</a></li>
 <li><strong><a href="meshtastic-i-meshcore/">Meshtastic i MeshCore</a></strong> — rad oba protokola na istom
   uređaju i (ne)mogućnost međusobne komunikacije</li>
-<li><strong><a href="povezivanje-i-observeri/">Povezivanje i observeri</a></strong> — spajanje udaljenih dijelova
-  mreže i observeri</li>
-<li><strong><a href="problemi/">Poznati problemi</a></strong></li>
 <li><strong><a href="poveznice/">Poveznice i pravna napomena</a></strong> — MeshCore HR, karte, alati, licenca</li>
 </ul>
 <p>Poznati MeshCore repetitori u Hrvatskoj navedeni su na stranici
@@ -2244,10 +2164,37 @@ Dokumentacija ostaje neutralna.</p>
 <p>Pravna napomena o neovisnosti, žigu i licenci nalazi se na stranici
 <a href="poveznice/#napomena-o-neovisnosti-zigu-i-licenci">Poveznice i pravna napomena</a>.</p>
 </blockquote>
+<h2 id="poveznice">Poveznice<a class="headerlink" href="#poveznice" title="Permanent link">&para;</a></h2>
+<p><strong>Službeni izvori</strong></p>
+<ul>
+<li><a href="https://meshcore.io">meshcore.io</a> — službena stranica projekta</li>
+<li><a href="https://docs.meshcore.io/">MeshCore dokumentacija</a> — službena dokumentacija</li>
+<li><a href="https://docs.meshcore.io/faq/">FAQ</a> — usmjeravanje, repetitori, veličina path hasha</li>
+<li><a href="https://docs.meshcore.io/cli_commands/">CLI naredbe</a> — <code>loop.detect</code>, <code>path.hash.mode</code>, <code>set radio</code></li>
+<li><a href="https://docs.meshcore.io/radio_presets/">Radio presetovi</a></li>
+<li><a href="https://github.com/meshcore-dev/MeshCore">MeshCore na GitHubu</a> — izvorni kod i prijave grešaka</li>
+</ul>
+<p><strong>Hrvatska zajednica i alati</strong></p>
+<ul>
+<li><a href="https://meshcore.com.hr/">MeshCore HR</a> — vodič, karta i observeri za Zagreb i okolicu</li>
+<li><a href="https://map.meshcore.com.hr/">MeshCore HR karta</a></li>
+<li><a href="https://map.meshcore.io">MeshCore karta (globalno)</a></li>
+<li><a href="https://analyzer.letsmesh.net">LetsMesh Analyzer</a></li>
+</ul>
+<p>Potpuni popis s opisima: <a href="poveznice/">Poveznice i pravna napomena</a>.</p>
 <figure class="cromesh-doc-photo">
   <img src="../assets/images/v392-meshcore.jpg" alt="Unutrašnjost kućišta solarnog repetitora: XIAO nRF52840, dvije ćelije 18650 sa zaštitnom pločicom i modul za punjenje" loading="lazy">
 </figure>
 
+<hr />
+<div class="admonition info">
+<p class="admonition-title">Napomena o neovisnosti</p>
+<p>docs.cromesh.eu je neovisan projekt i nije povezan s tvrtkom MeshCore Technologies
+Limited niti službenim MeshCore timom; „MeshCore” je naziv njegovih vlasnika. Sadržaj
+se pruža „kakav jest”, bez jamstva, a mjerodavna je službena dokumentacija na
+<a href="https://docs.meshcore.io/">docs.meshcore.io</a>. Cjelovita
+<a href="poveznice/#napomena-o-neovisnosti-zigu-i-licenci">pravna napomena</a>.</p>
+</div>
 <hr />
 <p><small><em>cromesh.eu i docs.cromesh.eu su neovisni, neslužbeni projekti CroMesh zajednice
 entuzijasta i nisu službeno povezani s niti odobreni od strane Meshtastic LLC.
@@ -2307,13 +2254,13 @@ entuzijasta i nisu službeno povezani s niti odobreni od strane Meshtastic LLC.
         
         
           
-          <a href="usmjeravanje/" class="md-footer__link md-footer__link--next" aria-label="Sljedeće: Usmjeravanje">
+          <a href="postavke/" class="md-footer__link md-footer__link--next" aria-label="Sljedeće: Postavke">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Sljedeće
               </span>
               <div class="md-ellipsis">
-                Usmjeravanje
+                Postavke
               </div>
             </div>
             <div class="md-footer__button md-icon">
