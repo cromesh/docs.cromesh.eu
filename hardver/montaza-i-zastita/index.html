@@ -2335,12 +2335,28 @@
 <li>Najjednostavnija i najjeftinija zaštita od statike je <strong>λ/4 kratkospojna dionica</strong>
   (T-konektor i komad koaksijalnog kabela od λ/4, kratko spojen na kraju). DC ne prolazi,
   RF prolazi. Radi samo ako je masa dobro uzemljena.</li>
-<li><strong>Od izravnog udara munje ne štiti ništa.</strong></li>
+<li><strong>Od izravnog udara munje ne štiti ništa.</strong> Odvodnik prenapona i λ/4 dionica štite od
+  prenapona i statike koje munja ili vjetar induciraju u kabelu, a ne od izravnog udara.</li>
 <li>Preporuka člana s iskustvom: za pouzdanost nužna je velika površina uzemljenja.</li>
+<li>Kvarovi zbog statike u node-ovima u plastičnim kutijama događaju se povremeno.</li>
 </ul>
-<!-- TODO: provjeriti tvrdnje o površini uzemljenja i komercijalnim gromobranima (npr. RF lightning arrestor) s autorom/izvorom. -->
-<!-- TODO: stvarna učestalost kvarova zbog statike u nodovima u plastičnim kutijama (pitanje je u chatu ostalo bez potvrđenog odgovora). -->
-
+<p><strong>Ispravna uporaba (prema stručnim izvorima):</strong></p>
+<ul>
+<li><strong>λ/4 dionica je ugođena na jednu frekvenciju:</strong> proizvođači je izrađuju za radnu frekvenciju
+  i propušta samo uski pojas oko nje (oko ±5%). Za Meshtastic mora biti izrađena za
+  868–869,5 MHz. Za istosmjerne signale je potpuni kratki spoj prema masi, pa radi samo ako
+  je sustav ispravno uzemljen. Nije za vodove kojima teče istosmjerni napon.</li>
+<li><strong>Plinski odvodnik prenapona</strong> postavlja se na mjestu gdje kabel ulazi u zgradu, prije
+  uređaja, i mora imati vlastiti kratak spoj na zajedničko uzemljenje (oplet kabela, kućište
+  i uzemljenje spojeni u jednoj točki). Nakon udara može biti potrošen i treba ga zamijeniti.</li>
+<li><strong>Uzemljenje treba imati nizak otpor.</strong> Profesionalne instalacije stupova navode više
+  uzemljivača (npr. četiri šipke u prstenu oko stupa) i otpor ispod 5–10 Ω, uz provjeru pri
+  postavljanju i jednom godišnje. To potkrjepljuje preporuku o velikoj površini uzemljenja.</li>
+<li>Hvataljku (gromobran) treba postaviti iznad najviše antene, tako da udar presretne ona, a
+  ne antena. Ne montiraj node izravno na gromobransku instalaciju.</li>
+</ul>
+<p>Izvori: <a href="https://rfessentials.com/rf-knowledge-base/what-is-the-recommended-lightning-protection-approach-for-a-tower-mounted-antenn/">RF Essentials — lightning protection</a>,
+<a href="https://www.pcs-electronics.com/it/shop/antennas-cable-connectors/broadcasting-antenna-accessories/lightning-protection-resonant-1-4-wave-grounding-stubs/">PCS Electronics — λ/4 grounding stubs</a>.</p>
 <h2 id="pozicioniranje">Pozicioniranje<a class="headerlink" href="#pozicioniranje" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Presudni su <strong>visina i linija optičke vidljivosti</strong> — metar više na stupu zna donijeti

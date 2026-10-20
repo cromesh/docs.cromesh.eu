@@ -2040,6 +2040,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Observer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#osnovno-o-postavljanju" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Osnovno o postavljanju
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2171,6 +2188,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Observer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#osnovno-o-postavljanju" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Osnovno o postavljanju
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2239,13 +2273,23 @@
 <h2 id="spajanje-udaljenih-dijelova-mreze">Spajanje udaljenih dijelova mreže<a class="headerlink" href="#spajanje-udaljenih-dijelova-mreze" title="Permanent link">&para;</a></h2>
 <p>MeshCore nema MQTT. Za privremeno povezivanje dijelova mreže koristi se <strong>Tailscale VPN
 most</strong> s XIAO ESP32-S3 koji se u mreži ponaša kao običan repetitor.</p>
-<!-- TODO: priložiti upute (u chatu postoji PDF `MeshCore-Tailscale-Bridge_upute.pdf`) i osigurati dopuštenje autora. -->
-
 <h2 id="observer">Observer<a class="headerlink" href="#observer" title="Permanent link">&para;</a></h2>
 <p>Observer je repetitor spojen preko USB-a na Raspberry Pi koji šalje statistiku na web.
 Preporuka: uređaj s WiFi-jem flashati kao observer kako bi mreža bila vidljiva 24/7.</p>
-<!-- TODO: upute za postavljanje observera. -->
-
+<h3 id="osnovno-o-postavljanju">Osnovno o postavljanju<a class="headerlink" href="#osnovno-o-postavljanju" title="Permanent link">&para;</a></h3>
+<p>Prema projektu <a href="https://github.com/Cisien/meshcoretomqtt">meshcoretomqtt</a>:</p>
+<ul>
+<li>Potrebno je računalo koje može pokretati Python 3.11+ (Raspberry Pi Zero, 2, 3 ili 4,
+  ili drugi Linux/macOS uređaj) i repetitor spojen USB-om.</li>
+<li>Repetitor mora imati firmware izgrađen s uključenim bilježenjem paketa
+  (<code>-D MESH_PACKET_LOGGING=1</code>) i jedinstveno ime. Testirane su RAK i Heltec ploče.</li>
+<li>Skripta čita repetitor preko serijskog porta (npr. <code>/dev/ttyACM0</code>) i objavljuje pakete
+  (bez dešifriranja) na MQTT poslužitelje koje postaviš u konfiguraciji; najčešće se šalje
+  na <a href="https://analyzer.letsmesh.net">LetsMesh</a>.</li>
+<li>Prijava na poslužitelj ide korisničkim imenom i lozinkom ili tokenom (token zahtijeva
+  firmware 1.8.0 ili noviji).</li>
+</ul>
+<p>Točne korake instalacije i konfiguracije vidi u README datoteci projekta.</p>
 <h2 id="koristan-alat">Koristan alat<a class="headerlink" href="#koristan-alat" title="Permanent link">&para;</a></h2>
 <p>Karte, vodiči i analizatori navedeni su na stranici
 <a href="../poveznice/">Poveznice i pravna napomena</a>.</p>

@@ -2369,13 +2369,34 @@ dokumentaciji.</p>
 <li>Nakon preduboke ispražnjenosti baterije mogu se promijeniti kratko i dugo ime noda.</li>
 <li>Heltec V3 može ući u stanje u kojem ne prima poruke, a aplikacija se normalno spaja.</li>
 </ul>
-<!-- TODO: potvrditi uzrok resetiranja i gubitka postavki na Heltec V3. -->
-
+<p>Što je poznato iz rasprava na <a href="https://meshtastic.discourse.group/t/heltec-v3-random-factory-resets/13769">Meshtastic forumu</a>:</p>
+<ul>
+<li>Nasumični reset na tvorničke postavke (gubitak popisa node-ova i konfiguracije) najčešće
+  se javlja na baterijskim i solarnim node-ovima nakon što se baterija isprazni. Sumnja se
+  na pad napona (brownout) i oštećenje flash memorije (LittleFS), a ne na sat ili timer.</li>
+<li>Prijavljeno na firmwareu od 2.3.4 do 2.5; potvrđeno rješenje ne postoji. Neki su se
+  vratili na 2.3.9 ili 2.3.15 i resetiranja su prestala, ali to nije provjerena popravka.</li>
+<li>Preporuke iz rasprave: zaštićena baterija i izbjegavanje potpunog pražnjenja. Prema
+  jednom izvještaju, s uključenim dubokim snom i niskom baterijom node može ostati u dubokom
+  snu i oporavlja se tek vanjskim resetom; spominje se i kalibracija ADC multiplikatora
+  baterije, bez koje granica niskog napona ne radi ispravno
+  (<a href="https://meshtastic.discourse.group/t/flash-corruption-power-management-on-heltec-v3/12673">forum</a>).</li>
+</ul>
 <h2 id="aplikacija-se-ne-spaja-na-heltec-v3-preko-bluetootha">Aplikacija se ne spaja na Heltec V3 preko Bluetootha<a class="headerlink" href="#aplikacija-se-ne-spaja-na-heltec-v3-preko-bluetootha" title="Permanent link">&para;</a></h2>
 <p>Prijavljeno: spajanje se prekida pri učitavanju nodova i na kraju piše "Could not
-establish a stable connection". Rješenje nije potvrđeno.</p>
-<!-- TODO: dopuniti kad zajednica potvrdi uzrok i rješenje. -->
-
+establish a stable connection". Službeno rješenje ne postoji; iz
+<a href="https://meshtastic.discourse.group/t/bluetooth-going-to-sleep-and-not-reconnecting/14612">foruma</a>
+i <a href="https://github.com/meshtastic/firmware/issues/2793">GitHub prijave</a> poznato je:</p>
+<ul>
+<li>U aplikaciji postavi vezu na „None (disabled)”, pa ponovno odaberi node. Veza se vrati,
+  no kod jednog korisnika opet pada nakon nekoliko minuta.</li>
+<li>Zaboravi uređaj u sistemskim Bluetooth postavkama i ponovno ga upari (vidi
+  <a href="../aplikacije/#android">Aplikacije</a>).</li>
+<li>Na ESP32 uređajima uz uključen WiFi Bluetooth može biti neaktivan (prijavljeno na
+  firmwareu 2.7.15).</li>
+<li>Jedan korisnik prijavio je da je zamjena zavijene Bluetooth antene ravnom žicom duljine
+  2,9 cm znatno povećala domet (neprovjereno).</li>
+</ul>
 <h2 id="azuriranje-firmwarea-ne-uspijeva">Ažuriranje firmwarea ne uspijeva<a class="headerlink" href="#azuriranje-firmwarea-ne-uspijeva" title="Permanent link">&para;</a></h2>
 <p>OTA bootloader, WiFi OTA, web flasher za XIAO nRF52 i iskustva s betom 2.7.26 opisani su
 na stranici <a href="../firmware/#poznati-problemi-pri-azuriranju">Firmware — poznati problemi pri ažuriranju</a>.</p>
@@ -2388,8 +2409,6 @@ na stranici <a href="../firmware/#poznati-problemi-pri-azuriranju">Firmware — 
    mogu pojaviti u zadanom kanalu kao <code>seq &lt;broj&gt;</code>.</li>
 <li>Test na prvom uređaju mora biti uključen dovoljno dugo.</li>
 </ol>
-<!-- TODO: potvrditi ponašanje prijemne strane. -->
-
 <h2 id="povezano">Povezano<a class="headerlink" href="#povezano" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../faq/">Česta pitanja</a> — poruke i potvrde isporuke, karta i MQTT</li>

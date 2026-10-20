@@ -2417,15 +2417,23 @@ uređaja</strong>. Hardver je isti, razlikuje se konfiguracija i način obrade p
   <strong>prije</strong> onoga koji je čuje bolje (ideja je maksimalan domet). Zbog toga na istoj
   lokaciji slabiji unutarnji node može preuzeti promet umjesto jačeg vanjskog.</li>
 </ul>
-<!-- NB: tablica iznad navodi CLIENT kao zadanu ulogu i za krovne node-ove; točka o CLIENT_BASE je iskustvo dijela članova. Uskladiti prema službenoj dokumentaciji kad bude potvrđeno. -->
-
+<div class="admonition note">
+<p class="admonition-title">CLIENT ili CLIENT_BASE za fiksni node?</p>
+<p>Oba izbora su prihvatljiva. Korisnici CroMesha za fiksni node na krovu ili tavanu
+preporučuju <code>CLIENT_BASE</code>, dok dokumentacija (tablica gore i
+<a href="https://meshtastic.org/blog/choosing-the-right-device-role/">službeni Meshtastic članak</a>)
+kao sigurnu zadanu opciju navodi <code>CLIENT</code> („when in doubt, simply sticking with Client
+is a safe bet”).</p>
+<p>Prema službenom članku, <code>CLIENT_BASE</code> ima prioritet pri retransmisiji poruka od i prema
+svojim favoritiziranim node-ovima: za node na tavanu ili krovu postavlja se
+<code>CLIENT_BASE</code>, a ostali tvoji node-ovi (<code>CLIENT</code> ili <code>CLIENT_MUTE</code>) označavaju se kao
+favoriti na njemu. Članak ne navodi verziju firmwarea od koje ova uloga postoji.</p>
+</div>
 <h3 id="slucaj-unutarnji-node-preuzima-promet-umjesto-krovnog">Slučaj: unutarnji node preuzima promet umjesto krovnog<a class="headerlink" href="#slucaj-unutarnji-node-preuzima-promet-umjesto-krovnog" title="Permanent link">&para;</a></h3>
 <p>Dva noda na istoj adresi: slabiji unutar zgrade i krovni solarni node s antenom većeg
 dobitka. Svi traceroute i promet idu kroz unutarnji node.</p>
 <p><strong>Rješenje koje je potvrdila zajednica:</strong> unutarnji node postaviti na <code>CLIENT_MUTE</code>.
 Uzrok može biti i to što su ta dva noda međusobno označena kao favoriti.</p>
-<!-- TODO: potvrditi ponašanje favorita u kombinaciji s `CLIENT_BASE` u dokumentaciji Meshtastica i navesti verziju firmwarea. -->
-
 <h3 id="fiksna-lokacija">Fiksna lokacija<a class="headerlink" href="#fiksna-lokacija" title="Permanent link">&para;</a></h3>
 <p>Za fiksne nodove postavi fiksnu lokaciju (ako nema GPS-a, može se koristiti lokacija
 mobitela).</p>

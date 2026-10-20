@@ -2275,7 +2275,7 @@ rješenje".</p>
 <tr>
 <td><strong>Heltec T096</strong></td>
 <td>nRF52840</td>
-<td>Dobra štednja baterije; nema WiFi-ja</td>
+<td>Dobra štednja baterije; nema WiFi-ja (Bluetooth 5 LE); SX1262 do 28 dBm i GNSS</td>
 </tr>
 <tr>
 <td><strong>Station G2</strong></td>
@@ -2285,7 +2285,12 @@ rješenje".</p>
 <tr>
 <td><strong>SenseCAP Solar Node P1-Pro</strong></td>
 <td>nRF52840</td>
-<td>Gotov solarni node (22 dBm), dostupan kod Seeeda; potvrđeno besprijekorno radi u mreži</td>
+<td>Gotov solarni node (XIAO nRF52840 + Wio-SX1262, do 22 dBm), solar 5 W i četiri ćelije 18650 od 3350 mAh u kompletu (verzija P1 dolazi bez baterija); dostupan kod Seeeda; potvrđeno besprijekorno radi u mreži</td>
+</tr>
+<tr>
+<td><strong>Heltec MeshTower V2</strong></td>
+<td>nRF52840</td>
+<td>Gotov solarni outdoor node prema podacima proizvođača: SX1262 do 30 dBm (postoji i opcija 22 dBm), solar 18 V / 10 W, 3 × 2800 mAh, aluminijsko kućište IP66. Provjerenih iskustava zajednice za sada nema, a u grupi su se pojavila upozorenja o kvaliteti</td>
 </tr>
 </tbody>
 </table>
@@ -2307,12 +2312,12 @@ rješenje".</p>
 <tr>
 <td><strong>Seeed T1000-E (card tracker)</strong></td>
 <td>nRF52840</td>
-<td>Mali tracker; dokazan i kao GPS tracker za kućne ljubimce (custom 3D print nosač). Kratko trajanje baterije (oko 2 dana) i nema ekrana</td>
+<td>Mali tracker; dokazan i kao GPS tracker za kućne ljubimce (custom 3D print nosač). Baterija 700 mAh: oko 2 dana uz GPS i telemetriju (oko 3 dana bez njih, do tjedan dana u power save načinu); nema ekrana</td>
 </tr>
 <tr>
 <td><strong>Seeed Wio Tracker L1 / L1 Pro</strong></td>
 <td>nRF52840</td>
-<td>GPS tracker; baterija 2000 mAh, može raditi bez mobitela, USB; cijena oko 50 € iz Njemačke; ⚠️ GPS bug u beta firmware-u (ispravljen u alphi)</td>
+<td>GPS tracker; verzija L1 Pro ima ugrađenu bateriju od 2000 mAh, može raditi bez mobitela, USB-C; cijena oko 50 € iz Njemačke; ⚠️ GPS bug u beta firmware-u (ispravljen u alphi)</td>
 </tr>
 <tr>
 <td><strong>Elecrow ThinkNode M1</strong></td>
@@ -2351,14 +2356,7 @@ proizvodnje Helteca je po iskustvima članova promjenjiva.</p>
   vidi <a href="../hardver/3d-print/">3D print kućišta</a>.</li>
 <li><strong>Kabeli i konektori:</strong> vidi <a href="../antene/#kabeli-i-konektori">Antene</a>. U CroMesh
   zajednici dostupni su i doniraju se sleeve dipoli i pigtaili.</li>
-<li><strong>Napomena o carini:</strong> članovi su prijavili da AliExpress od srpnja 2026. naplaćuje
-  carinske troškove EU-a. Kod paketa ispod 150 € primjenjuje se carina.</li>
 </ul>
-<!-- TODO: potvrditi trenutna pravila i troškove carine prema službenim izvorima. -->
-<!-- TODO: popis lokalnih dobavljača po kategorijama. -->
-<!-- TODO: provjeriti i uskladiti tablicu uređaja s iskustvima; neke ocjene su iskustva pojedinaca. -->
-<!-- TODO: Heltec MeshTower V2 spominje se u raspravi uz upozorenja o kvaliteti, ali bez provjerenih iskustava, pa nije uključen. -->
-
 <blockquote>
 <p><strong>Napomena:</strong> Prije kupnje "jeftinog čuda" s AliExpressa pitaj u grupi — velika je
 vjerojatnost da je netko taj točno model već testirao.</p>

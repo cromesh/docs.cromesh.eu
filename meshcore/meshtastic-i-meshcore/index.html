@@ -2222,11 +2222,9 @@ coding rate), a radio ne može istodobno slušati dvije konfiguracije. Postoje:<
 <li><strong>dva odvojena modula u istom kućištu</strong> (npr. 2 × XIAO nRF52 + Wio-SX1262 s jednim
   solarom i baterijom).</li>
 </ul>
-<p>Članovi koji koriste dual-node izvještavaju da razmak od 5 do 20 cm između dvije antene
-u praksi ne stvara problem. Dijeljenje jedne antene preko razdjelnika nije praktično
-jer su frekvencije preblizu.</p>
-<!-- TODO: dodati upute i shemu za dual-node izvedbu. -->
-
+<p>Dijeljenje jedne antene preko razdjelnika nije praktično jer su frekvencije preblizu.</p>
+<p><strong>Preporuka:</strong> kanali Meshtastica i MeshCorea se preklapaju, pa je između dvije antene
+potrebna visinska razlika od najmanje <strong>1,5 m</strong>.</p>
 <h2 id="mogu-li-meshcore-i-meshtastic-meusobno-razgovarati">Mogu li MeshCore i Meshtastic međusobno razgovarati?<a class="headerlink" href="#mogu-li-meshcore-i-meshtastic-meusobno-razgovarati" title="Permanent link">&para;</a></h2>
 <p><strong>Ne izravno.</strong> Kompatibilni su na fizičkom sloju (LoRa), ali ne na razini protokola.
 Oba protokola su otvorenog koda i mogu raditi na istom LoRa hardveru, ali međusobno nisu

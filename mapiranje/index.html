@@ -1664,6 +1664,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#store-forward" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Store &amp; Forward
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#povezano" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2174,6 +2185,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#store-forward" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Store &amp; Forward
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#povezano" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2287,8 +2309,12 @@
 <li>Ako se ne koristi MQTT, privatni kanal s uključenom lokacijom svim članovima kanala
   prikazuje GPS lokaciju noda neovisno o MQTT-u.</li>
 </ul>
-<!-- TODO: dodati upute za Store & Forward (radi na ESP32 s 8 MB PSRAM-a uz odgovarajući firmware) i potvrditi hardverske zahtjeve. -->
-
+<h2 id="store-forward">Store &amp; Forward<a class="headerlink" href="#store-forward" title="Permanent link">&para;</a></h2>
+<p>Prema <a href="https://meshtastic.org/docs/configuration/module/store-and-forward-module/">službenoj dokumentaciji</a>
+poslužitelj Store &amp; Forward može biti samo <strong>ESP32 uređaj s ugrađenim PSRAM-om</strong> (npr.
+T-Beam noviji od v1.0, T3S3). Minimalna veličina PSRAM-a nije navedena. Opcija „Is server”
+postoji od firmwarea 2.4, a Android i Apple aplikacije moraju biti verzije 2.2.23 ili novije
+za ručno traženje povijesti.</p>
 <h2 id="povezano">Povezano<a class="headerlink" href="#povezano" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../mqtt/">MQTT i karta</a> — postavke i uvjeti za prikaz na karti</li>

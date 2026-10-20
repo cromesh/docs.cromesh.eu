@@ -1973,6 +1973,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Preporučene postavke za CroMesh">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detekcija-petlji-loopdetect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detekcija petlji (loop.detect)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#velicina-path-hasha-pathhashmode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Veličina path hasha (path.hash.mode)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2149,6 +2177,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Preporučene postavke za CroMesh">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detekcija-petlji-loopdetect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detekcija petlji (loop.detect)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#velicina-path-hasha-pathhashmode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Veličina path hasha (path.hash.mode)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2218,8 +2274,8 @@
 <ul>
 <li>Radio preset: <strong>EU/UK Narrow</strong>.</li>
 <li>Coding rate: <strong>CR 8</strong> (pri provjeri na repetitoru).</li>
-<li>Širina path hasha: u zajednici se preporučuje <strong>2 bajta</strong> jer 1 bajt ima samo oko 1200
-  kombinacija pa su moguće kolizije. Klijent s 2 bajta može komunicirati s klijentom s
+<li>Širina path hasha: u zajednici se preporučuje <strong>2 bajta</strong> jer 1 bajt ima samo 256
+  mogućih vrijednosti (2 bajta imaju 65 536), pa su kod 1 bajta moguće kolizije. Klijent s 2 bajta može komunicirati s klijentom s
   1 bajtom.</li>
 <li>Firmware repetitora: <strong>1.14 ili noviji</strong>. Stariji od 1.14 ne razumiju multi-bajt path
   hash i ispuštaju 2- i 3-bajtne pakete.</li>
@@ -2228,13 +2284,55 @@
 <li>Preporuka jednog člana: na repetitorima uključiti <code>set loop.detect moderate</code> kako se
   ista poruka ne bi ponovno prosljeđivala.</li>
 </ul>
-<!-- TODO: potvrditi `loop.detect` i značenje "dropanja" pri različitim firmware verzijama (u raspravi postoji neslaganje). -->
-
+<h3 id="detekcija-petlji-loopdetect">Detekcija petlji (<code>loop.detect</code>)<a class="headerlink" href="#detekcija-petlji-loopdetect" title="Permanent link">&para;</a></h3>
+<p>Prema <a href="https://docs.meshcore.io/cli_commands/">MeshCore CLI dokumentaciji</a> naredba
+<code>set loop.detect &lt;stanje&gt;</code> prihvaća <code>off</code>, <code>minimal</code>, <code>moderate</code> i <code>strict</code>. Zadano je
+<code>off</code>, a značajka je dodana u firmwareu <strong>1.14</strong>. „Dropanje” znači da repetitor <strong>odbija</strong>
+(ne prosljeđuje dalje) flood pakete koji izgledaju kao da su u petlji, odnosno u čijem se
+putu hash/ID tog repetitora pojavljuje previše puta:</p>
+<table>
+<thead>
+<tr>
+<th>Stanje</th>
+<th>1-bajtni hash</th>
+<th>2-bajtni hash</th>
+<th>3-bajtni hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>off</code></td>
+<td>bez detekcije</td>
+<td>bez detekcije</td>
+<td>bez detekcije</td>
+</tr>
+<tr>
+<td><code>minimal</code></td>
+<td>4 ili više puta</td>
+<td>2 ili više puta</td>
+<td>1 ili više puta</td>
+</tr>
+<tr>
+<td><code>moderate</code></td>
+<td>2 ili više puta</td>
+<td>1 ili više puta</td>
+<td>1 ili više puta</td>
+</tr>
+<tr>
+<td><code>strict</code></td>
+<td>1 ili više puta</td>
+<td>1 ili više puta</td>
+<td>1 ili više puta</td>
+</tr>
+</tbody>
+</table>
+<h3 id="velicina-path-hasha-pathhashmode">Veličina path hasha (<code>path.hash.mode</code>)<a class="headerlink" href="#velicina-path-hasha-pathhashmode" title="Permanent link">&para;</a></h3>
+<p><code>set path.hash.mode &lt;0–2&gt;</code>: 0 = 1 bajt (zadano), 1 = 2 bajta, 2 = 3 bajta. Prema
+dokumentaciji, postavka <strong>ne utječe</strong> na veličinu hasha paketa koje taj repetitor
+prosljeđuje; također je dodana u firmwareu 1.14.</p>
 <h2 id="imenovanje-repetitora">Imenovanje repetitora<a class="headerlink" href="#imenovanje-repetitora" title="Permanent link">&para;</a></h2>
 <p>Dogovoreni obrazac za novi repetitor: <code>HR-&lt;OZNAKA GRADA&gt;-&lt;lokacija&gt;</code> (npr.
 <code>HR-ZG-M.Sljeme</code>). Osijek koristi <code>HR OS ...</code>.</p>
-<!-- TODO: formalno potvrditi obrazac i popis oznaka gradova. -->
-
 <hr />
 <p><small><em>cromesh.eu i docs.cromesh.eu su neovisni, neslužbeni projekti CroMesh zajednice
 entuzijasta i nisu službeno povezani s niti odobreni od strane Meshtastic LLC.
