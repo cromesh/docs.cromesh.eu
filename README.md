@@ -12,7 +12,7 @@ Ova dokumentacija koristi [MkDocs Material](https://squidfunk.github.io/mkdocs-m
 - **Hardware** — antene, montaža i zaštita, 3D print kućišta, solarno napajanje, oživljavanje i punjenje LiIon ćelija
 - **Software** — aplikacije, firmware, MQTT, mapiranje i nadzor
 - **Mreža** — dogovoreni standardi, kanali, uloge node-ova, infrastruktura (poznati routeri i repetitori)
-- **MeshCore** — pregled protokola, usmjeravanje, postavke, rad uz Meshtastic, povezivanje i observeri, poznati problemi, poveznice i pravna napomena
+- **MeshCore** — pregled protokola, postavke (uključujući usmjeravanje, povezivanje i observere te poznate probleme), rad uz Meshtastic, poveznice i pravna napomena
 
 ## Licenca
 
@@ -47,16 +47,27 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
 │  └─ v3.8.3  Listopad 2026 u povijesti zajednice, ispravak README-a
 └─ v3.9.0  MeshCore tab, nove stranice i nadopune iz zajednice
    ├─ v3.9.1  Riješeni TODO-i, ikona MeshCore taba, ispravljene tvrdnje
-   └─ v3.9.2  Trenutna verzija — fotografije na MeshCore stranicama
+   └─ v3.9.2  Trenutna verzija — fotografije, provjera prema službenoj dokumentaciji i preuređenje MeshCore taba
 ```
 
 ## Changelog
 
-### v3.9.2 — Fotografije na MeshCore stranicama
+### v3.9.2 — Fotografije, provjera prema službenoj dokumentaciji i preuređenje MeshCore taba
 - **MeshCore (Pregled):** fotografija unutrašnjosti kućišta solarnog repetitora
   (XIAO nRF52840, dvije ćelije 18650 sa zaštitnom pločicom i modul za punjenje).
 - **MeshCore → Postavke:** novi odjeljak „Primjer: Base Sljeme” s fotografijom repetitora
   na stupu (kućište, antena i solarni panel).
+- **Preuređenje MeshCore taba:** izbornik sada ima četiri stavke: MeshCore, Postavke,
+  Meshtastic i MeshCore te Poveznice i pravna napomena. Stranice „Usmjeravanje”,
+  „Povezivanje i observeri” i „Poznati problemi” spojene su u Postavke (redom, ispod
+  postojećeg sadržaja); poveznice na njih ažurirane.
+- **Provjera prema službenoj dokumentaciji (docs.meshcore.io):** dodani parametri
+  presetova EU/UK (Narrow), tablica veličina path hasha s brojem hopova, napomene o
+  grupnim kanalima, `flood.max` i room serverima; ispravljena tvrdnja da MeshCore nema
+  MQTT (nema ugrađenog MQTT-a, ali observeri šalju pakete na MQTT).
+- **MeshCore (Pregled):** novi odjeljak „Poveznice” sa službenim izvorima i hrvatskim
+  zajednicama.
+- **Pravna napomena:** kratka napomena o neovisnosti na dnu svake MeshCore stranice.
 
 ### v3.9.1 — Riješeni TODO-i, ikona MeshCore taba, ispravljene tvrdnje
 Obrađeni su svi skriveni `TODO` komentari iz v3.9.0; u izvornim datotekama više nema

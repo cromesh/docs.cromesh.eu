@@ -30,3 +30,12 @@ kompatibilna. Neki nodovi u mreži su dual (Meshtastic + MeshCore) — vidi
 [Infrastruktura](../mreza/infrastruktura.md#slavonija-i-podravina).
 
 Pregled razlika: [MeshCore u CroMeshu](index.md).
+
+---
+
+!!! info "Napomena o neovisnosti"
+    docs.cromesh.eu je neovisan projekt i nije povezan s tvrtkom MeshCore Technologies
+    Limited niti službenim MeshCore timom; „MeshCore” je naziv njegovih vlasnika. Sadržaj
+    se pruža „kakav jest”, bez jamstva, a mjerodavna je službena dokumentacija na
+    [docs.meshcore.io](https://docs.meshcore.io/). Cjelovita
+    [pravna napomena](poveznice.md#napomena-o-neovisnosti-zigu-i-licenci).

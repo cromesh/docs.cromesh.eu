@@ -46,12 +46,9 @@ nav:
     - Uloge i imenovanje: mreza/uloge-i-imenovanje.md
     - Infrastruktura: mreza/infrastruktura.md
   - MeshCore:
-    - Pregled: meshcore/index.md
-    - Usmjeravanje: meshcore/usmjeravanje.md
+    - MeshCore: meshcore/index.md
     - Postavke: meshcore/postavke.md
     - Meshtastic i MeshCore: meshcore/meshtastic-i-meshcore.md
-    - Povezivanje i observeri: meshcore/povezivanje-i-observeri.md
-    - Poznati problemi: meshcore/problemi.md
     - Poveznice i pravna napomena: meshcore/poveznice.md
 theme:
   name: material

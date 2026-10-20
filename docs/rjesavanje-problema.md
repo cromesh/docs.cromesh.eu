@@ -72,7 +72,7 @@ na stranici [Firmware — poznati problemi pri ažuriranju](firmware/index.md#po
 
 ## MeshCore: kontakti su nestali iz aplikacije
 
-Vidi [MeshCore — poznati problemi](meshcore/problemi.md).
+Vidi [MeshCore — poznati problemi](meshcore/postavke.md#poznati-problemi).
 
 ## Test dometa (Range Test)
 
