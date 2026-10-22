@@ -65,7 +65,7 @@ klijenti ostanu na 1 bajtu dok većina obližnjih repetitora ne prijeđe na 1.14
 ## Imenovanje repetitora
 
 Dogovoreni obrazac za novi repetitor: `HR-<OZNAKA GRADA>-<lokacija>` (npr.
-`HR-ZG-M.Sljeme`). Osijek koristi `HR OS ...`.
+`HR-ZG-Sljeme`). Osijek koristi `HR OS ...`.
 
 ## Primjer: Base Sljeme
 

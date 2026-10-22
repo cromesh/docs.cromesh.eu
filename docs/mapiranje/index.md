@@ -42,3 +42,8 @@ za ručno traženje povijesti.
 - [MQTT i karta](../mqtt/index.md) — postavke i uvjeti za prikaz na karti
 - [Infrastruktura](../mreza/infrastruktura.md) — poznati routeri i repetitori
 - [MeshCore poveznice](../meshcore/poveznice.md) — karte i alati za MeshCore
+
+<figure class="cromesh-doc-photo">
+  <img src="../../assets/images/mesh-monitor-shared-ka.png" alt="Shared Ka Mesh Monitor Screenshot" loading="lazy">
+  <figcaption>Shared Ka Mesh Monitor Screenshot</figcaption>
+</figure>

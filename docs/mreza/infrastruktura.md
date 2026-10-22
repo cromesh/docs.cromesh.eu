@@ -14,11 +14,17 @@ tags:
 
 ## Zagreb i okolica
 
-Prvi izvještaji nakon postavljanja Meshtastic routera na Malom Sljemenu: direktne veze s Donjom Dubravom,
+Prvi izvještaji nakon postavljanja Meshtastic routera na Sljemenu: direktne veze s Donjom Dubravom,
 Petrinjom i Samoborom te povremeno austrijski nodovi i slovenski nodovi.
 
 Za MeshCore je u prvim testovima iz automobila u zagrebačkom urbanom području prolaznost
 bila mala. Za pouzdan rad u pokretu bit će potrebna veća gustoća repetitora.
+
+### Karlovac i Petrinja
+
+Od starta u Meshtasticu, članovi radioklubova i amateri entuzijasti pridonose širenju mreže
+planovima i projektima poput kupanjeiline.com i Kar0-Kar2. Petrinja je među prvijencima u
+postavljanju konkretnog statičnog baznog node-a.
 
 ## Velebit i Jadran
 
@@ -42,8 +48,18 @@ nodove: dva noda, svaki sa svojim sustavom (jedan Meshtastic, jedan MeshCore). D
 
 Lokacije u izgradnji ili u testu: Krk, Rovinj, Pula, Karlovac, Varaždin.
 
+## Lista nodova prisutna u TG grupi
+
+Popis nodova prisutnih u Telegram grupi CroMesha dostupan je članovima u
+[Telegram grupi](https://t.me/+LMnznzvgKCg2OTc0).
+
 ## Povezano
 
 - Imenovanje routera i repetitora: [Uloge i imenovanje](uloge-i-imenovanje.md) i
   [MeshCore postavke](../meshcore/postavke.md#imenovanje-repetitora).
 - Pregled MeshCore mreže: [MeshCore u CroMeshu](../meshcore/index.md).
+
+<figure class="cromesh-doc-photo">
+  <img src="../../assets/images/kar0.jpg" alt="KaR0" loading="lazy">
+  <figcaption>KaR0</figcaption>
+</figure>

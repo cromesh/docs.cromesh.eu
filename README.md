@@ -66,8 +66,11 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
   repetitor) i na stranici Meshtastic i MeshCore.
 - **Lektura:** „karta uživo” i uklonjeno „Zagreb i okolica” u MeshCore poveznicama;
   „dvostruki nodovi” umjesto „dual nodova”; „kontrola kvalitete” (Odabir uređaja).
-- **Infrastruktura:** Meshtastic node na Malom Sljemenu prebačen u ulogu routera; uklonjena
-  tablica u odjeljku „Zagreb i okolica”.
+- **Infrastruktura:** Meshtastic node na Sljemenu prebačen u ulogu routera; uklonjena
+  tablica u odjeljku „Zagreb i okolica”; novi odjeljak „Karlovac i Petrinja” i odjeljak
+  „Lista nodova prisutna u TG grupi”; fotografija KaR0 na dnu stranice. Naziv lokacije
+  ujednačen na „Sljeme”.
+- **Mapiranje i nadzor:** dodan screenshot Shared Ka Mesh Monitora.
 
 ### v3.9.3 — Svaka stranica u vlastitoj mapi
 - **Struktura:** stranice koje su stajale izravno u `docs/` premještene su svaka u vlastitu
