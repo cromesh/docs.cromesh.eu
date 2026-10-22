@@ -45,13 +45,29 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
 │  ├─ v3.8.1  Ispravak: CLIENT_BASE nije zastario
 │  ├─ v3.8.2  18650 vodič: napomena o niskom naponu i čišćenje teksta
 │  └─ v3.8.3  Listopad 2026 u povijesti zajednice, ispravak README-a
-└─ v3.9.0  MeshCore tab, nove stranice i nadopune iz zajednice
-   ├─ v3.9.1  Riješeni TODO-i, ikona MeshCore taba, ispravljene tvrdnje
-   ├─ v3.9.2  Fotografije, provjera prema službenoj dokumentaciji i preuređenje MeshCore taba
-   └─ v3.9.3  Trenutna verzija — svaka stranica u vlastitoj mapi
+├─ v3.9.0  MeshCore tab, nove stranice i nadopune iz zajednice
+│  ├─ v3.9.1  Riješeni TODO-i, ikona MeshCore taba, ispravljene tvrdnje
+│  ├─ v3.9.2  Fotografije, provjera prema službenoj dokumentaciji i preuređenje MeshCore taba
+│  └─ v3.9.3  Svaka stranica u vlastitoj mapi, lektura i čišćenje MeshCore taba
+└─ v4.0.0  Trenutna verzija — MeshCore tab dovršen, lektura i ispravci
 ```
 
 ## Changelog
+
+### v4.0.0 — MeshCore tab dovršen, lektura i ispravci
+- **MeshCore:** izbornik ima četiri stavke (MeshCore, Postavke, Meshtastic i MeshCore,
+  Poveznice i pravna napomena); Postavke sadrže usmjeravanje, povezivanje i observere te
+  poznate probleme. Provjera prema službenoj dokumentaciji, poveznice na landing stranici i
+  kratka napomena o neovisnosti na svakoj stranici.
+- **Meshtastic i MeshCore:** na stranicu su premješteni odjeljci „Razlika između
+  Meshtastic-a i MeshCore-a” i „Kratki pregled razlika” s landing stranice; uklonjena
+  ponavljanja i duplicirani odjeljak „Usporedba s Meshtasticom” iz Postavki.
+- **Fotografije:** nove fotografije u MeshCore Pregledu, u Postavkama (Base Sljeme i solarni
+  repetitor) i na stranici Meshtastic i MeshCore.
+- **Lektura:** „karta uživo” i uklonjeno „Zagreb i okolica” u MeshCore poveznicama;
+  „dvostruki nodovi” umjesto „dual nodova”; „kontrola kvalitete” (Odabir uređaja).
+- **Infrastruktura:** Meshtastic node na Malom Sljemenu prebačen u ulogu routera; uklonjena
+  tablica u odjeljku „Zagreb i okolica”.
 
 ### v3.9.3 — Svaka stranica u vlastitoj mapi
 - **Struktura:** stranice koje su stajale izravno u `docs/` premještene su svaka u vlastitu

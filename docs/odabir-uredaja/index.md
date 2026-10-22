@@ -61,7 +61,7 @@ Za dublji pregled prednosti i mana pojedinog čipa vidi [ESP32](esp32.md),
 > antenama (40 cm+) praktički gluh; s malim antenama do 20 cm radi korektno. Revizija
 > **4.3** problem rješava (noise floor ~ −110 dB). Dodatno: pojačalo (PA) ne radi
 > ispravno na firmware-u starijem od **2.7.12** (koristi 2.7.13+), a za prijem postoji
-> LNA fix u novijoj alphi. Kod kupnje provjeri reviziju ploče; kvaliteta kontrole
+> LNA fix u novijoj alphi. Kod kupnje provjeri reviziju ploče; kontrola kvalitete
 > proizvodnje Helteca je po iskustvima članova promjenjiva.
 
 ## Gdje kupiti
