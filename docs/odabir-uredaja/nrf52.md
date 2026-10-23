@@ -18,4 +18,5 @@ Zbog toga je jednostavniji, ali se ne može izravno povezati na WiFi mrežu.
 
 <figure class="cromesh-doc-photo">
   <img src="../../assets/images/v361-nrf52.jpg" alt="LILYGO T-Echo uređaji" loading="lazy">
+  <figcaption>Lilygo T-Echo NRF paperwhite by Amir</figcaption>
 </figure>

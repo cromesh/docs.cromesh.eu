@@ -81,4 +81,7 @@ problem korisnika: nepodudaranje verzije firmware-a i verzije aplikacije/web cli
 nakon nadogradnje firmware-a gotovo uvijek treba i najnoviju verziju clienta, inače
 dolazi do neuspjelog spajanja ili netočno prikazanih postavki.
 
-![Software](../assets/images/v371-software.jpg)
+<figure class="cromesh-doc-photo">
+  <img src="../assets/images/v371-software.jpg" alt="SenseCAP trackeri korišteni u speleološkoj ekspediciji" loading="lazy">
+  <figcaption>SenseCAP trackeri korišteni u speleološkoj ekspediciji by Damjan</figcaption>
+</figure>

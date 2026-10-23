@@ -56,6 +56,7 @@ svakom po jedan sustav. Vidi [Infrastruktura](../mreza/infrastruktura.md#slavoni
 
 <figure class="cromesh-doc-photo">
   <img src="../../assets/images/meshcore-meshtastic-dva-noda.jpg" alt="Dva kućišta nodova montirana jedno uz drugo na istom stupu rukohvata, s antenom" loading="lazy">
+  <figcaption>Zagreb router by Zrinko</figcaption>
 </figure>
 
 ---

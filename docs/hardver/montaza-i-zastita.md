@@ -91,4 +91,5 @@ Izvori: [RF Essentials — lightning protection](https://rfessentials.com/rf-kno
 
 <figure class="cromesh-doc-photo">
   <img src="../../assets/images/v361-montaza-zastita.jpg" alt="Vanjska montaža antenskog node-a" loading="lazy">
+  <figcaption>Novi Petrinja nod by Matija</figcaption>
 </figure>

@@ -127,4 +127,5 @@ u grupi, ali bez dokumentiranog rješenja za sada.
 
 <figure class="cromesh-doc-photo">
   <img src="../assets/images/v361-solarni-uredaji.jpg" alt="Solarni Meshtastic uređaj" loading="lazy">
+  <figcaption>Nod Sl. Brod R1 by Bojan</figcaption>
 </figure>

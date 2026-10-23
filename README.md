@@ -71,6 +71,11 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
   „Lista nodova prisutna u TG grupi”; fotografija KaR0 na dnu stranice. Naziv lokacije
   ujednačen na „Sljeme”.
 - **Mapiranje i nadzor:** dodan screenshot Shared Ka Mesh Monitora.
+- **Opisi fotografija:** sve fotografije na stranicama dobile su opis s autorom: Hardware
+  (naslovnica, 3D print, Montaža i zaštita, Oživljavanje Li-Ion ćelija), Antene, Aplikacije,
+  Solarni uređaji, Postavke (naslovnica), Odabir uređaja (naslovnica, ESP32, NRF52, RP2040,
+  Zaključak), MeshCore (landing, Postavke, Meshtastic i MeshCore) i Infrastruktura (KaR0).
+  Fotografija na naslovnici Aplikacija preuređena iz Markdowna u isti oblik kao ostale.
 
 ### v3.9.3 — Svaka stranica u vlastitoj mapi
 - **Struktura:** stranice koje su stajale izravno u `docs/` premještene su svaka u vlastitu

@@ -214,4 +214,5 @@ preporuke i iskustva zajednice.
 
 <figure class="cromesh-doc-photo">
   <img src="../assets/images/v361-antene.jpg" alt="Vanjska antena za Meshtastic node" loading="lazy">
+  <figcaption>Petrinjski nod by Matija</figcaption>
 </figure>

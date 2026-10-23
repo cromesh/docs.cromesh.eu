@@ -21,4 +21,5 @@ To može **trajno oštetiti radio čip** i učiniti uređaj neupotrebljivim.
 
 <figure class="cromesh-doc-photo">
   <img src="../../assets/images/v361-t-echo.jpg" alt="LILYGO T-Echo uređaj" loading="lazy">
+  <figcaption>Lilygo T-Echo by Amir</figcaption>
 </figure>

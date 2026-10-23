@@ -71,6 +71,7 @@ Dogovoreni obrazac za novi repetitor: `HR-<OZNAKA GRADA>-<lokacija>` (npr.
 
 <figure class="cromesh-doc-photo">
   <img src="../../assets/images/v392-meshcore-sljeme.jpg" alt="Repetitor Base Sljeme na stupu: kućište s antenom i solarni panel" loading="lazy">
+  <figcaption>Zagreb router by Zrinko</figcaption>
 </figure>
 
 ## Usmjeravanje poruka u MeshCoreu
@@ -128,6 +129,7 @@ Karte, vodiči i analizatori navedeni su na stranici
 
 <figure class="cromesh-doc-photo">
   <img src="../../assets/images/meshcore-repetitor-solar.jpg" alt="Solarni repetitor na rukohvatu: kućište s antenom i solarni panel" loading="lazy">
+  <figcaption>Zagreb router by Zrinko</figcaption>
 </figure>
 
 ## Poznati problemi

@@ -51,4 +51,5 @@ autore objava da dopune opis.
 
 <figure class="cromesh-doc-photo">
   <img src="../../assets/images/v361-3d-print.jpg" alt="3D printano Meshtastic kućište" loading="lazy">
+  <figcaption>Heltec v3 by Amir, 3D print by Damjan</figcaption>
 </figure>

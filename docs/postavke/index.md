@@ -22,6 +22,7 @@ Time se smanjuje nepotreban promet u mreži.
 
 <figure class="cromesh-doc-photo">
   <img src="../assets/images/v371-pocetak.jpg" alt="CroMesh node na planinskom vrhu" loading="lazy">
+  <figcaption>Velebitski nodovi by Damjan</figcaption>
 </figure>
 
 

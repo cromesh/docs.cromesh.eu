@@ -18,4 +18,5 @@ Ako vam je najvažnije trajanje baterije, imajte na umu da će uređaji s ovim �
 
 <figure class="cromesh-doc-photo">
   <img src="../../assets/images/v361-esp32.jpg" alt="ESP32 Meshtastic uređaj" loading="lazy">
+  <figcaption>Heltec v4 u kućnoj radinosti by Amir</figcaption>
 </figure>

@@ -20,6 +20,7 @@ autonomne node-ove.
   ispražnjenih 18650 ćelija
 
 
-<div class="cromesh-doc-photo">
+<figure class="cromesh-doc-photo">
   <img src="../assets/images/v371-hardver.jpg" alt="CroMesh node na planinskom terenu" loading="lazy">
-</div>
+  <figcaption>Velebit by Damjan</figcaption>
+</figure>

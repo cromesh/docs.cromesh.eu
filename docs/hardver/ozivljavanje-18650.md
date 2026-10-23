@@ -107,4 +107,5 @@ Za dugoročno skladištenje: napon mirovanja ~3,7–3,9V.
 
 <figure class="cromesh-doc-photo">
   <img src="../../assets/images/v363-ozivljavanje-18650.jpg" alt="Punjač za Li-ion ćeliju" loading="lazy">
+  <figcaption>Baterije u kućnoj radinosti by Karlo</figcaption>
 </figure>

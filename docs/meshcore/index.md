@@ -63,6 +63,7 @@ Potpuni popis s opisima: [Poveznice i pravna napomena](poveznice.md).
 
 <figure class="cromesh-doc-photo">
   <img src="../assets/images/v392-meshcore.jpg" alt="Unutrašnjost kućišta solarnog repetitora: XIAO nRF52840, dvije ćelije 18650 sa zaštitnom pločicom i modul za punjenje" loading="lazy">
+  <figcaption>Router Zagreb iznutra by Zrinko</figcaption>
 </figure>
 
 ---

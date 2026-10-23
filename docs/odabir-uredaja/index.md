@@ -86,4 +86,5 @@ Za dublji pregled prednosti i mana pojedinog čipa vidi [ESP32](esp32.md),
 
 <figure class="cromesh-doc-photo cromesh-doc-photo--narrow">
   <img src="../assets/images/v361-odabir-uredaja-pwrd.jpg" alt="Meshtastic uređaj s antenom" loading="lazy">
+  <figcaption>Seeed WIO Tracker L1 by Damir</figcaption>
 </figure>
