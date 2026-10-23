@@ -20,7 +20,7 @@ Petrinjom i Samoborom te povremeno austrijski nodovi i slovenski nodovi.
 Za MeshCore je u prvim testovima iz automobila u zagrebačkom urbanom području prolaznost
 bila mala. Za pouzdan rad u pokretu bit će potrebna veća gustoća repetitora.
 
-### Karlovac i Petrinja
+## Karlovac i Petrinja
 
 Od starta u Meshtasticu, članovi radioklubova i amateri entuzijasti pridonose širenju mreže
 planovima i projektima poput kupanjeiline.com i Kar0-Kar2. Petrinja je među prvijencima u
