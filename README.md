@@ -26,6 +26,9 @@ Sadržaj ove dokumentacije dostupan je pod licencom [Creative Commons Imenovanje
 v2.0.0   2026-07-17  Prve tematske sekcije
 v3.0.0   2026-07-22  Restrukturirana navigacija
 ├─ v3.1.0  Pretraga, logo i restrukturiran Uvod
+│  ├─ v3.1.1  Ispravci pretrage i podnožja, Telegram poveznica, Hardver dodaci
+│  ├─ v3.1.2  Vodič Oživljavanje LiIon
+│  └─ v3.1.3  Licenca CC BY-SA 4.0
 ├─ v3.2.0  Tags, MQTT i pravne napomene
 ├─ v3.3.0  Lektura i terminološka dosljednost
 ├─ v3.4.0  MeshCore integracija i FAQ restrukturiranje
@@ -353,11 +356,38 @@ izvornim datotekama.
 ### v3.2.0 — Funkcionalnost i sadržaj
 - Tags, MQTT vodič, pravne napomene, lektura i dodatne postavke.
 
-### v3.1.0 — Temeljna struktura
-- Pretraga, logo, Uvod, licenca i hardverski vodiči.
+### v3.1.3 — Licenca CC BY-SA 4.0
+- Dodana licenca CC BY-SA 4.0 (`LICENSE`); „Struktura dokumentacije” premještena iz
+  `docs/index.md` u README.
 
-### v3.0.0 - Rekonstrukcija navigacijske trake
-- Restrukturirana navigacija i smanjen broj glavnih tabova.
+### v3.1.2 — Oživljavanje LiIon
+- Vodič „Oživljavanje LiIon” u sekciji Hardver dodaci (`docs/hardver/ozivljavanje-18650.md`).
 
-### v2.0.0 - Import iz Telegram grupe, nove teme i sadržaj
-- Uvedene prve tematske sekcije: Hardver, Mreža, Zajednica i FAQ.
+### v3.1.1 — Ispravci i dorade
+- Ispravljen `search.lang` (hr nije podržan i izazivao je upozorenje pri buildu).
+- Copyright u podnožju; „@cromesh.eu” u Long Name pojašnjen kao identifikator zajednice, a
+  ne e-mail; dodana Telegram pozivna poveznica.
+- Nova naslovna stranica Hardver dodaci (`docs/hardver/index.md`).
+- Uklonjen zalutali zip s master brancha; ispravljeno Git autorstvo commitova.
+
+### v3.1.0 — Temeljna struktura (2026-07-22)
+- Pretraga, logo i favicon (`assets/logo.png`), opisi (`description`) za 9 stranica.
+- Uvod u Meshtastic ugniježđen pod novu sekciju Početak, zajedno s Prvim koracima (koji
+  ostaju i pod Postavkama).
+
+### v3.0.0 - Rekonstrukcija navigacijske trake (2026-07-22)
+- Broj glavnih tabova smanjen s 13 na 9; svi naslovi ostali dostupni u izborniku.
+- Zajednica ugniježđena pod FAQ; nova sekcija Software (Aplikacije, Firmware, MQTT);
+  Hardver dodaci (Montaža i 3D print) proširen Solarnim uređajima.
+
+### v2.0.0 - Import iz Telegram grupe, nove teme i sadržaj (2026-07-17)
+Doprinos: 9A3CYN, 9A3AVX, 9A3VEX i 9A3WHY.
+
+- **Nove stranice:** FAQ; Postavke → Prvi koraci; Hardver (Montaža i zaštita, 3D print);
+  Mreža (Standardi, Kanali, Uloge i imenovanje); Zajednica (O zajednici, Pravila).
+- **Popunjene prazne stranice:** Antene (odabir, SWR, ERP limit), Solarno (baterije,
+  BMS, MPPT) i Napredno o MQTT (spajanje na mqtt.cromesh.eu, uvjeti za kartu, česti problemi).
+- **Nadopune:** naslovnica (poveznice i „Brzi start u 5 koraka”); Odabir uređaja (tablica
+  nRF52 i ESP32, uređaji u zajednici, upozorenje za Heltec V4 reviziju 4.2).
+- **Poveznice i navigacija:** interne poveznice usklađene s konačnim lokacijama stranica;
+  `mkdocs.yml` ažuriran bez dupliciranja sekcija.
