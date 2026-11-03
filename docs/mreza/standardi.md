@@ -69,3 +69,7 @@ Detalji o ulogama node-ova (CLIENT, CLIENT_MUTE, ROUTER...) nalaze se na stranic
 > **Napomena:** Zajednica još nema formalno definiran postupak donošenja odluka o
 > promjeni standarda (tko odlučuje, kojom većinom, gdje se glasa). Dosadašnje odluke
 > donošene su konsenzusom na meetup-ima i u Telegram grupi.
+
+<figure class="cromesh-doc-photo">
+  <img src="../../assets/images/mreza-standardi.jpg" alt="Radionica zajednice: polaznici u dvorani slušaju predavača" loading="lazy">
+</figure>

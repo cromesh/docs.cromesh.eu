@@ -70,3 +70,7 @@ description: Pravila ponašanja na CroMesh mreži i u zajednici te regulatorni o
   kontakt s lokalnim radioklubovima (često imaju uspostavljene veze i iskustvo s
   takvim lokacijama) te dogovor s upravom/vlasnicima za privatne kuće i stanove
   (vidi [Montaža i zaštita](../hardver/montaza-i-zastita.md)).
+
+<figure class="cromesh-doc-photo">
+  <img src="../../assets/images/zajednica-pravila-susret.jpg" alt="Susret članova zajednice ispred zgrade" loading="lazy">
+</figure>

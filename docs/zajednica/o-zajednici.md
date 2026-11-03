@@ -78,3 +78,7 @@ su i prekogranične propagacije (Slovenija, Italija, Austrija, Srbija).
 3. Za upis u adresar mreže javi svoj **short i long name** u topic **Popis članova**.
 4. Nabavi opremu ([vodič](../odabir-uredaja/index.md)), konfiguriraj node
    ([prvi koraci](../postavke/prvi-koraci.md)) i javi se na mreži.
+
+<figure class="cromesh-doc-photo">
+  <img src="../../assets/images/zajednica-meetup.jpg" alt="Susret zajednice: razni Meshtastic uređaji, radio-stanice i solarni node na stolu" loading="lazy">
+</figure>

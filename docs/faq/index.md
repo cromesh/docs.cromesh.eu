@@ -234,3 +234,7 @@ Detalji: [Meshtastic i MeshCore zajedno](../meshcore/meshtastic-i-meshcore.md).
 ### Poveznice i pravna napomena
 
 [MeshCore HR, karte i alati, licenca i isključenje odgovornosti](../meshcore/poveznice.md).
+
+<figure class="cromesh-doc-photo">
+  <img src="../assets/images/faq-ilustracija.jpg" alt="Radionica o LoRa tehnologiji i mesh mrežama: predavanje pred publikom" loading="lazy">
+</figure>

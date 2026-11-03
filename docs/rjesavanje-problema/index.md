@@ -86,3 +86,7 @@ Vidi [MeshCore — poznati problemi](../meshcore/postavke.md#poznati-problemi).
 - [Česta pitanja](../faq/index.md) — poruke i potvrde isporuke, karta i MQTT
 - [MQTT i karta](../mqtt/index.md) — kompletna checklista za prikaz na karti
 - [Mapiranje i nadzor](../mapiranje/index.md) — provjera čuje li te netko bez druge strane
+
+<figure class="cromesh-doc-photo">
+  <img src="../assets/images/rjesavanje-problema-over.jpg" alt="Dva lutka u radioklubu: &quot;Ok, let's get this over with&quot; i &quot;Yes, yes, let's get this over with... over? Over!&quot;" loading="lazy">
+</figure>

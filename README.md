@@ -52,10 +52,19 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
 │  ├─ v3.9.1  Riješeni TODO-i, ikona MeshCore taba, ispravljene tvrdnje
 │  ├─ v3.9.2  Fotografije, provjera prema službenoj dokumentaciji i preuređenje MeshCore taba
 │  └─ v3.9.3  Svaka stranica u vlastitoj mapi, lektura i čišćenje MeshCore taba
-└─ v4.0.0  Trenutna verzija — MeshCore tab dovršen, lektura i ispravci
+└─ v4.0.0  MeshCore tab dovršen, lektura i ispravci
+   └─ v4.0.1  Trenutna verzija — stranice obogaćene slikama sa meetupa
 ```
 
 ## Changelog
+
+### v4.0.1 — Stranice obogaćene slikama sa meetupa
+- Stranice obogaćene slikama sa meetupa i novim fotografijama.
+- **Rješavanje problema:** ilustracija na dnu stranice.
+- **O zajednici:** fotografija sa susreta zajednice na dnu stranice.
+- **Pravila:** fotografija sa susreta članova na dnu stranice.
+- **Česta pitanja:** fotografija s radionice na dnu stranice.
+- **Standardi:** fotografija s radionice na dnu stranice.
 
 ### v4.0.0 — MeshCore tab dovršen, lektura i ispravci
 - **MeshCore:** izbornik ima četiri stavke (MeshCore, Postavke, Meshtastic i MeshCore,
