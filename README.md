@@ -74,6 +74,7 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
   „Lista nodova prisutna u TG grupi”; fotografija KaR0 na dnu stranice. Naziv lokacije
   ujednačen na „Sljeme”.
 - **Mapiranje i nadzor:** dodan screenshot Shared Ka Mesh Monitora.
+- **Uvod:** vizualizacija CroMesh mreže (čvorovi i veze) na dnu stranice.
 - **Opisi fotografija:** sve fotografije na stranicama dobile su opis s autorom: Hardware
   (naslovnica, 3D print, Montaža i zaštita, Oživljavanje Li-Ion ćelija), Antene, Aplikacije,
   Solarni uređaji, Postavke (naslovnica), Odabir uređaja (naslovnica, ESP32, NRF52, RP2040,

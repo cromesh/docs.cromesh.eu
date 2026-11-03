@@ -72,3 +72,7 @@ Koristite Meshtastic mobilnu aplikaciju ili web sučelje za konfiguraciju node-o
 ### Postavljanje u rad
 
 Postavite node-ove na željeno područje i započnite komunikaciju putem mreže.
+
+<figure class="cromesh-doc-photo">
+  <img src="../assets/images/cromesh-mreza-nodova.jpg" alt="Vizualizacija CroMesh mreže: čvorovi i veze između node-ova" loading="lazy">
+</figure>
