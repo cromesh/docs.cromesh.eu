@@ -66,6 +66,7 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
 - **Česta pitanja:** fotografija s radionice na dnu stranice.
 - **Standardi:** fotografija s radionice na dnu stranice.
 - **Naslovnica:** plakat „Pridruži nam se na mreži i uživo” ispod odjeljka „Naše poveznice”.
+- **Opisi fotografija:** opisi (s autorima) dodani fotografijama na Uvodu, Naslovnici, Čestim pitanjima, Rješavanju problema, O zajednici, Pravilima i Standardima.
 
 ### v4.0.0 — MeshCore tab dovršen, lektura i ispravci
 - **MeshCore:** izbornik ima četiri stavke (MeshCore, Postavke, Meshtastic i MeshCore,

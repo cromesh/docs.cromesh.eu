@@ -81,4 +81,5 @@ su i prekogranične propagacije (Slovenija, Italija, Austrija, Srbija).
 
 <figure class="cromesh-doc-photo">
   <img src="../../assets/images/zajednica-meetup.jpg" alt="Susret zajednice: razni Meshtastic uređaji, radio-stanice i solarni node na stolu" loading="lazy">
+  <figcaption>Damjan analizira kutiju za sapun, kućište RPi; by Amir</figcaption>
 </figure>

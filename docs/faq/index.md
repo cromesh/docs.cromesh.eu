@@ -237,4 +237,5 @@ Detalji: [Meshtastic i MeshCore zajedno](../meshcore/meshtastic-i-meshcore.md).
 
 <figure class="cromesh-doc-photo">
   <img src="../assets/images/faq-ilustracija.jpg" alt="Radionica o LoRa tehnologiji i mesh mrežama: predavanje pred publikom" loading="lazy">
+  <figcaption>Prvi CroMesh Meetup, hosted by Karlovac Developers Group</figcaption>
 </figure>

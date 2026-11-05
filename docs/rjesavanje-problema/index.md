@@ -89,4 +89,5 @@ Vidi [MeshCore — poznati problemi](../meshcore/postavke.md#poznati-problemi).
 
 <figure class="cromesh-doc-photo">
   <img src="../assets/images/rjesavanje-problema-over.jpg" alt="Dva lutka u radioklubu: &quot;Ok, let's get this over with&quot; i &quot;Yes, yes, let's get this over with... over? Over!&quot;" loading="lazy">
+  <figcaption>Stranica CroMesh stripa, by ChatGPT</figcaption>
 </figure>

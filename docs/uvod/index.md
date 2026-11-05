@@ -75,4 +75,5 @@ Postavite node-ove na željeno područje i započnite komunikaciju putem mreže.
 
 <figure class="cromesh-doc-photo">
   <img src="../assets/images/cromesh-mreza-nodova.jpg" alt="Vizualizacija CroMesh mreže: čvorovi i veze između node-ova" loading="lazy">
+  <figcaption><a href="https://map.cromesh.eu/nodegraph">map.cromesh.eu/nodegraph</a> obrađena by ChatGPT</figcaption>
 </figure>

@@ -72,6 +72,7 @@ Privatnost, sigurnost i sloboda komunikacije.
 
 <figure class="cromesh-doc-photo">
   <img src="assets/images/home-susreti.jpg" alt="Pridruži nam se na mreži i uživo, na jednom od susreta koji uskoro stižu!" loading="lazy">
+  <figcaption>Slike s prvog meetupa, kolaž by Gemini AI</figcaption>
 </figure>
 
 ## Brzi pristup

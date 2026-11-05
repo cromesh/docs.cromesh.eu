@@ -72,4 +72,5 @@ Detalji o ulogama node-ova (CLIENT, CLIENT_MUTE, ROUTER...) nalaze se na stranic
 
 <figure class="cromesh-doc-photo">
   <img src="../../assets/images/mreza-standardi.jpg" alt="Radionica zajednice: polaznici u dvorani slušaju predavača" loading="lazy">
+  <figcaption>Prvi CroMesh Meetup, by Marko</figcaption>
 </figure>

@@ -73,4 +73,5 @@ description: Pravila ponašanja na CroMesh mreži i u zajednici te regulatorni o
 
 <figure class="cromesh-doc-photo">
   <img src="../../assets/images/zajednica-pravila-susret.jpg" alt="Susret članova zajednice ispred zgrade" loading="lazy">
+  <figcaption>Prvi Meetup, okupljanje sugovornika, by Amir</figcaption>
 </figure>
