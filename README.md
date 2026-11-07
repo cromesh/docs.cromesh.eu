@@ -64,7 +64,7 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
 - **O zajednici:** fotografija sa susreta zajednice na dnu stranice.
 - **Pravila:** fotografija sa susreta članova na dnu stranice.
 - **Česta pitanja:** fotografija s radionice na dnu stranice.
-- **Standardi:** fotografija s radionice na dnu stranice.
+- **Standardi:** fotografija s radionice na dnu stranice (obrezana, uz zadržan omjer slike).
 - **Naslovnica:** plakat „Pridruži nam se na mreži i uživo” ispod odjeljka „Naše poveznice”.
 - **Opisi fotografija:** opisi (s autorima) dodani fotografijama na Uvodu, Naslovnici, Čestim pitanjima, Rješavanju problema, O zajednici, Pravilima i Standardima.
 
