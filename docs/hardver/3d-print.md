@@ -46,8 +46,8 @@ U grupi su dijeljena još dva modela bez opisa namjene
 autore objava da dopune opis.
 
 <figure class="cromesh-doc-photo">
-  <img src="../../assets/images/hardver-3d-kuciste.jpg" alt="3D printano plavo kućište s trakom za nošenje" loading="lazy">
-  <figcaption>Nrf+Wio Seeed kućište by Damjan, photo Amir, CGPT obrada</figcaption>
+  <img src="../../assets/images/v361-3d-print.jpg" alt="3D printano Meshtastic kućište" loading="lazy">
+  <figcaption>Heltec v3 by Amir, 3D print by Damjan</figcaption>
 </figure>
 
 ## Praktične napomene
@@ -60,6 +60,6 @@ autore objava da dopune opis.
   kroz PR.
 
 <figure class="cromesh-doc-photo">
-  <img src="../../assets/images/v361-3d-print.jpg" alt="3D printano Meshtastic kućište" loading="lazy">
-  <figcaption>Heltec v3 by Amir, 3D print by Damjan</figcaption>
+  <img src="../../assets/images/hardver-3d-kuciste.jpg" alt="3D printano plavo kućište s trakom za nošenje" loading="lazy">
+  <figcaption>Nrf+Wio Seeed kućište by Damjan, photo Amir, CGPT obrada</figcaption>
 </figure>
