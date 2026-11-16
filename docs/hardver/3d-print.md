@@ -9,6 +9,11 @@ Popis modela dijeljenih u Telegram grupi. Zajednica raspolaže vlastitim printer
 ako nemaš printer, pitaj u grupi (više članova nudi printanje, uključujući pristup
 printerima na FSB-u).
 
+<figure class="cromesh-doc-photo">
+  <img src="../../assets/images/hardver-t1000-nosac.jpg" alt="Narančasti 3D printani nosač za SenseCAP T1000 s kopčom" loading="lazy">
+  <figcaption>Nosač za T1000 by Matija, foto-obrada Gemini</figcaption>
+</figure>
+
 ## Kućišta za uređaje
 
 | Model | Uređaj / namjena | Poveznica |
@@ -39,6 +44,11 @@ U grupi su dijeljena još dva modela bez opisa namjene
 ([thingiverse.com/thing:6854115](https://www.thingiverse.com/thing:6854115),
 [thingiverse.com/thing:7310226](https://www.thingiverse.com/thing:7310226)) — molimo
 autore objava da dopune opis.
+
+<figure class="cromesh-doc-photo">
+  <img src="../../assets/images/hardver-3d-kuciste.jpg" alt="3D printano plavo kućište s trakom za nošenje" loading="lazy">
+  <figcaption>Nrf+Wio Seeed kućište by Damjan, photo Amir, CGPT obrada</figcaption>
+</figure>
 
 ## Praktične napomene
 

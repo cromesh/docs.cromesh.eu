@@ -53,10 +53,15 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
 │  ├─ v3.9.2  Fotografije, provjera prema službenoj dokumentaciji i preuređenje MeshCore taba
 │  └─ v3.9.3  Svaka stranica u vlastitoj mapi, lektura i čišćenje MeshCore taba
 └─ v4.0.0  MeshCore tab dovršen, lektura i ispravci
-   └─ v4.0.1  Trenutna verzija — stranice obogaćene slikama sa meetupa
+   ├─ v4.0.1  Stranice obogaćene slikama sa meetupa
+   └─ v4.0.2  Trenutna verzija — nove fotografije
 ```
 
 ## Changelog
+
+### v4.0.2 — Nove fotografije
+- **Montaža i zaštita:** fotografija zabrtvljene antene na kraju odjeljka „Brtvljenje” (opis: „Rani projekti by Matija”) i fotografija odvodnika prenapona CA-23RP (opis: „CA-23RP by Amir”) na kraju odjeljka „Gromobranska zaštita”.
+- **3D print kućišta i nosača:** fotografija kućišta za Nrf+Wio Seeed (opis: „Nrf+Wio Seeed kućište by Damjan, photo Amir, CGPT obrada”) iznad odjeljka „Praktične napomene” i fotografija nosača za T1000 (opis: „Nosač za T1000 by Matija, foto-obrada Gemini”) iznad odjeljka „Kućišta za uređaje”.
 
 ### v4.0.1 — Stranice obogaćene slikama sa meetupa
 - Stranice obogaćene slikama sa meetupa i novim fotografijama.

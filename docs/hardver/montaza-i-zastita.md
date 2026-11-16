@@ -18,6 +18,11 @@ Voda je najčešći ubojica vanjskih node-ova. Provjerene metode iz zajednice:
 - Za konektore koje stock antena inače pokriva postoji 3D printani "gap filler" od
   fleksibilnog materijala — vidi [3D print](3d-print.md).
 
+<figure class="cromesh-doc-photo">
+  <img src="../../assets/images/hardver-brtvljenje.jpg" alt="Zabrtvljena antena ALFA 868 na solarnom node-u" loading="lazy">
+  <figcaption>Rani projekti by Matija</figcaption>
+</figure>
+
 ## Kondenzacija i vlaga
 
 - Ugradi **breather valve** (ventil za izjednačavanje tlaka) u kućište — sprječava
@@ -67,6 +72,11 @@ Ispravna zaštita prema iskustvima zajednice:
 
 Izvori: [RF Essentials — lightning protection](https://rfessentials.com/rf-knowledge-base/what-is-the-recommended-lightning-protection-approach-for-a-tower-mounted-antenn/),
 [PCS Electronics — λ/4 grounding stubs](https://www.pcs-electronics.com/it/shop/antennas-cable-connectors/broadcasting-antenna-accessories/lightning-protection-resonant-1-4-wave-grounding-stubs/).
+
+<figure class="cromesh-doc-photo">
+  <img src="../../assets/images/hardver-ca-23rp.jpg" alt="Diamond Antenna CA-23RP odvodnik prenapona" loading="lazy">
+  <figcaption>CA-23RP by Amir</figcaption>
+</figure>
 
 ## Pozicioniranje
 
