@@ -40,11 +40,6 @@ printerima na FSB-u).
 | Držač 18650 | Vlastiti dizajn člana zajednice | [thingiverse.com/thing:6801714](https://www.thingiverse.com/thing:6801714) |
 | TonyG profil | Preporučen profil s Meshtastic modelima | [printables.com/@TonyG](https://www.printables.com/@TonyG) |
 
-U grupi su dijeljena još dva modela bez opisa namjene
-([thingiverse.com/thing:6854115](https://www.thingiverse.com/thing:6854115),
-[thingiverse.com/thing:7310226](https://www.thingiverse.com/thing:7310226)) — molimo
-autore objava da dopune opis.
-
 <figure class="cromesh-doc-photo">
   <img src="../../assets/images/v361-3d-print.jpg" alt="3D printano Meshtastic kućište" loading="lazy">
   <figcaption>Heltec v3 by Amir, 3D print by Damjan</figcaption>
