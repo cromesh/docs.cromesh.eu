@@ -54,10 +54,15 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
 │  └─ v3.9.3  Svaka stranica u vlastitoj mapi, lektura i čišćenje MeshCore taba
 └─ v4.0.0  MeshCore tab dovršen, lektura i ispravci
    ├─ v4.0.1  Stranice obogaćene slikama sa meetupa
-   └─ v4.0.2  Trenutna verzija — nove fotografije
+   ├─ v4.0.2  Nove fotografije
+   └─ v4.0.3  Trenutna verzija — prelazak na GitHub Pages
 ```
 
 ## Changelog
+
+### v4.0.3 — Prelazak na GitHub Pages
+- **Objava:** stranica se objavljuje putem GitHub Pages (`pages.yml`); uklonjen stari `deploy.yml` koji je objavljivao u granu `build`.
+- **Build:** MkDocs je fiksiran na verziju 1.x (`mkdocs<2`) kako novo izdanje ne bi prekinulo izgradnju stranice.
 
 ### v4.0.2 — Nove fotografije
 - **Montaža i zaštita:** fotografija zabrtvljene antene na kraju odjeljka „Brtvljenje” (opis: „Rani projekti by Matija”) i fotografija odvodnika prenapona CA-23RP (opis: „CA-23RP by Amir”) na kraju odjeljka „Gromobranska zaštita”.
