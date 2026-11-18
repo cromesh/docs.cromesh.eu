@@ -63,6 +63,7 @@ v3.0.0   2026-07-22  Restrukturirana navigacija
 ### v4.0.3 — Prelazak na GitHub Pages
 - **Objava:** stranica se objavljuje putem GitHub Pages (`pages.yml`); uklonjen stari `deploy.yml` koji je objavljivao u granu `build`.
 - **3D print kućišta i nosača:** fotografija nosača za T1000 zamijenjena novom (svijetla pozadina).
+- **3D print kućišta i nosača:** fotografija Heltec kućišta zamijenjena novom (rastavljeno kućište).
 - **Build:** MkDocs je fiksiran na verziju 1.x (`mkdocs<2`) kako novo izdanje ne bi prekinulo izgradnju stranice.
 
 ### v4.0.2 — Nove fotografije

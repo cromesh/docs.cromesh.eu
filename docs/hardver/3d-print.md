@@ -41,7 +41,7 @@ printerima na FSB-u).
 | TonyG profil | Preporučen profil s Meshtastic modelima | [printables.com/@TonyG](https://www.printables.com/@TonyG) |
 
 <figure class="cromesh-doc-photo">
-  <img src="../../assets/images/v361-3d-print.jpg" alt="3D printano Meshtastic kućište" loading="lazy">
+  <img src="../../assets/images/v361-3d-print.jpg" alt="Rastavljeno 3D printano kućište s Heltec pločicom" loading="lazy">
   <figcaption>Heltec v3 by Amir, 3D print by Damjan</figcaption>
 </figure>
 
